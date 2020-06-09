@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="35756d48-6b58-46d4-9c91-bb07f9f9fcd2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="overdraft_borrower_passport_number" class="java.lang.String"/>
+	<parameter name="overdraft_loan_repayment_rate" class="java.lang.String"/>
+	<parameter name="overdraft_delay_percent_rate" class="java.lang.String"/>
+	<parameter name="overdraft_loan_term" class="java.lang.String"/>
+	<parameter name="overdraft_percent_rate" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_passport_issue_by" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_address" class="java.lang.String"/>
+	<parameter name="overdraft_doverennost_date" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_fio" class="java.lang.String"/>
+	<parameter name="PSK_number" class="java.lang.String"/>
+	<parameter name="PSK_words" class="java.lang.String"/>
+	<parameter name="overdraft_filial_name" class="java.lang.String"/>
+	<parameter name="overdraft_doverennost_number" class="java.lang.String"/>
+	<parameter name="overdraft_loan_sum" class="java.lang.String"/>
+	<parameter name="overdraft_emp_fio" class="java.lang.String"/>
+	<parameter name="overdraft_number" class="java.lang.String"/>
+	<parameter name="overdraft_grace_period" class="java.lang.String"/>
+	<parameter name="overdraft_city" class="java.lang.String"/>
+	<parameter name="overdraft_date" class="java.lang.String"/>
+	<parameter name="overdraft_bank_name" class="java.lang.String"/>
+	<parameter name="overdraft_committee_decision_number" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_passport_issue_date" class="java.lang.String"/>
+	<parameter name="overdraft_committee_decision_date" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="247" y="26" width="53" height="82" uuid="db8be51d-b4d5-4400-97e8-ec9ad090e3bc">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="310" y="40" width="210" height="69" forecolor="#5293E3" uuid="2d619e6a-c90d-4f4b-bea0-53d5c874725e"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="109" width="480" height="50" uuid="2e71e14e-b5b5-4de7-96a1-9dc135a47654"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PSK_number}+
+"\n"+$P{PSK_words}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="170" width="480" height="20" uuid="b62f3167-d60b-4dff-86cc-0078a8af463d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Кредит договор о выделении кредита Овердрафт № "+$P{overdraft_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="201" width="240" height="19" uuid="7b1f7b94-0356-4c46-b6ff-81fe8f554286"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["город "+$P{overdraft_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="201" width="240" height="19" uuid="ce5b629f-9504-4f96-b7fc-a304208984c4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{overdraft_date}+" год"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="240" width="480" height="130" uuid="8088e279-a3ad-4d3f-ac67-03d449f6acfb"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t"+$P{overdraft_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{overdraft_filial_name} +" отделением/филиалом Банка "+$P{overdraft_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{overdraft_doverennost_number}+" от "+$P{overdraft_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{overdraft_borrower_fio}+" проживающий(ая) "+$P{overdraft_borrower_address}+" паспорт серии "+$P{overdraft_borrower_passport_number}+" выдан "+$P{overdraft_borrower_passport_issue_by}+" "+$P{overdraft_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="413" width="480" height="371" uuid="a1be6f3d-c9e5-40f9-a7b6-6c1cbf3b3ccc"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t1.1.	Банк выделяет кредит овердрафт Заемщику, в соответствии с решением кредитного комитета № "+$P{overdraft_committee_decision_number}+" от "+$P{overdraft_committee_decision_date}+" года."+
+"\n\t1.2.	В соответствии с настоящим Договором, Банк дает право пользователю пластиковой карты осушествлять платежи за товары (работы, услуги) в рамках, установленных лимитом  Банковской пластиковой карты в размере превышающем остаток на расчетном счету банковской пластиковой карты."+
+"\n\t1.3.	Сумма кредита овердрафт составляет (лимит, установленный на пластиковую карту "+$P{overdraft_loan_sum}+" сум."+
+"\n\t1.4.	Овердрафт выдается с льготным периодом "+$P{overdraft_grace_period}+" месяцев на срок "+$P{overdraft_loan_term}+" месяцев."+
+"\n\t1.5.	Процентная ставка за пользование овердрафтом устанавливается в размере "+$P{overdraft_percent_rate}+" процентов годовых. За просроченный основной долг по овердрафту процентная ставка устанавливается в размере "+$P{overdraft_delay_percent_rate}+" процентов за год."+
+"\n\t1.6.	Начиная с даты выделения основного долга овердрафта (лимит овердрафта), по истечении 2 месяцев, его лимит уменьшается на 10% процентов ежемесячно. Периодичность возврата овердрафта в соответствии с настояним Договором устанавливается путем оплаты  один раз в месяц, ежемесячно "+$P{overdraft_loan_repayment_rate}+" числа."+
+"\n\t1.7.	С целью соответствующего выполнения Заемщиком обязательств по настоящему Договору, в соответствии со статей 783 Гражданского кодекса Республики Узбекистан, Банку предоставляется безотзывное и беусловное право/распоряжение списывать со всех банковских счетов Заемщика, открытых в Банке, суммы для выполнения платежных обязатлельств."+
+"\n\t1.8.	Согласно настоященму Договору, погашение кредита овердрафт осуществляется псоредством заработной платы, пенсии или других не запрещенных средств, поступивших на личную пластиковую карту Заемщика,  а также другими способами, не противоречащими законодательству."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="393" width="480" height="20" uuid="bfda75d6-d2ba-4371-8b5a-12671212ebff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. Предмет Договора]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

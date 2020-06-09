@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="af40fb8f-e9ec-42f7-8a3f-670379747860">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="rate_for_late" class="java.lang.String"/>
+	<parameter name="collateral_loan" class="java.lang.String"/>
+	<parameter name="penalty_for_violation" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="phone_number" class="java.lang.String"/>
+	<parameter name="mail" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="0" width="491" height="20" uuid="8b4bc80f-8bee-4b89-a9a4-7915c35d9def">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[2-бўлим. Бошқа муҳим шартлар]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="30" width="240" height="40" uuid="5eea6012-59ab-4f56-a26a-f8df91faaffe">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1. Кредит шартномаси шартлари бузилганлиги учун неустойка]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="70" width="240" height="50" uuid="1b603a56-451d-445b-b3fb-8d9a7b423ec6"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[2. Кредит бўйича қарздорлик ўз вақтида сўндирилмаганлиги учун кредит суммасидан тўланадиган оширилган фоиз ставкаси миқдори]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="120" width="240" height="30" uuid="dd3e9122-8cbb-4a77-9354-5f794f5502ff"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[3. Кредитнинг таъминоти]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="30" width="250" height="40" uuid="3b95f359-a22e-4a91-ba8c-5df4e05ae531">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{penalty_for_violation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="70" width="250" height="50" uuid="12792adc-5715-46a4-84d1-3df4eaa68e18">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rate_for_late}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="120" width="250" height="30" uuid="2f4f96ae-d56b-4e96-bda3-a9665c467c92">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{collateral_loan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="150" width="490" height="40" uuid="19874cda-7712-4f34-8cae-42d5e07f782f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Мазкур ахборот варақасининг 1 ва 2-бўлимларда келтирилган маълумотлар якуний ҳисобланмайди ва кредит шартномасида ўзгартирилиши мумкин.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="190" width="490" height="30" uuid="4639a591-43e5-4de6-b573-be7e9b8e22ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[3-бўлим. Кредит олиш учун тақдим этилиши лозим бўлган ҳужжатлар рўйхати]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="220" width="490" height="90" uuid="71ae74bf-780f-4b93-a32b-3a6501a9e5a1"/>
+				<box padding="7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1. Қарз олувчининг паспорти ёки шахсини тасдиқловчи бошқа хужжат;
+
+2. Қарз олувчининг иш жойидан даромадлари тўғрисида маълумотнома;
+
+3. Кредит ҳисобига истеъмол эҳтиёжларини қондиришга мўлжалланган товарлар, ишлар ва хизматлар сотиб олиш учун мижоз ва сотувчи ўртасида тузилган олди-сотди шартнома (истеъмол кредити учун);
+
+4. кредит қайтарилиши таъминотига доир ҳужжатлар. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="310" width="490" height="30" uuid="bfec8ad6-4df4-41ba-9c68-a264f167af87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[4-бўлим. Бўлажак қарз олувчи сифатида Сизнинг ҳуқуқларингиз]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="718" width="210" height="30" uuid="afd5ab79-008d-4346-86b4-086a94b21f8e"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(подпись, Ф.И.О. и должность специалиста банка)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="45" y="708" width="260" height="1" uuid="acf56964-de4d-4364-b8e4-d6c365bf0da6"/>
+			</line>
+			<textField>
+				<reportElement x="40" y="340" width="490" height="210" uuid="509294b6-5d66-4fe5-9722-6e0210cf99b0"/>
+				<box padding="7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["1. Сиз банкни ва банк хизматларини танлашда эркинсиз.\n\n"+
+
+"2. Сиз кредит шартномаси ёки бошқа шартнома ва битимларни имзолашдан бош тортишга ҳақлисиз.\n\n"+
+
+"3. Сиз кредит шартномаси тузишда шартнома тузиладиган тилни танлаш ҳуқуқига эгасиз (давлат ёки рус тилларида).\n\n"+
+
+"4. Сиз кредит шартномаси лойиҳасини банк ташқарисида танишиб чиқиш ва маслаҳатлашиш учун олишга ҳақлисиз.\n\n"+
+
+"5. Сиз кредитнинг шартлари ва қиймати тўғрисида, тўловлар ва ҳисоб-китоблар тартиби тўғрисида (фоизлар, жарима ва пенялар), кредит шартномаси бўйича Сизнинг ҳуқуқларингиз ва мажбуриятларингиз тўғрисида, кредит шартномаси бўйича юзага келиши мумкин бўлган хатарлар ва жавобгарликлар тўғрисида, шунингдек Сизга тушунарсиз бўлган бошқа масалалар юзасидан банкдан тўлиқ ва батафсил маълумот олишга ҳақлисиз.\n\n"+
+"6. Кредит шартномаси имзоланганидан кейин, бироқ пул маблағлари ҳақиқатда олингунга қадар Сиз кредит олишдан бирон-бир тўловларсиз воз кечиш ҳуқуқига эгасиз. Банк ходимлари ҳақ эвазига кредит олиш юзасидан кўмаклашишга ҳақли эмас. Агар Сизда шикоятлар мавжуд бўлса, у ҳолда Сиз мурожаатингизни "+$P{phone_number}+" рақамли телефонга ёки "+$P{mail}+" манзилга ёки "+$P{email}+" электрон манзилга жўнатишингиз мумкин."]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

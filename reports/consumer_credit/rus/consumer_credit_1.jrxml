@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consumer_credit_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="008c10f4-f15f-4c40-94f6-f026d9738db5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="consumer_blanking_type" class="java.lang.String"/>
+	<parameter name="consumer_grace_period" class="java.lang.String"/>
+	<parameter name="consumer_borrower_passport_number" class="java.lang.String"/>
+	<parameter name="consumer_loan_repayment_rate" class="java.lang.String"/>
+	<parameter name="consumer_delay_percent_rate" class="java.lang.String"/>
+	<parameter name="consumer_loan_term" class="java.lang.String"/>
+	<parameter name="consumer_percent_rate" class="java.lang.String"/>
+	<parameter name="consumer_borrower_passport_issue_by" class="java.lang.String"/>
+	<parameter name="consumer_borrower_address" class="java.lang.String"/>
+	<parameter name="consumer_doverennost_date" class="java.lang.String"/>
+	<parameter name="consumer_borrower_fio" class="java.lang.String"/>
+	<parameter name="PSK_number" class="java.lang.String"/>
+	<parameter name="PSK_words" class="java.lang.String"/>
+	<parameter name="consumer_filial_name" class="java.lang.String"/>
+	<parameter name="consumer_doverennost_number" class="java.lang.String"/>
+	<parameter name="consumer_loan_sum" class="java.lang.String"/>
+	<parameter name="consumer_emp_fio" class="java.lang.String"/>
+	<parameter name="consumer_city" class="java.lang.String"/>
+	<parameter name="consumer_date" class="java.lang.String"/>
+	<parameter name="consumer_bank_name" class="java.lang.String"/>
+	<parameter name="consumer_committee_decision_number" class="java.lang.String"/>
+	<parameter name="consumer_borrower_passport_issue_date" class="java.lang.String"/>
+	<parameter name="consumer_committee_decision_date" class="java.lang.String"/>
+	<parameter name="consumer_loan_purpose" class="java.lang.String"/>
+	<parameter name="consumer_number" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="247" y="26" width="53" height="82" uuid="740e5862-7be7-4669-9cfc-07b9482a1df3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="330" y="52" width="180" height="50" forecolor="#5293E3" uuid="d637201c-a216-4c27-a3a9-2b91e7dbf8cd"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="109" width="480" height="50" uuid="e46093fb-6ec1-4c19-afe6-58bb673f5001"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PSK_number}+
+"\n"+$P{PSK_words}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="170" width="480" height="20" uuid="cbd0cf33-e6e0-4ba4-8952-6b84fc9e5e11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Кредитный договор о выдаче потребительского кредита № "+$P{consumer_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="194" width="240" height="19" uuid="d3eaa592-f77f-4b77-8154-1c1adf86df5f"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["город "+$P{consumer_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="194" width="240" height="19" uuid="9ce95c9e-5247-44cd-a355-ce87d9d91ebe">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["20__ год "+$P{consumer_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="219" width="480" height="131" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" отделением/филиалом Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от «____» "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" "+$P{consumer_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="370" width="480" height="283" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t1.1.	Банк согласно решению кредитного комитета  № "+$P{consumer_committee_decision_number}+" от "+$P{consumer_committee_decision_date}+" года предоставляет Заёмщику кредит для потребительских нужд."+
+"\n\t1.2.	Сумма кредита"+$P{consumer_loan_sum}+" сум."+
+"\n\t1.3.	Цель кредита для "+$P{consumer_loan_purpose}+"."+
+"\n\t1.4.	Кредит выдается с льготным периодом "+$P{consumer_grace_period}+" месяцев на срок "+$P{consumer_loan_term}+" месяцев."+
+"\n\t1.5.	Процентная ставка за пользование кредитом устанавливается в размере "+$P{consumer_percent_rate}+" процентов за год. За просроченный основной долг процентная ставка устанавливается в размере "+$P{consumer_delay_percent_rate}+" процентов годовых."+
+"\n\t1.6.	Кредит погашается "+$P{consumer_blanking_type}+") способом (выбирается аннуитет или способ уменьшения остатка суммы кредиты). Возврат кредита осуществляется  согласно  графику возврата кредита, являющегося  неотъемлемой частью настоящего договора, в соответствии с которым периодичность погашения осуществляется "+$P{consumer_loan_repayment_rate}+" числа каждого месяца."+
+"\n\t1.7.	С целью соответствующего выполнения Заемщиком обязательств по настоящему Договору, в соответствии со статей 783 Гражданского кодекса Республики Узбекистан, Банку предоставляется безотзывное и беусловное право/распоряжение списывания со всех банковских счетов Заемщика, открытых в Банке, суммы для выполнения платежных обязатлельств."+
+"\n\t1.8.	Согласно настоящему Договору, основной долг по просроченной ссуде и проценты по нему, могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="350" width="480" height="20" uuid="052b5d73-fc6f-4e75-976c-ffd720f05d4e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. Предмет Договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="653" width="480" height="20" uuid="2596b403-f194-4259-bc1e-a1ff74ba5e02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.	Права и обязанности сторон ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="673" width="480" height="20" uuid="130cc8f6-94e3-41a0-a146-8dc037ecfcdf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1.	Права Банка:"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="693" width="480" height="60" uuid="ad4e2f51-5857-4ddb-ad70-94a63934af7b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[	1.1.1.	Банк вправе контролировать  платежеспособность Заемщика, достаточность кредитного обеспечения, запрашивать необходимые документы, подтверждающие выполнение обязательств Заемщиком. 
+	1.1.2.	При несвоевременном погашении очередной части Кредита Банк вправе:]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

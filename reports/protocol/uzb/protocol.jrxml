@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="protocol_uzb" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f07922c4-251d-4b1e-b2aa-bf4594817f3f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="protocol_initiative_unit" class="java.lang.String"/>
+	<parameter name="protocol_client_inn" class="java.lang.String"/>
+	<parameter name="protocol_lending_currency" class="java.lang.String"/>
+	<parameter name="protocol_loan_amount" class="java.lang.String"/>
+	<parameter name="protocol_repayment_type" class="java.lang.String"/>
+	<parameter name="protocol_customer_name" class="java.lang.String"/>
+	<parameter name="protocol_term" class="java.lang.String"/>
+	<parameter name="protocol_grace_period" class="java.lang.String"/>
+	<parameter name="protocol_finance_source" class="java.lang.String"/>
+	<parameter name="protocol_loan_product" class="java.lang.String"/>
+	<parameter name="protocol_loan_type" class="java.lang.String"/>
+	<parameter name="protocol_percent_rate" class="java.lang.String"/>
+	<parameter name="protocol_credit_rating" class="java.lang.String"/>
+	<parameter name="protocol_request_number" class="java.lang.String"/>
+	<parameter name="protocol_loan_specialist_position" class="java.lang.String"/>
+	<parameter name="protocol_number" class="java.lang.String"/>
+	<parameter name="protocol_filial" class="java.lang.String"/>
+	<parameter name="protocol_committee_decision_number" class="java.lang.String"/>
+	<parameter name="protocol_committee_decision_date" class="java.lang.String"/>
+	<parameter name="protocol_loan_specialist_fio" class="java.lang.String"/>
+	<parameter name="protocol_special_value" class="java.lang.String"/>
+	<parameter name="protocol_insurance_value" class="java.lang.String"/>
+	<parameter name="protocol_additional_value" class="java.lang.String"/>
+	<parameter name="protocol_guarantor_value" class="java.lang.String"/>
+	<parameter name="protocol_guarantor_name" class="java.lang.String"/>
+	<parameter name="protocol_insurance_name" class="java.lang.String"/>
+	<parameter name="protocol_additional_name" class="java.lang.String"/>
+	<parameter name="protocol_special_name" class="java.lang.String"/>
+	<parameter name="protocol_secretary_fio" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="25" width="555" height="20" uuid="b35db6f0-8595-44fc-910f-7e10485cb861">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. Форма выписки из протокола решения кредитного комитета]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="46" y="55" width="400" height="95" uuid="74a3ab44-4ebe-403f-ab43-4b61daf96100"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Баёндан кўчирма №  "+$P{protocol_number}+
+"\n"+$P{protocol_filial}+" бўлими/филиали"+
+"\nКредит қўмитасининг "+$P{protocol_committee_decision_date}+"йил даги №"+$P{protocol_committee_decision_number}+" йиғилиши"+
+"\nКредит қўмитаси йиғилиши ўтказилган жой ва вақти"+
+"\nТошкент ш., Амир Темур хиёбони, 101,"+
+"\nАриза № "+$P{protocol_request_number} +
+"\nКун тартибидаги масала бўйича қарор:"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="160" width="250" height="20" uuid="a50d527c-4e39-4f2b-b098-0cea193e6d56"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Кредит параметрлари]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="160" width="250" height="20" uuid="8e3e6041-9cda-42a2-92ee-c9effc0ffe8b"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Кредит шартлари]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="180" width="250" height="20" uuid="29a570cd-b4f8-461a-ad1c-0a5906ced509"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредитни ажратувчи бўлим/филиал номи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="380" width="250" height="20" uuid="1dd773ac-e5a6-41f9-b39b-1b123f37b5f0"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Фоиз ставкаси (йиллик)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="360" width="250" height="20" uuid="55b78736-90f0-46c9-b7ed-5fd67b388dea"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит суммаси]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="340" width="250" height="20" uuid="8eaf9e55-614b-470c-a776-0454ad1fb95e"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит валютаси]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="320" width="250" height="20" uuid="b23c8c08-64e3-49f1-aaab-e8e19957e2e2"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит маҳсулоти]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="300" width="250" height="20" uuid="c8e1ed0c-5bc8-4118-aa4a-1d552d10ec18"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит тури]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="460" width="250" height="20" uuid="73d182f9-6ec7-40b3-9eea-7437ca627d30"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредитни қайтариш тури]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="440" width="250" height="20" uuid="92c75e20-73e6-477a-8163-519c94493625"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Имтиёзли давр]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="400" width="250" height="20" uuid="5a0af392-c95f-49e2-9844-cf25269530c2"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит муддати]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="420" width="250" height="20" uuid="597f410a-5979-4517-8775-4fbd21280de9"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Молиялаштириш манбаи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="280" width="250" height="20" uuid="426524af-c45f-4028-9b85-0abdf48942c6"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредитга лаёқатлилик синфи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="260" width="250" height="20" uuid="a1d3462a-336d-4114-9bcf-cce72bbfa9e8"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Мижоз СТИРи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="240" width="250" height="20" uuid="77b4ea1d-d69a-4740-9815-e53547dc55fb"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Мижоз номи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="220" width="250" height="20" uuid="04f32e51-56b4-4005-ab91-d42b4f285a05"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит мутахассиси лавозими ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="200" width="250" height="20" uuid="a07c2974-1226-4c20-87ea-3beadf7698ff"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Кредит мутахассиси Ф.И.О.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="285" y="180" width="250" height="20" uuid="612d6783-9575-4e7a-8f8d-957205b8abb9"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_initiative_unit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="460" width="250" height="20" uuid="2248d1df-f9f7-4f4d-8b92-e0ae0f0f7e8c"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_repayment_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="440" width="250" height="20" uuid="67b30273-fdc7-4cb1-b66e-c7d9604586a2"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_grace_period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="420" width="250" height="20" uuid="b20bd337-a4ec-4bfb-9f22-7ec1fdedba72"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_finance_source}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="400" width="250" height="20" uuid="f8fbbce9-ac79-434e-a269-612352e596f7"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_term}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="380" width="250" height="20" uuid="f37b2e65-4004-4424-8204-050ce72b5447"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_percent_rate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="360" width="250" height="20" uuid="94e788f2-f374-454d-bed2-4411e1175848"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_loan_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="340" width="250" height="20" uuid="8f02cd92-cd34-4913-8704-8365d5a30b40"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_lending_currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="320" width="250" height="20" uuid="0ae9a946-6681-429c-8423-a8174dd3184e"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_loan_product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="300" width="250" height="20" uuid="c9d96c3b-1e6a-40e2-8480-f11dc260fd35"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_loan_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="280" width="250" height="20" uuid="5ccc4c54-9c6e-4d5f-b21c-9e9405ba02e2"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_credit_rating}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="260" width="250" height="20" uuid="ddd80e97-eb23-40d2-91ad-c5dd8ab1d3ed"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_client_inn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="240" width="250" height="20" uuid="89a5d59e-cc91-4c42-9f49-da2f01119b44"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_customer_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="220" width="250" height="20" uuid="9e71b3a4-ec97-4c38-b060-5ba0c09cdf70"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_loan_specialist_position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="200" width="250" height="20" uuid="307190ef-913a-41dc-a059-c0f70fa3b87b"/>
+				<box padding="3">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_loan_specialist_fio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="485" width="100" height="20" uuid="1c812977-c2b8-4979-aaaf-3d378da75e74"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Кафил:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="485" width="20" height="28" uuid="19d50cbc-57bd-43d1-91c4-26c71d2fb68c"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[№]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="513" width="20" height="31" uuid="46a9d39b-935c-4d51-8d97-3f03d23bbf03"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="485" width="200" height="28" uuid="351b5285-0166-40f5-9838-8c7755f570ed"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Номланиши]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="485" width="100" height="28" uuid="664cb343-f83e-4432-86d0-3314e7331436"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Мажбурият 
+суммаси]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="513" width="200" height="31" uuid="e30cfc9b-aca1-4733-98b9-2b7d0a691672"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_guarantor_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="513" width="100" height="31" uuid="7571e1f7-2d29-45c9-afda-6ba34810d6e3"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_guarantor_value}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="552" width="100" height="20" uuid="4a93ac2c-9334-4d4a-b879-459194ebd928"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Суғурта компанияси:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="552" width="20" height="28" uuid="e4e71a1e-1bc8-4589-8f0e-3dff03a3ca51"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[№]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="580" width="20" height="29" uuid="271613a5-36c4-4339-a7d3-0fd75d9d0398"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="552" width="200" height="28" uuid="272ee52a-1210-464c-8945-ab14ed229077"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Номланиши]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="552" width="100" height="28" uuid="9eb86f8c-90f8-40a7-b57d-cdf0316ad06d"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Мажбурият 
+суммаси]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="580" width="200" height="29" uuid="89103998-fc9b-41d4-a0bc-3ef364e9b284"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_insurance_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="580" width="100" height="29" uuid="07283740-df0f-49a6-b4c3-a85f4f9a3ab9"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_insurance_value}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="619" width="100" height="28" uuid="fc1297ae-6dca-43da-b8da-6b8c2977b55f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Қўшимча шартлар:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="619" width="20" height="28" uuid="e58d11ef-28b5-421c-aaff-bdd0dfac9eb2"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[№]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="647" width="20" height="29" uuid="d459238a-e48e-46f4-a96d-62ef4d18c69a"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="619" width="200" height="28" uuid="99b48e82-5de4-4ce7-809b-c5da45163515"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Номланиши]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="619" width="100" height="28" uuid="540f5bbf-f538-4fe1-8d65-8e3cd903fbd3"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ижро муддати]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="647" width="200" height="29" uuid="1b1df9fe-c25d-44e8-9c0e-91755c10923d"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_additional_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="647" width="100" height="29" uuid="933827fb-6636-46ec-9703-ff68dd89c452"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_additional_value}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="686" width="100" height="20" uuid="5736807b-e637-4246-b173-5d232c723fe7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Алоҳида шартлар:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="686" width="20" height="28" uuid="7a407750-2c54-45dc-ad7e-c3b9707214e4"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[№]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="714" width="20" height="29" uuid="d8ac5fe1-863d-4ee7-a364-479559e20472"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="686" width="200" height="28" uuid="0d9c76b4-ef41-4519-8853-62654cfe93f9"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Номланиши]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="686" width="100" height="28" uuid="b9afa290-a613-4048-bf0b-65dc69f07dd5"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ижро муддати]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="714" width="200" height="29" uuid="baa3ce8e-93eb-4aee-aa17-92e4ad03321c"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_special_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="714" width="100" height="29" uuid="6d5dbde1-c9b6-45a0-84ea-fb9d85c6e067"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_special_value}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="50" y="764" width="200" height="30" uuid="fd3106e1-d78d-44ae-a4f2-26511baa44f5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Кўчирма тўғри: 
+Кредит қўмита котиби]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="764" width="250" height="30" uuid="00b0f5f4-2f51-4afa-a87f-a71aa61c82f3"/>
+				<box leftPadding="10" bottomPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protocol_secretary_fio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

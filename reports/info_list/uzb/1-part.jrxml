@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="1-part" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2244d620-bada-492b-acaa-bbbc82570855">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="department_name" class="java.lang.String"/>
+	<parameter name="fullname_and_position_emp" class="java.lang.String"/>
+	<parameter name="completion_date" class="java.lang.String"/>
+	<parameter name="loan_purpose" class="java.lang.String"/>
+	<parameter name="additional_costs" class="java.lang.String"/>
+	<parameter name="one_time_amount" class="java.lang.String"/>
+	<parameter name="payments_frequency" class="java.lang.String"/>
+	<parameter name="loan_rate_monetary_equivalent" class="java.lang.String"/>
+	<parameter name="loan_currency" class="java.lang.String"/>
+	<parameter name="loan_term" class="java.lang.String"/>
+	<parameter name="loan_amount" class="java.lang.String"/>
+	<parameter name="loan_rate_percent" class="java.lang.String"/>
+	<parameter name="additional_costs_third_party" class="java.lang.String"/>
+	<parameter name="additional_costs_bank" class="java.lang.String"/>
+	<parameter name="loan_total_cost" class="java.lang.String"/>
+	<parameter name="repayment_method" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<frame>
+				<reportElement x="-20" y="-20" width="595" height="105" uuid="4e3b7884-e548-4760-aba9-983511f75bc5"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<staticText>
+					<reportElement x="60" y="41" width="515" height="30" uuid="05bae677-c8df-4cfc-ae12-763f948f798f">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Serif" size="16"/>
+					</textElement>
+					<text><![CDATA[Кредитнинг асосий шартлари тўғрисидаги ахборот варақаси]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="668" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="0" width="275" height="30" uuid="70b367cd-7126-4a98-9531-0b0c055acfc7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{department_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="30" width="275" height="30" uuid="84aeda01-9bc9-449c-bed2-a4367cea27c3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fullname_and_position_emp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="60" width="275" height="30" uuid="2c5c2f2e-7bb3-49e9-bb2e-6c65a0310609">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{completion_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="0" width="240" height="30" uuid="a9d18944-5bd5-4a26-ba64-27702a127b5a"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Тижорат банкининг номи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="30" width="240" height="30" uuid="f1617d20-12f7-45c1-9f5a-e9979719e676"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Мазкур варақа ким томондан тўлдирилган]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="60" width="240" height="30" uuid="f85eb916-3506-4953-ab47-489c6eb531af"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Тўлдирилган сана]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="118" width="515" height="19" uuid="c8da1bda-9902-4039-a6fc-77808e6ec3aa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[1-бўлим. Кредит бўйича маълумотлар]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="143" width="241" height="30" uuid="3bd76990-dc0c-4a33-bce1-a52e77fa3680"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1. Кредитнинг мақсади (тури)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="173" width="241" height="30" uuid="028f9d22-bcb5-404e-8e45-9e4c01d6eacc"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[2. Ажратиладиган кредитнинг валюта тури]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="203" width="241" height="30" uuid="a4119e83-d6f3-4bef-a4ae-ad22df249d95"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[3. Кредитнинг миқдори]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="233" width="241" height="30" uuid="84ea1188-490c-4b05-b410-39978e4bb6d6"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[4. Кредитнинг муддати]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="263" width="241" height="30" uuid="a18b3f87-d6da-483a-a261-7e6726a11e12">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[5. Кредитнинг фоиз ставкаси]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="293" width="241" height="30" uuid="2694937d-107c-4f85-a67d-7088dcaed468"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[6. Кредитнинг тўлиқ қиймати]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="323" width="241" height="30" uuid="254142af-c84e-40bf-a5b9-0dcf84e271a0"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[7. Тўловларнинг даврийлиги]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="353" width="241" height="30" uuid="6612e13b-e9d7-4f9f-ba05-1ac55338655e"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[8. Кредитни сўндириш усули]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="383" width="241" height="30" uuid="7c351719-0ebe-4d0c-95e1-dbcf09134dac">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[9. Тўловларнинг даврида бир марталик тўловнинг суммаси]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="413" width="241" height="41" uuid="49ea3968-3d13-4bbb-9cd5-d18d22a6bd8c"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[10. Кредит билан боғлиқ қўшимча харажатлар, жумладан:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="454" width="241" height="30" uuid="052e7ae9-bd63-4d69-822e-273eda434ba9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Турлари бўйича банкнинг комиссия ва йиғимлари]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="484" width="241" height="30" uuid="161c3530-a5cc-4a80-8433-ff45ff962c9f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Учинчи шахслар хизмати]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="143" width="274" height="30" uuid="0d6bed10-dc47-4fbc-9513-191d7b7d7ace">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_purpose}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="173" width="274" height="30" uuid="b96d6134-d893-4dec-9f5e-d37f4c08182e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="203" width="274" height="30" uuid="6ddef56b-d322-4bec-829f-9eb1072e8c90">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="233" width="274" height="30" uuid="4b070b9e-8087-49bc-9db4-a9f8a79f4bb3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_term}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="263" width="129" height="30" uuid="031640e6-d233-4618-8718-c454369fa063">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_rate_percent}+"%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="263" width="145" height="30" uuid="6b33b075-964f-49dc-b255-75eb6df0369e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_rate_monetary_equivalent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="293" width="274" height="30" uuid="588815d0-245e-4b6e-9a38-c24fabc9a34e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loan_total_cost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="323" width="274" height="30" uuid="e630cf83-0297-4b34-a32d-6cd5b8a12102">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{payments_frequency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="353" width="274" height="30" uuid="49a3ea69-3380-499c-8f39-fc0c903d6367">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{repayment_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="383" width="274" height="30" uuid="b507431b-bad0-48b0-872b-f1b77ad314de">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{one_time_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="413" width="274" height="41" uuid="c1aa6586-5847-4144-92fe-76e6c6fa8664">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{additional_costs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="454" width="274" height="30" uuid="fe45f8ea-0fec-4d13-85e4-55a7df049c1b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{additional_costs_bank}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="484" width="274" height="30" uuid="1a6f06c7-882a-455f-a16e-d43833ba2bb3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{additional_costs_third_party}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="649" width="515" height="19" uuid="8640eb72-a8b4-4d52-8197-a33e4205e783">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Кредит олишга рози бўлишдан олдин диққат билан ўрганиб чиқинг!]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+</jasperReport>

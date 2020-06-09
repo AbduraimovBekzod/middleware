@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="microloan_3_uzb" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d4aa3c5c-b6a6-48ef-8bac-ccb217337068">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="microloan_borrower_passport_number" class="java.lang.String"/>
+	<parameter name="microloan_borrower_passport_issue_by" class="java.lang.String"/>
+	<parameter name="microloan_borrower_address" class="java.lang.String"/>
+	<parameter name="microloan_borrower_fio" class="java.lang.String"/>
+	<parameter name="microloan_filial_name" class="java.lang.String"/>
+	<parameter name="microloan_borrower_passport_issue_date" class="java.lang.String"/>
+	<parameter name="microloan_borrower_phone" class="java.lang.String"/>
+	<parameter name="microloan_filial_inn" class="java.lang.String"/>
+	<parameter name="microloan_filial_phone" class="java.lang.String"/>
+	<parameter name="microloan_filial_address" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="50" width="480" height="45" uuid="e00e8f43-d5ed-43a1-9214-89442c9e59d9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.6.	Ушбу шартнома амал қиладиган муддат мобайнида Қарз олувчи Банкнинг розилигисиз ушбу шартнома бўйича Қарз олувчининг мажбуриятига нисбатан устивор талаб қилиш ҳуқуқига эга бўлиши мумкин бўлган учинчи томонларнинг кредитлари ёки қарзларини жалб қилмаслиги керак."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="95" width="480" height="25" uuid="dba15064-6ddc-4a7b-b2e6-fbcbd9c6d32a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["3.	Томонларнинг жавобгарлиги"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="120" width="480" height="180" uuid="0999fe08-2996-49ac-830d-e8efc3d3945f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t3.1.	 Томонларнинг ушбу шартномада кўзда тутилган мажбуриятларни бажаришдан бош тортиши ушбу шартнома шартлари ва Ўзбекистон Республикасининг амалдаги қонунчилигига мувофиқ жавобгарликка тортилади."+
+"\n\t3.2.	 Микроқарз бўйича қарздорликни белгиланган муддатда тўламаганлиги ва улар бўйича муддати ўтган суммалар вужудга келгани учун Қарз олувчи Банкка кечиктирилган тўловларнинг ҳар бир куни учун кечиктирилган тўлов суммасининг 0,1 фоизи миқдорида, аммо кечиктирилган тўлов суммасининг 50 фоизидан ошмаган миқдорда пеня тўлайди (ҳар қандай ҳолатда мазкур Шартнома бўйича йиллик қарз миқдорининг ярмидан кўпидан ошмаган ҳолда)."+
+"\n\t3.3.	 Қарз олувчи томонидан ушбу шартноманинг шартлари бажарилиб, банк микроқарзни ўз вақтида ажратмаган ҳолатда Банк Қарз олувчига муддатида тўланмаган микроқарз суммасининг кечиктирилган ҳар бир куни учун 0,1 фоиз миқдорида, лекин муддатида тўланмаган кредит суммасининг 50 фоизидан юқори бўлмаган миқдорда пеня тўлайди (ҳар қандай ҳолатда мазкур Шартнома бўйича йиллик қарз миқдорининг ярмидан кўпидан ошмаган ҳолда)."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="300" width="480" height="25" uuid="7b73afc1-58a4-453b-9deb-8e64beffb15f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["4.	Шартноманинг амал қилиш шартлари"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="325" width="480" height="145" uuid="312ba0ef-41a3-4db9-9d41-3981102eb959"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t4.1.	Ушбу Шартнома имзоланган кундан бошлаб кучга киради ва Қарз олувчи микроқарзни ва унинг фоизларини тўлагунига қадар ҳамда томонларнинг ўз зиммаларига олган мажбуриятлари тўлиқ бажарилгунига қадар амал қилади."+
+"\n\t4.2.	Банк микроқарз бериш бўйича ўз мажбуриятларини бажаргунига қадар Шартнома томонлардан бирининг ёзма аризасига кўра бекор қилиниши мумкин."+
+"\n\t4.3.	Мазкур Шартнома бўйича низолар пайдо бўлган ҳолларда томонлар ўртасидаги низо Ўзбекистон Республикасининг амалдаги қонун хужжатларига амал қилган ҳолда белгиланган тартибда ҳал этилади."+
+"\n\t4.4.	Ушбу шартномага ўзгартиш ва қўшимчалар ҳар икки томон имзолайдиган қўшимча битим билан расмийлаштирилади."+
+"\n\t4.5.	Шартнома бир хил юридик кучга эга бўлган иккита бир хил нусхада, ҳар бир томон учун биттадан тузилди."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="497" width="230" height="249" uuid="8f65c1e7-2ad4-4b17-abd7-50662c8244f1"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{microloan_filial_name}+" бўлими/филиали"+
+"\nМанзил: "+$P{microloan_filial_address}+
+"\n________________________________"+
+"\nСТИР "+$P{microloan_filial_inn}+
+"\nТелефон "+$P{microloan_filial_phone}+
+"\nБошқарувчи \n_____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"+
+"\nБош бухгалтер ___________________ "+
+"\n                                    (Ф.И.О. ва имзо)"+
+"\n                  м.ў."+
+"\nХуқуқшунос ____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="497" width="220" height="169" uuid="9823e2a4-a0ce-411f-8d4b-a9f74db71def"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ф.И.О. "+$P{microloan_borrower_fio}+
+"\n\nМанзил "+$P{microloan_borrower_address}+
+"\n\nТелефон рақами "+$P{microloan_borrower_phone}+
+"\n\nПаспорт маълумотлари "+$P{microloan_borrower_passport_number}+", "+$P{microloan_borrower_passport_issue_by}+" томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="477" width="230" height="20" uuid="a2c14d08-dc0c-454f-81eb-08b75307e0e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[БАНК:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="477" width="220" height="20" uuid="bde1e0d6-73b4-47ab-b333-3a231071f499"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="666" width="220" height="40" uuid="81f265e6-8c94-453f-9218-33054decbb68"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[__________________
+(имзо)]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

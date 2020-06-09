@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="microloan_2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f1e604a3-f8cc-4c4e-b248-57071356817c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="microloan_guarantee_surety_sum" class="java.lang.String"/>
+	<parameter name="microloan_loan_repayment_rate" class="java.lang.String"/>
+	<parameter name="microloan_delay_percent_rate" class="java.lang.String"/>
+	<parameter name="microloan_loan_sum" class="java.lang.String"/>
+	<parameter name="microloan_guarantee_surety" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="50" width="480" height="170" uuid="4d839893-0241-4309-9fb9-544aee9add42"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1.2.	При несвоевременном погашении очередной части микрозайма:"+
+"\n\tа) начиная с даты перевода кредита на счет просроченных ссуд, взимать платеж по повышеной процентной ставке  начисляемой на сумму просроченного основного долга в размере "+$P{microloan_delay_percent_rate}+"% за год;"+
+"\n\tб) требовать от Заемщика досрочного возврата кредита (остатка долга по кредиту) и незамедлительного  принятия мер по оплате процентов по нему;"+
+"\n\tв) в соответствии с законодательством, Банк вправе пользоваться всеми правами по продаже  обеспечения по кредиту;"+
+"\n\tг) Банк вправе в установленном порядке  расторгнуть настоящий Договор."+
+"\n\t2.1.3.	Банк вправе контролировать выполнение Заемщиком условий настоящего Договора, в частности целевое использование микрозайм."+
+"\n\t2.1.4.	В случае если Заемщик не выполняет обязательства по погашению основного долга  по микрозайму и процентов по нему в срок, Банк вправе предпринять меры, установленные законодательством."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="220" width="480" height="19" uuid="cae64c7e-0583-4afe-9f9f-40c3aa007491"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.2.	Права заемщика:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="240" width="480" height="200" uuid="2b01dbac-7f89-4cf6-a068-7a85a98b5aa3"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.2.1.	Заемщик вправе ознакомиться с  проектом  договора Микрозаймования вне банка и получить его для консультации."+
+"\n\t2.2.2.	Заемщик вправе отказаться от получения кредита, до фактического  получения денежных средств от Банка, после подписания договора Микрозаймования."+
+"\n\t2.2.3.	Заемщик вправе осуществлять следующие действия по оплате микрозайм и начисленных по нему процентов:"+
+"\n\t•	Сдача наличных денежных средств в кассу банковского учреждения;"+
+"\n\t•	Перевод средств с личного депозитного расчетного счета заемщика, открытого в Банке;"+
+"\n\t•	Перевод денежных средств с заработной платы Заемщика посредством безналичного расчета;"+
+"\n\t•	Другими способами, не противоречащими законодательству."+
+"\n\t2.2.4.	При внесении  изменений в договор Микрозаймования  Банком, получить извещение минимум за  5 дней до внесения изменений."+
+"\n\t2.2.5.	Заемщик вправе самостоятельно выбирать страховую компанию."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="530" width="480" height="20" uuid="605ff11d-567b-4772-ae2c-ba7d21344982"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.	Обязанности заемщика:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="550" width="480" height="180" uuid="8fe1827b-d93a-40d5-8f80-d85badec199c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения микрозайма, оформленное по  форме, удовлетворяющей запрос банка и в соотвествии с законодательством, обеспечение по кредиту на сумму не менее 125% от суммы микрозайма в виде "+$P{microloan_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{microloan_guarantee_surety_sum}+" сум,  являющееся залогом возвратности микрозайма."+
+"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{microloan_loan_repayment_rate}+" 20__года,   в соответствии с графиком возврата микрозайма, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты."+
+"\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
+"\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе микрозаймных отношений."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="440" width="480" height="20" uuid="da0fbdf9-a371-45b3-8b10-e76e84f4f425">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.3.	Обязанности Банка:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="460" width="480" height="70" uuid="37812ae2-3a82-428e-91d5-11090aff7286"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.3.1.	Выделить Заемщику микрозайм в размере "+$P{microloan_loan_sum}+" сум."+
+"\n\t2.3.2.	Банк обязан открыть расчетный счет микрозайма 12501 (если срок кредита до 1 года)/14901 (если срок кредита свыше 1 года) ________________."+
+"\n\t2.3.3.	Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита."]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

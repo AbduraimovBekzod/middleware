@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consumer_credit_3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7032fbcc-e831-4589-aeab-6e14aa5e76b5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="consumer_borrower_passport_number" class="java.lang.String"/>
+	<parameter name="consumer_borrower_passport_issue_by" class="java.lang.String"/>
+	<parameter name="consumer_borrower_address" class="java.lang.String"/>
+	<parameter name="consumer_borrower_fio" class="java.lang.String"/>
+	<parameter name="consumer_filial_name" class="java.lang.String"/>
+	<parameter name="consumer_borrower_passport_issue_date" class="java.lang.String"/>
+	<parameter name="consumer_borrower_phone" class="java.lang.String"/>
+	<parameter name="consumer_filial_inn" class="java.lang.String"/>
+	<parameter name="consumer_filial_phone" class="java.lang.String"/>
+	<parameter name="consumer_filial_address" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="170" width="480" height="25" uuid="6920055c-8d1f-4e64-81ed-ddb5c19758b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["3.	Томонларнинг жавобгарлиги"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="350" width="480" height="25" uuid="3aead848-4153-40cc-85fa-cd8d600b3aac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["4.	Шартноманинг амал қилиш шартлари"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="375" width="480" height="145" uuid="bcf120c7-ef23-45b7-a838-1f171846e1ab"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[	4.1.	Ушбу Шартнома имзоланган кундан бошлаб кучга киради ва Қарз олувчи кредитни ва унинг фоизларини тўлагунига қадар ҳамда томонларнинг ўз зиммаларига олган мажбуриятлари тўлиқ бажарилгунига қадар амал қилади.
+	4.2.	Банк кредит бериш бўйича ўз мажбуриятларини бажаргунига қадар Шартнома томонлардан бирининг ёзма аризасига кўра бекор қилиниши мумкин.
+	4.3.	Мазкур Шартнома бўйича низолар пайдо бўлган ҳолларда томонлар ўртасидаги низо Ўзбекистон Республикасининг амалдаги қонун хужжатларига амал қилган ҳолда белгиланган тартибда ҳал этилади.
+	4.4.	Ушбу шартномага ўзгартиш ва қўшимчалар ҳар икки томон имзолайдиган қўшимча битим билан расмийлаштирилади.
+	4.5.	Шартнома бир хил юридик кучга эга бўлган иккита бир хил нусхада, ҳар бир томон учун биттадан тузилди.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="545" width="230" height="20" uuid="a26f613b-a389-4bec-8b00-1d5010fb89ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[БАНК:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="545" width="220" height="20" uuid="9a2f3a5d-721d-4ceb-8e20-99bed233be51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="45" y="565" width="230" height="169" uuid="a44f1812-c923-456e-b1e0-587143182047"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{consumer_filial_name}+" бўлими/филиали"+
+"\nМанзил: "+$P{consumer_filial_address}+
+"\n________________________________"+
+"\nСТИР "+$P{consumer_filial_inn}+
+"\nТелефон "+$P{consumer_filial_phone}+
+"\nБошқарувчи \n_____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"+
+"\nБош бухгалтер \n___________________ "+
+"\n                                   (Ф.И.О. ва имзо)"+
+"\n\n                                м.ў."+
+"\nХуқуқшунос ____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="565" width="220" height="149" uuid="bed779ad-8a1d-42c0-a68f-2d194150f33c"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ф.И.О. "+$P{consumer_borrower_fio}+
+"\n\nМанзил "+$P{consumer_borrower_address}+
+"\n\nТелефон рақами "+$P{consumer_borrower_phone}+
+"\n\nПаспорт маълумотлари  "+$P{consumer_borrower_passport_number}+", "+$P{consumer_borrower_passport_issue_by}+" томонидан "+$P{consumer_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="714" width="220" height="40" uuid="c2492480-84ba-445f-b430-2d40d8dca66e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[__________________
+(имзо)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="195" width="480" height="154" uuid="32ab5631-7ffe-43b2-9700-795bec846c3f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[	3.1.	 Томонларнинг ушбу шартномада кўзда тутилган мажбуриятларни бажаришдан бош тортиши ушбу шартнома шартлари ва Ўзбекистон Республикасининг амалдаги қонунчилигига мувофиқ жавобгарликка тортилади. 
+	3.2.	 Кредит бўйича қарздорликни белгиланган муддатда тўламаганлиги ва улар бўйича муддати ўтган суммалар вужудга келгани учун Қарз олувчи Банкка кечиктирилган тўловларнинг ҳар бир куни учун кечиктирилган тўлов суммасининг 0,1 фоизи миқдорида, аммо кечиктирилган тўлов суммасининг 50 фоизидан ошмаган миқдорда пеня тўлайди.     
+	3.3.	 Қарз олувчи томонидан ушбу шартноманинг шартлари бажарилиб, банк кредитни ўз вақтида ажратмаган ҳолатда Банк Қарз олувчига муддатида тўланмаган кредит суммасининг кечиктирилган ҳар бир куни учун 0,1 фоиз миқдорида, лекин муддатида тўланмаган кредит суммасининг 50 фоизидан юқори бўлмаган миқдорда пеня тўлайди. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="50" width="480" height="120" uuid="8f588eff-a09b-47cc-b3bf-faf080354770"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[	2.4.5.	Турар жойи, иш жойи, фамилияси ёки исми ўзгариши кутилаётгани, шунингдек мазкур шартнома бўйича мажбуриятлар бажарилишига салбий таъсир кўрсатиши мумкин бўлган бошқа вазиятлар тўғрисида кўпи билан 3 кун ичида Банкка хабар бериш.
+	2.4.6.	Ушбу шартнома амал қиладиган муддат мобайнида Қарз олувчи Банкнинг розилигисиз ушбу шартнома бўйича Қарз олувчининг мажбуриятига нисбатан устивор талаб қилиш ҳуқуқига эга бўлиши мумкин бўлган учинчи томонларнинг кредитлари ёки қарзларини жалб қилмаслиги керак.  
+	2.4.7.	Кредит ажратилганидан сўнг 10 кун муддат ичида кредит ҳисобига сотиб олинган товарларнинг олинганлигини тасдиқловчи хужжатларни банкка тақдим этиш.]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

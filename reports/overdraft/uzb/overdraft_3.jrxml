@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_uzb_3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a12f73f0-8355-48a3-ad17-dbfc0592c302">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="overdraft_borrower_passport_issue_by" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_address" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_fio" class="java.lang.String"/>
+	<parameter name="overdraft_filial_name" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_passport_issue_date" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_phone" class="java.lang.String"/>
+	<parameter name="overdraft_filial_inn" class="java.lang.String"/>
+	<parameter name="overdraft_filial_phone" class="java.lang.String"/>
+	<parameter name="overdraft_filial_address" class="java.lang.String"/>
+	<parameter name="overdraft_borrower_passport_number" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="51" width="480" height="25" uuid="3cdd1ff5-aa29-4270-8c3c-d6f3ca3dc150"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["3.	Томонларнинг жавобгарлиги"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="76" width="480" height="154" uuid="8fd4ec2e-7b8e-40d0-b952-b0f2f0489e1c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t3.1.	 Томонларнинг ушбу шартномада кўзда тутилган мажбуриятларни бажаришдан бош тортиши ушбу шартнома шартлари ва Ўзбекистон Республикасининг амалдаги қонунчилигига мувофиқ жавобгарликка тортилади."+
+"\n\t3.2.	 Овердрафт бўйича қарздорликни белгиланган муддатда тўламаганлиги ва улар бўйича муддати ўтган суммалар вужудга келгани учун Қарз олувчи Банкка кечиктирилган тўловларнинг ҳар бир куни учун кечиктирилган тўлов суммасининг 0,1 фоизи миқдорида, аммо кечиктирилган тўлов суммасининг 50 фоизидан ошмаган миқдорда пеня тулайди."+
+"\n\t3.3.	 Қарз олувчи томонидан ушбу шартноманинг шартлари бажарилиб, банк овердрафтни ўз вақтида ажратмаган ҳолатда Банк Қарз олувчига муддатида тўланмаган овердрафт суммасининг кечиктирилган ҳар бир куни учун 0,1 фоиз миқдорида, лекин муддатида тўланмаган кредит суммасининг 50 фоизидан юқори бўлмаган миқдорда пеня тўлайди."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="231" width="480" height="25" uuid="4b393460-7681-49d0-ac81-65bd4ade8f2a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["3.	Томонларнинг жавобгарлиги"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="256" width="480" height="143" uuid="8e002adf-3015-4379-aa18-747fc4fab2bf"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t4.1.	Ушбу Шартнома имзоланган кундан бошлаб кучга киради ва Қарз олувчи овердрафтни ва унинг фоизларини тўлагунига қадар ҳамда томонларнинг ўз зиммаларига олган мажбуриятлари тўлиқ бажарилгунига қадар амал қилади."+
+"\n\t4.2.	Банк овердрафт бериш бўйича ўз мажбуриятларини бажаргунига қадар Шартнома томонлардан бирининг ёзма аризасига кўра бекор қилиниши мумкин."+
+"\n\t4.3.	Мазкур Шартнома бўйича низолар пайдо бўлган ҳолларда томонлар ўртасидаги низо Ўзбекистон Республикасининг амалдаги қонун хужжатларига амал қилган ҳолда белгиланган тартибда ҳал этилади."+
+"\n\t4.4.	Ушбу шартномага ўзгартиш ва қўшимчалар ҳар икки томон имзолайдиган қўшимча битим билан расмийлаштирилади."+
+"\n\t4.5.	Шартнома бир хил юридик кучга эга бўлган иккита бир хил нусхада, ҳар бир томон учун биттадан тузилди."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="458" width="230" height="222" uuid="7dfd2ef0-745a-4eca-8660-858e8c0f85d3"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{overdraft_filial_name}+" бўлими/филиали"+
+"\nМанзил: "+$P{overdraft_filial_address}+
+"\n________________________________"+
+"\nСТИР "+$P{overdraft_filial_inn}+
+"\nТелефон "+$P{overdraft_filial_phone}+
+"\nБошқарувчи \n_____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"+
+"\nБош бухгалтер \n___________________ "+
+"\n                                    (Ф.И.О. ва имзо)"+
+"\n\n                               м.ў."+
+"\nХуқуқшунос ____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="458" width="220" height="120" uuid="bc417f50-a7fe-42bb-9720-c66003e0bf37"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ф.И.О. "+$P{overdraft_borrower_fio}+
+"\n\nМанзил "+$P{overdraft_borrower_address}+
+"\n\nТелефон рақами "+$P{overdraft_borrower_phone}+
+"\n\nПаспорт маълумотлари "+$P{overdraft_borrower_passport_number}+", "+$P{overdraft_borrower_passport_issue_by}+" когда выдан  "+$P{overdraft_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="438" width="230" height="20" uuid="cd6af3c7-cf46-4fe7-af29-ef021311d2e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[БАНК:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="438" width="220" height="20" uuid="2c2ba29e-1d8c-4bd3-9943-a158254c1c19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="578" width="220" height="40" uuid="f0da2db4-92ea-4f3b-beed-372755903eb4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[__________________
+(имзо)]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

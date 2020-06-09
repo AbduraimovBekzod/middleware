@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2-part" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="61d850c6-3ca2-4039-8c7e-dd049dc19c91">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="rate_for_late" class="java.lang.String"/>
+	<parameter name="collateral_loan" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="phone_number" class="java.lang.String"/>
+	<parameter name="penalty_for_violation" class="java.lang.String"/>
+	<parameter name="mail" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="802">
+			<staticText>
+				<reportElement x="45" y="5" width="491" height="20" uuid="bc0ea210-4298-4b91-b58b-828ce75976a6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[2-раздел. Другие важные условия]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="35" width="240" height="35" uuid="464fefe1-0de8-404d-8a62-41168856cb5b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1. Неустойка за нарушение условий кредитного договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="70" width="240" height="40" uuid="396da94a-5c3c-4582-9598-8344535c57b0"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[2. Повышенная процентная ставка за несвоевременную оплату задолженности по кредиту]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="110" width="240" height="30" uuid="e852c657-6a5c-43d2-809f-74491e18575d"/>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[3. Обеспечение по кредиту]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="285" y="35" width="250" height="35" uuid="6912051c-e57e-4615-8473-783f5f24b61a">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{penalty_for_violation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="70" width="250" height="40" uuid="376aa6bf-defc-4a22-8201-3ab158136d0c">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rate_for_late}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="110" width="250" height="30" uuid="a373c3f5-ffcd-4efa-80ff-91b1b5e61cd1">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{collateral_loan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="45" y="140" width="490" height="40" uuid="be322883-9e6f-4591-a695-b18dfb207115">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Сведения, приведенные в разделе 1 и 2 настоящего информационного листа, не являются окончательными и могут быть изменены в кредитном договоре. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="180" width="490" height="30" uuid="1bd92754-ed22-47cd-a817-e33d146f5769"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[3-раздел. Список документов для получения кредита]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="210" width="490" height="94" uuid="a6a1966c-056e-42f2-b4f9-d4f924cc6f30"/>
+				<box padding="7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[1. Паспорт заемщика или иной документ, подтверждающий личность.
+
+2.  Справка о доходах заемщика с места работы;
+
+3. Договор купли-проджи, составленный между покупателем и продавцом на приобретение товаров, работ и услуг для удовлетворения потребительских нужд за счет кредита  (для потребительского кредита);
+
+4. Документы, связанные с обеспечением возвратности кредита.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="304" width="490" height="30" uuid="928374f4-bae6-4c6e-bc73-98cfb21b17b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[4-раздел. Ваши права в качестве будущего Заемщика]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="712" width="210" height="30" uuid="a01505e7-eb04-45ed-8af7-09a86deab27f"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(подпись, Ф.И.О. и должность специалиста банка)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="45" y="704" width="260" height="1" uuid="ebaa3109-ffdd-43dd-ac44-896ca54ccf8f"/>
+			</line>
+			<textField>
+				<reportElement x="45" y="335" width="490" height="220" uuid="abf8b7c6-d7ec-46a0-972c-48bd26e5c1e6"/>
+				<box padding="7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["1. Вы свободны в выборе банка и банковских услуг.\n\n"+
+
+"2. Вы вправе отказаться от подписания кредитного договора или других договоров и соглашений.\n\n"+
+
+"3. Вы вправе выбирать язык, на котором будет составлен кредитный договор (государственный или русский язык).\n\n"+
+
+"4. Вы вправе ознакомиться с проектом кредитного договора вне банка и взять его для консультации.\n\n"+
+
+"5. Вы вправе получить от банка полную информацию об условиях кредита и его стоимости, порядке оплат и расчетов (проценты, штрафы, пени), ваших правах и обязанностях по кредитному договору, рисках по кредитному договору и ответственности по кредитному договору, также иную информацию по другим интересующим вас вопросам.\n\n"+
+
+"6. Вы вправе после подписания кредитного договора, но до фактического получения денежных средств, отказаться без каких–либо выплат от получения кредита. Сотрудники банка не имеют права оказывать поддержку по кредитным вопросам за денежное вознаграждение. Если у вас имеются жалобы, вы можете обратиться с обращением по номеру телефона "+$P{phone_number}+" почту "+$P{mail}+" или на электронную почту " +$P{email}+"."]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

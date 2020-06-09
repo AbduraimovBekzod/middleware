@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_2" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="173240c8-9bc8-4f06-ba33-0a531754b571">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="jasperadmin"/>
+	<property name="ireport.jasperserver.report.resource" value="/reports/JasperSoft_Studio/overdraft_2_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/JasperSoft_Studio/overdraft_2"/>
+	<parameter name="overdraft_guarantee_surety_sum" class="java.lang.String"/>
+	<parameter name="overdraft_delay_percent_rate" class="java.lang.String"/>
+	<parameter name="overdraft_loan_sum" class="java.lang.String"/>
+	<parameter name="overdraft_guarantee_surety" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="713">
+			<textField>
+				<reportElement x="40" y="69" width="480" height="201" uuid="96fd0b3f-2d90-423f-a710-d934addb7a02"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1.1.	Банк вправе контролировать  платежеспособность Заемщика, достаточность овердрафтного обеспечения, запрашивать необходимые документы, подтверждающие выполнение обязательств Заемщиком."+
+"\n\t2.1.2.	При несвоевременном погашении очередной части Овердрафта:"+
+"\n\t\tа) начиная с даты перевода кредита на счет просроченных ссуд, взимать платеж по повышеной процентной ставке  начисляемой на сумму просроченного основного долга в размере "+$P{overdraft_delay_percent_rate}+"% за год;"+
+"\n\t\tб) требовать от Заемщика досрочного возврата кредита (остатка долга по кредиту) и незамедлительного  принятия мер по оплате процентов по нему;"+
+"\n\t\tв) в соответствии с законодательством, Банк вправе пользоваться всеми правами по продаже  обеспечения по кредиту;"+
+"\n\t\tг) Банк вправе в установленном порядке  расторгнуть настоящий Договор."+
+"\n\t2.1.3.	Банк вправе контролировать выполнение Заемщиком условий настоящего Договора."+
+"\n\t2.1.4.	В случае если Заемщик не выполняет обязательства по погашению основного долга по овердрафту  и процентов по нему в срок, Банк вправе предпринять меры, установленные законодательством."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="49" width="480" height="19" uuid="c89f9b34-bfe3-4cd7-b9b6-ed79340f24d6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1.	Права Банка:"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="30" width="480" height="19" uuid="800a15cf-daf5-4f8d-8b14-2cab5e2f2045">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Права и обязанности сторон ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="270" width="480" height="19" uuid="40f8f265-52a4-491c-8519-681a7cbefc36"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.2.	Права заемщика:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="290" width="480" height="90" uuid="e6e56cb4-8633-43be-8f0e-362763abab86"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.2.1.	Заемщик вправе ознакомиться с  проектом договора овердрафт вне банка и получить его для консультации."+
+"\n\t2.2.2.	Заемщик вправе отказаться от получения овердрафта, до фактического  получения денежных средств от Банка, после подписания  договора овердрафт."+
+"\n\t2.2.3.	При возможных внесениях изменений в договор овердрафт  Банком, Банк обязан минимум за 5 дней известить об этом Заемщика."+
+"\n\t2.2.4.	Заемщик вправе самостоятельно выбирать страховую компанию."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="472" width="480" height="20" uuid="0fe07c9a-9905-4299-955b-e2538a94d11a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.	Обязанности заемщика:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="490" width="480" height="223" uuid="a9de2cf9-3728-47a8-a020-7b63b9c9f1b0"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения овердрафта, оформленное по  форме, удовлетворяющей запрос банка и соотвествующее законодательным актам, кредитное обеспечение не менее 125% суммы овердрафта "+$P{overdraft_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{overdraft_guarantee_surety_sum}+" сум,  являющееся залогом возвратности овердрафта."+
+"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с__ ________20__года,   в соответствии с графиком возврата овердрафта, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать овердрафт и начисленные по нему проценты."+
+"\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
+"\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе выделения овердрафта."+
+"\n\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или имени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="382" width="480" height="20" uuid="8eb90cc4-7490-4694-92eb-d7ca10970f44">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.3.	Обязанности Банка:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="401" width="480" height="71" uuid="bb7d8b2f-5f7b-41ed-9f05-228c0fa13a10"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.3.1.	Выделить Заемщику овердрафт в размере "+$P{overdraft_loan_sum}+" сум."+
+"\n\t2.3.2.	Открыть расчетный счет по овердрафту 12503________________________."+
+"\n\t2.3.3.	Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита."]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
