@@ -1,20 +1,25 @@
 package uz.nbu.middleware.util.jasper;
+
 import net.sf.jasperreports.engine.*;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Microloan {
     public ByteArrayOutputStream microloan(JSONObject requestObj, Integer lang) throws JRException, IOException {
 
-        for(int i = 1; i <= 3; i++) //запись параметров в report
-        {
+        String dir = "/home/";
+        for (int i = 1; i <= 3; i++) {//запись параметров в report
+
             JasperReport jasperReport = lang == 0 ?
-                JasperCompileManager.compileReport("reports"+File.separator+"microloan"+File.separator+"rus"+File.separator+"microloan_"+i+".jrxml"):
-                JasperCompileManager.compileReport("reports"+File.separator+"microloan"+File.separator+"uzb"+File.separator+"microloan_"+i+".jrxml");
+                    JasperCompileManager.compileReport(dir + "reports/microloan/rus/microloan_" + i + ".jrxml") :
+                    JasperCompileManager.compileReport(dir + "reports/microloan/uzb/microloan_" + i + ".jrxml");
 
             Map<String, Object> parameters = new HashMap<String, Object>();
 
@@ -52,30 +57,27 @@ public class Microloan {
 
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
-            JasperExportManager.exportReportToPdfFile(jasperPrint, "output"+File.separator+"microloan_"+i+".pdf");//create pdf file
+            JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/microloan_" + i + ".pdf");//create pdf file
         }
 
         PDFMergerUtility ut = new PDFMergerUtility();
-        for (int i = 1; i <= 3; i++)
-        {
-            ut.addSource("output"+File.separator+"microloan_"+i+".pdf");
+        for (int i = 1; i <= 3; i++) {
+            ut.addSource(dir + "output/microloan_" + i + ".pdf");
         }
-        ut.setDestinationFileName("output"+File.separator+"microloan.pdf");//merge pdf name
+        ut.setDestinationFileName(dir + "output/microloan.pdf");//merge pdf name
         ut.mergeDocuments();//create merge pdf
 
-        File file = new File("output"+File.separator+"microloan.pdf");
+        File file = new File(dir + "output/microloan.pdf");
         FileInputStream fis = new FileInputStream(file);
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
         byte[] buf = new byte[1024];
-        for(int readNum; (readNum = fis.read(buf)) != -1;)
-        {
+        for (int readNum; (readNum = fis.read(buf)) != -1; ) {
             bos.write(buf, 0, readNum);
         }
 
-        for (int i = 1; i <= 3; i++) //delete parts
-        {
-            new File("output"+File.separator+"microloan_"+i+".pdf").delete();
+        for (int i = 1; i <= 3; i++) { //delete parts
+            new File(dir + "output/microloan_" + i + ".pdf").delete();
         }
 
         return bos;

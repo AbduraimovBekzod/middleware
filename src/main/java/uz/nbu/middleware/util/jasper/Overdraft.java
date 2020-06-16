@@ -1,19 +1,24 @@
 package uz.nbu.middleware.util.jasper;
+
 import net.sf.jasperreports.engine.*;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Overdraft {
     public ByteArrayOutputStream overdraft(JSONObject requestObj, Integer lang) throws JRException, IOException {
-        for(int i = 1; i <= 3; i++) //запись параметров в report
-        {
+        String dir = "/home/";
+        for (int i = 1; i <= 3; i++) { //запись параметров в report
+
             JasperReport jasperReport = lang == 0 ?
-                JasperCompileManager.compileReport("reports"+File.separator+"overdraft"+File.separator+"rus"+File.separator+"overdraft_"+i+".jrxml"):
-                JasperCompileManager.compileReport("reports"+File.separator+"overdraft"+File.separator+"uzb"+File.separator+"overdraft_"+i+".jrxml");
+                    JasperCompileManager.compileReport(dir + "reports/overdraft/rus/overdraft_" + i + ".jrxml") :
+                    JasperCompileManager.compileReport(dir + "reports/overdraft/uzb/overdraft_" + i + ".jrxml");
 
             Map<String, Object> parameters = new HashMap<String, Object>();
 
@@ -51,30 +56,27 @@ public class Overdraft {
 
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
-            JasperExportManager.exportReportToPdfFile(jasperPrint, "output"+File.separator+"overdraft_"+i+".pdf");//create pdf file
+            JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/overdraft_" + i + ".pdf");//create pdf file
         }
 
         PDFMergerUtility ut = new PDFMergerUtility();
-        for (int i = 1; i <= 3; i++)
-        {
-            ut.addSource("output"+File.separator+"overdraft_"+i+".pdf");
+        for (int i = 1; i <= 3; i++) {
+            ut.addSource(dir + "output/overdraft_" + i + ".pdf");
         }
-        ut.setDestinationFileName("output"+File.separator+"overdraft.pdf");//merge pdf name
+        ut.setDestinationFileName(dir + "output/overdraft.pdf");//merge pdf name
         ut.mergeDocuments();//create merge pdf
 
-        File file = new File("output"+File.separator+"overdraft.pdf");
+        File file = new File(dir + "output/overdraft.pdf");
         FileInputStream fis = new FileInputStream(file);
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
         byte[] buf = new byte[1024];
-        for(int readNum; (readNum = fis.read(buf)) != -1;)
-        {
+        for (int readNum; (readNum = fis.read(buf)) != -1; ) {
             bos.write(buf, 0, readNum);
         }
 
-        for (int i = 1; i <= 3; i++) //delete parts
-        {
-            new File("output"+File.separator+"overdraft_"+i+".pdf").delete();
+        for (int i = 1; i <= 3; i++) {//delete parts
+            new File(dir + "output/overdraft_" + i + ".pdf").delete();
         }
 
         return bos;

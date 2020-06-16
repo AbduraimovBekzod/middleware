@@ -1,19 +1,24 @@
 package uz.nbu.middleware.util.jasper;
+
 import net.sf.jasperreports.engine.*;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class InfoList {
     public ByteArrayOutputStream InfoList(JSONObject requestObj, Integer lang) throws JRException, IOException {
 
+        String dir = "/home/";
         //first part
         JasperReport jasperReport = lang == 0 ?
-                JasperCompileManager.compileReport("reports"+File.separator+"info_list"+File.separator+"rus"+File.separator+"1-part.jrxml"):
-                JasperCompileManager.compileReport("reports"+File.separator+"info_list"+File.separator+"uzb"+File.separator+"1-part.jrxml");
+                JasperCompileManager.compileReport(dir + "reports/info_list/rus/1-part.jrxml"):
+                JasperCompileManager.compileReport(dir + "reports/info_list/uzb/1-part.jrxml");
 
         Map<String, Object> parameters = new HashMap<String, Object>();
 
@@ -38,12 +43,12 @@ public class InfoList {
 
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
-        JasperExportManager.exportReportToPdfFile(jasperPrint, "output"+File.separator+"info_list_1.pdf");//create pdf file
+        JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/info_list_1.pdf");//create pdf file
         //end first part
         //second part
         jasperReport = lang == 0 ?
-                JasperCompileManager.compileReport("reports"+File.separator+"info_list"+File.separator+"rus"+File.separator+"2-part.jrxml"):
-                JasperCompileManager.compileReport("reports"+File.separator+"info_list"+File.separator+"uzb"+File.separator+"2-part.jrxml");
+                JasperCompileManager.compileReport(dir + "reports/info_list/rus/2-part.jrxml"):
+                JasperCompileManager.compileReport(dir + "reports/info_list/uzb/2-part.jrxml");
 
         parameters = new HashMap<String, Object>();
 
@@ -58,16 +63,16 @@ public class InfoList {
 
         jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
-        JasperExportManager.exportReportToPdfFile(jasperPrint, "output"+File.separator+"info_list_2.pdf");//create pdf file
+        JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/info_list_2.pdf");//create pdf file
         //end second part
 
         PDFMergerUtility ut = new PDFMergerUtility();
-        ut.addSource("output"+File.separator+"info_list_1.pdf");
-        ut.addSource("output"+File.separator+"info_list_2.pdf");
-        ut.setDestinationFileName("output"+File.separator+"info_list.pdf");//merge pdf name
+        ut.addSource(dir + "output/info_list_1.pdf");
+        ut.addSource(dir + "output/info_list_2.pdf");
+        ut.setDestinationFileName(dir + "output/info_list.pdf");//merge pdf name
         ut.mergeDocuments();//create merge pdf
 
-        File file = new File("output"+File.separator+"info_list.pdf");
+        File file = new File(dir + "output/info_list.pdf");
         FileInputStream fis = new FileInputStream(file);
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
@@ -76,6 +81,10 @@ public class InfoList {
         {
             bos.write(buf, 0, readNum);
         }
+
+        new File(dir + "output/info_list_1.pdf").delete();
+        new File(dir + "output/info_list_2.pdf").delete();
+
         return bos;
     }
 }

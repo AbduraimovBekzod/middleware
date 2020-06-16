@@ -3,7 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JsonMain" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15289120-bdf0-4edd-905c-647999c3c0cc">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["reports\\protocol_form\\rus\\"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["/home/reports/protocol_form/rus/"]]></defaultValueExpression>
 	</parameter>
 	<queryString language="JSON">
 		<![CDATA[]]>

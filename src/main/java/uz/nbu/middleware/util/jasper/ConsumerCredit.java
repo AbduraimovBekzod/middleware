@@ -1,19 +1,25 @@
 package uz.nbu.middleware.util.jasper;
+
 import net.sf.jasperreports.engine.*;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ConsumerCredit {
+
     public ByteArrayOutputStream consumer_credit(JSONObject requestObj, Integer lang) throws JRException, IOException {
-        for(int i = 1; i <= 3; i++) //запись параметров в report
-        {
+        String dir = "/home/";
+        for (int i = 1; i <= 3; i++) { //запись параметров в report
+
             JasperReport jasperReport = lang == 0 ?
-                    JasperCompileManager.compileReport("reports"+File.separator+"consumer_credit"+File.separator+"rus"+File.separator+"consumer_credit_"+i+".jrxml"):
-                    JasperCompileManager.compileReport("reports"+File.separator+"consumer_credit"+File.separator+"uzb"+File.separator+"consumer_credit_"+i+".jrxml");
+                    JasperCompileManager.compileReport(dir + "reports/consumer_credit/rus/consumer_credit_" + i + ".jrxml") :
+                    JasperCompileManager.compileReport(dir + "reports/consumer_credit/uzb/consumer_credit_" + i + ".jrxml");
 
             Map<String, Object> parameters = new HashMap<String, Object>();
 
@@ -57,30 +63,27 @@ public class ConsumerCredit {
 
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
-            JasperExportManager.exportReportToPdfFile(jasperPrint, "output"+File.separator+"consumer_credit_"+i+".pdf");//create pdf file
+            JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/consumer_credit_" + i + ".pdf");//create pdf file
         }
 
         PDFMergerUtility ut = new PDFMergerUtility();
-        for (int i = 1; i <= 3; i++)
-        {
-            ut.addSource("output"+File.separator+"consumer_credit_"+i+".pdf");
+        for (int i = 1; i <= 3; i++) {
+            ut.addSource(dir + "output/consumer_credit_" + i + ".pdf");
         }
-        ut.setDestinationFileName("output"+File.separator+"consumer_credit.pdf");//merge pdf name
+        ut.setDestinationFileName(dir + "output/consumer_credit.pdf");//merge pdf name
         ut.mergeDocuments();//create merge pdf
 
-        File file = new File("output"+File.separator+"consumer_credit.pdf");
+        File file = new File(dir + "output/consumer_credit.pdf");
         FileInputStream fis = new FileInputStream(file);
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
         byte[] buf = new byte[1024];
-        for(int readNum; (readNum = fis.read(buf)) != -1;)
-        {
+        for (int readNum; (readNum = fis.read(buf)) != -1; ) {
             bos.write(buf, 0, readNum);
         }
 
-        for (int i = 1; i <= 3; i++) //delete parts
-        {
-            new File("output"+File.separator+"consumer_credit_"+i+".pdf").delete();
+        for (int i = 1; i <= 3; i++) { //delete parts
+            new File(dir + "output/consumer_credit_" + i + ".pdf").delete();
         }
 
         return bos;
