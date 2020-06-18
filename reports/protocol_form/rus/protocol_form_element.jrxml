@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JsonMain" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15289120-bdf0-4edd-905c-647999c3c0cc">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/reports/protocol_form/rus/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="comp_name" class="java.lang.String">
+		<fieldDescription><![CDATA[comp_name]]></fieldDescription>
+	</field>
+	<field name="title" class="java.lang.String">
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="protocol_form_filial" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_filial]]></fieldDescription>
+	</field>
+	<field name="protocol_form_number" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_number]]></fieldDescription>
+	</field>
+	<field name="protocol_form_kvorum" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_kvorum]]></fieldDescription>
+	</field>
+	<field name="protocol_form_request_number" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_request_number]]></fieldDescription>
+	</field>
+	<field name="protocol_form_loan_product" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_loan_product]]></fieldDescription>
+	</field>
+	<field name="protocol_form_client_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_client_fio]]></fieldDescription>
+	</field>
+	<field name="protocol_form_client_inn" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_client_inn]]></fieldDescription>
+	</field>
+	<field name="protocol_form_scoring" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_scoring]]></fieldDescription>
+	</field>
+	<field name="protocol_form_currency" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_currency]]></fieldDescription>
+	</field>
+	<field name="protocol_form_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_sum]]></fieldDescription>
+	</field>
+	<field name="protocol_form_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_rate]]></fieldDescription>
+	</field>
+	<field name="protocol_form_term" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_term]]></fieldDescription>
+	</field>
+	<field name="protocol_form_grace_period" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_grace_period]]></fieldDescription>
+	</field>
+	<field name="protocol_form_repayment_type" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_repayment_type]]></fieldDescription>
+	</field>
+	<field name="protocol_form_finance_source" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_finance_source]]></fieldDescription>
+	</field>
+	<field name="protocol_form_purpose" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_purpose]]></fieldDescription>
+	</field>
+	<field name="protocol_form_special_cond" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_special_cond]]></fieldDescription>
+	</field>
+	<field name="protocol_form_guarantor_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_guarantor_fio]]></fieldDescription>
+	</field>
+	<field name="protocol_form_guarantor_scope" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_guarantor_scope]]></fieldDescription>
+	</field>
+	<field name="protocol_form_insurance_company" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_insurance_company]]></fieldDescription>
+	</field>
+	<field name="protocol_form_insurance_scope" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_insurance_scope]]></fieldDescription>
+	</field>
+	<field name="protocol_form_emp_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_emp_fio]]></fieldDescription>
+	</field>
+	<field name="protocol_form_emp_post" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_emp_post]]></fieldDescription>
+	</field>
+	<field name="protocol_form_date" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_date]]></fieldDescription>
+	</field>
+	<field name="protocol_form_secret_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_secret_fio]]></fieldDescription>
+	</field>
+	<field name="protocol_form_secret_post" class="java.lang.String">
+		<fieldDescription><![CDATA[protocol_form_secret_post]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="329">
+			<textField>
+				<reportElement x="1" y="20" width="299" height="10" uuid="2a44eaab-4706-4b53-a29e-8e68dc50238b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Заявка № " +$F{protocol_form_request_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="195" width="314" height="16" uuid="d01a6adb-d917-4920-903c-b1409c9920fc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_grace_period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="115" width="314" height="16" uuid="1fd7e761-469d-4db7-a1b8-619fcd849635">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_scoring}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="291" width="30" height="16" uuid="e15d3669-d6ca-4253-8018-a276ed686368">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[14.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="51" width="30" height="16" uuid="1223562a-5a51-4d4d-9f35-9e232d22dd4f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[№]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="163" width="30" height="16" uuid="6d41d8d8-00d3-4ee9-829a-d760086c4311">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="131" width="209" height="16" uuid="407ae348-785c-4bb9-8d25-7cf1848e0e57">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Валюта кредита ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="211" width="30" height="16" uuid="a4b653b3-caa5-45ea-89ff-00c412add566">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="131" width="30" height="16" uuid="1942b499-687a-480c-b454-33c1c3d5a1b8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="275" width="209" height="16" uuid="247e66ef-30e1-4631-af54-c7e7ef88d52c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Обеспечение:  ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="131" width="314" height="16" uuid="5108c75f-4254-4fb9-8096-cd46cdd3b375">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_currency}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="147" width="30" height="16" uuid="6b696d92-b5ec-4290-95b1-bb8a198b3151">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="243" width="314" height="16" uuid="5366db20-c6dc-4424-9ecc-e478f7205092">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_purpose}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="99" width="209" height="16" uuid="a3b07676-a0fd-4ea3-a5c9-93d96e1435fc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[ИНН Клиента ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="147" width="314" height="16" uuid="e9fab004-f680-45be-aeed-13e0548762ca">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_sum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="179" width="314" height="16" uuid="788fd077-ac3e-4d6c-b97e-b7c713d86423">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_term}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="99" width="314" height="16" uuid="a18dfe75-c505-4ef4-b35b-19612a8dca61">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_client_inn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="51" width="523" height="16" uuid="f945901a-9997-4580-b7ae-b07e9bc8f175">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Условия по сделке]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="227" width="209" height="16" uuid="d57a34ed-8bbf-4645-aece-0ceb0ca9ba6e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Источник финансирования ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="275" width="30" height="16" uuid="661da8c6-a87f-422a-8ebe-24839b590a64">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="243" width="30" height="16" uuid="e0915ccb-a3c4-484a-bd9e-16327dd147a4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="259" width="314" height="16" uuid="367eb696-16d5-46d8-a5fd-5cb849081729">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_special_cond}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="259" width="209" height="16" uuid="a0eb98bd-4c11-4205-a8c8-c956988a8a09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Особые условия ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="67" width="314" height="16" uuid="fd7a5658-b2b1-4dcf-8bf5-478d88425cf4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_loan_product}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="195" width="30" height="16" uuid="32466eee-cad1-4a78-b500-2906bd7a936b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="99" width="30" height="16" uuid="20da2673-c66d-4447-9c90-408322c92b19">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="67" width="209" height="16" uuid="740bb710-254a-4ac6-8b93-58413679780d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Кредитный продукт]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="115" width="209" height="16" uuid="eb83d9ac-3fae-490c-9860-789030499e3b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Класс кредитоспособности (скоринговый балл)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="147" width="209" height="16" uuid="6b7d1540-9392-441d-a726-f18a927abb04">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Сумма кредита ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="67" width="30" height="16" uuid="827f8420-90d5-415a-a3b5-43410248819a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="83" width="314" height="16" uuid="14d19eb1-bbb9-42ec-9eaf-d2585cfa77e8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_client_fio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="163" width="314" height="16" uuid="15e66a87-7c7e-4c1b-b20b-8979c106beda">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_rate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="195" width="209" height="16" uuid="43f5e64f-f21a-4d8a-9e0e-2a6d974b27cd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Льготный период ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="275" width="314" height="16" uuid="705d6063-56d0-4978-8e14-557b1772e4bb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="291" width="314" height="16" uuid="d5272c36-87f9-446f-8a89-706c5675a1e5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="211" width="209" height="16" uuid="95e8c6b7-f256-445e-a4f9-27e5bea0c92b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Тип графика погашения ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="291" width="209" height="16" uuid="3a6171e2-d334-4d55-b944-86db1e357a04">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Поручитель: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="211" width="314" height="16" uuid="9d5c0ff7-6e64-4550-8922-4a93eb1c402d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_repayment_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="83" width="30" height="16" uuid="0f1de8b9-19c5-4987-a8d7-7d0924b12c77">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="243" width="209" height="16" uuid="11361858-a1c7-4ed7-9fb1-fdd76f11f8ee">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Целевое назначение займа]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="227" width="30" height="16" uuid="1c9b3b41-babd-4f3d-a870-a592a9036e5c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[11]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="179" width="209" height="16" uuid="d2ab5124-fed7-4baf-98ff-ce8a06db960f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Срок кредита ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="259" width="30" height="16" uuid="a9b08c6f-a4e3-452b-9e69-db1a99d6ae24">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[13]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="163" width="209" height="16" uuid="6772bd19-cc11-4dbf-8161-20d852df9afb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Ставка процента (в годовых)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="179" width="30" height="16" uuid="865e8f6b-23aa-45ca-bbd9-b6161da3044a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="227" width="314" height="16" uuid="37941879-973e-4075-a28c-fb0016435081">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_finance_source}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="83" width="209" height="16" uuid="e9c0a041-9ac6-48cd-a222-548c176ce247">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[ФИО Клиента]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="115" width="30" height="16" uuid="7dcda775-4f25-4b04-9889-ddc7e2ed6352">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="307" width="553" height="22" uuid="ccbf621e-0fba-47e0-9ef2-e47df321f7cb"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("loan_security")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "loan_security.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="73">
+			<subreport>
+				<reportElement x="0" y="53" width="555" height="20" uuid="335ff6f3-6ea3-4e65-a353-56b3e032b7f6"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("credit_committee_results")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "credit_committee_results.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement x="31" y="0" width="209" height="16" uuid="659d86b1-3078-4561-918a-41b625935b25">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[ФИО кредитный специалист ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="16" width="314" height="16" uuid="31465f8f-0e53-4471-a596-7617f95c3c87">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_emp_post}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="16" width="30" height="16" uuid="c84dd154-1702-4935-92d2-7ba2c3f6a88b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[16]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="0" width="314" height="16" uuid="bce95c98-d8df-44b7-99e5-17b8551eecbd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protocol_form_emp_fio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="0" width="30" height="16" uuid="2de3764c-6c40-49a6-af32-219194380dec">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="16" width="209" height="16" uuid="be3deef9-c098-4004-85b3-95cb2c59205e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Должность кредитного специалиста]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="40" width="553" height="10" uuid="1741a28f-675a-46ae-ac18-7952e1289a4f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Результаты голосования по заявке № " +$F{protocol_form_request_number}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="20">
+			<textField>
+				<reportElement x="1" y="10" width="553" height="10" uuid="fbab75ff-b50f-4a07-83fe-268d8f3616c3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Решение по заявке № " +$F{protocol_form_request_number}+ " повестки дня: "]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
