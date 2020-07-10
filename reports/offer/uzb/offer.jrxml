@@ -33,7 +33,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="802" splitType="Stretch">
+		<band height="560" splitType="Stretch">
 			<staticText>
 				<reportElement x="52" y="202" width="188" height="20" uuid="c497e63a-7805-41ef-9cfa-21574e61be98"/>
 				<box>
@@ -234,6 +234,13 @@
 				</reportElement>
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="105" y="177" width="345" height="14" uuid="b955bb5e-f9b5-438b-89d7-c6bc7e296a94"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mijozning imzo taklifini tasdiqlash shakli]]></text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>

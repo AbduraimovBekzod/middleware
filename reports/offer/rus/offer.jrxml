@@ -232,6 +232,13 @@
 				</reportElement>
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="105" y="177" width="345" height="14" uuid="280acda2-a2ba-4c0a-ba08-d1175da53459"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Форма подтверждения подписания оферты клиентом]]></text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>
