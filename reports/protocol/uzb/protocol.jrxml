@@ -3,7 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JsonMain" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15289120-bdf0-4edd-905c-647999c3c0cc">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["reports/protocol/uzb/"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["/home/reports/protocol/uzb/"]]></defaultValueExpression>
 	</parameter>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -189,7 +189,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<text><![CDATA[1. Форма выписки из протокола решения кредитного комитета]]></text>
+				<text><![CDATA[1. Kredit qo'mitasi qarori bayonidan ko'chirma]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="280" y="231" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>

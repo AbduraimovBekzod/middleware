@@ -357,7 +357,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<text><![CDATA[1. Форма выписки из протокола решения кредитного комитета]]></text>
+				<text><![CDATA[1. Выписка из протокола решения кредитного комитета]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="280" y="231" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>
