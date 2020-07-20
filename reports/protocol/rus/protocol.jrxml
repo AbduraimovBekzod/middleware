@@ -105,7 +105,7 @@
 				<textElement>
 					<font fontName="DejaVu Serif" size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_percent_rate}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{protocol_percent_rate}+"%"]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="30" y="251" width="250" height="20" uuid="4f43fed3-62cf-4723-90dd-e36013116192"/>
@@ -313,7 +313,7 @@
 					<font fontName="DejaVu Serif" size="9" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Выписка из протокола № "+$F{protocol_number}+
-"\n"+$F{protocol_filial}+" отделения/филиала"+
+"\n"+$F{protocol_filial}+
 "\nЗаседания Кредитного Комитета № "+$F{protocol_committee_decision_number}+" от "+$F{protocol_committee_decision_date}+" года."+
 "\nМесто и время проведения заседания Кредитного Комитета"+
 "\nг. Ташкент, проспект Амира Темура, 101,"+
@@ -357,7 +357,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<text><![CDATA[1. Выписка из протокола решения кредитного комитета]]></text>
+				<text><![CDATA[Выписка из протокола решения кредитного комитета]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="280" y="231" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>

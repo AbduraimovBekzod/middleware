@@ -79,7 +79,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{rate_for_late}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{rate_for_late}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="120" width="250" height="30" uuid="2f4f96ae-d56b-4e96-bda3-a9665c467c92">

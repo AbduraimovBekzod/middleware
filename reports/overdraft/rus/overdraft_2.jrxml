@@ -57,7 +57,7 @@
 			</textField>
 			<textField>
 				<reportElement x="40" y="290" width="480" height="90" uuid="e6e56cb4-8633-43be-8f0e-362763abab86"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.1.	Заемщик вправе ознакомиться с  проектом договора овердрафт вне банка и получить его для консультации."+
@@ -74,7 +74,7 @@
 			</textField>
 			<textField>
 				<reportElement x="40" y="490" width="480" height="223" uuid="a9de2cf9-3728-47a8-a020-7b63b9c9f1b0"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения овердрафта, оформленное по  форме, удовлетворяющей запрос банка и соотвествующее законодательным актам, кредитное обеспечение не менее 125% суммы овердрафта "+$P{overdraft_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{overdraft_guarantee_surety_sum}+" сум,  являющееся залогом возвратности овердрафта."+
@@ -94,7 +94,7 @@
 			</textField>
 			<textField>
 				<reportElement x="40" y="401" width="480" height="71" uuid="bb7d8b2f-5f7b-41ed-9f05-228c0fa13a10"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.1.	Выделить Заемщику овердрафт в размере "+$P{overdraft_loan_sum}+" сум."+

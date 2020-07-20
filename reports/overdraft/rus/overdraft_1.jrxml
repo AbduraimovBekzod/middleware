@@ -60,7 +60,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Кредит договор о выделении кредита Овердрафт № "+$P{overdraft_number}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Кредитный договор о выделении кредита Овердрафт № "+$P{overdraft_number}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="201" width="240" height="19" uuid="7b1f7b94-0356-4c46-b6ff-81fe8f554286"/>

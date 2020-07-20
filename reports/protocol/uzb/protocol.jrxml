@@ -57,7 +57,7 @@
 				<textElement>
 					<font fontName="DejaVu Serif" size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_percent_rate}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{protocol_percent_rate}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="351" width="250" height="20" uuid="f53fa21f-f48a-4e51-8168-fe4ef4aa5135"/>
@@ -165,7 +165,7 @@
 					<font fontName="DejaVu Serif" size="9" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Баёндан кўчирма №  "+$F{protocol_number}+
-"\n"+$F{protocol_filial}+" бўлими/филиали"+
+"\n"+$F{protocol_filial}+
 "\nКредит қўмитасининг "+$F{protocol_committee_decision_date}+"йил даги №"+$F{protocol_committee_decision_number}+" йиғилиши"+
 "\nКредит қўмитаси йиғилиши ўтказилган жой ва вақти"+
 "\nТошкент ш., Амир Темур хиёбони, 101,"+
@@ -189,7 +189,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<text><![CDATA[1. Kredit qo'mitasi qarori bayonidan ko'chirma]]></text>
+				<text><![CDATA[Kredit qo'mitasi qarori bayonidan ko'chirma]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="280" y="231" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>

@@ -56,7 +56,7 @@
 			</textField>
 			<textField>
 				<reportElement x="40" y="341" width="480" height="108" uuid="bc37478f-2680-4714-b57a-2d5f63814281"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.1.	Овердрафт шартномаси лойиҳасини банк ташқарисида танишиб чиқиш ва маслаҳатлашиш учун олиш."+
@@ -74,7 +74,7 @@
 			</textField>
 			<textField>
 				<reportElement x="40" y="519" width="480" height="230" uuid="685f4f0b-2363-47cc-beee-5fc759876a91"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Овердрафт олингунга қадар кредит қайтарилиши таъминоти сифатида овердрафтнинг 125 %дан кам бўлмаган "+$P{overdraft_guarantee_surety_sum}+" сўмлик "+$P{overdraft_guarantee_surety}+" ни қонун ҳажжатлари талабларига мувофиқ ва Банкни қониқтирадиган шаклда расмийлаштириб тақдим этади."+
@@ -95,7 +95,7 @@
 			</textField>
 			<textField>
 				<reportElement x="40" y="469" width="480" height="30" uuid="c404f46c-e739-41ba-8397-8548790dd98d"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.1.	Қарз олувчига "+$P{overdraft_loan_sum}+" сўм овердрафт бериш."+
