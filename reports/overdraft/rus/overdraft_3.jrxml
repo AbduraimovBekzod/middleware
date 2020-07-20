@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_3" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="acb43d9c-f9b1-492d-948a-8338784ae510">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="overdraft_borrower_passport_issue_by" class="java.lang.String"/>
@@ -8,6 +8,7 @@
 	<parameter name="overdraft_filial_name" class="java.lang.String"/>
 	<parameter name="overdraft_borrower_passport_issue_date" class="java.lang.String"/>
 	<parameter name="overdraft_borrower_phone" class="java.lang.String"/>
+	<parameter name="overdraft_filial_mfo" class="java.lang.String"/>
 	<parameter name="overdraft_filial_inn" class="java.lang.String"/>
 	<parameter name="overdraft_filial_phone" class="java.lang.String"/>
 	<parameter name="overdraft_filial_address" class="java.lang.String"/>
@@ -68,11 +69,10 @@
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{overdraft_filial_name}+" филиал/ отдел Банка"+
+				<textFieldExpression><![CDATA[$P{overdraft_filial_name} + ", МФО " + $P{overdraft_filial_mfo} + " Банка"+
 "\nАдрес: "+$P{overdraft_filial_address}+
-"\n________________________________"+
-"\nИНН "+$P{overdraft_filial_inn}+
-"\nТелефон "+$P{overdraft_filial_phone}+
+"\nИНН: "+$P{overdraft_filial_inn}+
+"\nТелефон: "+$P{overdraft_filial_phone}+
 "\nУправляющий \n_____________________ "+
 "\n                                    (Ф.И.О. и подпись)"+
 "\nГлавный бухгалтер \n___________________ "+
@@ -89,7 +89,7 @@
 				<textFieldExpression><![CDATA["Ф.И.О. "+$P{overdraft_borrower_fio}+
 "\n\nАдрес "+$P{overdraft_borrower_address}+
 "\n\nТелефон "+$P{overdraft_borrower_phone}+
-"\n\nПаспортные данные "+$P{overdraft_borrower_passport_number}+", кем выдан "+$P{overdraft_borrower_passport_issue_by}+" когда выдан  "+$P{overdraft_borrower_passport_issue_date}+"."]]></textFieldExpression>
+"\n\nПаспортные данные "+$P{overdraft_borrower_passport_number}+", выдан "+$P{overdraft_borrower_passport_issue_by}+" "+$P{overdraft_borrower_passport_issue_date}+"."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="477" width="230" height="20" uuid="20c563ae-da2c-40b4-9072-a08d1b871590"/>

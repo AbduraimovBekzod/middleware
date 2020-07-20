@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_2" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="173240c8-9bc8-4f06-ba33-0a531754b571">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
@@ -10,6 +10,7 @@
 	<parameter name="overdraft_delay_percent_rate" class="java.lang.String"/>
 	<parameter name="overdraft_loan_sum" class="java.lang.String"/>
 	<parameter name="overdraft_guarantee_surety" class="java.lang.String"/>
+	<parameter name="overdraft_date" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -77,7 +78,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения овердрафта, оформленное по  форме, удовлетворяющей запрос банка и соотвествующее законодательным актам, кредитное обеспечение не менее 125% суммы овердрафта "+$P{overdraft_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{overdraft_guarantee_surety_sum}+" сум,  являющееся залогом возвратности овердрафта."+
-"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с__ ________20__года,   в соответствии с графиком возврата овердрафта, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать овердрафт и начисленные по нему проценты."+
+"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{overdraft_date}+" года,   в соответствии с графиком возврата овердрафта, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать овердрафт и начисленные по нему проценты."+
 "\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
 "\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе выделения овердрафта."+
 "\n\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или имени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору."]]></textFieldExpression>

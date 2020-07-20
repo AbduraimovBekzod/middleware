@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_uzb_3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a12f73f0-8355-48a3-ad17-dbfc0592c302">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="overdraft_borrower_passport_issue_by" class="java.lang.String"/>
@@ -12,6 +12,7 @@
 	<parameter name="overdraft_filial_phone" class="java.lang.String"/>
 	<parameter name="overdraft_filial_address" class="java.lang.String"/>
 	<parameter name="overdraft_borrower_passport_number" class="java.lang.String"/>
+	<parameter name="overdraft_filial_mfo" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -59,11 +60,10 @@
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{overdraft_filial_name}+" бўлими/филиали"+
+				<textFieldExpression><![CDATA["Банкнинг "+$P{overdraft_filial_name}+", МФО "+ $P{overdraft_filial_mfo} +
 "\nМанзил: "+$P{overdraft_filial_address}+
-"\n________________________________"+
-"\nСТИР "+$P{overdraft_filial_inn}+
-"\nТелефон "+$P{overdraft_filial_phone}+
+"\nСТИР: "+$P{overdraft_filial_inn}+
+"\nТелефон: "+$P{overdraft_filial_phone}+
 "\nБошқарувчи \n_____________________ "+
 "\n                                    (Ф.И.О. ва имзо)"+
 "\nБош бухгалтер \n___________________ "+
@@ -73,14 +73,14 @@
 "\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="458" width="220" height="120" uuid="bc417f50-a7fe-42bb-9720-c66003e0bf37"/>
+				<reportElement x="300" y="458" width="220" height="134" uuid="bc417f50-a7fe-42bb-9720-c66003e0bf37"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Ф.И.О. "+$P{overdraft_borrower_fio}+
 "\n\nМанзил "+$P{overdraft_borrower_address}+
 "\n\nТелефон рақами "+$P{overdraft_borrower_phone}+
-"\n\nПаспорт маълумотлари "+$P{overdraft_borrower_passport_number}+", "+$P{overdraft_borrower_passport_issue_by}+" когда выдан  "+$P{overdraft_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
+"\n\nПаспорт маълумотлари "+$P{overdraft_borrower_passport_number}+", "+$P{overdraft_borrower_passport_issue_by}+" "+$P{overdraft_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="438" width="230" height="20" uuid="cd6af3c7-cf46-4fe7-af29-ef021311d2e9"/>
@@ -97,7 +97,7 @@
 				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="578" width="220" height="40" uuid="f0da2db4-92ea-4f3b-beed-372755903eb4"/>
+				<reportElement x="300" y="592" width="220" height="40" uuid="f0da2db4-92ea-4f3b-beed-372755903eb4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

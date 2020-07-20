@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overdraft_uzb_2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9c0bcb24-6352-4508-a12a-d7368c397419">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="overdraft_guarantee_surety_sum" class="java.lang.String"/>
 	<parameter name="overdraft_delay_percent_rate" class="java.lang.String"/>
 	<parameter name="overdraft_loan_sum" class="java.lang.String"/>
 	<parameter name="overdraft_guarantee_surety" class="java.lang.String"/>
+	<parameter name="overdraft_date" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -77,7 +78,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Овердрафт олингунга қадар кредит қайтарилиши таъминоти сифатида овердрафтнинг 125 %дан кам бўлмаган "+$P{overdraft_guarantee_surety_sum}+" сўмлик "+$P{overdraft_guarantee_surety}+" ни қонун ҳажжатлари талабларига мувофиқ ва Банкни қониқтирадиган шаклда расмийлаштириб тақдим этади."+
-"\n\t2.4.2.	Овердрафт ва унга ҳисобланган фоизларни 20__ йил __(число погашения) дан бошлаб ҳар ойда бир марта сўндириб бориш."+
+"\n\t2.4.2.	Овердрафт ва унга ҳисобланган фоизларни "+$P{overdraft_date}+" йилдан бошлаб ҳар ойда бир марта сўндириб бориш."+
 "\n\t2.4.3.	Ҳар ойда, овердрафт бўйича навбатдаги тўловларни Банкда Қарз олувчи номига очилган махсус пластик карта ҳисобварағига олдиндан, асосий қарз ва фоизлар бўйича навбатдаги тўлов муддати келгунича киритиб бориш."+
 "\n\t2.4.4.	Овердрафт муносабатлари жараёнида кредит масалалари юзасидан зарур бўлган ҳар қандай ахборотни Банкнинг талабига кўра унга тақдим этиш."+
 "\n\t2.4.5.	Турар жойи, иш жойи, фамилияси ёки исми ўзгариши кутилаётгани, шунингдек мазкур шартнома бўйича мажбуриятлар бажарилишига салбий таъсир кўрсатиши мумкин бўлган бошқа вазиятлар тўғрисида кўпи билан 3 кун ичида Банкка хабар бериш."+

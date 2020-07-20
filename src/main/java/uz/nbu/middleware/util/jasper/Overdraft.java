@@ -51,6 +51,7 @@ public class Overdraft {
             parameters.put("overdraft_filial_phone", requestObj.getString("overdraft_filial_phone"));
             parameters.put("overdraft_filial_address", requestObj.getString("overdraft_filial_address"));
             parameters.put("overdraft_guarantee_surety", requestObj.getString("overdraft_guarantee_surety"));
+            parameters.put("overdraft_filial_mfo", requestObj.getString("overdraft_filial_mfo"));
 
             JRDataSource dataSource = new JREmptyDataSource();
 

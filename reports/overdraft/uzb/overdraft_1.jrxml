@@ -60,7 +60,7 @@
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{overdraft_city}+" шаҳри."]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{overdraft_city}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="201" width="240" height="19" uuid="172d1fc5-574a-445c-a826-5b484ae59cb3">
