@@ -8,6 +8,7 @@
 	<parameter name="phone_number" class="java.lang.String"/>
 	<parameter name="penalty_for_violation" class="java.lang.String"/>
 	<parameter name="mail" class="java.lang.String"/>
+	<parameter name="fullname_and_position_emp" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -133,7 +134,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[(подпись, Ф.И.О. и должность специалиста банка)]]></text>
+				<text><![CDATA[(подпись)]]></text>
 			</staticText>
 			<line>
 				<reportElement x="45" y="704" width="260" height="1" uuid="ebaa3109-ffdd-43dd-ac44-896ca54ccf8f"/>
@@ -155,6 +156,13 @@
 "5. Вы вправе получить от банка полную информацию об условиях кредита и его стоимости, порядке оплат и расчетов (проценты, штрафы, пени), ваших правах и обязанностях по кредитному договору, рисках по кредитному договору и ответственности по кредитному договору, также иную информацию по другим интересующим вас вопросам.\n\n"+
 
 "6. Вы вправе после подписания кредитного договора, но до фактического получения денежных средств, отказаться без каких–либо выплат от получения кредита. Сотрудники банка не имеют права оказывать поддержку по кредитным вопросам за денежное вознаграждение. Если у вас имеются жалобы, вы можете обратиться с обращением по номеру телефона "+$P{phone_number}+" почту "+$P{mail}+" или на электронную почту " +$P{email}+"."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="630" width="275" height="50" uuid="09bc9d27-a8ce-4179-b5ac-43eb7ada5738"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fullname_and_position_emp}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

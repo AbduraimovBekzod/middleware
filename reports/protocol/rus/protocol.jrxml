@@ -56,7 +56,7 @@
 	<field name="protocol_special_name" class="java.lang.String"/>
 	<field name="protocol_secretary_fio" class="java.lang.String"/>
 	<title>
-		<band height="480">
+		<band height="519">
 			<staticText>
 				<reportElement x="30" y="271" width="250" height="20" uuid="2bd52db7-1039-43c6-a3d3-d636358f1164"/>
 				<box padding="3">
@@ -68,7 +68,7 @@
 				<text><![CDATA[Класс кредитоспособности]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="431" width="250" height="20" uuid="f0ed262a-044d-4ec9-8494-9203f62c8954"/>
+				<reportElement x="280" y="457" width="250" height="20" uuid="f0ed262a-044d-4ec9-8494-9203f62c8954"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -78,7 +78,9 @@
 				<textFieldExpression><![CDATA[$F{protocol_grace_period}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="411" width="250" height="20" uuid="2ee5b680-6e70-4b3f-8236-9949a0f9717d"/>
+				<reportElement x="30" y="411" width="250" height="46" uuid="2ee5b680-6e70-4b3f-8236-9949a0f9717d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -118,7 +120,7 @@
 				<text><![CDATA[ИНН Клиента]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="451" width="250" height="20" uuid="88ffbe40-a9d1-46f1-8475-e3250a1c2c47"/>
+				<reportElement x="30" y="477" width="250" height="20" uuid="88ffbe40-a9d1-46f1-8475-e3250a1c2c47"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -238,11 +240,13 @@
 				<textFieldExpression><![CDATA[$F{protocol_initiative_unit}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="411" width="250" height="20" uuid="af4f0b39-5cab-45a1-aa1f-e56c17e09149"/>
+				<reportElement x="280" y="411" width="250" height="46" uuid="af4f0b39-5cab-45a1-aa1f-e56c17e09149">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
-				<textElement>
+				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{protocol_finance_source}]]></textFieldExpression>
@@ -314,14 +318,14 @@
 				</textElement>
 				<textFieldExpression><![CDATA["Выписка из протокола № "+$F{protocol_number}+
 "\n"+$F{protocol_filial}+
-"\nЗаседания Кредитного Комитета № "+$F{protocol_committee_decision_number}+" от "+$F{protocol_committee_decision_date}+" года."+
+"\nЗаседание Кредитного Комитета № "+$F{protocol_committee_decision_number}+" от "+$F{protocol_committee_decision_date}+" года."+
 "\nМесто и время проведения заседания Кредитного Комитета"+
-"\nг. Ташкент, проспект Амира Темура, 101,"+
+"\nг. Ташкент, проспект Амира Темура, 101"+
 "\nЗаявка № "+$F{protocol_request_number} +
 "\nРешение по - вопросу повестки дня:"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="431" width="250" height="20" uuid="f088ab1d-6d00-431d-960b-bfa93df21ada"/>
+				<reportElement x="30" y="457" width="250" height="20" uuid="f088ab1d-6d00-431d-960b-bfa93df21ada"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -331,7 +335,7 @@
 				<text><![CDATA[Льготный период]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="451" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
+				<reportElement x="280" y="477" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>

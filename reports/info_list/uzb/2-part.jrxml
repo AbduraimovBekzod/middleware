@@ -8,6 +8,7 @@
 	<parameter name="email" class="java.lang.String"/>
 	<parameter name="phone_number" class="java.lang.String"/>
 	<parameter name="mail" class="java.lang.String"/>
+	<parameter name="fullname_and_position_emp" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -136,7 +137,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[(подпись, Ф.И.О. и должность специалиста банка)]]></text>
+				<text><![CDATA[(имзо)]]></text>
 			</staticText>
 			<line>
 				<reportElement x="45" y="708" width="260" height="1" uuid="acf56964-de4d-4364-b8e4-d6c365bf0da6"/>
@@ -157,6 +158,13 @@
 
 "5. Сиз кредитнинг шартлари ва қиймати тўғрисида, тўловлар ва ҳисоб-китоблар тартиби тўғрисида (фоизлар, жарима ва пенялар), кредит шартномаси бўйича Сизнинг ҳуқуқларингиз ва мажбуриятларингиз тўғрисида, кредит шартномаси бўйича юзага келиши мумкин бўлган хатарлар ва жавобгарликлар тўғрисида, шунингдек Сизга тушунарсиз бўлган бошқа масалалар юзасидан банкдан тўлиқ ва батафсил маълумот олишга ҳақлисиз.\n\n"+
 "6. Кредит шартномаси имзоланганидан кейин, бироқ пул маблағлари ҳақиқатда олингунга қадар Сиз кредит олишдан бирон-бир тўловларсиз воз кечиш ҳуқуқига эгасиз. Банк ходимлари ҳақ эвазига кредит олиш юзасидан кўмаклашишга ҳақли эмас. Агар Сизда шикоятлар мавжуд бўлса, у ҳолда Сиз мурожаатингизни "+$P{phone_number}+" рақамли телефонга ёки "+$P{mail}+" манзилга ёки "+$P{email}+" электрон манзилга жўнатишингиз мумкин."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="630" width="275" height="50" uuid="13802d9a-4181-497e-a304-567f34f02d01"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fullname_and_position_emp}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

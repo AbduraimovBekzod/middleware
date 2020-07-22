@@ -32,8 +32,7 @@ public class Offer {
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
         byte[] buf = new byte[1024];
-        for(int readNum; (readNum = fis.read(buf)) != -1;)
-        {
+        for(int readNum; (readNum = fis.read(buf)) != -1;) {
             bos.write(buf, 0, readNum);
         }
 
