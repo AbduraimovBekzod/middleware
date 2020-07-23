@@ -51,7 +51,8 @@ public class InfoList {
                 JasperCompileManager.compileReport(dir + "reports/info_list/uzb/2-part.jrxml");
 
         parameters = new HashMap<String, Object>();
-
+		
+		parameters.put("fullname_and_position_emp", requestObj.getString("fullname_and_position_emp"));
         parameters.put("rate_for_late", requestObj.getString("rate_for_late"));
         parameters.put("collateral_loan", requestObj.getString("collateral_loan"));
         parameters.put("email", requestObj.getString("email"));
