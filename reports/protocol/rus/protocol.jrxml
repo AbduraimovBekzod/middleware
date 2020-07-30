@@ -55,6 +55,7 @@
 	<field name="protocol_additional_name" class="java.lang.String"/>
 	<field name="protocol_special_name" class="java.lang.String"/>
 	<field name="protocol_secretary_fio" class="java.lang.String"/>
+	<field name="protocol_decision" class="java.lang.String"/>
 	<title>
 		<band height="519">
 			<staticText>
@@ -322,7 +323,7 @@
 "\nМесто и время проведения заседания Кредитного Комитета"+
 "\nг. Ташкент, проспект Амира Темура, 101"+
 "\nЗаявка № "+$F{protocol_request_number} +
-"\nРешение по - вопросу повестки дня:"]]></textFieldExpression>
+"\nРешение по - вопросу повестки дня: "+$F{protocol_decision}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="30" y="457" width="250" height="20" uuid="f088ab1d-6d00-431d-960b-bfa93df21ada"/>

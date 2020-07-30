@@ -37,6 +37,7 @@
 	<field name="protocol_additional_name" class="java.lang.String"/>
 	<field name="protocol_special_name" class="java.lang.String"/>
 	<field name="protocol_secretary_fio" class="java.lang.String"/>
+	<field name="protocol_decision" class="java.lang.String"/>
 	<title>
 		<band height="515">
 			<textField>
@@ -172,7 +173,7 @@
 "\nКредит қўмитаси йиғилиши ўтказилган жой ва вақти"+
 "\nТошкент ш., Амир Темур хиёбони, 101"+
 "\nАриза № "+$F{protocol_request_number} +
-"\nКун тартибидаги масала бўйича қарор:"]]></textFieldExpression>
+"\nКун тартибидаги масала бўйича қарор: "+$F{protocol_decision}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="477" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
