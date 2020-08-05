@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payment schedule" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cab683d6-91dd-4291-a92c-9c04f54aff70">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/reports/payment_schedule/uzb/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="contract_date" class="java.lang.String">
+		<fieldDescription><![CDATA[contract_date]]></fieldDescription>
+	</field>
+	<field name="contract_number" class="java.lang.String">
+		<fieldDescription><![CDATA[contract_number]]></fieldDescription>
+	</field>
+	<field name="total_percent" class="java.lang.String">
+		<fieldDescription><![CDATA[total_percent]]></fieldDescription>
+	</field>
+	<field name="total_debt" class="java.lang.String">
+		<fieldDescription><![CDATA[total_debt]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="130" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="49" width="400" height="30" uuid="59fe9fc8-7b30-4a97-ab68-081dac09a000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contract_date}+" йилдаги "+$F{contract_number}+"-сонли шартномага мувофиқ қарзни тўлаш жадвали"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="90" width="50" height="40" uuid="3f80369b-a97e-4dbd-859c-e3fd5e955fab"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Тўлов санаси]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="90" width="60" height="40" uuid="052e1df8-740b-48a4-b9f6-8d5f5dc87e3e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Ойдаги кунлар сони]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="90" width="40" height="40" uuid="3c68e23d-cf75-47ee-8475-f36f4f251d82"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Ой]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="90" width="90" height="40" uuid="eb85f155-ef04-4f27-a4bd-4bd65cdfc817"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Ойнинг бошидаги қолдиқ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="90" width="60" height="40" uuid="19219f89-0f05-4592-a6da-b7593d1cf74c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Фоизлар]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="90" width="70" height="40" uuid="1ec3f0e1-4d17-459d-8518-736c64c6b5ad"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Асосий қарз]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="90" width="60" height="40" uuid="ab353594-5d3f-4502-8b1e-679488d749b2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Жами]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="90" width="124" height="40" uuid="40ca26f1-4647-4656-b99e-804457346f8b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Ой охиридаги қолдиқ / Жорий қарз]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<subreport>
+				<reportElement x="1" y="0" width="553" height="20" uuid="3492e1b7-b89e-4691-99d6-d4209fc3ccfe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("payment_schedule_month")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "payment_schedule_month.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="20">
+			<textField>
+				<reportElement x="301" y="0" width="70" height="20" uuid="019ac30a-2198-4a2b-85ad-b96d8b028e1d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_debt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="0" width="50" height="20" uuid="807a3083-a2e7-41d2-8a8b-5de52a28f5a4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Жами]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="40" height="20" uuid="7a6f4b24-67d4-4f6e-b4ab-b6f741e4cf41">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="60" height="20" uuid="4c68cd27-3c3c-4f2a-adaa-afd63d84d6a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="0" width="90" height="20" uuid="9f58156e-d688-4130-84a1-bfa0789afd5b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="0" width="124" height="20" uuid="1f88866a-778d-46eb-961b-ec2710087d4c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="0" width="60" height="20" uuid="3fc01960-fc73-4e13-8876-a5f991c1a30e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="241" y="0" width="60" height="20" uuid="6e54428c-8bf7-42fd-853c-0b0251e87399">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_percent}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

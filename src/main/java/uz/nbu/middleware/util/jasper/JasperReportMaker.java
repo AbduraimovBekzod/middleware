@@ -53,6 +53,10 @@ public class JasperReportMaker {
                 OverdraftGuarantorLegal ogl = new OverdraftGuarantorLegal();
                 baos = ogl.overdraft_guarantor_legal(requestObj.getJSONObject("data"), requestObj.getInt("lang"));
                 break;
+			case "payment_schedule":
+				PaymentSchedule ps = new PaymentSchedule();
+				baos = ps.schedule(requestObj.getJSONObject("data"), requestObj.getInt("lang"));
+				break;
         }
         return baos;
     }
