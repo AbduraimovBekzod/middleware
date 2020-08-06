@@ -3,7 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payment schedule" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cab683d6-91dd-4291-a92c-9c04f54aff70">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["/home/reports/payment_schedule/rus/"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["/home/reports/payment_schedule/uzb/"]]></defaultValueExpression>
 	</parameter>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -124,7 +124,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("payment_schedule_month")]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "payment_sсhedule_month.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "payment_schedule_month.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 		<band height="20">
