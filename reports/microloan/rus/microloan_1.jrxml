@@ -24,6 +24,9 @@
 	<parameter name="microloan_committee_decision_number" class="java.lang.String"/>
 	<parameter name="microloan_borrower_passport_issue_date" class="java.lang.String"/>
 	<parameter name="microloan_committee_decision_date" class="java.lang.String"/>
+	<parameter name="microloan_month_day" class="java.lang.String">
+		<defaultValueExpression><![CDATA["1"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -66,7 +69,7 @@
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["город "+$P{microloan_city}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{microloan_city}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="201" width="240" height="19" uuid="bb5845d2-b3ac-4274-9f94-eac501177ffd">
@@ -75,14 +78,14 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["20__ год "+$P{microloan_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{microloan_date} + " год"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="231" width="480" height="139" uuid="fd938c71-c4e8-434d-b6d8-40bd9cb74819"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t"+$P{microloan_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{microloan_filial_name} +" отделением/филиалом Банка "+$P{microloan_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{microloan_doverennost_number}+" от «____» "+$P{microloan_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{microloan_borrower_fio}+" проживающий(ая) "+$P{microloan_borrower_address}+" паспорт серии "+$P{microloan_borrower_passport_number}+" выдан "+$P{microloan_borrower_passport_issue_by}+" "+$P{microloan_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t"+$P{microloan_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{microloan_filial_name} +" Банка "+$P{microloan_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{microloan_doverennost_number}+" от "+$P{microloan_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{microloan_borrower_fio}+" проживающий(ая) "+$P{microloan_borrower_address}+" паспорт серии "+$P{microloan_borrower_passport_number}+" выдан "+$P{microloan_borrower_passport_issue_by}+" "+$P{microloan_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="396" width="480" height="284" uuid="5266981f-fd64-49e8-aecf-0d918a3cd3d3"/>
@@ -93,7 +96,7 @@
 "\n\t1.2.	Сумма, выделяемого микрозайма "+$P{microloan_loan_sum}+" сум."+
 "\n\t1.3.	Микрозайм выделяется сроком на "+$P{microloan_loan_term}+" месяцев."+
 "\n\t1.4.	Процентная ставка за пользование микрозаймом устанавливается в размере "+$P{microloan_percent_rate}+" процентов за год. За просроченный основной долг процентная ставка устанавливается в размере "+$P{microloan_delay_percent_rate}+" процентов годовых."+
-"\n\t1.5.	Микрозайм погашается "+$P{microloan_blanking_type}+" способом (выбирается аннуитет или способ уменьшения остатка суммы кредиты). Возврат микрозайм осуществляется  согласно  графику погашения кредита, являющегося  неотъемлемой частью настоящего договора, в соответствии с которым периодичность погашения осуществляется __ числа каждого месяца."+
+"\n\t1.5.	Микрозайм погашается "+$P{microloan_blanking_type}+" способом (выбирается аннуитет или способ уменьшения остатка суммы кредиты). Возврат микрозайм осуществляется  согласно  графику погашения кредита, являющегося  неотъемлемой частью настоящего договора, в соответствии с которым периодичность погашения осуществляется "+$P{microloan_month_day}+" числа каждого месяца."+
 "\n\t1.6.	С целью соответствующего выполнения Заемщиком обязательств по настоящему Договору, в соответствии со статей 783 Гражданского кодекса Республики Узбекистан, Банку предоставляется безотзывное и беусловное право/распоряжение списывать со всех банковских счетов Заемщика, открытых в Банке, суммы для выполнения платежных обязатлельств."+
 "\n\t1.7.	Согласно настоящему Договору, основной долг по Микрозайму и проценты по нему могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
 			</textField>

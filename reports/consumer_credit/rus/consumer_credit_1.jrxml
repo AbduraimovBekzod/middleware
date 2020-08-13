@@ -69,7 +69,7 @@
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["город "+$P{consumer_city}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{consumer_city}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="194" width="240" height="19" uuid="9ce95c9e-5247-44cd-a355-ce87d9d91ebe">
@@ -78,14 +78,14 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["20__ год "+$P{consumer_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{consumer_date} + " год"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="219" width="480" height="131" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" отделением/филиалом Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от «____» "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" "+$P{consumer_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" "+$P{consumer_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="370" width="480" height="283" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>
@@ -97,7 +97,7 @@
 "\n\t1.3.	Цель кредита для "+$P{consumer_loan_purpose}+"."+
 "\n\t1.4.	Кредит выдается с льготным периодом "+$P{consumer_grace_period}+" месяцев на срок "+$P{consumer_loan_term}+" месяцев."+
 "\n\t1.5.	Процентная ставка за пользование кредитом устанавливается в размере "+$P{consumer_percent_rate}+" процентов за год. За просроченный основной долг процентная ставка устанавливается в размере "+$P{consumer_delay_percent_rate}+" процентов годовых."+
-"\n\t1.6.	Кредит погашается "+$P{consumer_blanking_type}+") способом (выбирается аннуитет или способ уменьшения остатка суммы кредиты). Возврат кредита осуществляется  согласно  графику возврата кредита, являющегося  неотъемлемой частью настоящего договора, в соответствии с которым периодичность погашения осуществляется "+$P{consumer_loan_repayment_rate}+" числа каждого месяца."+
+"\n\t1.6.	Кредит погашается "+$P{consumer_blanking_type}+" способом (выбирается аннуитет или способ уменьшения остатка суммы кредиты). Возврат кредита осуществляется  согласно  графику возврата кредита, являющегося  неотъемлемой частью настоящего договора, в соответствии с которым периодичность погашения осуществляется "+$P{consumer_loan_repayment_rate}+" числа каждого месяца."+
 "\n\t1.7.	С целью соответствующего выполнения Заемщиком обязательств по настоящему Договору, в соответствии со статей 783 Гражданского кодекса Республики Узбекистан, Банку предоставляется безотзывное и беусловное право/распоряжение списывания со всех банковских счетов Заемщика, открытых в Банке, суммы для выполнения платежных обязатлельств."+
 "\n\t1.8.	Согласно настоящему Договору, основной долг по просроченной ссуде и проценты по нему, могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
 			</textField>

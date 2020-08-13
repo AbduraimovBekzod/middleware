@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="microloan_2_uzb" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e460c38-41d3-4ebd-aa2a-68ad02df6bf6">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="microloan_guarantee_surety_sum" class="java.lang.String"/>
@@ -7,6 +7,7 @@
 	<parameter name="microloan_delay_percent_rate" class="java.lang.String"/>
 	<parameter name="microloan_loan_sum" class="java.lang.String"/>
 	<parameter name="microloan_guarantee_surety" class="java.lang.String"/>
+	<parameter name="microloan_account" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -64,7 +65,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Микроқарз олингунга қадар кредит қайтарилиши таъминоти сифатида микроқарзнинг 125 %дан кам бўлмаган "+$P{microloan_guarantee_surety_sum}+" сўмлик "+$P{microloan_guarantee_surety}+" (гаров таъминоти турларининг бири кўрсатилади) ни қонун ҳажжатлари талабларига мувофиқ ва Банкни қониқтирадиган шаклда расмийлаштириб тақдим этади."+
-"\n\t2.4.2.	Ушбу шартноманинг ажралмас қисми бўлган микроқарзни қайтариш жадвалига  мувофиқ микроқарз ва унга ҳисобланган фоизларни 20__ йил "+$P{microloan_loan_repayment_rate}+" дан бошлаб ҳар ойда бир марта сўндириб бориш."+
+"\n\t2.4.2.	Ушбу шартноманинг ажралмас қисми бўлган микроқарзни қайтариш жадвалига  мувофиқ микроқарз ва унга ҳисобланган фоизларни "+$P{microloan_loan_repayment_rate}+" йилдан бошлаб ҳар ойда бир марта сўндириб бориш."+
 "\n\t2.4.3.	Ҳар ойда, микроқарзни қайтариш жадвалига асосан навбатдаги тўловларни Банкда Қарз олувчи номига очилган махсус ҳисобварақга олдиндан, асосий қарз ва фоизлар бўйича навбатдаги тўлов муддати келгунича киритиб бориш."+
 "\n\t2.4.4.	Микроқарз муносабатлари жараёнида кредит масалалари юзасидан зарур бўлган ҳар қандай ахборотни Банкнинг талабига кўра унга тақдим этиш."+
 "\n\t2.4.5.	Турар жойи, иш жойи, фамилияси ёки исми ўзгариши кутилаётгани, шунингдек мазкур шартнома бўйича мажбуриятлар бажарилишига салбий таъсир кўрсатиши мумкин бўлган бошқа вазиятлар тўғрисида кўпи билан 3 кун ичида Банкка хабар бериш."]]></textFieldExpression>
@@ -84,7 +85,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.1.	Қарз олувчига "+$P{microloan_loan_sum}+" сўм микроқарз бериш."+
-"\n\t2.3.2.	12501 (если кредит до 1 года)/14901 (если срок кредиты свыше 1 года) микроқарз ҳисобварағи очиш."+
+"\n\t2.3.2. "+$P{microloan_account}+"________________ микроқарз ҳисобварағи очиш."+
 "\n\t2.3.3.	Қарз олувчини микроқарз беришни рад этиш, микроқарзни муддатидан олдин ундиришга қаратиш сабаблари тўғрисида ёзма хабардор қилиш."]]></textFieldExpression>
 			</textField>
 		</band>

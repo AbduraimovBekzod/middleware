@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consumer_credit_2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9a21c9d5-a329-4893-bf7b-87d1cda34d07">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="consumer_guarantee_surety_sum" class="java.lang.String"/>
@@ -11,6 +11,7 @@
 	<parameter name="consumer_seller_contract_number" class="java.lang.String"/>
 	<parameter name="consumer_seller_contract_date" class="java.lang.String"/>
 	<parameter name="consumer_guarantee_surety" class="java.lang.String"/>
+	<parameter name="consumer_account" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -68,7 +69,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.1.	Выделение кредита Заемщику в размере "+$P{consumer_loan_sum}+" сум."+
-"\n\t2.3.2.	Открытие кредитного расчетного счета 12501 (если срок кредита до 1 года)/14901 (если срок кредита свыше 1 года) ________________."+
+"\n\t2.3.2.	Открытие кредитного расчетного счета "+$P{consumer_account}+" ________________."+
 "\n\t2.3.3.	Банк обязан перевести  кредитные средства с ссудного счета Заёмщика путем перечисления безналичных денежных  средств на расчетный счет "+$P{consumer_seller_bank_account}+" открытый в "+$P{consumer_seller_bank_name}+" банке, на основании договора № "+$P{consumer_seller_contract_number}+" от "+$P{consumer_seller_contract_date}+" года заключенного между Заёмщиком и Поставщиком товара,работ, услуг."+
 "\n\t2.3.4.	Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита."]]></textFieldExpression>
 			</textField>
@@ -85,7 +86,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения кредита, оформленное по  форме, удовлетворяющей запрос банка и в соотвествии с законодательством, обеспечение по кредиту на сумму не менее 125% от суммы кредита в виде "+$P{consumer_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{consumer_guarantee_surety_sum}+" сум,  являющееся залогом возвратности кредита."+
-"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{consumer_loan_repayment_rate}+" 20___года,   в соответствии с графиком возврата кредита, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты.   "+
+"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{consumer_loan_repayment_rate}+" года,   в соответствии с графиком возврата кредита, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты.   "+
 "\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
 "\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе кредитных отношений."]]></textFieldExpression>
 			</textField>

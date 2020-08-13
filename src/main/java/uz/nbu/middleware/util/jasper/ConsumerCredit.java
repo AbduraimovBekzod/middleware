@@ -58,6 +58,8 @@ public class ConsumerCredit {
             parameters.put("consumer_seller_contract_date", requestObj.getString("consumer_seller_contract_date"));
             parameters.put("consumer_guarantee_surety", requestObj.getString("consumer_guarantee_surety"));
             parameters.put("consumer_borrower_phone", requestObj.getString("consumer_borrower_phone"));
+            if (requestObj.getInt("consumer_loan_term") <= 12) parameters.put("consumer_account", "12501");
+            else parameters.put("consumer_account", "14901");
 
             JRDataSource dataSource = new JREmptyDataSource();
 

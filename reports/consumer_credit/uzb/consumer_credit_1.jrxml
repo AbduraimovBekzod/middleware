@@ -69,7 +69,7 @@
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{consumer_city}+" шаҳри."]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{consumer_city}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="194" width="240" height="19" uuid="cd669a45-8e3f-426c-b1e0-41e5ada9bf10">
@@ -78,14 +78,14 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["20__ йил "+$P{consumer_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{consumer_date}+" йил"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="219" width="480" height="131" uuid="6bde49b2-7468-4dd8-b1d3-1d8d3aa7c369"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки» акциядорлик жамиятининг "+$P{consumer_filial_name}+" бўлими/филиали (кейинги ўринларда–Банк) Низом ҳамда 20__ йил __ "+$P{consumer_doverennost_date}+" даги "+$P{consumer_doverennost_number}+" -сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{consumer_bank_name}+" бўлими/филиали бошқарувчиси "+$P{consumer_emp_fio}+" бир томондан ва "+$P{consumer_borrower_address}+" да яшовчи, "+$P{consumer_borrower_passport_issue_by}+" томонидан "+$P{consumer_borrower_passport_issue_date}+" йилда берилган № "+$P{consumer_borrower_passport_number}+" паспорт маълумотларига эга "+$P{consumer_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки» акциядорлик жамиятининг "+$P{consumer_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда "+$P{consumer_doverennost_date}+" йилдаги "+$P{consumer_doverennost_number}+" -сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{consumer_bank_name}+" бошқарувчиси "+$P{consumer_emp_fio}+" бир томондан ва "+$P{consumer_borrower_address}+" да яшовчи, "+$P{consumer_borrower_passport_issue_by}+" томонидан "+$P{consumer_borrower_passport_issue_date}+" йилда берилган № "+$P{consumer_borrower_passport_number}+" паспорт маълумотларига эга "+$P{consumer_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="370" width="480" height="310" uuid="28c73740-2cd3-4172-8638-2150187e63a5"/>
