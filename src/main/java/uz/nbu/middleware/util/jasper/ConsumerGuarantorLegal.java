@@ -12,7 +12,7 @@ import java.util.Map;
 public class ConsumerGuarantorLegal {
     public ByteArrayOutputStream consumer_guarantor_legal(JSONObject requestObj, Integer lang) throws JRException, IOException {
 
-		tring dir = "/home/";
+		String dir = "/home/";
         String str = requestObj.toString();
 
         for(int i = 1; i <= 3; i++) {

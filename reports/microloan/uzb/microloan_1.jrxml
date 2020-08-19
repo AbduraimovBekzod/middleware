@@ -25,9 +25,6 @@
 	<parameter name="microloan_borrower_passport_issue_date" class="java.lang.String"/>
 	<parameter name="microloan_committee_decision_date" class="java.lang.String"/>
 	<parameter name="microloan_loan_repayment_rate" class="java.lang.String"/>
-	<parameter name="microloan_month_day" class="java.lang.String">
-		<defaultValueExpression><![CDATA["1"]]></defaultValueExpression>
-	</parameter>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
