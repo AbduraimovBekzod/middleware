@@ -1,12 +1,10 @@
 package uz.nbu.middleware.util.jasper;
 
 import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.query.JsonQueryExecuterFactory;
 import org.json.JSONObject;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 

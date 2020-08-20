@@ -11,121 +11,108 @@
 	<field name="loan_sum" class="java.lang.String">
 		<fieldDescription><![CDATA[loan_sum]]></fieldDescription>
 	</field>
-	<field name="loan_currency" class="java.lang.String">
-		<fieldDescription><![CDATA[loan_currency]]></fieldDescription>
-	</field>
 	<field name="loan_type" class="java.lang.String">
 		<fieldDescription><![CDATA[loan_type]]></fieldDescription>
 	</field>
-	<field name="offer_date" class="java.lang.String">
-		<fieldDescription><![CDATA[offer_date]]></fieldDescription>
-	</field>
-	<field name="loan_date" class="java.lang.String">
-		<fieldDescription><![CDATA[loan_date]]></fieldDescription>
-	</field>
-	<field name="offer_time" class="java.lang.String">
-		<fieldDescription><![CDATA[offer_time]]></fieldDescription>
+	<field name="offer_datetime" class="java.lang.String">
+		<fieldDescription><![CDATA[offer_datetime]]></fieldDescription>
 	</field>
 	<field name="filial" class="java.lang.String">
 		<fieldDescription><![CDATA[filial]]></fieldDescription>
+	</field>
+	<field name="claim_number" class="java.lang.String">
+		<fieldDescription><![CDATA[claim_number]]></fieldDescription>
+	</field>
+	<field name="claim_datetime" class="java.lang.String">
+		<fieldDescription><![CDATA[claim_datetime]]></fieldDescription>
+	</field>
+	<field name="passport" class="java.lang.String">
+		<fieldDescription><![CDATA[passport]]></fieldDescription>
+	</field>
+	<field name="client_inn" class="java.lang.String">
+		<fieldDescription><![CDATA[client_inn]]></fieldDescription>
+	</field>
+	<field name="client_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[client_phone]]></fieldDescription>
+	</field>
+	<field name="org_inn" class="java.lang.String">
+		<fieldDescription><![CDATA[org_inn]]></fieldDescription>
+	</field>
+	<field name="org_name" class="java.lang.String">
+		<fieldDescription><![CDATA[org_name]]></fieldDescription>
+	</field>
+	<field name="scoring_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[scoring_sum]]></fieldDescription>
+	</field>
+	<field name="loan_term" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_term]]></fieldDescription>
+	</field>
+	<field name="percent_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[percent_rate]]></fieldDescription>
+	</field>
+	<field name="card_number" class="java.lang.String">
+		<fieldDescription><![CDATA[card_number]]></fieldDescription>
+	</field>
+	<field name="loan_datetime" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_datetime]]></fieldDescription>
 	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="560" splitType="Stretch">
+		<band height="802" splitType="Stretch">
 			<staticText>
-				<reportElement x="52" y="202" width="188" height="20" uuid="c497e63a-7805-41ef-9cfa-21574e61be98"/>
-				<box>
+				<reportElement x="52" y="202" width="208" height="20" uuid="c497e63a-7805-41ef-9cfa-21574e61be98"/>
+				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
-				<textElement>
+				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<text><![CDATA[]]></text>
+				<text><![CDATA[Дата и время заявки]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="240" y="202" width="282" height="20" uuid="22e9a03b-a4aa-4d47-87de-d173c02bf49c"/>
-				<box>
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="52" y="322" width="188" height="20" uuid="57f39ce1-e1db-49e1-acf0-8c1b00a53e4f"/>
+				<reportElement x="52" y="442" width="208" height="20" uuid="4f78391d-cb3c-4db0-9944-979400669d5f"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
+					<font fontName="DejaVu Serif" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Tasdiqlash vaqtini taklif qilish:]]></text>
+				<text><![CDATA[Дата и время подтверждения оферты]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="52" y="302" width="188" height="20" uuid="4f78391d-cb3c-4db0-9944-979400669d5f"/>
+				<reportElement x="52" y="422" width="208" height="20" uuid="a745fb41-f14f-4a4d-a523-6bd632b44db0"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
+					<font fontName="DejaVu Serif" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Tasdiqlash kunini taklif qilish:]]></text>
+				<text><![CDATA[Тип кредита]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="52" y="282" width="188" height="20" uuid="a745fb41-f14f-4a4d-a523-6bd632b44db0"/>
+				<reportElement x="52" y="362" width="208" height="20" uuid="6ee874fe-6e86-4dbe-b721-a31ebb9c4da9"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
+					<font fontName="DejaVu Serif" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Kredit turi:]]></text>
+				<text><![CDATA[Сумма кредита]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="52" y="262" width="188" height="20" uuid="0575a804-88d0-4353-95ed-cd013000bd6d"/>
+				<reportElement x="52" y="222" width="208" height="20" uuid="78d34dbc-b995-4866-9d30-0d5e0237a08f"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
+					<font fontName="DejaVu Serif" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Kredit valyutasi:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="52" y="242" width="188" height="20" uuid="6ee874fe-6e86-4dbe-b721-a31ebb9c4da9"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Kredit summasi:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="52" y="222" width="188" height="20" uuid="78d34dbc-b995-4866-9d30-0d5e0237a08f"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Mijozning FISh:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="52" y="342" width="188" height="20" uuid="77c9573b-19a3-4477-89f4-e74f59cdea24"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Kreditni rasmiylashtirish sanasi:]]></text>
+				<text><![CDATA[ФИО клиента]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="240" y="222" width="282" height="20" uuid="518c8f40-2ffb-416a-9cfd-974f49308d25"/>
+				<reportElement x="260" y="222" width="261" height="20" uuid="518c8f40-2ffb-416a-9cfd-974f49308d25"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
@@ -135,37 +122,17 @@
 				<textFieldExpression><![CDATA[$F{client_fio}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="342" width="282" height="20" uuid="bca2d05c-7eb2-4409-bf84-2ff72863d137"/>
+				<reportElement x="260" y="442" width="261" height="20" uuid="29e3e683-d556-4b0c-a2d9-e9337537e1b6"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{offer_datetime}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="322" width="282" height="20" uuid="486b1d58-a36a-4413-8f40-166501b20f1f"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{offer_time}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="240" y="302" width="282" height="20" uuid="29e3e683-d556-4b0c-a2d9-e9337537e1b6"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{offer_date}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="240" y="282" width="282" height="20" uuid="5cf663e6-9ecd-4787-8fcd-a378e2b0c550"/>
+				<reportElement x="260" y="422" width="261" height="20" uuid="5cf663e6-9ecd-4787-8fcd-a378e2b0c550"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
@@ -175,17 +142,7 @@
 				<textFieldExpression><![CDATA[$F{loan_type}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="262" width="282" height="20" uuid="e4a80183-2233-41ca-b0a2-650ff035ff30"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_currency}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="240" y="242" width="282" height="20" uuid="27118e2a-5c87-4445-b306-047208fb99d4"/>
+				<reportElement x="260" y="362" width="261" height="20" uuid="27118e2a-5c87-4445-b306-047208fb99d4"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
@@ -195,52 +152,270 @@
 				<textFieldExpression><![CDATA[$F{loan_sum}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="70" y="400" width="160" height="19" uuid="42b9dfb0-35ac-4e09-8978-7b391955f31c"/>
-				<textElement verticalAlignment="Middle">
+				<reportElement x="51" y="145" width="470" height="30" uuid="5b6c5665-6639-41ae-8d76-7364c947fa30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Bank filiali / filiali:]]></text>
+				<text><![CDATA[Информация 
+об утверждении заёмщиком оферте о предоставлении онлайн кредита]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="230" y="400" width="270" height="19" uuid="061814f4-e456-4782-b193-8524d0abddb9"/>
+				<reportElement x="260" y="202" width="261" height="20" uuid="5a434087-289f-4054-a9d9-b59693411782"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{claim_datetime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="182" width="208" height="20" uuid="f6d52bb7-fe72-40ae-bab5-0d91a0320dcc"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Номер заявки]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="182" width="261" height="20" uuid="b0342e34-ee03-4260-8d9a-69c72557cd6b"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{claim_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="242" width="261" height="20" uuid="80adcf76-fc4a-45c6-b127-3569c4967280"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{passport}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="242" width="208" height="20" uuid="29f916a5-e2fa-4a90-8b19-c7c460f72e76"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Паспортные данные]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="262" width="261" height="20" uuid="6abec871-eb48-4669-ae68-d3a38f56c157"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{client_inn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="262" width="208" height="20" uuid="a40c101d-5bcc-4177-9011-42f94234b56e"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[ИНН]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="282" width="261" height="20" uuid="bdc2d426-3dee-48b3-96df-ece698e22d77"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{client_phone}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="282" width="208" height="20" uuid="8da19b0a-1837-4cf7-a729-7dde34a11d26"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Телефон]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="302" width="261" height="20" uuid="5492fcbc-6095-4872-b5cb-f729136728b5"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{org_inn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="302" width="208" height="20" uuid="a69273f3-fa60-4b77-af77-7d109233c133"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[ИНН организации]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="322" width="208" height="20" uuid="61e7573c-27d7-4858-b480-c20b52e67580"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Наименование организации]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="322" width="261" height="20" uuid="18b6e7a4-03fa-4ed3-8dcf-62e2b28ceee4"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{org_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="342" width="208" height="20" uuid="fc8055b5-66a4-459d-b5c2-5824a8b59042"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Сумма скоринга]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="342" width="261" height="20" uuid="eac41951-e597-4ee4-ba22-34e52fc38e44"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{scoring_sum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="382" width="208" height="20" uuid="c92baae3-1e93-43a1-89a7-b3af2585a19c"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Срок кредита]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="382" width="261" height="20" uuid="6e065d35-a219-46b4-a65e-854a7b632328"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loan_term}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="402" width="208" height="20" uuid="b33c89f3-e6a5-40c1-9d00-92980f32511a"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Годовая процентная ставка]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="402" width="261" height="20" uuid="a2953ae6-066b-4bca-83d2-5f24b5c4cdfd"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{percent_rate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="462" width="208" height="28" uuid="96a10da4-83b8-4c28-b92d-5d03ea251558"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Номер пластиковой карты, на которую выдан кредит]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="462" width="261" height="28" uuid="a96e6acb-b862-4015-b2ce-17f0e5977b8a"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{card_number}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="490" width="208" height="20" uuid="5fdf3860-c540-46c6-bf51-ba657aad7d3a"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Дата и время оформления кредита]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="490" width="261" height="20" uuid="0c1da53a-8c50-4f28-a69c-04fc84f11f63"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loan_datetime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="510" width="261" height="30" uuid="699aa0a8-1e33-40c2-b9d5-4c7690730ffb"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{filial}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="70" y="470" width="151" height="20" uuid="e0caf2bf-c68a-404f-83c4-d4b588c5ada9"/>
+				<reportElement x="52" y="510" width="208" height="30" uuid="38cd44da-d311-4b64-b66b-22ebbe8fe818"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" isBold="true"/>
+					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<text><![CDATA[Kredit menejeri]]></text>
-			</staticText>
-			<line>
-				<reportElement x="70" y="530" width="150" height="1" uuid="fe6c4a19-8b3a-4420-8488-015675c5335e"/>
-			</line>
-			<staticText>
-				<reportElement x="95" y="540" width="100" height="20" uuid="aebd8e80-9b90-48be-b8b5-4f42b4f181f2"/>
-				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="8" isItalic="true"/>
-				</textElement>
-				<text><![CDATA[(FISh, Imzo) ]]></text>
+				<text><![CDATA[Отделение банка/филиал (МФО и название)]]></text>
 			</staticText>
 			<image>
-				<reportElement x="247" y="32" width="53" height="82" uuid="198a46ec-663b-4872-a2eb-0be50578e858">
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<reportElement x="247" y="26" width="53" height="82" uuid="32a09815-e044-421a-bb73-019858b0cfbb">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
-			<staticText>
-				<reportElement x="105" y="177" width="345" height="14" uuid="b955bb5e-f9b5-438b-89d7-c6bc7e296a94"/>
-				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Mijozning imzo taklifini tasdiqlash shakli]]></text>
-			</staticText>
 		</band>
 	</detail>
 </jasperReport>
