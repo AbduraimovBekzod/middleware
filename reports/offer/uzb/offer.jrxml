@@ -56,6 +56,12 @@
 	<field name="loan_datetime" class="java.lang.String">
 		<fieldDescription><![CDATA[loan_datetime]]></fieldDescription>
 	</field>
+	<field name="iabs_status" class="java.lang.String">
+		<fieldDescription><![CDATA[iabs_status]]></fieldDescription>
+	</field>
+	<field name="loan_status" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_status]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -416,6 +422,54 @@
 				</reportElement>
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="52" y="540" width="208" height="20" uuid="9c71f041-8bc0-40e6-b187-087d5a7677c6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Статус в ИАБС]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="540" width="261" height="20" uuid="c2f6219b-2d60-4ce8-93b8-4b2cd1037152">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{iabs_status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="560" width="208" height="20" uuid="921b48b8-ae66-499f-b585-eac90659ff61">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Статус кредита]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="560" width="261" height="20" uuid="e82f8f0c-5222-43af-a7ea-79072dcc5dbc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loan_status}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 </jasperReport>
