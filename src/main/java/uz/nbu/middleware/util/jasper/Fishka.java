@@ -26,8 +26,10 @@ public class Fishka {
 
             i = i + 1;
 
-            JSONObject perf2 = performer.getJSONObject(i);
-            performer2.put((i - 1)/2, perf2);
+            if (i < performer.length()) {
+                JSONObject perf2 = performer.getJSONObject(i);
+                performer2.put((i-1)/2, perf2);
+            }
         }
 
         requestObj.remove("performer");
