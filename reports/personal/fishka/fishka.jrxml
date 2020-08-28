@@ -32,7 +32,9 @@
 	<field name="date" class="java.lang.String">
 		<fieldDescription><![CDATA[date]]></fieldDescription>
 	</field>
-	<field name="h_emp" class="java.lang.String"/>
+	<field name="h_emp" class="java.lang.String">
+		<fieldDescription><![CDATA[h_emp]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
