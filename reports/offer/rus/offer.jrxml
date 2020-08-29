@@ -62,6 +62,9 @@
 	<field name="loan_status" class="java.lang.String">
 		<fieldDescription><![CDATA[loan_status]]></fieldDescription>
 	</field>
+	<field name="iabs_datetime" class="java.lang.String">
+		<fieldDescription><![CDATA[iabs_datetime]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -376,7 +379,7 @@
 				<textFieldExpression><![CDATA[$F{card_number}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="52" y="490" width="208" height="20" uuid="5fdf3860-c540-46c6-bf51-ba657aad7d3a"/>
+				<reportElement x="52" y="570" width="208" height="20" uuid="5fdf3860-c540-46c6-bf51-ba657aad7d3a"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
@@ -386,7 +389,7 @@
 				<text><![CDATA[Дата и время оформления кредита]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="260" y="490" width="261" height="20" uuid="0c1da53a-8c50-4f28-a69c-04fc84f11f63"/>
+				<reportElement x="260" y="570" width="261" height="20" uuid="0c1da53a-8c50-4f28-a69c-04fc84f11f63"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -396,7 +399,7 @@
 				<textFieldExpression><![CDATA[$F{loan_datetime}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="260" y="510" width="261" height="30" uuid="699aa0a8-1e33-40c2-b9d5-4c7690730ffb"/>
+				<reportElement x="260" y="490" width="261" height="30" uuid="699aa0a8-1e33-40c2-b9d5-4c7690730ffb"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -406,7 +409,7 @@
 				<textFieldExpression><![CDATA[$F{filial}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="52" y="510" width="208" height="30" uuid="38cd44da-d311-4b64-b66b-22ebbe8fe818"/>
+				<reportElement x="52" y="490" width="208" height="30" uuid="38cd44da-d311-4b64-b66b-22ebbe8fe818"/>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
@@ -423,7 +426,7 @@
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="52" y="540" width="208" height="20" uuid="9c71f041-8bc0-40e6-b187-087d5a7677c6">
+				<reportElement x="52" y="550" width="208" height="20" uuid="9c71f041-8bc0-40e6-b187-087d5a7677c6">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="5">
@@ -435,7 +438,7 @@
 				<text><![CDATA[Статус в ИАБС]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="260" y="540" width="261" height="20" uuid="c2f6219b-2d60-4ce8-93b8-4b2cd1037152">
+				<reportElement x="260" y="550" width="261" height="20" uuid="c2f6219b-2d60-4ce8-93b8-4b2cd1037152">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="5">
@@ -447,7 +450,7 @@
 				<textFieldExpression><![CDATA[$F{iabs_status}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="52" y="560" width="208" height="20" uuid="921b48b8-ae66-499f-b585-eac90659ff61">
+				<reportElement x="52" y="590" width="208" height="20" uuid="921b48b8-ae66-499f-b585-eac90659ff61">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="5">
@@ -459,7 +462,7 @@
 				<text><![CDATA[Статус кредита]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="260" y="560" width="261" height="20" uuid="e82f8f0c-5222-43af-a7ea-79072dcc5dbc">
+				<reportElement x="260" y="590" width="261" height="20" uuid="e82f8f0c-5222-43af-a7ea-79072dcc5dbc">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="5">
@@ -469,6 +472,30 @@
 					<font fontName="DejaVu Serif"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{loan_status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="520" width="208" height="30" uuid="32bab790-e69a-40bc-b09c-ed36d662a94b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[Дата и время создания заявки в ИАБС]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="520" width="261" height="30" uuid="cbf60b52-d837-464e-bbcc-e0ab2c355139">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{iabs_datetime}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
