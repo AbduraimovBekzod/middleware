@@ -120,31 +120,33 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "performer2.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band height="103">
+	</detail>
+	<lastPageFooter>
+		<band height="95">
 			<textField>
-				<reportElement x="0" y="9" width="555" height="30" uuid="63f9e942-10c8-4fe8-a2f7-c12af03fb770"/>
+				<reportElement x="0" y="1" width="555" height="30" uuid="3973e882-f11a-473b-a04d-ac4e725fff1e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
 					<font fontName="DejaVu Serif" size="12" isBold="true" isItalic="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA["<u>"+$F{action}+"</u>"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="54" y="73" width="185" height="30" uuid="fbb22109-1205-4f94-a761-2b70e48bd3d0"/>
+				<reportElement x="54" y="65" width="185" height="30" uuid="21b70219-9440-468b-9472-7a276b75f748"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Дата: "+$F{date}+ " г."]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="303" y="76" width="191" height="1" uuid="486209dc-3898-41c0-89fe-176f6ae3fea7"/>
+				<reportElement x="303" y="68" width="191" height="1" uuid="80a331d1-b1e9-43e6-85a5-ac306d3104cd"/>
 			</line>
 			<textField>
-				<reportElement x="382" y="73" width="112" height="30" uuid="a2667eaa-5d9d-49ac-98e9-5d4bf26c241d"/>
+				<reportElement x="382" y="65" width="112" height="30" uuid="35489dfb-b825-452a-b482-2f0ef4aaa91a"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{h_emp}]]></textFieldExpression>
 			</textField>
 		</band>
-	</detail>
+	</lastPageFooter>
 </jasperReport>

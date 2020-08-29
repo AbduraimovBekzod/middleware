@@ -435,7 +435,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<text><![CDATA[Статус в ИАБС]]></text>
+				<text><![CDATA[Статус заявки в ИАБС]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="260" y="550" width="261" height="20" uuid="c2f6219b-2d60-4ce8-93b8-4b2cd1037152">
