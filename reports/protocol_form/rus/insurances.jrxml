@@ -16,7 +16,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_insurance_scope}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_insurance_scope}!=null?$F{protocol_form_insurance_scope}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement mode="Opaque" x="30" y="16" width="209" height="16" backcolor="#FFFFFF" uuid="82954937-6f5c-49c7-981e-64e3415b1c32">
@@ -55,7 +55,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_insurance_company}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_insurance_company}!=null?$F{protocol_form_insurance_company}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement mode="Opaque" x="0" y="0" width="30" height="16" backcolor="#FFFFFF" uuid="ff8d343a-5643-49af-88c0-68ab9b6119db">

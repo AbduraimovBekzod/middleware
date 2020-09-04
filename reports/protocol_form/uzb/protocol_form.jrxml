@@ -48,7 +48,7 @@
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Кредит қўмитасининг йиғилиши\n"+
-$F{protocol_form_filial}+" бўлими/филиали"]]></textFieldExpression>
+($F{protocol_form_filial}!=null?$F{protocol_form_filial}:"")+" бўлими/филиали"]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="88" width="554" height="15" uuid="268a0607-2f9b-4aa2-a4f1-ee9da083f1ba">
@@ -64,14 +64,14 @@ $F{protocol_form_filial}+" бўлими/филиали"]]></textFieldExpression>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Баён № "+$F{protocol_form_number}+" (сонли рақамлаш, алоҳида журнал)"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Баён № "+($F{protocol_form_number}!=null?$F{protocol_form_number}:"")+" (сонли рақамлаш, алоҳида журнал)"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="380" y="70" width="175" height="15" uuid="b0743287-380d-428c-9fa6-ed43be0e528d"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Сана: "+$F{protocol_form_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Сана: "+($F{protocol_form_date}!=null?$F{protocol_form_date}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
@@ -84,7 +84,7 @@ $F{protocol_form_filial}+" бўлими/филиали"]]></textFieldExpression>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Кворум сақланди "+$F{protocol_form_kvorum}+" %. (100%)"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Кворум сақланди "+($F{protocol_form_kvorum}!=null?$F{protocol_form_kvorum}:"")+" %. (100%)"]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="0" y="24" width="300" height="13" uuid="f1f0a950-8c95-43f4-bd69-21df3afcf8d8"/>
@@ -105,7 +105,10 @@ $F{protocol_form_filial}+" бўлими/филиали"]]></textFieldExpression>
 				<textElement>
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_filial}+ " бўлим/филиал\n Кредит қўмитаси котиби \n"+$F{protocol_form_secret_fio} + ", "+$F{protocol_form_secret_post}+", "+$F{protocol_form_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_filial}!=null?$F{protocol_form_filial}:"")+ " бўлим/филиал\n Кредит қўмитаси котиби \n"+
+($F{protocol_form_secret_fio}!=null?$F{protocol_form_secret_fio}:"")+
+($F{protocol_form_secret_post}!=null?", "+$F{protocol_form_secret_post}:"")+
+($F{protocol_form_date}!=null?", "+$F{protocol_form_date}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

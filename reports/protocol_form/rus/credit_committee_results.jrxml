@@ -109,7 +109,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{fio}+", "+$F{post}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{fio}!=null?$F{fio}:"")+($F{post}!=null?", "+$F{post}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="167" y="0" width="50" height="15" uuid="e0b9aff3-c8e3-4895-90a2-339ffb7c856f">
@@ -125,7 +125,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{yes}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{yes}!=null?$F{yes}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="217" y="0" width="50" height="15" uuid="24ea9337-f779-4e3b-82ad-e389ff457440">
@@ -141,7 +141,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{no}!=null?$F{no}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="267" y="0" width="213" height="15" uuid="6ac84c54-307e-46aa-b897-3a3c0d33e9d8">
@@ -157,7 +157,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{special_condition}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{special_condition}!=null?$F{special_condition}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="480" y="0" width="75" height="15" uuid="ad1728ec-8713-4456-969b-d16e5d85e346">
@@ -173,7 +173,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{imzo}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{imzo}!=null?$F{imzo}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

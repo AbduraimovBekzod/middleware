@@ -102,7 +102,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Заявка № " +$F{protocol_form_request_number}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Заявка № " +($F{protocol_form_request_number}!=null?$F{protocol_form_request_number}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="240" y="195" width="314" height="16" uuid="d01a6adb-d917-4920-903c-b1409c9920fc">
@@ -114,7 +114,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_grace_period}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_grace_period}!=null?$F{protocol_form_grace_period}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="240" y="115" width="314" height="16" uuid="1fd7e761-469d-4db7-a1b8-619fcd849635">
@@ -126,7 +126,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_scoring}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_scoring}!=null?$F{protocol_form_scoring}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="291" width="30" height="16" uuid="e15d3669-d6ca-4253-8018-a276ed686368">
@@ -220,7 +220,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_currency}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_currency}!=null?$F{protocol_form_currency}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="147" width="30" height="16" uuid="6b696d92-b5ec-4290-95b1-bb8a198b3151">
@@ -244,7 +244,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_purpose}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_purpose}!=null?$F{protocol_form_purpose}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="31" y="99" width="209" height="16" uuid="a3b07676-a0fd-4ea3-a5c9-93d96e1435fc">
@@ -268,7 +268,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_sum}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_sum}!=null?$F{protocol_form_sum}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="240" y="179" width="314" height="16" uuid="788fd077-ac3e-4d6c-b97e-b7c713d86423">
@@ -280,7 +280,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_term}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_term}!=null?$F{protocol_form_term}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="240" y="99" width="314" height="16" uuid="a18dfe75-c505-4ef4-b35b-19612a8dca61">
@@ -292,7 +292,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_client_inn}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_client_inn}!=null?$F{protocol_form_client_inn}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="31" y="51" width="523" height="16" uuid="f945901a-9997-4580-b7ae-b07e9bc8f175">
@@ -352,7 +352,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_special_cond}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_special_cond}!=null?$F{protocol_form_special_cond}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="31" y="259" width="209" height="16" uuid="a0eb98bd-4c11-4205-a8c8-c956988a8a09">
@@ -376,7 +376,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_loan_product}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_loan_product}!=null?$F{protocol_form_loan_product}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="195" width="30" height="16" uuid="32466eee-cad1-4a78-b500-2906bd7a936b">
@@ -460,7 +460,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_client_fio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_client_fio}!=null?$F{protocol_form_client_fio}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="240" y="163" width="314" height="16" uuid="15e66a87-7c7e-4c1b-b20b-8979c106beda">
@@ -472,7 +472,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_rate}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_rate}!=null?$F{protocol_form_rate}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="31" y="195" width="209" height="16" uuid="43f5e64f-f21a-4d8a-9e0e-2a6d974b27cd">
@@ -544,7 +544,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_repayment_type}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_repayment_type}!=null?$F{protocol_form_repayment_type}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="83" width="30" height="16" uuid="0f1de8b9-19c5-4987-a8d7-7d0924b12c77">
@@ -640,7 +640,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_finance_source}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_finance_source}!=null?$F{protocol_form_finance_source}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="31" y="83" width="209" height="16" uuid="e9c0a041-9ac6-48cd-a222-548c176ce247">
@@ -701,7 +701,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_emp_post}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_emp_post}!=null?$F{protocol_form_emp_post}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="16" width="30" height="16" uuid="c84dd154-1702-4935-92d2-7ba2c3f6a88b">
@@ -726,7 +726,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{protocol_form_emp_fio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{protocol_form_emp_fio}!=null?$F{protocol_form_emp_fio}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="0" width="30" height="16" uuid="2de3764c-6c40-49a6-af32-219194380dec">
@@ -757,7 +757,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Результаты голосования по заявке № " +$F{protocol_form_request_number}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Результаты голосования по заявке № " +($F{protocol_form_request_number}!=null?$F{protocol_form_request_number}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="20">
@@ -766,7 +766,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Решение по заявке № " +$F{protocol_form_request_number}+ " повестки дня: "]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Решение по заявке № " +($F{protocol_form_request_number}!=null?$F{protocol_form_request_number}:"")+ " повестки дня: "]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

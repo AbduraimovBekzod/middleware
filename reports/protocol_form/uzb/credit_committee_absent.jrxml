@@ -11,7 +11,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{status}+", "+$F{post}+", "+$F{fio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{status}!=null?$F{status}+",":"")+($F{post}!=null?$F{post}+",":"") +($F{fio}!=null?$F{fio}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

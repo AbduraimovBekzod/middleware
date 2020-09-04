@@ -58,15 +58,15 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="20" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{from}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{from}!=null?$F{from}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="76" y="227" width="250" height="50" uuid="d2998bc0-e7a5-457b-a119-67f14b73299c"/>
 				<textElement verticalAlignment="Middle" markup="html">
 					<font fontName="DejaVu Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Вх. № <u>"+$F{in_number}+"</u>"+
-"<br><br>Исх. № <u>"+$F{out_number}+"</u>"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Вх. № <u>"+($F{in_number}!=null?$F{in_number}:"")+"</u>"+
+"<br><br>Исх. № <u>"+($F{out_number}!=null?$F{out_number}:"")+"</u>"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="326" y="227" width="212" height="50" uuid="88f7627b-1b97-4c5a-ab32-27c545856747"/>
@@ -88,7 +88,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="12" isItalic="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{text}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{text}!=null?$F{text}:"")]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="0" y="440" width="555" height="30" uuid="15f220ca-aa99-4bfa-aa79-8eb69e5a509a"/>
@@ -128,24 +128,24 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
 					<font fontName="DejaVu Serif" size="12" isBold="true" isItalic="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["<u>"+$F{action}+"</u>"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["<u>"+($F{action}!=null?$F{action}:"")+"</u>"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="54" y="65" width="185" height="30" uuid="21b70219-9440-468b-9472-7a276b75f748"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Дата: "+$F{date}+ " г."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Дата: "+($F{date}!=null?$F{date}:"")+ " г."]]></textFieldExpression>
 			</textField>
 			<line>
 				<reportElement x="303" y="68" width="191" height="1" uuid="80a331d1-b1e9-43e6-85a5-ac306d3104cd"/>
 			</line>
 			<textField>
-				<reportElement x="382" y="65" width="112" height="30" uuid="35489dfb-b825-452a-b482-2f0ef4aaa91a"/>
+				<reportElement x="303" y="65" width="191" height="30" uuid="35489dfb-b825-452a-b482-2f0ef4aaa91a"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{h_emp}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{h_emp}!=null?$F{h_emp}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 	</lastPageFooter>

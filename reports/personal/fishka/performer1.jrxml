@@ -12,7 +12,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA["• "+$F{name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{name}!=null?"• "+$F{name}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
