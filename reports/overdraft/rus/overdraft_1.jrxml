@@ -25,6 +25,7 @@
 	<parameter name="overdraft_committee_decision_number" class="java.lang.String"/>
 	<parameter name="overdraft_borrower_passport_issue_date" class="java.lang.String"/>
 	<parameter name="overdraft_committee_decision_date" class="java.lang.String"/>
+	<parameter name="overdraft_percent_rate_word" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -41,36 +42,28 @@
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="310" y="40" width="210" height="69" forecolor="#5293E3" uuid="2d619e6a-c90d-4f4b-bea0-53d5c874725e"/>
+				<reportElement x="320" y="40" width="199" height="69" forecolor="#5293E3" uuid="2d619e6a-c90d-4f4b-bea0-53d5c874725e"/>
 				<textElement verticalAlignment="Top">
 					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="109" width="480" height="50" uuid="2e71e14e-b5b5-4de7-96a1-9dc135a47654"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{PSK_number}+
-"\n"+$P{PSK_words}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="40" y="170" width="480" height="20" uuid="b62f3167-d60b-4dff-86cc-0078a8af463d"/>
+				<reportElement x="40" y="191" width="480" height="20" uuid="b62f3167-d60b-4dff-86cc-0078a8af463d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Кредитный договор о выделении кредита Овердрафт № "+$P{overdraft_number}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="201" width="240" height="19" uuid="7b1f7b94-0356-4c46-b6ff-81fe8f554286"/>
+				<reportElement x="40" y="222" width="240" height="19" uuid="7b1f7b94-0356-4c46-b6ff-81fe8f554286"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{overdraft_city}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="201" width="240" height="19" uuid="ce5b629f-9504-4f96-b7fc-a304208984c4">
+				<reportElement x="280" y="222" width="240" height="19" uuid="ce5b629f-9504-4f96-b7fc-a304208984c4">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -79,14 +72,14 @@
 				<textFieldExpression><![CDATA[$P{overdraft_date}+" год"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="240" width="480" height="130" uuid="8088e279-a3ad-4d3f-ac67-03d449f6acfb"/>
+				<reportElement x="40" y="261" width="480" height="130" uuid="8088e279-a3ad-4d3f-ac67-03d449f6acfb"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t"+$P{overdraft_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{overdraft_filial_name} +" отделением/филиалом Банка "+$P{overdraft_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{overdraft_doverennost_number}+" от "+$P{overdraft_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{overdraft_borrower_fio}+" проживающий(ая) "+$P{overdraft_borrower_address}+" паспорт серии "+$P{overdraft_borrower_passport_number}+" выдан "+$P{overdraft_borrower_passport_issue_by}+" "+$P{overdraft_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="413" width="480" height="371" uuid="a1be6f3d-c9e5-40f9-a7b6-6c1cbf3b3ccc"/>
+				<reportElement x="40" y="434" width="480" height="356" uuid="a1be6f3d-c9e5-40f9-a7b6-6c1cbf3b3ccc"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -100,11 +93,53 @@
 "\n\t1.8.	Согласно настоященму Договору, погашение кредита овердрафт осуществляется псоредством заработной платы, пенсии или других не запрещенных средств, поступивших на личную пластиковую карту Заемщика,  а также другими способами, не противоречащими законодательству."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="393" width="480" height="20" uuid="bfda75d6-d2ba-4371-8b5a-12671212ebff"/>
+				<reportElement x="40" y="414" width="480" height="20" uuid="bfda75d6-d2ba-4371-8b5a-12671212ebff"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1. Предмет Договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="150" width="207" height="30" uuid="db6bef96-dfd2-41d7-b108-95d7e86275d1"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[Полная процентная ставка с учетом расходов]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="247" y="120" width="273" height="30" uuid="9bfd27aa-b8c6-47cf-8a3c-9a3e5ce7340f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{overdraft_percent_rate}+"%"+
+"\n("+$P{overdraft_percent_rate_word}+")"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="150" width="273" height="30" uuid="303cb1db-fccc-44e3-b01e-bbeacee83539"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PSK_number}+"%"+
+"\n("+$P{PSK_words}+")"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="120" width="207" height="30" uuid="3aacf861-bd1a-49f2-8cef-527c8343c770"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[Процентная ставка по кредиту]]></text>
 			</staticText>
 		</band>
 	</title>

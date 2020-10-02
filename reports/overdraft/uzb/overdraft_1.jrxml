@@ -25,6 +25,7 @@
 	<parameter name="overdraft_committee_decision_number" class="java.lang.String"/>
 	<parameter name="overdraft_borrower_passport_issue_date" class="java.lang.String"/>
 	<parameter name="overdraft_committee_decision_date" class="java.lang.String"/>
+	<parameter name="overdraft_percent_rate_word" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -41,45 +42,37 @@
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="109" width="480" height="50" uuid="31af4293-b951-4e17-b9c9-daf79d0ec51e"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Кредитнинг тўлиқ қиймати \n"+$P{PSK_number}+
-"\n"+$P{PSK_words}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="40" y="170" width="480" height="20" uuid="c47d866d-2e74-43d7-a938-a35533bc86f2"/>
+				<reportElement x="40" y="189" width="480" height="20" uuid="c47d866d-2e74-43d7-a938-a35533bc86f2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Овердрафт кредити бериш тўғрисида кредит шартномаси № "+$P{overdraft_number}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="201" width="240" height="19" uuid="a15bf89c-93eb-4fba-ac0f-820dcf25f973"/>
+				<reportElement x="40" y="220" width="240" height="19" uuid="a15bf89c-93eb-4fba-ac0f-820dcf25f973"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{overdraft_city}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="201" width="240" height="19" uuid="172d1fc5-574a-445c-a826-5b484ae59cb3">
+				<reportElement x="280" y="220" width="240" height="19" uuid="172d1fc5-574a-445c-a826-5b484ae59cb3">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["20__ йил "+$P{overdraft_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{overdraft_date}+"йил"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="240" width="480" height="130" uuid="d2161a69-c5cd-4409-81a9-4c56b38e42c0"/>
+				<reportElement x="40" y="259" width="480" height="130" uuid="d2161a69-c5cd-4409-81a9-4c56b38e42c0"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки» акциядорлик жамиятининг "+$P{overdraft_filial_name}+" бўлими/филиали (кейинги ўринларда–Банк) Низом ҳамда 20__ йил __ "+$P{overdraft_doverennost_date}+" даги "+$P{overdraft_doverennost_number}+"  - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{overdraft_bank_name}+" бўлими/филиали бошқарувчиси "+$P{overdraft_emp_fio}+" бир томондан ва "+$P{overdraft_borrower_address}+" да яшовчи, "+$P{overdraft_borrower_passport_issue_by}+" томонидан "+$P{overdraft_borrower_passport_issue_date}+" йилда берилган № "+$P{overdraft_borrower_passport_number}+" паспорт маълумотларига эга "+$P{overdraft_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="390" width="480" height="340" uuid="210b98d3-ec48-42c3-b24a-34cad2f56d05"/>
+				<reportElement x="40" y="409" width="480" height="340" uuid="210b98d3-ec48-42c3-b24a-34cad2f56d05"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -93,7 +86,7 @@
 "\n\t1.8.	Ушбу шартномага асосан берилган овердрафтни қайтариш қарздорнинг иш ҳақи, пенсияси ёки қонун ҳужжатларида тақиқланмаган бошқа маблағлари унинг банк пластик карточкасига кирим қилиш орқали ва кредитни сўндиришнинг қонунчиликда таъқиқланмаган бошқа усуллари ёрдамида амалга оширилади."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="370" width="480" height="20" uuid="626457cd-93f6-4c1b-aa9f-61e79643ab03"/>
+				<reportElement x="40" y="389" width="480" height="20" uuid="626457cd-93f6-4c1b-aa9f-61e79643ab03"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
@@ -108,6 +101,48 @@
 				</reportElement>
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="40" y="120" width="207" height="30" uuid="ac39a8e0-854c-4762-b30d-af233ad40aae"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[Кредит бўйича фоиз ставкаси]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="150" width="207" height="30" uuid="913989bd-1a87-48f4-8524-9d5f66145178"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[тўла фоизли ойлик маош ҳисобга олган ҳолда харажатларни]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="247" y="120" width="273" height="30" uuid="fbac677c-afc0-4f02-b49a-eda3e26df0ae"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{overdraft_percent_rate}+"%"+
+"\n("+$P{overdraft_percent_rate_word}+")"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="150" width="273" height="30" uuid="4234e813-4f3f-4374-a3c7-46e3856939aa"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PSK_number}+"%"+
+"\n("+$P{PSK_words}+")"]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 </jasperReport>

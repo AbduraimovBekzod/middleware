@@ -58,6 +58,7 @@ public class ConsumerCredit {
             parameters.put("consumer_seller_contract_date", requestObj.getString("consumer_seller_contract_date"));
             parameters.put("consumer_guarantee_surety", requestObj.getString("consumer_guarantee_surety"));
             parameters.put("consumer_borrower_phone", requestObj.getString("consumer_borrower_phone"));
+			parameters.put("consumer_percent_rate_word", requestObj.getString("consumer_percent_rate_word"));
             if (requestObj.getInt("consumer_loan_term") <= 12) parameters.put("consumer_account", "12501");
             else parameters.put("consumer_account", "14901");
 
