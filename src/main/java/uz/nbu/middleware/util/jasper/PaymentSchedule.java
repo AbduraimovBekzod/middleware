@@ -14,6 +14,44 @@ public class PaymentSchedule {
                 JasperCompileManager.compileReport(dir + "reports/payment_schedule/rus/payment_schedule.jrxml"):
                 JasperCompileManager.compileReport(dir + "reports/payment_schedule/uzb/payment_schedule.jrxml");
 
+		JSONArray paymentSchedule = requestObj.getJSONArray("payment_schedule_month");
+
+        for (int i = 0; i < paymentSchedule.length(); i++) {
+            JSONObject tempJsonObject = paymentSchedule.getJSONObject(i);
+            String tempMonthBegin = tempJsonObject.getString("month_begin");
+            String tempPercent = tempJsonObject.getString("percent");
+            String tempMainDebt = tempJsonObject.getString("main_debt");
+            String tempTotal = tempJsonObject.getString("total");
+            String tempMonthEnd = tempJsonObject.getString("month_end");
+
+            tempMonthBegin = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempMonthBegin));
+            tempPercent = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempPercent));
+            tempMainDebt = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempMainDebt));
+            tempTotal = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempTotal));
+            tempMonthEnd = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempMonthEnd));
+
+            tempMonthBegin = tempMonthBegin.replaceAll(",", " ");
+            tempPercent = tempPercent.replaceAll(",", " ");
+            tempMainDebt = tempMainDebt.replaceAll(",", " ");
+            tempTotal = tempTotal.replaceAll(",", " ");
+            tempMonthEnd = tempMonthEnd.replaceAll(",", " ");
+
+            tempJsonObject.remove("month_begin");
+            tempJsonObject.put("month_begin", tempMonthBegin);
+            tempJsonObject.remove("percent");
+            tempJsonObject.put("percent", tempPercent);
+            tempJsonObject.remove("main_debt");
+            tempJsonObject.put("main_debt", tempMainDebt);
+            tempJsonObject.remove("total");
+            tempJsonObject.put("total", tempTotal);
+            tempJsonObject.remove("month_end");
+            tempJsonObject.put("month_end", tempMonthEnd);
+
+            paymentSchedule.put(i, tempJsonObject);
+        }
+
+        requestObj.put("payment_schedule_month", paymentSchedule);
+
         String str = requestObj.toString();
 
         try (ByteArrayInputStream is = new ByteArrayInputStream(str.getBytes())) {

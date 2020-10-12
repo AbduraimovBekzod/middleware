@@ -20,6 +20,16 @@
 	<field name="total_debt" class="java.lang.String">
 		<fieldDescription><![CDATA[total_debt]]></fieldDescription>
 	</field>
+	<field name="filial_name" class="java.lang.String"/>
+	<field name="filial_address" class="java.lang.String"/>
+	<field name="filial_inn" class="java.lang.String"/>
+	<field name="filial_phone" class="java.lang.String"/>
+	<field name="borrower_fio" class="java.lang.String"/>
+	<field name="borrower_address" class="java.lang.String"/>
+	<field name="borrower_phone" class="java.lang.String"/>
+	<field name="borrower_passport_number" class="java.lang.String"/>
+	<field name="borrower_passport_issue_by" class="java.lang.String"/>
+	<field name="borrower_passport_issue_date" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -226,4 +236,57 @@
 			</textField>
 		</band>
 	</detail>
+	<lastPageFooter>
+		<band height="232">
+			<staticText>
+				<reportElement x="45" y="23" width="230" height="20" uuid="802875ad-2d58-47f4-a47c-d490e897c0ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[БАНК:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="23" width="220" height="20" uuid="8c0bef67-0df9-43df-90b8-4d5f7d5e9039"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="45" y="43" width="230" height="169" uuid="fbcebe22-80a5-47f5-8e67-9cde4a96ea68"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Банкнинг "+$F{filial_name}+
+"\n\nМанзил: "+$F{filial_address}+
+"\n\nСТИР "+$F{filial_inn}+
+"\n\nТелефон "+$F{filial_phone}+
+"\n\nБошқарувчи \n_____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"+
+"\nБош бухгалтер \n___________________ "+
+"\n                                   (Ф.И.О. ва имзо)"+
+"\n\n                                м.ў."+
+"\nХуқуқшунос ____________________ "+
+"\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="43" width="220" height="149" uuid="bac3f756-4911-4aaf-803f-9b2bbc9f4959"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ф.И.О. "+$F{borrower_fio}+
+"\n\nМанзил "+$F{borrower_address}+
+"\n\nТелефон рақами "+$F{borrower_phone}+
+"\n\nПаспорт маълумотлари  "+$F{borrower_passport_number}+", "+$F{borrower_passport_issue_by}+" томонидан "+$F{borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="192" width="220" height="40" uuid="c3d3a419-3ed7-4a4e-819d-f27270d85ba3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[__________________
+(имзо)]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
 </jasperReport>
