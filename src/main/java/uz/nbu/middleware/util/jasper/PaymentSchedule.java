@@ -36,21 +36,26 @@ public class PaymentSchedule {
             tempTotal = tempTotal.replaceAll(",", " ");
             tempMonthEnd = tempMonthEnd.replaceAll(",", " ");
 
-            tempJsonObject.remove("month_begin");
             tempJsonObject.put("month_begin", tempMonthBegin);
-            tempJsonObject.remove("percent");
             tempJsonObject.put("percent", tempPercent);
-            tempJsonObject.remove("main_debt");
             tempJsonObject.put("main_debt", tempMainDebt);
-            tempJsonObject.remove("total");
             tempJsonObject.put("total", tempTotal);
-            tempJsonObject.remove("month_end");
             tempJsonObject.put("month_end", tempMonthEnd);
 
             paymentSchedule.put(i, tempJsonObject);
         }
 
         requestObj.put("payment_schedule_month", paymentSchedule);
+
+		String temp = requestObj.getString("total_percent");
+        temp = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(temp));
+        temp = temp.replaceAll(",", " ");
+        requestObj.put("total_percent", temp);
+
+        temp = requestObj.getString("total_debt");
+        temp = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(temp));
+        temp = temp.replaceAll(",", " ");
+        requestObj.put("total_debt", temp);
 
         String str = requestObj.toString();
 
