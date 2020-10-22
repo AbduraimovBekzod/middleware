@@ -53,7 +53,7 @@ public class PaymentSchedule {
         requestObj.put("total_percent", temp);
 
         temp = requestObj.getString("total_debt");
-        temp = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(temp));
+        temp = NumberFormat.getNumberInstance(Locale.US).format(Math.ceil(Double.parseDouble(temp)));
         temp = temp.replaceAll(",", " ");
         requestObj.put("total_debt", temp);
 
