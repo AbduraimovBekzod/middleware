@@ -27,11 +27,11 @@ public class InfoList {
         parameters.put("completion_date", requestObj.getString("completion_date"));
         parameters.put("loan_purpose", requestObj.getString("loan_purpose"));
         parameters.put("additional_costs", requestObj.getString("additional_costs"));
-        parameters.put("one_time_amount", requestObj.getString("one_time_amount"));
-        parameters.put("loan_rate_monetary_equivalent", requestObj.getString("loan_rate_monetary_equivalent"));
+        parameters.put("one_time_amount", String.format("%,.0f", Double.parseDouble(requestObj.getString("one_time_amount"))));
+        parameters.put("loan_rate_monetary_equivalent", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_rate_monetary_equivalent"))));
         parameters.put("loan_currency", requestObj.getString("loan_currency"));
         parameters.put("loan_term", requestObj.getString("loan_term"));
-        parameters.put("loan_amount", requestObj.getString("loan_amount"));
+        parameters.put("loan_amount", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_amount"))));
         parameters.put("loan_rate_percent", requestObj.getString("loan_rate_percent"));
         parameters.put("additional_costs_third_party", requestObj.getString("additional_costs_third_party"));
         parameters.put("additional_costs_bank", requestObj.getString("additional_costs_bank"));
