@@ -14,6 +14,9 @@ import java.util.Map;
 public class Overdraft {
     public ByteArrayOutputStream overdraft(JSONObject requestObj, Integer lang) throws JRException, IOException {
         String dir = "/home/";
+        
+        requestObj.put("overdraft_loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("overdraft_loan_sum"))).replaceAll(",", " "));
+        
         for (int i = 1; i <= 3; i++) { //запись параметров в report
 
             JasperReport jasperReport = lang == 0 ?

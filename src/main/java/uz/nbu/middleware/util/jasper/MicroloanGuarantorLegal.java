@@ -13,6 +13,10 @@ public class MicroloanGuarantorLegal {
     public ByteArrayOutputStream microloan_guarantor_legal(JSONObject requestObj, Integer lang) throws JRException, IOException {
 
 		String dir = "/home/";
+        
+        requestObj.put("loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_sum"))).replaceAll(",", " "));
+        requestObj.put("guarantor_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("guarantor_sum"))).replaceAll(",", " "));
+        
         String str = requestObj.toString();
 
         for(int i = 1; i <= 3; i++) {

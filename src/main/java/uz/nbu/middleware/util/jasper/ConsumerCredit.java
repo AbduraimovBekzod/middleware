@@ -15,6 +15,9 @@ public class ConsumerCredit {
 
     public ByteArrayOutputStream consumer_credit(JSONObject requestObj, Integer lang) throws JRException, IOException {
         String dir = "/home/";
+        
+        requestObj.put("consumer_loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("consumer_loan_sum"))).replaceAll(",", " "));
+        
         for (int i = 1; i <= 3; i++) { //запись параметров в report
 
             JasperReport jasperReport = lang == 0 ?

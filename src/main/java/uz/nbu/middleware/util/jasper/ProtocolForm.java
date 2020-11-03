@@ -18,6 +18,35 @@ public class ProtocolForm {
                 JasperCompileManager.compileReport(dir + "reports/protocol_form/rus/protocol_form.jrxml") :
                 JasperCompileManager.compileReport(dir + "reports/protocol_form/uzb/protocol_form.jrxml");
 
+        JSONArray element = requestObj.getJSONArray("protocol_form_element");
+        for (int i = 0; i < element.length(); i++) {
+            JSONObject temp = element.getJSONObject(i);
+
+            JSONObject loanSecurity = temp.getJSONObject("loan_security");
+            JSONArray guarantors = loanSecurity.getJSONArray("guarantors");
+            JSONArray insurances = loanSecurity.getJSONArray("insurances");
+
+            for (int g = 0; g < guarantors.length(); g++) {
+                JSONObject gTemp = guarantors.getJSONObject(g);
+                gTemp.put("protocol_form_guarantor_scope", String.format("%,.0f", Double.parseDouble(gTemp.getString("protocol_form_guarantor_scope"))).replaceAll(",", " "));
+                guarantors.put(g, gTemp);
+            }
+            loanSecurity.put("guarantors", guarantors);
+
+            for (int in = 0; in < insurances.length();in++) {
+                JSONObject gTemp = insurances.getJSONObject(in);
+                gTemp.put("protocol_form_insurance_scope", String.format("%,.0f", Double.parseDouble(gTemp.getString("protocol_form_insurance_scope"))).replaceAll(",", " "));
+                insurances.put(in, gTemp);
+            }
+            loanSecurity.put("insurances", insurances);
+            temp.put("loan_security", loanSecurity);
+
+            temp.put("protocol_form_sum", String.format("%,.0f", Double.parseDouble(temp.getString("protocol_form_sum"))).replaceAll(",", " "));
+            element.put(i, temp);
+        }
+
+        requestObj.put("protocol_form_element", element);
+        
         String str = requestObj.toString();
 
         try (ByteArrayInputStream is = new ByteArrayInputStream(str.getBytes())) {

@@ -15,6 +15,9 @@ public class Microloan {
     public ByteArrayOutputStream microloan(JSONObject requestObj, Integer lang) throws JRException, IOException {
 
         String dir = "/home/";
+        
+        requestObj.put("microloan_loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("microloan_loan_sum"))).replaceAll(",", " "));
+        
         for (int i = 1; i <= 3; i++) {//запись параметров в report
 
             JasperReport jasperReport = lang == 0 ?

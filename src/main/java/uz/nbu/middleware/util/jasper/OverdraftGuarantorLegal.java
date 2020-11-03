@@ -14,6 +14,10 @@ public class OverdraftGuarantorLegal {
 
         String str = requestObj.toString();
         String dir = "/home/";
+        
+        requestObj.put("loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_sum"))).replaceAll(",", " "));
+        requestObj.put("guarantor_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("guarantor_sum"))).replaceAll(",", " "));
+
         for(int i = 1; i <= 3; i++) {
             JasperReport jasperReport = lang == 0 ?
                     JasperCompileManager.compileReport(dir + "reports/overdraft_guarantor_legal/rus/overdraft_guarantor_legal_" + i + ".jrxml"):

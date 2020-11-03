@@ -18,44 +18,19 @@ public class PaymentSchedule {
 
         for (int i = 0; i < paymentSchedule.length(); i++) {
             JSONObject tempJsonObject = paymentSchedule.getJSONObject(i);
-            String tempMonthBegin = tempJsonObject.getString("month_begin");
-            String tempPercent = tempJsonObject.getString("percent");
-            String tempMainDebt = tempJsonObject.getString("main_debt");
-            String tempTotal = tempJsonObject.getString("total");
-            String tempMonthEnd = tempJsonObject.getString("month_end");
-
-            tempMonthBegin = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempMonthBegin));
-            tempPercent = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempPercent));
-            tempMainDebt = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempMainDebt));
-            tempTotal = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempTotal));
-            tempMonthEnd = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(tempMonthEnd));
-
-            tempMonthBegin = tempMonthBegin.replaceAll(",", " ");
-            tempPercent = tempPercent.replaceAll(",", " ");
-            tempMainDebt = tempMainDebt.replaceAll(",", " ");
-            tempTotal = tempTotal.replaceAll(",", " ");
-            tempMonthEnd = tempMonthEnd.replaceAll(",", " ");
-
-            tempJsonObject.put("month_begin", tempMonthBegin);
-            tempJsonObject.put("percent", tempPercent);
-            tempJsonObject.put("main_debt", tempMainDebt);
-            tempJsonObject.put("total", tempTotal);
-            tempJsonObject.put("month_end", tempMonthEnd);
+            tempJsonObject.put("month_begin", String.format("%,.2f", Double.parseDouble(tempJsonObject.getString("month_begin"))).replaceAll(",", " "));
+            tempJsonObject.put("percent", String.format("%,.2f", Double.parseDouble(tempJsonObject.getString("percent"))).replaceAll(",", " "));
+            tempJsonObject.put("main_debt", String.format("%,.2f", Double.parseDouble(tempJsonObject.getString("main_debt"))).replaceAll(",", " "));
+            tempJsonObject.put("total", String.format("%,.2f", Double.parseDouble(tempJsonObject.getString("total"))).replaceAll(",", " "));
+            tempJsonObject.put("month_end", String.format("%,.2f", Double.parseDouble(tempJsonObject.getString("month_end"))).replaceAll(",", " "));
 
             paymentSchedule.put(i, tempJsonObject);
         }
 
         requestObj.put("payment_schedule_month", paymentSchedule);
-
-		String temp = requestObj.getString("total_percent");
-        temp = NumberFormat.getNumberInstance(Locale.US).format(Double.parseDouble(temp));
-        temp = temp.replaceAll(",", " ");
-        requestObj.put("total_percent", temp);
-
-        temp = requestObj.getString("total_debt");
-        temp = NumberFormat.getNumberInstance(Locale.US).format(Math.ceil(Double.parseDouble(temp)));
-        temp = temp.replaceAll(",", " ");
-        requestObj.put("total_debt", temp);
+        requestObj.put("total_percent", String.format("%,.2f", Double.parseDouble(requestObj.getString("total_percent"))).replaceAll(",", " "));
+        requestObj.put("total_debt", String.format("%,.2f", Double.parseDouble(requestObj.getString("total_debt"))).replaceAll(",", " "));
+        requestObj.put("total_total", String.format("%,.2f", Double.parseDouble(requestObj.getString("total_total"))).replaceAll(",", " "));
 
         String str = requestObj.toString();
 
