@@ -18,6 +18,8 @@ public class ScoringResults {
                 JasperCompileManager.compileReport(dir + "reports/scoring_results/rus/scoring_results.jrxml") :
                 JasperCompileManager.compileReport(dir + "reports/scoring_results/uzb/scoring_results.jrxml");
 
+        functions func = new functions();
+
         Map<String, Object> parameters = new HashMap<String, Object>();
 
         parameters.put("result_emp_fio", requestObj.getString("result_emp_fio"));
@@ -27,7 +29,7 @@ public class ScoringResults {
         parameters.put("result_borrower_date", requestObj.getString("result_borrower_date"));
         parameters.put("result_borrower_request_number", requestObj.getString("result_borrower_request_number"));
         parameters.put("result_product", requestObj.getString("result_product"));
-        parameters.put("result_sum", requestObj.getString("result_sum"));
+        parameters.put("result_sum", func.indents(requestObj.getString("result_sum")));
         parameters.put("result_filial", requestObj.getString("result_filial"));
 
         JRDataSource dataSource = new JREmptyDataSource();

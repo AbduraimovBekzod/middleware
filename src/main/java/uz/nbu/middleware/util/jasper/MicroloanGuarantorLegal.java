@@ -14,8 +14,10 @@ public class MicroloanGuarantorLegal {
 
 		String dir = "/home/";
         
-        requestObj.put("loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_sum"))).replaceAll(",", " "));
-        requestObj.put("guarantor_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("guarantor_sum"))).replaceAll(",", " "));
+        functions func = new functions();
+
+        requestObj.put("loan_sum", func.indents(requestObj.getString("loan_sum")));
+        requestObj.put("guarantor_sum", func.indents(requestObj.getString("guarantor_sum")));
         
         String str = requestObj.toString();
 

@@ -16,7 +16,9 @@ public class Microloan {
 
         String dir = "/home/";
         
-        requestObj.put("microloan_loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("microloan_loan_sum"))).replaceAll(",", " "));
+        functions func = new functions();
+
+        requestObj.put("microloan_loan_sum", func.indents(requestObj.getString("microloan_loan_sum")));
         
         for (int i = 1; i <= 3; i++) {//запись параметров в report
 

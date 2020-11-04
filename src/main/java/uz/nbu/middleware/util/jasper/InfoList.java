@@ -15,6 +15,13 @@ public class InfoList {
     public ByteArrayOutputStream InfoList(JSONObject requestObj, Integer lang) throws JRException, IOException {
 
         String dir = "/home/";
+
+        functions func = new functions();
+
+        requestObj.put("one_time_amount", func.indents(requestObj.getString("one_time_amount")));
+        requestObj.put("loan_rate_monetary_equivalent", func.indents(requestObj.getString("loan_rate_monetary_equivalent")));
+        requestObj.put("loan_amount", func.indents(requestObj.getString("loan_amount")));
+
         //first part
         JasperReport jasperReport = lang == 0 ?
                 JasperCompileManager.compileReport(dir + "reports/info_list/rus/1-part.jrxml"):
@@ -27,11 +34,11 @@ public class InfoList {
         parameters.put("completion_date", requestObj.getString("completion_date"));
         parameters.put("loan_purpose", requestObj.getString("loan_purpose"));
         parameters.put("additional_costs", requestObj.getString("additional_costs"));
-        parameters.put("one_time_amount", String.format("%,.0f", Double.parseDouble(requestObj.getString("one_time_amount"))).replaceAll(",", " "));
-        parameters.put("loan_rate_monetary_equivalent", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_rate_monetary_equivalent"))).replaceAll(",", " "));
+        parameters.put("one_time_amount", requestObj.getString("one_time_amount"));
+        parameters.put("loan_rate_monetary_equivalent", requestObj.getString("loan_rate_monetary_equivalent"));
         parameters.put("loan_currency", requestObj.getString("loan_currency"));
         parameters.put("loan_term", requestObj.getString("loan_term"));
-        parameters.put("loan_amount", String.format("%,.0f", Double.parseDouble(requestObj.getString("loan_amount"))).replaceAll(",", " "));
+        parameters.put("loan_amount", requestObj.getString("loan_amount"));
         parameters.put("loan_rate_percent", requestObj.getString("loan_rate_percent"));
         parameters.put("additional_costs_third_party", requestObj.getString("additional_costs_third_party"));
         parameters.put("additional_costs_bank", requestObj.getString("additional_costs_bank"));

@@ -15,7 +15,9 @@ public class Overdraft {
     public ByteArrayOutputStream overdraft(JSONObject requestObj, Integer lang) throws JRException, IOException {
         String dir = "/home/";
         
-        requestObj.put("overdraft_loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("overdraft_loan_sum"))).replaceAll(",", " "));
+        functions func = new functions();
+
+        requestObj.put("overdraft_loan_sum", func.indents(requestObj.getString("overdraft_loan_sum")));
         
         for (int i = 1; i <= 3; i++) { //запись параметров в report
 

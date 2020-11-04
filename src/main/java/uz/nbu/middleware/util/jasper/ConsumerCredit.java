@@ -16,7 +16,9 @@ public class ConsumerCredit {
     public ByteArrayOutputStream consumer_credit(JSONObject requestObj, Integer lang) throws JRException, IOException {
         String dir = "/home/";
         
-        requestObj.put("consumer_loan_sum", String.format("%,.0f", Double.parseDouble(requestObj.getString("consumer_loan_sum"))).replaceAll(",", " "));
+        functions func = new functions();
+
+        requestObj.put("consumer_loan_sum", func.indents(requestObj.getString("consumer_loan_sum")));
         
         for (int i = 1; i <= 3; i++) { //запись параметров в report
 

@@ -18,35 +18,45 @@ public class ProtocolForm {
                 JasperCompileManager.compileReport(dir + "reports/protocol_form/rus/protocol_form.jrxml") :
                 JasperCompileManager.compileReport(dir + "reports/protocol_form/uzb/protocol_form.jrxml");
 
-        JSONArray element = requestObj.getJSONArray("protocol_form_element");
-        for (int i = 0; i < element.length(); i++) {
-            JSONObject temp = element.getJSONObject(i);
+        functions func = new functions();
 
-            JSONObject loanSecurity = temp.getJSONObject("loan_security");
-            JSONArray guarantors = loanSecurity.getJSONArray("guarantors");
-            JSONArray insurances = loanSecurity.getJSONArray("insurances");
+        if (requestObj.has("protocol_form_element")) {
+            JSONArray element = requestObj.getJSONArray("protocol_form_element");
+            for (int i = 0; i < element.length(); i++) {
+                JSONObject temp = element.getJSONObject(i);
 
-            for (int g = 0; g < guarantors.length(); g++) {
-                JSONObject gTemp = guarantors.getJSONObject(g);
-                gTemp.put("protocol_form_guarantor_scope", String.format("%,.0f", Double.parseDouble(gTemp.getString("protocol_form_guarantor_scope"))).replaceAll(",", " "));
-                guarantors.put(g, gTemp);
+                if (temp.has("loan_security")) {
+                    JSONObject loanSecurity = temp.getJSONObject("loan_security");
+
+                    if (loanSecurity.has("guarantors")) {
+                        JSONArray guarantors = loanSecurity.getJSONArray("guarantors");
+                        for (int g = 0; g < guarantors.length(); g++) {
+                            JSONObject gTemp = guarantors.getJSONObject(g);
+                            gTemp.put("protocol_form_guarantor_scope", func.indents(gTemp.getString("protocol_form_guarantor_scope")));
+                            guarantors.put(g, gTemp);
+                        }
+                        loanSecurity.put("guarantors", guarantors);
+                    }
+                    if (loanSecurity.has("insurances")) {
+                        JSONArray insurances = loanSecurity.getJSONArray("insurances");
+
+
+                        for (int in = 0; in < insurances.length(); in++) {
+                            JSONObject gTemp = insurances.getJSONObject(in);
+                            gTemp.put("protocol_form_insurance_scope", func.indents(gTemp.getString("protocol_form_insurance_scope")));
+                            insurances.put(in, gTemp);
+                        }
+                        loanSecurity.put("insurances", insurances);
+                    }
+
+                    temp.put("loan_security", loanSecurity);
+                }
+                temp.put("protocol_form_sum", func.indents(temp.getString("protocol_form_sum")));
+                element.put(i, temp);
             }
-            loanSecurity.put("guarantors", guarantors);
-
-            for (int in = 0; in < insurances.length();in++) {
-                JSONObject gTemp = insurances.getJSONObject(in);
-                gTemp.put("protocol_form_insurance_scope", String.format("%,.0f", Double.parseDouble(gTemp.getString("protocol_form_insurance_scope"))).replaceAll(",", " "));
-                insurances.put(in, gTemp);
-            }
-            loanSecurity.put("insurances", insurances);
-            temp.put("loan_security", loanSecurity);
-
-            temp.put("protocol_form_sum", String.format("%,.0f", Double.parseDouble(temp.getString("protocol_form_sum"))).replaceAll(",", " "));
-            element.put(i, temp);
+            requestObj.put("protocol_form_element", element);
         }
 
-        requestObj.put("protocol_form_element", element);
-        
         String str = requestObj.toString();
 
         try (ByteArrayInputStream is = new ByteArrayInputStream(str.getBytes())) {
@@ -54,16 +64,17 @@ public class ProtocolForm {
 
             parametersMap.put(JsonQueryExecuterFactory.JSON_INPUT_STREAM, is);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parametersMap);
-            JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/protocol_form.pdf");
+            JasperExportManager.exportReportToPdfFile(jasperPrint, "output"+File.separator+"protocol_form.pdf");
         }
 
-        File file = new File(dir + "output/protocol_form.pdf");
+        File file = new File("output"+File.separator+"protocol_form.pdf");
 
         FileInputStream fis = new FileInputStream(file);
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
         byte[] buf = new byte[1024];
-        for (int readNum; (readNum = fis.read(buf)) != -1; ) {
+        for(int readNum; (readNum = fis.read(buf)) != -1;)
+        {
             bos.write(buf, 0, readNum);
         }
 
