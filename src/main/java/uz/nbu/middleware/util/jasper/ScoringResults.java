@@ -30,6 +30,7 @@ public class ScoringResults {
         parameters.put("result_borrower_request_number", requestObj.getString("result_borrower_request_number"));
         parameters.put("result_product", requestObj.getString("result_product"));
         parameters.put("result_sum", func.indents(requestObj.getString("result_sum")));
+        parameters.put("result_currency", requestObj.getString("result_currency"));
         parameters.put("result_filial", requestObj.getString("result_filial"));
 
         JRDataSource dataSource = new JREmptyDataSource();

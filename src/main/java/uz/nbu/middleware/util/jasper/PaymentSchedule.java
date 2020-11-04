@@ -2,6 +2,7 @@ package uz.nbu.middleware.util.jasper;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.query.JsonQueryExecuterFactory;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 import java.io.*;
 import java.util.HashMap;

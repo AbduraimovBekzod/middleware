@@ -46,7 +46,9 @@
 				<text><![CDATA[2. Повышенная процентная ставка за несвоевременную оплату задолженности по кредиту]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="45" y="110" width="240" height="30" uuid="e852c657-6a5c-43d2-809f-74491e18575d"/>
+				<reportElement stretchType="ElementGroupHeight" x="45" y="110" width="240" height="50" uuid="e852c657-6a5c-43d2-809f-74491e18575d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
 				</box>
@@ -79,9 +81,10 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{rate_for_late}+"%"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="285" y="110" width="250" height="30" uuid="a373c3f5-ffcd-4efa-80ff-91b1b5e61cd1">
+			<textField textAdjust="StretchHeight">
+				<reportElement stretchType="ContainerHeight" x="285" y="110" width="250" height="50" uuid="a373c3f5-ffcd-4efa-80ff-91b1b5e61cd1">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -92,7 +95,7 @@
 				<textFieldExpression><![CDATA[$P{collateral_loan}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="45" y="140" width="490" height="40" uuid="be322883-9e6f-4591-a695-b18dfb207115">
+				<reportElement positionType="FixRelativeToBottom" x="45" y="183" width="490" height="40" uuid="be322883-9e6f-4591-a695-b18dfb207115">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7"/>
@@ -102,14 +105,14 @@
 				<text><![CDATA[Сведения, приведенные в разделе 1 и 2 настоящего информационного листа, не являются окончательными и могут быть изменены в кредитном договоре. ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="45" y="180" width="490" height="30" uuid="1bd92754-ed22-47cd-a817-e33d146f5769"/>
+				<reportElement x="45" y="229" width="490" height="30" uuid="1bd92754-ed22-47cd-a817-e33d146f5769"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
 				<text><![CDATA[3-раздел. Список документов для получения кредита]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="45" y="210" width="490" height="94" uuid="a6a1966c-056e-42f2-b4f9-d4f924cc6f30"/>
+				<reportElement x="45" y="259" width="490" height="94" uuid="a6a1966c-056e-42f2-b4f9-d4f924cc6f30"/>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="8"/>
@@ -123,7 +126,7 @@
 4. Документы, связанные с обеспечением возвратности кредита.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="45" y="304" width="490" height="30" uuid="928374f4-bae6-4c6e-bc73-98cfb21b17b9"/>
+				<reportElement x="45" y="353" width="490" height="30" uuid="928374f4-bae6-4c6e-bc73-98cfb21b17b9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
@@ -140,7 +143,7 @@
 				<reportElement x="45" y="704" width="260" height="1" uuid="ebaa3109-ffdd-43dd-ac44-896ca54ccf8f"/>
 			</line>
 			<textField>
-				<reportElement x="45" y="335" width="490" height="220" uuid="abf8b7c6-d7ec-46a0-972c-48bd26e5c1e6"/>
+				<reportElement x="45" y="384" width="490" height="220" uuid="abf8b7c6-d7ec-46a0-972c-48bd26e5c1e6"/>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="8"/>

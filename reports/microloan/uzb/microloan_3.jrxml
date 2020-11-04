@@ -85,10 +85,10 @@
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Ф.И.О. "+$P{microloan_borrower_fio}+
+				<textFieldExpression><![CDATA[$P{microloan_borrower_fio}+
 "\n\nМанзил "+$P{microloan_borrower_address}+
 "\n\nТелефон рақами "+$P{microloan_borrower_phone}+
-"\n\nПаспорт маълумотлари "+$P{microloan_borrower_passport_number}+", "+$P{microloan_borrower_passport_issue_by}+" томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган."]]></textFieldExpression>
+"\n\nПаспорт маълумотлари "+$P{microloan_borrower_passport_number}+", "+$P{microloan_borrower_passport_issue_by}+" ИИБ томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="477" width="230" height="20" uuid="a2c14d08-dc0c-454f-81eb-08b75307e0e8"/>

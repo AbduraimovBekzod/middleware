@@ -48,7 +48,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="40" y="191" width="480" height="20" uuid="cbd0cf33-e6e0-4ba4-8952-6b84fc9e5e11"/>
@@ -71,14 +71,14 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{consumer_date} + " год"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{consumer_date} + " г."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="240" width="480" height="131" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" "+$P{consumer_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" ИИБ "+$P{consumer_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="391" width="480" height="283" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>

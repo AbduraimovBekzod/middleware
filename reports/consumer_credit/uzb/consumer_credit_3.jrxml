@@ -81,10 +81,10 @@
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Ф.И.О. "+$P{consumer_borrower_fio}+
+				<textFieldExpression><![CDATA[$P{consumer_borrower_fio}+
 "\n\nМанзил "+$P{consumer_borrower_address}+
 "\n\nТелефон рақами "+$P{consumer_borrower_phone}+
-"\n\nПаспорт маълумотлари  "+$P{consumer_borrower_passport_number}+", "+$P{consumer_borrower_passport_issue_by}+" томонидан "+$P{consumer_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
+"\n\nПаспорт маълумотлари  "+$P{consumer_borrower_passport_number}+", "+$P{consumer_borrower_passport_issue_by}+" ИИБ томонидан "+$P{consumer_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="300" y="714" width="220" height="40" uuid="c2492480-84ba-445f-b430-2d40d8dca66e"/>

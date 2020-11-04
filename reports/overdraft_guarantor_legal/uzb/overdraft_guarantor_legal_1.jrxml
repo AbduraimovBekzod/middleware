@@ -87,7 +87,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="40" y="120" width="480" height="20" uuid="c47d866d-2e74-43d7-a938-a35533bc86f2"/>
@@ -117,7 +117,7 @@
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\tЎзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки "+$F{filial}+" бундан буён матнда “Кредитор” деб юритилувчи номидан Ишончнома асосида иш юритувчи Банкнинг бошқарувчиси № "+$F{doverennost_number}+" "+$F{doverennost_date}+" бир томондан, ҳамда бундан буён матнда “Кафил” деб юритилувчи, "+$F{guarantor_name}+" номидан "+$F{director_fio}+" Уставга асосан иккинчи томондан, ҳамда бундан буён матнда “Қарздор” деб юритилувчи иккинчи томонидан, "+$F{borrower_passport_number}+" "+$F{borrower_passport_issue_by}+" томонидан "+$F{borrower_passport_issue_date}+" йилда берилган паспортга эга бўлган фуқаро "+$F{borrower_fio}+" учинчи томондан, қуйидагилар ҳақида ушбу шартномани туздилар:"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\tЎзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ "+$F{filial}+" бундан буён матнда “Кредитор” деб юритилувчи номидан Ишончнома асосида иш юритувчи Банкнинг бошқарувчиси № "+$F{doverennost_number}+" "+$F{doverennost_date}+" бир томондан, ҳамда бундан буён матнда “Кафил” деб юритилувчи, "+$F{guarantor_name}+" номидан "+$F{director_fio}+" Уставга асосан иккинчи томондан, ҳамда бундан буён матнда “Қарздор” деб юритилувчи иккинчи томонидан, "+$F{borrower_passport_number}+" "+$F{borrower_passport_issue_by}+" ИИБ томонидан "+$F{borrower_passport_issue_date}+" йилда берилган паспортга эга бўлган фуқаро "+$F{borrower_fio}+" учинчи томондан, қуйидагилар ҳақида ушбу шартномани туздилар:"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="330" width="480" height="330" uuid="210b98d3-ec48-42c3-b24a-34cad2f56d05"/>

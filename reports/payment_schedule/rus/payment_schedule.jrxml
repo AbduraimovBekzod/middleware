@@ -30,30 +30,29 @@
 	<field name="borrower_passport_number" class="java.lang.String"/>
 	<field name="borrower_passport_issue_by" class="java.lang.String"/>
 	<field name="borrower_passport_issue_date" class="java.lang.String"/>
+	<field name="debtor_end_date" class="java.lang.String"/>
+	<field name="debtor_begin_date" class="java.lang.String"/>
+	<field name="debtor_percent" class="java.lang.String"/>
+	<field name="debtor_sum" class="java.lang.String"/>
+	<field name="debtor_mfo" class="java.lang.String"/>
+	<field name="total_total" class="java.lang.String"/>
+	<field name="headerKD_fio" class="java.lang.String"/>
+	<field name="cm_fio" class="java.lang.String"/>
+	<field name="debtor_fio" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
 		<band height="130" splitType="Stretch">
 			<textField>
-				<reportElement x="80" y="49" width="400" height="30" uuid="59fe9fc8-7b30-4a97-ab68-081dac09a000"/>
+				<reportElement x="80" y="50" width="400" height="30" uuid="59fe9fc8-7b30-4a97-ab68-081dac09a000"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["График погашения кредита к Договору № "+$F{contract_number}+" от "+$F{contract_date} +" г."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="1" y="90" width="50" height="40" uuid="3f80369b-a97e-4dbd-859c-e3fd5e955fab"/>
-				<box>
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[Дата платежа]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="51" y="90" width="60" height="40" uuid="052e1df8-740b-48a4-b9f6-8d5f5dc87e3e"/>
+				<reportElement x="83" y="90" width="60" height="40" uuid="052e1df8-740b-48a4-b9f6-8d5f5dc87e3e"/>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -63,7 +62,10 @@
 				<text><![CDATA[Количество дней в месяце]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="111" y="90" width="40" height="40" uuid="3c68e23d-cf75-47ee-8475-f36f4f251d82"/>
+				<reportElement x="1" y="90" width="32" height="40" uuid="3c68e23d-cf75-47ee-8475-f36f4f251d82">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -73,17 +75,17 @@
 				<text><![CDATA[Месяц]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="151" y="90" width="90" height="40" uuid="eb85f155-ef04-4f27-a4bd-4bd65cdfc817"/>
+				<reportElement x="143" y="90" width="90" height="40" uuid="eb85f155-ef04-4f27-a4bd-4bd65cdfc817"/>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<text><![CDATA[Остаток на начало месяца]]></text>
+				<text><![CDATA[Остаток на начало]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="241" y="90" width="60" height="40" uuid="19219f89-0f05-4592-a6da-b7593d1cf74c"/>
+				<reportElement x="303" y="90" width="68" height="40" uuid="19219f89-0f05-4592-a6da-b7593d1cf74c"/>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -93,17 +95,7 @@
 				<text><![CDATA[Проценты]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="301" y="90" width="70" height="40" uuid="1ec3f0e1-4d17-459d-8518-736c64c6b5ad"/>
-				<box>
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[Основной долг]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="371" y="90" width="60" height="40" uuid="ab353594-5d3f-4502-8b1e-679488d749b2"/>
+				<reportElement x="371" y="90" width="69" height="40" uuid="ab353594-5d3f-4502-8b1e-679488d749b2"/>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -113,7 +105,7 @@
 				<text><![CDATA[Всего]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="431" y="90" width="124" height="40" uuid="40ca26f1-4647-4656-b99e-804457346f8b">
+				<reportElement x="440" y="90" width="115" height="40" uuid="40ca26f1-4647-4656-b99e-804457346f8b">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -122,8 +114,41 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<text><![CDATA[Остаток на конец месяца /
-Текущая задолжность]]></text>
+				<text><![CDATA[Остаток после погошения]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="81" y="0" width="399" height="20" uuid="cf44aeca-1226-4fda-a998-a902c99c5526"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{debtor_fio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="20" width="480" height="30" uuid="abdff805-2462-424b-a40c-1cc2540e47d9"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["МФО: "+$F{debtor_mfo}+", Сумма: "+$F{debtor_sum}+", Процентная ставка: "+$F{debtor_percent}+", Дата начала договора: "+$F{debtor_begin_date}+", Дата окончания договора: "+$F{debtor_end_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="33" y="90" width="50" height="40" uuid="3f80369b-a97e-4dbd-859c-e3fd5e955fab"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Дата платежа]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="90" width="70" height="40" uuid="1ec3f0e1-4d17-459d-8518-736c64c6b5ad"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Основной долг]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -139,7 +164,7 @@
 		</band>
 		<band height="20">
 			<textField>
-				<reportElement x="301" y="0" width="70" height="20" uuid="019ac30a-2198-4a2b-85ad-b96d8b028e1d">
+				<reportElement x="233" y="0" width="70" height="20" uuid="019ac30a-2198-4a2b-85ad-b96d8b028e1d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -151,7 +176,7 @@
 				<textFieldExpression><![CDATA[$F{total_debt}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="1" y="0" width="50" height="20" uuid="807a3083-a2e7-41d2-8a8b-5de52a28f5a4">
+				<reportElement x="1" y="0" width="32" height="20" uuid="807a3083-a2e7-41d2-8a8b-5de52a28f5a4">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -163,7 +188,7 @@
 				<text><![CDATA[Всего]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="111" y="0" width="40" height="20" uuid="7a6f4b24-67d4-4f6e-b4ab-b6f741e4cf41">
+				<reportElement x="83" y="0" width="60" height="20" uuid="7a6f4b24-67d4-4f6e-b4ab-b6f741e4cf41">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -175,7 +200,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="371" y="0" width="60" height="20" uuid="4c68cd27-3c3c-4f2a-adaa-afd63d84d6a2">
+				<reportElement x="143" y="0" width="90" height="20" uuid="9f58156e-d688-4130-84a1-bfa0789afd5b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -187,19 +212,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="151" y="0" width="90" height="20" uuid="9f58156e-d688-4130-84a1-bfa0789afd5b">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<box>
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="431" y="0" width="124" height="20" uuid="1f88866a-778d-46eb-961b-ec2710087d4c">
+				<reportElement x="440" y="0" width="115" height="20" uuid="1f88866a-778d-46eb-961b-ec2710087d4c">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -212,7 +225,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="51" y="0" width="60" height="20" uuid="3fc01960-fc73-4e13-8876-a5f991c1a30e">
+				<reportElement x="33" y="0" width="50" height="20" uuid="3fc01960-fc73-4e13-8876-a5f991c1a30e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -224,7 +237,19 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="241" y="0" width="60" height="20" uuid="6e54428c-8bf7-42fd-853c-0b0251e87399">
+				<reportElement x="371" y="0" width="69" height="20" uuid="417224ae-c820-4eb1-a1c0-b1c409d869f4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="303" y="0" width="68" height="20" uuid="6e54428c-8bf7-42fd-853c-0b0251e87399">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -238,56 +263,49 @@
 		</band>
 	</detail>
 	<lastPageFooter>
-		<band height="281">
+		<band height="74">
 			<staticText>
-				<reportElement x="40" y="16" width="230" height="20" uuid="0427063b-b2d8-4d8e-a44c-98db28fa6f50"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="16" y="14" width="184" height="20" uuid="9a17ea85-d0fb-413a-b03b-189541db20f6"/>
+				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[БАНК:]]></text>
+				<text><![CDATA[Заёмщик]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="16" width="220" height="20" uuid="0b37d113-a9ea-4b43-81ea-a9af0103aafe"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="16" y="34" width="184" height="20" uuid="6396552a-dbe4-4b7e-acd5-13f853e7e18d"/>
+				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ЗАЕМЩИК:]]></text>
+				<text><![CDATA[Начальник кредитного отдела]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="40" y="36" width="230" height="245" uuid="48ef64f4-df47-442c-ae01-e1d326ad010f"/>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Serif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{filial_name}+" филиал/ отдел Банка"+
-"\n\nАдрес: "+$F{filial_address}+
-"\n\nИНН "+$F{filial_inn}+
-"\n\nТелефон "+$F{filial_phone}+
-"\n\nУправляющий \n_____________________ "+
-"\n                                    (Ф.И.О. и подпись)"+
-"\nГлавный бухгалтер \n___________________ "+
-"\n                                    (Ф.И.О. и подпись)"+
-"\n\n                                М.П."+
-"\nЮрист ____________________ "+
-"\n                                    (Ф.И.О. и подпись)"]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="300" y="36" width="220" height="169" uuid="8fe02493-4ad4-4135-8467-cb51b670e947"/>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Serif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Ф.И.О. "+$F{borrower_fio}+
-"\n\nАдрес "+$F{borrower_address}+
-"\n\nТелефон "+$F{borrower_phone}+
-"\n\nПаспортные данные "+$F{borrower_passport_number}+", выдан "+$F{borrower_passport_issue_by}+"  "+$F{borrower_passport_issue_date}+"."]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement x="300" y="230" width="220" height="40" uuid="0c6a5889-4abc-4264-bd67-da48496b05f0"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="16" y="54" width="184" height="20" uuid="eada2420-219b-40d4-b9b1-1f56ab7c9988"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Кредитный менеджер]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="209" y="14" width="270" height="20" uuid="d107f8d8-2fbf-49f4-8b89-95092060d489"/>
+				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<text><![CDATA[__________________
-(подпись)]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA[$F{debtor_fio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="34" width="270" height="20" uuid="b2357523-42bf-4304-84f9-6cd21e65a774"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{headerKD_fio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="54" width="270" height="20" uuid="23a6a98a-09a5-4a83-9aff-fb69c25db3fc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cm_fio}]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 </jasperReport>

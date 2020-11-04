@@ -86,10 +86,10 @@
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Ф.И.О. "+$P{microloan_borrower_fio}+
+				<textFieldExpression><![CDATA[$P{microloan_borrower_fio}+
 "\n\nАдрес "+$P{microloan_borrower_address}+
 "\n\nТелефон "+$P{microloan_borrower_phone}+
-"\n\nПаспортные данные "+$P{microloan_borrower_passport_number}+", выдан "+$P{microloan_borrower_passport_issue_by}+" "+$P{microloan_borrower_passport_issue_date}+"."]]></textFieldExpression>
+"\n\nПаспортные данные "+$P{microloan_borrower_passport_number}+", выдан "+$P{microloan_borrower_passport_issue_by}+" ИИБ "+$P{microloan_borrower_passport_issue_date}+"г."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="472" width="230" height="20" uuid="91305f65-a003-4add-8cdc-1fc237eb9a66"/>

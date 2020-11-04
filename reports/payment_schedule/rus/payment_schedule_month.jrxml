@@ -12,7 +12,7 @@
 	<detail>
 		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="50" y="0" width="60" height="20" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18">
+				<reportElement x="82" y="0" width="60" height="20" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -25,7 +25,7 @@
 				<textFieldExpression><![CDATA[$F{month_days}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="110" y="0" width="40" height="20" uuid="92c50a7b-7485-4acd-a57b-a614461cf177">
+				<reportElement x="0" y="0" width="32" height="20" uuid="92c50a7b-7485-4acd-a57b-a614461cf177">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -37,7 +37,7 @@
 				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="0" width="50" height="20" uuid="a19f0297-0944-4d44-a426-e3430c1afca4">
+				<reportElement x="32" y="0" width="50" height="20" uuid="a19f0297-0944-4d44-a426-e3430c1afca4">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -49,7 +49,7 @@
 				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="150" y="0" width="90" height="20" uuid="44133ab6-f3b8-4ce0-b430-bb9e83b8e728">
+				<reportElement x="142" y="0" width="90" height="20" uuid="44133ab6-f3b8-4ce0-b430-bb9e83b8e728">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -61,7 +61,7 @@
 				<textFieldExpression><![CDATA[$F{month_begin}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="0" width="60" height="20" uuid="b13ab02e-9172-44ee-94f4-e222d55b1a9d">
+				<reportElement x="302" y="0" width="68" height="20" uuid="b13ab02e-9172-44ee-94f4-e222d55b1a9d">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -73,7 +73,7 @@
 				<textFieldExpression><![CDATA[$F{percent}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="0" width="70" height="20" uuid="2b623658-5e6d-4aa7-9f25-5849a6e7fc5e">
+				<reportElement x="232" y="0" width="70" height="20" uuid="2b623658-5e6d-4aa7-9f25-5849a6e7fc5e">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -85,7 +85,7 @@
 				<textFieldExpression><![CDATA[$F{main_debt}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="370" y="0" width="60" height="20" uuid="6c91ac33-457e-46a4-a194-b095badf963b">
+				<reportElement x="370" y="0" width="69" height="20" uuid="6c91ac33-457e-46a4-a194-b095badf963b">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -97,7 +97,7 @@
 				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="430" y="0" width="124" height="20" uuid="1c3987aa-c3e0-47cf-bbb0-c839be078a9b">
+				<reportElement x="439" y="0" width="115" height="20" uuid="1c3987aa-c3e0-47cf-bbb0-c839be078a9b">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>

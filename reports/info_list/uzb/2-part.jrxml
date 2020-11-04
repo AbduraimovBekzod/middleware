@@ -49,7 +49,9 @@
 				<text><![CDATA[2. Кредит бўйича қарздорлик ўз вақтида сўндирилмаганлиги учун кредит суммасидан тўланадиган оширилган фоиз ставкаси миқдори]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="120" width="240" height="30" uuid="dd3e9122-8cbb-4a77-9354-5f794f5502ff"/>
+				<reportElement x="40" y="120" width="240" height="50" uuid="dd3e9122-8cbb-4a77-9354-5f794f5502ff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
 				</box>
@@ -83,8 +85,9 @@
 				<textFieldExpression><![CDATA[$P{rate_for_late}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="120" width="250" height="30" uuid="2f4f96ae-d56b-4e96-bda3-a9665c467c92">
+				<reportElement x="280" y="120" width="250" height="50" uuid="2f4f96ae-d56b-4e96-bda3-a9665c467c92">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -95,7 +98,7 @@
 				<textFieldExpression><![CDATA[$P{collateral_loan}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="150" width="490" height="40" uuid="19874cda-7712-4f34-8cae-42d5e07f782f">
+				<reportElement x="40" y="186" width="490" height="40" uuid="19874cda-7712-4f34-8cae-42d5e07f782f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7"/>
@@ -105,14 +108,14 @@
 				<text><![CDATA[Мазкур ахборот варақасининг 1 ва 2-бўлимларда келтирилган маълумотлар якуний ҳисобланмайди ва кредит шартномасида ўзгартирилиши мумкин.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="190" width="490" height="30" uuid="4639a591-43e5-4de6-b573-be7e9b8e22ec"/>
+				<reportElement x="40" y="226" width="490" height="30" uuid="4639a591-43e5-4de6-b573-be7e9b8e22ec"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
 				<text><![CDATA[3-бўлим. Кредит олиш учун тақдим этилиши лозим бўлган ҳужжатлар рўйхати]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="220" width="490" height="90" uuid="71ae74bf-780f-4b93-a32b-3a6501a9e5a1"/>
+				<reportElement x="40" y="256" width="490" height="90" uuid="71ae74bf-780f-4b93-a32b-3a6501a9e5a1"/>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="8"/>
@@ -126,7 +129,7 @@
 4. кредит қайтарилиши таъминотига доир ҳужжатлар. ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="310" width="490" height="30" uuid="bfec8ad6-4df4-41ba-9c68-a264f167af87"/>
+				<reportElement x="40" y="346" width="490" height="30" uuid="bfec8ad6-4df4-41ba-9c68-a264f167af87"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
@@ -143,7 +146,7 @@
 				<reportElement x="45" y="708" width="260" height="1" uuid="acf56964-de4d-4364-b8e4-d6c365bf0da6"/>
 			</line>
 			<textField>
-				<reportElement x="40" y="340" width="490" height="210" uuid="509294b6-5d66-4fe5-9722-6e0210cf99b0"/>
+				<reportElement x="40" y="376" width="490" height="210" uuid="509294b6-5d66-4fe5-9722-6e0210cf99b0"/>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="8"/>

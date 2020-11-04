@@ -39,7 +39,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="40" y="189" width="480" height="20" uuid="c47d866d-2e74-43d7-a938-a35533bc86f2"/>
@@ -69,7 +69,7 @@
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки» акциядорлик жамиятининг "+$P{overdraft_filial_name}+" бўлими/филиали (кейинги ўринларда–Банк) Низом ҳамда 20__ йил __ "+$P{overdraft_doverennost_date}+" даги "+$P{overdraft_doverennost_number}+"  - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{overdraft_bank_name}+" бўлими/филиали бошқарувчиси "+$P{overdraft_emp_fio}+" бир томондан ва "+$P{overdraft_borrower_address}+" да яшовчи, "+$P{overdraft_borrower_passport_issue_by}+" томонидан "+$P{overdraft_borrower_passport_issue_date}+" йилда берилган № "+$P{overdraft_borrower_passport_number}+" паспорт маълумотларига эга "+$P{overdraft_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ» акциядорлик жамиятининг "+$P{overdraft_filial_name}+" бўлими/филиали (кейинги ўринларда–Банк) Низом ҳамда 20__ йил __ "+$P{overdraft_doverennost_date}+" даги "+$P{overdraft_doverennost_number}+"  - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{overdraft_bank_name}+" бўлими/филиали бошқарувчиси "+$P{overdraft_emp_fio}+" бир томондан ва "+$P{overdraft_borrower_address}+" да яшовчи, "+$P{overdraft_borrower_passport_issue_by}+" ИИБ томонидан "+$P{overdraft_borrower_passport_issue_date}+" йилда берилган № "+$P{overdraft_borrower_passport_number}+" паспорт маълумотларига эга "+$P{overdraft_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="409" width="480" height="340" uuid="210b98d3-ec48-42c3-b24a-34cad2f56d05"/>

@@ -46,7 +46,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="40" y="191" width="480" height="20" uuid="b62f3167-d60b-4dff-86cc-0078a8af463d"/>
@@ -69,21 +69,21 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{overdraft_date}+" год"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{overdraft_date}+" г."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="261" width="480" height="130" uuid="8088e279-a3ad-4d3f-ac67-03d449f6acfb"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t"+$P{overdraft_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{overdraft_filial_name} +" отделением/филиалом Банка "+$P{overdraft_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{overdraft_doverennost_number}+" от "+$P{overdraft_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{overdraft_borrower_fio}+" проживающий(ая) "+$P{overdraft_borrower_address}+" паспорт серии "+$P{overdraft_borrower_passport_number}+" выдан "+$P{overdraft_borrower_passport_issue_by}+" "+$P{overdraft_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t"+$P{overdraft_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{overdraft_filial_name} +" отделением/филиалом Банка "+$P{overdraft_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{overdraft_doverennost_number}+" от "+$P{overdraft_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{overdraft_borrower_fio}+" проживающий(ая) "+$P{overdraft_borrower_address}+" паспорт серии "+$P{overdraft_borrower_passport_number}+" выдан "+$P{overdraft_borrower_passport_issue_by}+" ИИБ "+$P{overdraft_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="434" width="480" height="356" uuid="a1be6f3d-c9e5-40f9-a7b6-6c1cbf3b3ccc"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t1.1.	Банк выделяет кредит овердрафт Заемщику, в соответствии с решением кредитного комитета № "+$P{overdraft_committee_decision_number}+" от "+$P{overdraft_committee_decision_date}+" года."+
+				<textFieldExpression><![CDATA["\t1.1.	Банк выделяет кредит овердрафт Заемщику, в соответствии с решением кредитного комитета № "+$P{overdraft_committee_decision_number}+" от "+$P{overdraft_committee_decision_date}+" г."+
 "\n\t1.2.	В соответствии с настоящим Договором, Банк дает право пользователю пластиковой карты осушествлять платежи за товары (работы, услуги) в рамках, установленных лимитом  Банковской пластиковой карты в размере превышающем остаток на расчетном счету банковской пластиковой карты."+
 "\n\t1.3.	Сумма кредита овердрафт составляет (лимит, установленный на пластиковую карту) "+$P{overdraft_loan_sum}+" сум."+
 "\n\t1.4.	Овердрафт выдается с льготным периодом "+$P{overdraft_grace_period}+" месяцев на срок "+$P{overdraft_loan_term}+" месяцев."+

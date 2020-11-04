@@ -103,7 +103,7 @@
 				<textFieldExpression><![CDATA[$F{borrower_fio} +
 "\nМанзил: "+$F{borrower_address}+
 "\nТелефон: " +$F{borrower_phone}+
-"\nПаспорт маълумотлари: "+$F{borrower_passport_number} +" "+$F{borrower_passport_issue_by}+" томонидан "+ $F{borrower_passport_issue_date} +" йилда берилган."+
+"\nПаспорт маълумотлари: "+$F{borrower_passport_number} +" "+$F{borrower_passport_issue_by}+" ИИБ томонидан "+ $F{borrower_passport_issue_date} +" йилда берилган."+
 "\n\n________________________ "+
 "\n             ( имзо)"]]></textFieldExpression>
 			</textField>
@@ -120,7 +120,7 @@
 				<textFieldExpression><![CDATA[$F{guarantor_fio}+
 "\nМанзил: "+$F{guarantor_address}+
 "\nТелефон: "+$F{guarantor_phone}+
-"\nПаспорт маълумотлари: "+$F{guarantor_passport_number} +" "+$F{guarantor_passport_issue_by}+" томонидан "+$F{guarantor_passport_issue_date} +" йилда берилган."+
+"\nПаспорт маълумотлари: "+$F{guarantor_passport_number} +" "+$F{guarantor_passport_issue_by}+" ИИБ томонидан "+$F{guarantor_passport_issue_date} +" йилда берилган."+
 "\n\n________________________"+ 
 "\n              (имзо)"]]></textFieldExpression>
 			</textField>

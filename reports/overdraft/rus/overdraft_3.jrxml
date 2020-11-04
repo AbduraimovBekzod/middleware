@@ -89,7 +89,7 @@
 				<textFieldExpression><![CDATA["Ф.И.О. "+$P{overdraft_borrower_fio}+
 "\n\nАдрес "+$P{overdraft_borrower_address}+
 "\n\nТелефон "+$P{overdraft_borrower_phone}+
-"\n\nПаспортные данные "+$P{overdraft_borrower_passport_number}+", выдан "+$P{overdraft_borrower_passport_issue_by}+" "+$P{overdraft_borrower_passport_issue_date}+"."]]></textFieldExpression>
+"\n\nПаспортные данные "+$P{overdraft_borrower_passport_number}+", выдан "+$P{overdraft_borrower_passport_issue_by}+" ИИБ "+$P{overdraft_borrower_passport_issue_date}+"г."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="477" width="230" height="20" uuid="20c563ae-da2c-40b4-9072-a08d1b871590"/>
