@@ -16,7 +16,7 @@ public class Protocol {
                 JasperCompileManager.compileReport(dir + "reports/protocol/rus/protocol.jrxml") :
                 JasperCompileManager.compileReport(dir + "reports/protocol/uzb/protocol.jrxml");
 
-        functions func = new functions();
+        Functions func = new Functions();
 
         requestObj.put("protocol_loan_amount", func.indents(requestObj.getString("protocol_loan_amount")));
 

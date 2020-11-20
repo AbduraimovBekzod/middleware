@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="asoki" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d9dd9eb-7599-4b63-8f4d-dcd77bf02d04">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="filial_name" class="java.lang.String">
+		<fieldDescription><![CDATA[filial_name]]></fieldDescription>
+	</field>
+	<field name="borrower_name" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_name]]></fieldDescription>
+	</field>
+	<field name="borrower_post" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_post]]></fieldDescription>
+	</field>
+	<field name="borrower_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_fio]]></fieldDescription>
+	</field>
+	<field name="borrower_reason" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_reason]]></fieldDescription>
+	</field>
+	<field name="borrower_inn" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_inn]]></fieldDescription>
+	</field>
+	<field name="borrower_legal_address" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_legal_address]]></fieldDescription>
+	</field>
+	<field name="filial_emp_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[filial_emp_fio]]></fieldDescription>
+	</field>
+	<field name="filial_emp_post" class="java.lang.String">
+		<fieldDescription><![CDATA[filial_emp_post]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="30" width="550" height="110" uuid="24b6dd5d-99b5-44c9-8a60-f51eb4b63f4e"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["В " + $F{filial_name} + 
+"\n\nот " + $F{borrower_name} + " \n" + $F{borrower_post} + " \n" + $F{borrower_fio} + " \n" + $F{borrower_reason}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="177" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="550" height="30" uuid="29d39482-db06-4a14-8204-c70b8250c5cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[СОГЛАСИЕ
+на предоставление информации и получения данных из АСОКИ.]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="ContainerBottom" x="20" y="47" width="530" height="130" uuid="9acc8ed0-628a-493f-8843-81a01c87a71f"/>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\tНастоящим даю свое согласие на предоставление и получение информации о " + $F{borrower_name} + ", ИНН " + $F{borrower_inn} + ", адрес " + $F{borrower_legal_address} + " из АСОКИ для формирования и получение кредитной истории, согласно закону о персональных данных №547 от 02.07.2019 года."]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="160">
+			<textField>
+				<reportElement stretchType="ContainerBottom" x="20" y="30" width="230" height="40" uuid="a9b1cd99-4b61-4a2c-8b37-d95ca684ee0a"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{borrower_fio} + "\n"+
+$F{borrower_post} + "\n"+
+$F{borrower_name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="255" y="60" width="100" height="1" uuid="93d54270-7d58-4606-baa6-abd4a306c82c"/>
+			</line>
+			<staticText>
+				<reportElement x="280" y="70" width="60" height="20" uuid="0de56fcb-b883-4adf-8545-7fae23aabbb4"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[(Подпись)]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="ContainerBottom" x="20" y="90" width="230" height="40" uuid="7e5a2bde-5e45-4dc8-b6a9-87e9c592d544"/>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Кто принимает согласие: \n\n"+
+$F{filial_emp_fio} + "\n"+
+$F{filial_emp_post}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="140" width="60" height="20" uuid="027c070d-ad97-46b8-b492-4ccb09e82f30"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[(Подпись)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="255" y="130" width="100" height="1" uuid="5cca31f6-abff-4d35-8636-a1d55aff6fa6"/>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>

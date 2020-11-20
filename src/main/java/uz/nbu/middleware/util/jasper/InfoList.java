@@ -16,7 +16,7 @@ public class InfoList {
 
         String dir = "/home/";
 
-        functions func = new functions();
+        Functions func = new Functions();
 
         requestObj.put("one_time_amount", func.indents(requestObj.getString("one_time_amount")));
         requestObj.put("loan_rate_monetary_equivalent", func.indents(requestObj.getString("loan_rate_monetary_equivalent")));

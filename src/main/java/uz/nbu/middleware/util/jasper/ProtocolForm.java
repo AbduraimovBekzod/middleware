@@ -19,7 +19,7 @@ public class ProtocolForm {
                 JasperCompileManager.compileReport(dir + "reports/protocol_form/rus/protocol_form.jrxml") :
                 JasperCompileManager.compileReport(dir + "reports/protocol_form/uzb/protocol_form.jrxml");
 
-        functions func = new functions();
+        Functions func = new Functions();
 
         if (requestObj.has("protocol_form_element")) {
             JSONArray element = requestObj.getJSONArray("protocol_form_element");

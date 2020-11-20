@@ -15,7 +15,7 @@ public class PaymentSchedule {
                 JasperCompileManager.compileReport(dir + "reports/payment_schedule/rus/payment_schedule.jrxml"):
                 JasperCompileManager.compileReport(dir + "reports/payment_schedule/uzb/payment_schedule.jrxml");
 
-		functions func = new functions();
+		Functions func = new Functions();
 
         if (requestObj.has("payment_schedule_month")) {
             JSONArray paymentSchedule = requestObj.getJSONArray("payment_schedule_month");

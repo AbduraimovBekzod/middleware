@@ -11,6 +11,7 @@
 	<parameter name="result_product" class="java.lang.String"/>
 	<parameter name="result_sum" class="java.lang.String"/>
 	<parameter name="result_filial" class="java.lang.String"/>
+	<parameter name="result_currency" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -57,7 +58,7 @@ $P{result_borrower_phone}]]></textFieldExpression>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\tПосле рассмотрения вашей заявки на кредит №"+$P{result_borrower_request_number}+" на получение "+$P{result_product}+" на сумму "+$P{result_sum}+" уведомляем Вас о невозможности удовлетворения Вашей заявки по причине не соответствия Ваших данных требованиям скоринговой системы Банка."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\tПосле рассмотрения вашей заявки на кредит №"+$P{result_borrower_request_number}+" на получение "+$P{result_product}+" на сумму "+$P{result_sum}+" "+$P{result_currency}+" уведомляем Вас о невозможности удовлетворения Вашей заявки по причине не соответствия Ваших данных требованиям скоринговой системы Банка."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="60" y="450" width="350" height="79" uuid="0b695b4a-0e58-4867-a213-567c1ddba75b"/>

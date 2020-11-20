@@ -1,6 +1,6 @@
 package uz.nbu.middleware.util.jasper;
 
-public class functions {
+public class Functions {
     public String indents (String number) {
 
         number = number.replaceAll(" ", "");

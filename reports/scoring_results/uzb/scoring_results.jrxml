@@ -11,6 +11,7 @@
 	<parameter name="result_sum" class="java.lang.String"/>
 	<parameter name="result_emp_fio" class="java.lang.String"/>
 	<parameter name="result_filial" class="java.lang.String"/>
+	<parameter name="result_currency" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -57,7 +58,7 @@ $P{result_borrower_phone}]]></textFieldExpression>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\tСизнинг "+$P{result_sum}+" сўм миқдордаги "+$P{result_product}+" кредити олиш юзасидан тақдим этилган № "+$P{result_borrower_request_number}+" аризангиз Банкнинг скоринг тизими шартларига мос келмаганлиги учун рад этилганлиги тўғрисида хабардор қилмамиз. "]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\tСизнинг "+$P{result_sum}+" "+$P{result_currency}+" миқдордаги "+$P{result_product}+" кредити олиш юзасидан тақдим этилган № "+$P{result_borrower_request_number}+" аризангиз Банкнинг скоринг тизими шартларига мос келмаганлиги учун рад этилганлиги тўғрисида хабардор қилмамиз. "]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="65" y="450" width="350" height="79" uuid="8e828a24-6b7d-4a7c-87cf-4038e1be1ae0"/>

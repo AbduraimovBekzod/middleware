@@ -18,7 +18,7 @@ public class ScoringResults {
                 JasperCompileManager.compileReport(dir + "reports/scoring_results/rus/scoring_results.jrxml") :
                 JasperCompileManager.compileReport(dir + "reports/scoring_results/uzb/scoring_results.jrxml");
 
-        functions func = new functions();
+        Functions func = new Functions();
 
         Map<String, Object> parameters = new HashMap<String, Object>();
 

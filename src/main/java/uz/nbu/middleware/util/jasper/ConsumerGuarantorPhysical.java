@@ -14,7 +14,7 @@ public class ConsumerGuarantorPhysical {
 
 		String dir = "/home/";
 
-        functions func = new functions();
+        Functions func = new Functions();
 
         requestObj.put("loan_sum", func.indents(requestObj.getString("loan_sum")));
         requestObj.put("guarantor_sum", func.indents(requestObj.getString("guarantor_sum")));

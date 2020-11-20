@@ -16,7 +16,7 @@ public class ConsumerCredit {
     public ByteArrayOutputStream consumer_credit(JSONObject requestObj, Integer lang) throws JRException, IOException {
         String dir = "/home/";
         
-        functions func = new functions();
+        Functions func = new Functions();
 
         requestObj.put("consumer_loan_sum", func.indents(requestObj.getString("consumer_loan_sum")));
         

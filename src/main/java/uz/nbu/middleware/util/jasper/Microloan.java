@@ -16,7 +16,7 @@ public class Microloan {
 
         String dir = "/home/";
         
-        functions func = new functions();
+        Functions func = new Functions();
 
         requestObj.put("microloan_loan_sum", func.indents(requestObj.getString("microloan_loan_sum")));
         
