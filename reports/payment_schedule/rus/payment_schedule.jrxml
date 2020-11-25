@@ -128,7 +128,8 @@
 				<textElement textAlignment="Center">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["МФО: "+$F{debtor_mfo}+", Сумма: "+$F{debtor_sum}+", Процентная ставка: "+$F{debtor_percent}+", Дата начала договора: "+$F{debtor_begin_date}+", Дата окончания договора: "+$F{debtor_end_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["МФО: "+$F{debtor_mfo}+", Сумма: "+$F{debtor_sum}+", Процентная ставка: "+$F{debtor_percent}+
+"\nДата начала договора: "+$F{debtor_begin_date}+", Дата окончания договора: "+$F{debtor_end_date}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="33" y="90" width="50" height="40" uuid="3f80369b-a97e-4dbd-859c-e3fd5e955fab"/>
@@ -162,7 +163,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "payment_schedule_month.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band height="105">
+		<band height="101">
 			<textField>
 				<reportElement x="233" y="0" width="70" height="20" uuid="019ac30a-2198-4a2b-85ad-b96d8b028e1d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -261,47 +262,56 @@
 				<textFieldExpression><![CDATA[$F{total_percent}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="16" y="45" width="184" height="20" uuid="58375e59-b04a-4703-a0e5-d0080afecb1a"/>
+				<reportElement x="16" y="41" width="184" height="20" uuid="1bff28cc-a429-40e4-9994-d8f0da919125"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Заёмщик]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="16" y="65" width="184" height="20" uuid="e3381e9f-7de8-4712-a146-f09c6299a628"/>
+				<reportElement x="16" y="61" width="184" height="20" uuid="b33d6b01-5d7c-4d5c-a6d2-74854c953a71"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Начальник кредитного отдела]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="16" y="85" width="184" height="20" uuid="c132e53b-e705-4df2-a168-e11195fa147c"/>
+				<reportElement x="16" y="81" width="184" height="20" uuid="87f299fa-8921-47b4-b025-d7060f9a5dae"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Кредитный менеджер]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="209" y="45" width="270" height="20" uuid="e7cd91a4-2e53-4981-9648-6265cc17e214"/>
+				<reportElement x="284" y="41" width="270" height="20" uuid="5b9fd93e-b23d-49ed-8d16-ce357b7d595d"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{debtor_fio}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="209" y="65" width="270" height="20" uuid="5b4c5126-05e0-4aaa-b3e4-ef6ebb318e0b"/>
+				<reportElement x="284" y="61" width="270" height="20" uuid="3f47868b-e8c4-4fc8-b92a-645b5ed55a05"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{headerKD_fio}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="209" y="85" width="270" height="20" uuid="640b1541-ff9c-417c-9d0f-171c6e8b9f61"/>
+				<reportElement x="284" y="81" width="270" height="20" uuid="4c4c19ca-5cf7-4d6b-ba00-9e047aa6b640"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{cm_fio}]]></textFieldExpression>
 			</textField>
+			<line>
+				<reportElement x="201" y="56" width="79" height="1" uuid="c4fc167d-aaa8-41dc-934f-c473548ecb35"/>
+			</line>
+			<line>
+				<reportElement x="201" y="75" width="79" height="1" uuid="b7f10dd1-a75b-4f5a-89a5-c9375eaab47c"/>
+			</line>
+			<line>
+				<reportElement x="201" y="95" width="79" height="1" uuid="44f013b3-9bc6-4f9c-b12f-893c7d01ab3e"/>
+			</line>
 		</band>
 	</detail>
 </jasperReport>
