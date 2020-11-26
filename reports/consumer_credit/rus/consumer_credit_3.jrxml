@@ -59,7 +59,7 @@
 				</textElement>
 				<text><![CDATA[ЗАЕМЩИК:]]></text>
 			</staticText>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="520" width="230" height="245" uuid="76904560-3506-45a2-9e4a-0756325785e2"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
@@ -76,7 +76,7 @@
 "\nЮрист ____________________ "+
 "\n                                    (Ф.И.О. и подпись)"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="300" y="520" width="220" height="169" uuid="ed5d4362-4cb5-49ab-8ca4-0978ccb71a4a"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>

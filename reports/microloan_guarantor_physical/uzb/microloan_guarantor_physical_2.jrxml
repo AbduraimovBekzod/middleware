@@ -23,14 +23,14 @@
 	2.6.	 Қарздорнинг микроқарз шартномасига мувофиқ мажбуриятлари тўла бажарилгандан сўнг, Қарздордан ўзига етказилган зарарларни қопланишини талаб қилиш.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="260" width="480" height="19" uuid="d7c28295-0d3e-4b1b-a213-dd587f1caf65"/>
+				<reportElement x="40" y="250" width="480" height="19" uuid="d7c28295-0d3e-4b1b-a213-dd587f1caf65"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[III. ҚАРЗДОРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="280" width="480" height="60" uuid="c4c1633a-f28a-4b3d-89f8-616422bb7bce"/>
+				<reportElement x="40" y="270" width="480" height="60" uuid="c4c1633a-f28a-4b3d-89f8-616422bb7bce"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
@@ -38,14 +38,14 @@
 	3.2. Қарздор кафиллик билан таъминланган мажбуриятни бажармаган ёки лозим даражада бажармаган тақдирда Кафил ва Карздор Кредитор олдида солидар жавоб берадилар.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="350" width="480" height="19" uuid="c4c2bfeb-8b63-447f-a331-23b3c37eda11"/>
+				<reportElement x="40" y="330" width="480" height="19" uuid="c4c2bfeb-8b63-447f-a331-23b3c37eda11"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[IV. КРЕДИТОРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="369" width="480" height="82" uuid="c8b7c5bd-c761-46b2-ae95-4ee044d57a26"/>
+				<reportElement x="40" y="349" width="480" height="82" uuid="c8b7c5bd-c761-46b2-ae95-4ee044d57a26"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
@@ -53,28 +53,28 @@
 	4.2. Микроқарз мажбуриятлари бажарилмаганда ёки лозим даражада бажарилмаганда тезкорлик билан Кафил ва Қарздорга тўлов талабномаси қўйиш, тўлов толабномаси бир ойлик муддат ичида бажарилмаганда қарз мажбуриятларини қонунда белгиланган тартибда суд орқали ундириб олиш.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="460" width="480" height="19" uuid="c4bcf8c7-3431-4e8f-a3fc-f122b89e1745"/>
+				<reportElement x="40" y="431" width="480" height="19" uuid="c4bcf8c7-3431-4e8f-a3fc-f122b89e1745"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[V. ШАРТНОМАНИ АМАЛ ҚИЛИШ МУДДАТИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="480" width="480" height="40" uuid="23b28a1d-6110-43dd-a6c4-8b7d87a1e6c0"/>
+				<reportElement x="40" y="450" width="480" height="40" uuid="23b28a1d-6110-43dd-a6c4-8b7d87a1e6c0"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
 				<text><![CDATA[	5.1. Мазкур шартнома имзоланган кундан бошлаб кучга киради, Қарздор ва Кредитор ўртасида тузилган микроқарз шартномаси шартлари тўла бажарилгунга қадар амалда бўлади.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="530" width="480" height="19" uuid="9638792d-cce0-448d-b43a-722a8fdf7c3c"/>
+				<reportElement x="40" y="490" width="480" height="19" uuid="9638792d-cce0-448d-b43a-722a8fdf7c3c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[VI. БОШҚА ШАРТЛАР]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="550" width="480" height="252" uuid="ab228b56-7059-476b-b1b7-26dffafc76e5"/>
+				<reportElement x="40" y="509" width="480" height="252" uuid="ab228b56-7059-476b-b1b7-26dffafc76e5"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>

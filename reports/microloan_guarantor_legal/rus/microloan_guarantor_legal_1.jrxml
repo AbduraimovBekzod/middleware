@@ -106,15 +106,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{date}+" йил"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="180" width="480" height="120" uuid="d2161a69-c5cd-4409-81a9-4c56b38e42c0"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="180" width="480" height="70" uuid="d2161a69-c5cd-4409-81a9-4c56b38e42c0"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\tЎзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ "+$F{filial}+" бундан буён матнда “Кредитор” деб юритилувчи номидан Ишончнома асосида иш юритувчи Банкнинг бошқарувчиси № "+$F{doverennost_number}+" "+$F{doverennost_date}+" бир томондан, ҳамда бундан буён матнда “Кафил” деб юритилувчи, "+$F{guarantor_name}+" номидан "+$F{director_fio}+" Уставга асосан иккинчи томондан, ҳамда бундан буён матнда “Қарздор” деб юритилувчи иккинчи томонидан, "+$F{borrower_passport_number}+" "+$F{borrower_passport_issue_by}+" ИИБ томонидан "+$F{borrower_passport_issue_date}+" йилда берилган паспортга эга бўлган фуқаро "+$F{borrower_fio}+"учинчи томондан, қуйидагилар ҳақида ушбу шартномани туздилар:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="330" width="480" height="310" uuid="210b98d3-ec48-42c3-b24a-34cad2f56d05"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="270" width="480" height="200" uuid="210b98d3-ec48-42c3-b24a-34cad2f56d05"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -125,7 +125,7 @@
 "\n\tПеня тўланиши Кафилни мазкур шартнома бўйича ўз мажбуриятларини бажаришдан озод этмайди."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="310" width="480" height="20" uuid="626457cd-93f6-4c1b-aa9f-61e79643ab03"/>
+				<reportElement positionType="Float" x="40" y="250" width="480" height="20" uuid="626457cd-93f6-4c1b-aa9f-61e79643ab03"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
@@ -141,20 +141,21 @@
 				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="40" y="650" width="480" height="20" uuid="2490d2a0-48cc-4a31-b715-4f24b2da9b0c"/>
+				<reportElement positionType="Float" x="40" y="470" width="480" height="20" uuid="2490d2a0-48cc-4a31-b715-4f24b2da9b0c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[II. КАФИЛНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="670" width="480" height="131" uuid="00611143-a2aa-4a35-b018-030958753152"/>
+				<reportElement positionType="Float" x="40" y="490" width="480" height="170" uuid="00611143-a2aa-4a35-b018-030958753152"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
 				<text><![CDATA[	2.1.	Кафиллик билан таъминланган мажбуриятлар Қарздор томонидан бажарилмаганда ёки лозим даражада бажарилмаганда ва Кредиторнинг талабига асосан, Кафил кредит тўловларини, микроқарз бўйича ҳисобланган фоизларни ва бошқа тўловларни микроқарз шартномасидаги қарздорнинг мажбуриятлари билан белгиланган муддат ва миқдорда тўлаш мажбурияти олади.
 	2.2.	Агар кафил тўлов қобилиятини йўқотган ёки мажбуриятларини бажара олмайдиган ҳолатда бўлса, қарздорликни ундириш кафилнинг барча мол-мулкига қаратилади.
-	2.3.	Кредитор томонидан қўйилган мажбуриятларини бажариш тўғрисидаги талаб 1 (бир) банк иш кунида Қарздор томонидан бажарилмаса, Кафил: ]]></text>
+	2.3.	Кредитор томонидан қўйилган мажбуриятларини бажариш тўғрисидаги талаб 1 (бир) банк иш кунида Қарздор томонидан бажарилмаса, Кафил: 
+	а) Кредит шартномаси бўйича талабларни қондириш учун етарли бўладиган суммани, кейинчалик Кредитор кўрсатган ҳисобвараққа ўтказиш учун, ўзининг барча ҳисобварақларидан ундириб бериш тўғрисида Кафилнинг банкига сўзсиз ва чакириб олинмайдиган талабни қўйиш ҳуқуқини (акцептсиз) Кредиторга беради; ]]></text>
 			</staticText>
 		</band>
 	</title>

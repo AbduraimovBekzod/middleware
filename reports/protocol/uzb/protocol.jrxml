@@ -38,6 +38,7 @@
 	<field name="protocol_special_name" class="java.lang.String"/>
 	<field name="protocol_secretary_fio" class="java.lang.String"/>
 	<field name="protocol_decision" class="java.lang.String"/>
+	<field name="filial_address" class="java.lang.String"/>
 	<title>
 		<band height="515">
 			<textField>
@@ -171,7 +172,7 @@
 "\n"+$F{protocol_filial}+
 "\nКредит қўмитасининг "+$F{protocol_committee_decision_date}+"йил даги №"+$F{protocol_committee_decision_number}+" йиғилиши"+
 "\nКредит қўмитаси йиғилиши ўтказилган жой ва вақти"+
-"\nТошкент ш., Амир Темур хиёбони, 101"+
+"\n"+$F{filial_address}+
 "\nАриза № "+$F{protocol_request_number} +
 "\nКун тартибидаги масала бўйича қарор: "+$F{protocol_decision}]]></textFieldExpression>
 			</textField>
@@ -403,25 +404,6 @@
 				<reportElement x="10" y="10" width="500" height="30" uuid="04c810e3-ad4c-4120-8f6e-19095150d4b0"/>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("protocol_insurances")]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "protocol_insurances.jasper"]]></subreportExpression>
-			</subreport>
-		</band>
-		<band height="40">
-			<subreport>
-				<reportElement x="10" y="10" width="500" height="30" uuid="f3bd08a0-763f-44b7-96c5-3fdd57a0dab5">
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
-				</reportElement>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("protocol_add_terms")]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "protocol_add_terms.jasper"]]></subreportExpression>
-			</subreport>
-		</band>
-		<band height="40">
-			<subreport>
-				<reportElement x="10" y="10" width="500" height="30" uuid="bed87ef5-4b00-43e8-a4cb-cf72a85a7b11">
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
-				</reportElement>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("protocol_spec_terms")]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "protocol_spec_terms.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 		<band height="60">

@@ -62,7 +62,7 @@
 				</textElement>
 				<text><![CDATA[ТОМОНЛАРНИНГ МАНЗИЛЛАРИ ВА БАНК РЕКВИЗИТЛАРИ]]></text>
 			</staticText>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="88" width="155" height="222" uuid="c65c8c56-953d-4736-a2b7-259024fce5e7">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -87,7 +87,7 @@
 "\n________________________ "+
 "\n    (Ф.И.Ш. ва имзо)"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="365" y="88" width="155" height="222" uuid="0f7aa98f-eda2-4652-aba2-05ab72096a00">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -104,7 +104,7 @@
 "\n\n________________________ "+
 "\n             ( имзо)"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="203" y="88" width="155" height="222" uuid="0af6a430-461f-46b2-acb9-1d85a3988350">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>

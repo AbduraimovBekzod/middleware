@@ -21,24 +21,23 @@
 	<title>
 		<band height="802" splitType="Stretch">
 			<textField>
-				<reportElement x="40" y="50" width="480" height="45" uuid="38b4e223-e2b6-4058-bc48-cbdc1ab2e62f">
+				<reportElement x="40" y="50" width="480" height="40" uuid="38b4e223-e2b6-4058-bc48-cbdc1ab2e62f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или шимени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору."+
-"\n\t2.4.6.	В период действия данного Договора, Заемщик без согласования с Банком, не должен привлекать кредиты или долги третьих лиц, имеющих право требования взыскания относительно Заемщика."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\n\t2.4.6.	В период действия данного Договора, Заемщик без согласования с Банком, не должен привлекать кредиты или долги третьих лиц, имеющих право требования взыскания относительно Заемщика."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="95" width="480" height="25" uuid="fb5c0a73-db2a-49dd-8d22-422644a9def4"/>
+				<reportElement positionType="Float" x="40" y="90" width="480" height="20" uuid="fb5c0a73-db2a-49dd-8d22-422644a9def4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["3.	Ответственность сторон"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="120" width="480" height="130" uuid="48a41165-f4aa-4986-8922-1ba1a7e6aba6"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="110" width="480" height="90" uuid="48a41165-f4aa-4986-8922-1ba1a7e6aba6"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -47,14 +46,14 @@
 "\n\t3.3.	В случае если Заемщик выполнил условия данного договора, а Банк несвоевременно перечислил сумму микрозайм, Банк уплачивает пеню в раз мере 0,1 процентов от просроченной суммы за каждый день,  но не более 50 процентов от суммы просроченной задолженности."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="250" width="480" height="25" uuid="dee28c45-5587-432b-a885-97bae4ab8ade"/>
+				<reportElement positionType="Float" x="40" y="200" width="480" height="20" uuid="dee28c45-5587-432b-a885-97bae4ab8ade"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["4.	Условия действия Договора"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="275" width="480" height="145" uuid="e790e6cf-6255-4705-9301-c4ca98055038"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="220" width="480" height="90" uuid="e790e6cf-6255-4705-9301-c4ca98055038"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -64,8 +63,8 @@
 "\n\t4.4.	Изменение условий и дополнения к настоящему Договору производятся по письменному соглашению Сторон."+
 "\n\t4.5.	Настоящий Договор составлен в двух экземплярах, имеющих  одинаковую юридическую силу, для каждой из Сторон."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="492" width="230" height="249" uuid="7902c6ef-f2ba-4d3f-beab-54e84a779a70"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="351" width="230" height="249" uuid="7902c6ef-f2ba-4d3f-beab-54e84a779a70"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -81,8 +80,8 @@
 "\nЮрист ____________________ "+
 "\n                                    (Ф.И.О. и подпись)"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="300" y="492" width="220" height="169" uuid="ea56d49a-3961-4cde-895d-e8f7d9b56612"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="300" y="351" width="220" height="169" uuid="ea56d49a-3961-4cde-895d-e8f7d9b56612"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -92,21 +91,21 @@
 "\n\nПаспортные данные "+$P{microloan_borrower_passport_number}+", выдан "+$P{microloan_borrower_passport_issue_by}+" ИИБ "+$P{microloan_borrower_passport_issue_date}+"г."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="472" width="230" height="20" uuid="91305f65-a003-4add-8cdc-1fc237eb9a66"/>
+				<reportElement positionType="Float" x="40" y="331" width="230" height="20" uuid="91305f65-a003-4add-8cdc-1fc237eb9a66"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[БАНК:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="472" width="220" height="20" uuid="dfba1bc0-7f41-476b-ba90-93909fb0487a"/>
+				<reportElement positionType="Float" x="300" y="331" width="220" height="20" uuid="dfba1bc0-7f41-476b-ba90-93909fb0487a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ЗАЕМЩИК:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="661" width="220" height="40" uuid="be481ec0-77fb-497d-847a-e1196ce5eff7"/>
+				<reportElement positionType="Float" x="300" y="520" width="220" height="40" uuid="be481ec0-77fb-497d-847a-e1196ce5eff7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

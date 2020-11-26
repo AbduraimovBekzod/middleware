@@ -73,15 +73,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{microloan_date} + " г."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="252" width="480" height="139" uuid="fd938c71-c4e8-434d-b6d8-40bd9cb74819"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="252" width="480" height="68" uuid="fd938c71-c4e8-434d-b6d8-40bd9cb74819"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t"+$P{microloan_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{microloan_filial_name} +" Банка "+$P{microloan_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{microloan_doverennost_number}+" от "+$P{microloan_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{microloan_borrower_fio}+" проживающий(ая) "+$P{microloan_borrower_address}+" паспорт серии "+$P{microloan_borrower_passport_number}+" выдан "+$P{microloan_borrower_passport_issue_by}+" ИИБ "+$P{microloan_borrower_passport_issue_date}+" (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t"+$P{microloan_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{microloan_filial_name} +" Банка "+$P{microloan_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{microloan_doverennost_number}+" от "+$P{microloan_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{microloan_borrower_fio}+" проживающий(ая) "+$P{microloan_borrower_address}+" паспорт серии "+$P{microloan_borrower_passport_number}+" выдан "+$P{microloan_borrower_passport_issue_by}+" ИИБ "+$P{microloan_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="417" width="480" height="284" uuid="5266981f-fd64-49e8-aecf-0d918a3cd3d3"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="340" width="480" height="210" uuid="5266981f-fd64-49e8-aecf-0d918a3cd3d3"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -94,28 +94,28 @@
 "\n\t1.7.	Согласно настоящему Договору, основной долг по Микрозайму и проценты по нему могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="394" width="480" height="20" uuid="13a30de1-2864-44c0-b6c3-52df454a178c"/>
+				<reportElement positionType="Float" x="40" y="320" width="480" height="20" uuid="13a30de1-2864-44c0-b6c3-52df454a178c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1. Предмет Договора]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="701" width="480" height="20" uuid="1619e631-d7e9-4ff2-a1e2-28c13a7c7b77"/>
+				<reportElement positionType="Float" x="40" y="550" width="480" height="20" uuid="1619e631-d7e9-4ff2-a1e2-28c13a7c7b77"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2.	Права и обязанности сторон ]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="40" y="743" width="480" height="46" uuid="9dd10f60-9a15-40ac-ade5-b4ef56875b38"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="590" width="480" height="46" uuid="9dd10f60-9a15-40ac-ade5-b4ef56875b38"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.1.1.	Банк вправе контролировать  платежеспособность Заемщика, достаточность обеспечения микрозайм, запрашивать необходимые документы, подтверждающие выполнение обязательств Заемщиком."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="721" width="480" height="22" uuid="fbad1af3-f046-46f0-9cb0-22a591d252b9"/>
+				<reportElement positionType="Float" x="40" y="570" width="480" height="20" uuid="fbad1af3-f046-46f0-9cb0-22a591d252b9"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>

@@ -46,7 +46,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки]]></text>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="40" y="189" width="480" height="20" uuid="12fe24cc-2116-4485-aeee-7e3cc1eeb7d5"/>
@@ -71,15 +71,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{microloan_date} + " йил"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="250" width="480" height="129" uuid="7c526327-719f-4a8b-ae83-4c09990be8ef"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="250" width="480" height="80" uuid="7c526327-719f-4a8b-ae83-4c09990be8ef"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["«Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки» акциядорлик жамиятининг "+$P{microloan_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда "+$P{microloan_doverennost_date}+" йилдаги "+$P{microloan_doverennost_number}+"  - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{microloan_bank_name}+" бошқарувчиси "+$P{microloan_emp_fio}+" бир томондан ва "+$P{microloan_borrower_address}+" да яшовчи, "+$P{microloan_borrower_passport_issue_by}+" ИИБ томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган № "+$P{microloan_borrower_passport_number}+" паспорт маълумотларига эга "+$P{microloan_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["«Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ» акциядорлик жамиятининг "+$P{microloan_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда "+$P{microloan_doverennost_date}+" йилдаги "+$P{microloan_doverennost_number}+"  - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{microloan_bank_name}+" бошқарувчиси "+$P{microloan_emp_fio}+" бир томондан ва "+$P{microloan_borrower_address}+" да яшовчи, "+$P{microloan_borrower_passport_issue_by}+" ИИБ томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган № "+$P{microloan_borrower_passport_number}+" паспорт маълумотларига эга "+$P{microloan_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="415" width="480" height="264" uuid="46051352-7a0d-46eb-ac2f-75bb43be2d00"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="350" width="480" height="180" uuid="46051352-7a0d-46eb-ac2f-75bb43be2d00"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -92,28 +92,28 @@
 "\n\t1.7.	Ушбу шартномага асосан берилган микроқарз бўйича муддатида тўланмаган асосий қарз ва фоизлар тўловлари Қарз олувчининг пластик карталаридаги маблағлари ҳисобидан чиқариб олиш орқали сўндирилиши мумкин."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="392" width="480" height="20" uuid="0ee77b65-8dc8-4984-a1d3-ba8cee5bd056"/>
+				<reportElement positionType="Float" x="40" y="330" width="480" height="20" uuid="0ee77b65-8dc8-4984-a1d3-ba8cee5bd056"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1.	Шартнома предмети]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="688" width="480" height="20" uuid="b3a6dc80-941a-4667-b6d5-cdfde72c61be"/>
+				<reportElement positionType="Float" x="40" y="530" width="480" height="20" uuid="b3a6dc80-941a-4667-b6d5-cdfde72c61be"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2.	Томонларнинг ҳуқуқлари ва мажбуриятлари ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="730" width="480" height="46" uuid="156514e2-8252-4652-88b5-b0d95c7b3863"/>
+				<reportElement positionType="Float" x="40" y="572" width="480" height="38" uuid="156514e2-8252-4652-88b5-b0d95c7b3863"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.1.1.	Қарз олувчининг тўлов лаёқатини, микроқарз таъминоти етарлилигини назорат қилиш, Қарз олувчидан мажбуриятларни бажариш юзасидан керакли хужжатларни сўраб олиш."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="708" width="480" height="22" uuid="497cc12e-cfec-4ae5-af55-369a05a10c4c"/>
+				<reportElement positionType="Float" x="40" y="550" width="480" height="22" uuid="497cc12e-cfec-4ae5-af55-369a05a10c4c"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>

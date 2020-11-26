@@ -16,8 +16,8 @@
 	</background>
 	<title>
 		<band height="802" splitType="Stretch">
-			<textField>
-				<reportElement x="40" y="50" width="480" height="170" uuid="4d839893-0241-4309-9fb9-544aee9add42"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="50" width="480" height="80" uuid="4d839893-0241-4309-9fb9-544aee9add42"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -30,14 +30,14 @@
 "\n\t2.1.4.	В случае если Заемщик не выполняет обязательства по погашению основного долга  по микрозайму и процентов по нему в срок, Банк вправе предпринять меры, установленные законодательством."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="220" width="480" height="19" uuid="cae64c7e-0583-4afe-9f9f-40c3aa007491"/>
+				<reportElement positionType="Float" x="40" y="130" width="480" height="19" uuid="cae64c7e-0583-4afe-9f9f-40c3aa007491"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.	Права заемщика:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="240" width="480" height="200" uuid="2b01dbac-7f89-4cf6-a068-7a85a98b5aa3"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="150" width="480" height="90" uuid="2b01dbac-7f89-4cf6-a068-7a85a98b5aa3"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -52,24 +52,25 @@
 "\n\t2.2.5.	Заемщик вправе самостоятельно выбирать страховую компанию."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="530" width="480" height="20" uuid="605ff11d-567b-4772-ae2c-ba7d21344982"/>
+				<reportElement positionType="Float" x="40" y="300" width="480" height="20" uuid="605ff11d-567b-4772-ae2c-ba7d21344982"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.	Обязанности заемщика:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="550" width="480" height="180" uuid="8fe1827b-d93a-40d5-8f80-d85badec199c"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="320" width="480" height="90" uuid="8fe1827b-d93a-40d5-8f80-d85badec199c"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения микрозайма, оформленное по  форме, удовлетворяющей запрос банка и в соотвествии с законодательством, обеспечение по кредиту на сумму не менее 125% от суммы микрозайма в виде "+$P{microloan_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{microloan_guarantee_surety_sum}+" сум,  являющееся залогом возвратности микрозайма."+
 "\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{microloan_loan_repayment_rate}+",   в соответствии с графиком возврата микрозайма, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты."+
 "\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
-"\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе микрозаймных отношений."]]></textFieldExpression>
+"\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе микрозаймных отношений."+
+"\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или шимени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="440" width="480" height="20" uuid="da0fbdf9-a371-45b3-8b10-e76e84f4f425">
+				<reportElement positionType="Float" x="40" y="240" width="480" height="20" uuid="da0fbdf9-a371-45b3-8b10-e76e84f4f425">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -77,8 +78,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.	Обязанности Банка:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="460" width="480" height="70" uuid="37812ae2-3a82-428e-91d5-11090aff7286"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="260" width="480" height="40" uuid="37812ae2-3a82-428e-91d5-11090aff7286"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

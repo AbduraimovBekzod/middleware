@@ -11,27 +11,25 @@
 	<detail>
 		<band height="802" splitType="Stretch">
 			<staticText>
-				<reportElement x="40" y="23" width="480" height="246" uuid="083d85e6-c861-4ec1-b66c-8a2965e1569a"/>
+				<reportElement x="40" y="23" width="480" height="177" uuid="083d85e6-c861-4ec1-b66c-8a2965e1569a"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<text><![CDATA[	2.3.	Кредитор томонидан қўйилган мажбуриятларини бажариш тўғрисидаги талаб 1 (бир) банк иш кунида Қарздор томонидан бажарилмаса, Кафил: 
-	а) Кредит шартномаси бўйича талабларни қондириш учун етарли бўладиган суммани, кейинчалик Кредитор кўрсатган ҳисобвараққа ўтказиш учун, ўзининг барча ҳисобварақларидан ундириб бериш тўғрисида Кафилнинг банкига сўзсиз ва чакириб олинмайдиган талабни қўйиш ҳуқуқини (акцептсиз) Кредиторга беради; 
-	б) Ўзига хизмат кўрсатувчи банкга Кредиторнинг талабига биноан ўз ҳисоб рақамларидаги пул маблағлари ҳаракати ҳақида маълумот бериш ваколати (ҳуқуқи)ни беради;
+				<text><![CDATA[	б) Ўзига хизмат кўрсатувчи банкга Кредиторнинг талабига биноан ўз ҳисоб рақамларидаги пул маблағлари ҳаракати ҳақида маълумот бериш ваколати (ҳуқуқи)ни беради;
 	в) Ўзига хизмат кўрсатувчи банкга Кредиторнинг биринчи талабига асосан Кафилнинг розилигисиз Кредитор талаб қилган валютада Кафилнинг ҳисобварақларидан маблағларни кўчириш тўғрисида фармойиш беради (кўчиришни топширади), яъни ҳисобварағидан пул маблағларини ўзининг розилигисиз кўчириш ҳуқуқини беради.
 	2.4.	Кредиторнинг талабига кўра Кафил ўзининг молиявий аҳволи тўғрисидаги барча маълумотларни тақдим этади. 
 	2.5.	Иш жойи ёки яшаш жойи ўзгарганда, Кафил бу ҳақда 10 кунлик муддат ичида Кредиторга хабар бериши лозим.
-	2.6.	 Қарздорнинг кредит шартномасига мувофиқ мажбуриятлари тўла бажарилгандан сўнг, Қарздордан ўзига етказилган зарарларни қопланишини талаб қилиш.   ]]></text>
+	2.6.	 Қарздорнинг кредит шартномасига мувофиқ мажбуриятлари тўла бажарилгандан сўнг, Қарздордан ўзига етказилган зарарларни қопланишини талаб қилиш.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="278" width="480" height="19" uuid="d7c28295-0d3e-4b1b-a213-dd587f1caf65"/>
+				<reportElement x="40" y="200" width="480" height="19" uuid="d7c28295-0d3e-4b1b-a213-dd587f1caf65"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[III. ҚАРЗДОРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="298" width="480" height="60" uuid="c4c1633a-f28a-4b3d-89f8-616422bb7bce"/>
+				<reportElement x="40" y="220" width="480" height="60" uuid="c4c1633a-f28a-4b3d-89f8-616422bb7bce"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
@@ -39,14 +37,14 @@
 	3.2. Қарздор кафиллик билан таъминланган мажбуриятни бажармаган ёки лозим даражада бажармаган тақдирда Кафил ва Карздор Кредитор олдида солидар жавоб берадилар.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="359" width="480" height="19" uuid="c4c2bfeb-8b63-447f-a331-23b3c37eda11"/>
+				<reportElement x="40" y="280" width="480" height="19" uuid="c4c2bfeb-8b63-447f-a331-23b3c37eda11"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[IV. КРЕДИТОРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="378" width="480" height="82" uuid="c8b7c5bd-c761-46b2-ae95-4ee044d57a26"/>
+				<reportElement x="40" y="300" width="480" height="82" uuid="c8b7c5bd-c761-46b2-ae95-4ee044d57a26"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
@@ -54,28 +52,28 @@
 	4.2. Кредит мажбуриятлари бажарилмаганда ёки лозим даражада бажарилмаганда тезкорлик билан Кафил ва Қарздорга тўлов талабномаси қўйиш, тўлов толабномаси бир ойлик муддат ичида бажарилмаганда қарз мажбуриятларини қонунда белгиланган тартибда суд орқали ундириб олиш.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="469" width="480" height="19" uuid="c4bcf8c7-3431-4e8f-a3fc-f122b89e1745"/>
+				<reportElement x="40" y="382" width="480" height="19" uuid="c4bcf8c7-3431-4e8f-a3fc-f122b89e1745"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[V. ШАРТНОМАНИ АМАЛ ҚИЛИШ МУДДАТИ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="489" width="480" height="40" uuid="23b28a1d-6110-43dd-a6c4-8b7d87a1e6c0"/>
+				<reportElement x="40" y="401" width="480" height="40" uuid="23b28a1d-6110-43dd-a6c4-8b7d87a1e6c0"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
 				<text><![CDATA[	5.1. Мазкур шартнома имзоланган кундан бошлаб кучга киради, Қарздор ва Кредитор ўртасида тузилган кредит шартномаси шартлари тўла бажарилгунга қадар амалда бўлади.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="538" width="480" height="19" uuid="9638792d-cce0-448d-b43a-722a8fdf7c3c"/>
+				<reportElement x="40" y="441" width="480" height="19" uuid="9638792d-cce0-448d-b43a-722a8fdf7c3c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[VI. БОШҚА ШАРТЛАР]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="558" width="480" height="240" uuid="ab228b56-7059-476b-b1b7-26dffafc76e5"/>
+				<reportElement x="40" y="460" width="480" height="240" uuid="ab228b56-7059-476b-b1b7-26dffafc76e5"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
