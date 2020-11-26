@@ -27,8 +27,9 @@
 				<text><![CDATA[2-бўлим. Бошқа муҳим шартлар]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="30" width="240" height="40" uuid="5eea6012-59ab-4f56-a26a-f8df91faaffe">
+				<reportElement x="40" y="30" width="240" height="35" uuid="5eea6012-59ab-4f56-a26a-f8df91faaffe">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -39,7 +40,9 @@
 				<text><![CDATA[1. Кредит шартномаси шартлари бузилганлиги учун неустойка]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="70" width="240" height="50" uuid="1b603a56-451d-445b-b3fb-8d9a7b423ec6"/>
+				<reportElement x="40" y="65" width="240" height="40" uuid="1b603a56-451d-445b-b3fb-8d9a7b423ec6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
 				</box>
@@ -49,7 +52,7 @@
 				<text><![CDATA[2. Кредит бўйича қарздорлик ўз вақтида сўндирилмаганлиги учун кредит суммасидан тўланадиган оширилган фоиз ставкаси миқдори]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="120" width="240" height="50" uuid="dd3e9122-8cbb-4a77-9354-5f794f5502ff">
+				<reportElement x="40" y="105" width="240" height="70" uuid="dd3e9122-8cbb-4a77-9354-5f794f5502ff">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7">
@@ -61,8 +64,9 @@
 				<text><![CDATA[3. Кредитнинг таъминоти]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="30" width="250" height="40" uuid="3b95f359-a22e-4a91-ba8c-5df4e05ae531">
+				<reportElement x="280" y="30" width="250" height="35" uuid="3b95f359-a22e-4a91-ba8c-5df4e05ae531">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -73,8 +77,9 @@
 				<textFieldExpression><![CDATA[$P{penalty_for_violation}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="70" width="250" height="50" uuid="12792adc-5715-46a4-84d1-3df4eaa68e18">
+				<reportElement x="280" y="65" width="250" height="40" uuid="12792adc-5715-46a4-84d1-3df4eaa68e18">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -85,7 +90,7 @@
 				<textFieldExpression><![CDATA[$P{rate_for_late}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="120" width="250" height="50" uuid="2f4f96ae-d56b-4e96-bda3-a9665c467c92">
+				<reportElement x="280" y="105" width="250" height="70" uuid="2f4f96ae-d56b-4e96-bda3-a9665c467c92">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -99,7 +104,9 @@
 			</textField>
 			<staticText>
 				<reportElement x="40" y="186" width="490" height="40" uuid="19874cda-7712-4f34-8cae-42d5e07f782f">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
@@ -108,14 +115,14 @@
 				<text><![CDATA[Мазкур ахборот варақасининг 1 ва 2-бўлимларда келтирилган маълумотлар якуний ҳисобланмайди ва кредит шартномасида ўзгартирилиши мумкин.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="226" width="490" height="30" uuid="4639a591-43e5-4de6-b573-be7e9b8e22ec"/>
+				<reportElement x="40" y="233" width="490" height="30" uuid="4639a591-43e5-4de6-b573-be7e9b8e22ec"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
 				<text><![CDATA[3-бўлим. Кредит олиш учун тақдим этилиши лозим бўлган ҳужжатлар рўйхати]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="256" width="490" height="90" uuid="71ae74bf-780f-4b93-a32b-3a6501a9e5a1"/>
+				<reportElement x="40" y="263" width="490" height="90" uuid="71ae74bf-780f-4b93-a32b-3a6501a9e5a1"/>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="8"/>
@@ -129,24 +136,24 @@
 4. кредит қайтарилиши таъминотига доир ҳужжатлар. ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="346" width="490" height="30" uuid="bfec8ad6-4df4-41ba-9c68-a264f167af87"/>
+				<reportElement x="40" y="353" width="490" height="30" uuid="bfec8ad6-4df4-41ba-9c68-a264f167af87"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
 				<text><![CDATA[4-бўлим. Бўлажак қарз олувчи сифатида Сизнинг ҳуқуқларингиз]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="65" y="718" width="210" height="30" uuid="afd5ab79-008d-4346-86b4-086a94b21f8e"/>
-				<textElement textAlignment="Center">
+				<reportElement positionType="Float" x="48" y="630" width="128" height="19" uuid="afd5ab79-008d-4346-86b4-086a94b21f8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[(имзо)]]></text>
 			</staticText>
 			<line>
-				<reportElement x="45" y="708" width="260" height="1" uuid="acf56964-de4d-4364-b8e4-d6c365bf0da6"/>
+				<reportElement positionType="Float" x="48" y="630" width="129" height="1" uuid="acf56964-de4d-4364-b8e4-d6c365bf0da6"/>
 			</line>
-			<textField>
-				<reportElement x="40" y="376" width="490" height="210" uuid="509294b6-5d66-4fe5-9722-6e0210cf99b0"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="383" width="490" height="210" uuid="509294b6-5d66-4fe5-9722-6e0210cf99b0"/>
 				<box padding="7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="8"/>
@@ -163,7 +170,11 @@
 "6. Кредит шартномаси имзоланганидан кейин, бироқ пул маблағлари ҳақиқатда олингунга қадар Сиз кредит олишдан бирон-бир тўловларсиз воз кечиш ҳуқуқига эгасиз. Банк ходимлари ҳақ эвазига кредит олиш юзасидан кўмаклашишга ҳақли эмас. Агар Сизда шикоятлар мавжуд бўлса, у ҳолда Сиз мурожаатингизни "+$P{phone_number}+" рақамли телефонга ёки "+$P{mail}+" манзилга ёки "+$P{email}+" электрон манзилга жўнатишингиз мумкин."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="45" y="630" width="275" height="50" uuid="13802d9a-4181-497e-a304-567f34f02d01"/>
+				<reportElement positionType="Float" x="40" y="593" width="490" height="20" uuid="13802d9a-4181-497e-a304-567f34f02d01">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="7"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>

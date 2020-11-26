@@ -43,9 +43,9 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="668" splitType="Stretch">
+		<band height="559" splitType="Stretch">
 			<textField>
-				<reportElement x="280" y="0" width="275" height="30" uuid="70b367cd-7126-4a98-9531-0b0c055acfc7">
+				<reportElement x="280" y="0" width="275" height="43" uuid="70b367cd-7126-4a98-9531-0b0c055acfc7">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box padding="7">
@@ -57,7 +57,7 @@
 				<textFieldExpression><![CDATA[$P{department_name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="30" width="275" height="40" uuid="84aeda01-9bc9-449c-bed2-a4367cea27c3">
+				<reportElement x="280" y="43" width="275" height="40" uuid="84aeda01-9bc9-449c-bed2-a4367cea27c3">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box padding="7">
@@ -69,7 +69,7 @@
 				<textFieldExpression><![CDATA[$P{fullname_and_position_emp}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="70" width="275" height="30" uuid="2c5c2f2e-7bb3-49e9-bb2e-6c65a0310609">
+				<reportElement x="280" y="83" width="275" height="30" uuid="2c5c2f2e-7bb3-49e9-bb2e-6c65a0310609">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box padding="7">
@@ -81,7 +81,7 @@
 				<textFieldExpression><![CDATA[$P{completion_date}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="0" width="240" height="30" uuid="a9d18944-5bd5-4a26-ba64-27702a127b5a"/>
+				<reportElement x="40" y="0" width="240" height="43" uuid="a9d18944-5bd5-4a26-ba64-27702a127b5a"/>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
 				</box>
@@ -91,7 +91,7 @@
 				<text><![CDATA[Наименование филиала/отдела]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="30" width="240" height="40" uuid="f1617d20-12f7-45c1-9f5a-e9979719e676"/>
+				<reportElement x="40" y="43" width="240" height="40" uuid="f1617d20-12f7-45c1-9f5a-e9979719e676"/>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
 				</box>
@@ -101,7 +101,7 @@
 				<text><![CDATA[Ф.И.О. и должность сотрудника, заполнившего настоящий лист ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="70" width="240" height="30" uuid="f85eb916-3506-4953-ab47-489c6eb531af"/>
+				<reportElement x="40" y="83" width="240" height="30" uuid="f85eb916-3506-4953-ab47-489c6eb531af"/>
 				<box padding="7">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
 				</box>
@@ -114,7 +114,7 @@
 				<reportElement x="40" y="124" width="515" height="19" uuid="c8da1bda-9902-4039-a6fc-77808e6ec3aa">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
 				<text><![CDATA[1-раздел. Сведения о кредите]]></text>
@@ -412,7 +412,7 @@
 				<textFieldExpression><![CDATA[$P{additional_costs_third_party}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="649" width="515" height="19" uuid="8640eb72-a8b4-4d52-8197-a33e4205e783">
+				<reportElement x="40" y="540" width="515" height="19" uuid="8640eb72-a8b4-4d52-8197-a33e4205e783">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
