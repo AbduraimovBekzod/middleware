@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jsonMain_subreport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c681432-4547-4fd8-91c1-5634ca368da6">
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<field name="status" class="java.lang.String"/>
+	<field name="post" class="java.lang.String"/>
+	<field name="fio" class="java.lang.String"/>
+	<detail>
+		<band height="10" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement x="0" y="-1" width="555" height="11" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{status}!=null?$F{status}+", ":"")+($F{post}!=null?$F{post}+", ":"") +($F{fio}!=null?$F{fio}:"")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18">
+			<staticText>
+				<reportElement x="0" y="8" width="554" height="10" uuid="33c7372a-5f78-4502-b2c8-4ab627db487a"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Отсутвовали]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>
