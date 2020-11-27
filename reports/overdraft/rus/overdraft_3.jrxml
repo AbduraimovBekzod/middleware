@@ -20,8 +20,8 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
-			<textField>
+		<band height="542">
+			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="50" width="480" height="45" uuid="167ae3b0-3c86-417f-88f7-2c3575664800">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -31,14 +31,14 @@
 				<textFieldExpression><![CDATA["\t2.4.6.	В период действия данного Договора, Заемщик без согласования с Банком, не должен привлекать кредиты или долги третьих лиц, имеющих право требования взыскания относительно Заемщика."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="95" width="480" height="25" uuid="1fa0ea0a-f799-4ad1-b83c-951b73aba416"/>
+				<reportElement positionType="Float" x="40" y="95" width="480" height="25" uuid="1fa0ea0a-f799-4ad1-b83c-951b73aba416"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["3.	Ответственность сторон"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="120" width="480" height="130" uuid="b0d3c993-710d-4813-8e83-514716c9cc94"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="120" width="480" height="70" uuid="b0d3c993-710d-4813-8e83-514716c9cc94"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -47,14 +47,14 @@
 "\n\t3.3.	В случае если Заемщик выполнил условия данного договора, а Банк несвоевременно перечислил сумму овердрафта, Банк уплачивает пеню в раз мере 0,1 процентов от просроченной суммы за каждый день, , но не более 50 процентов от суммы просроченной задолженности."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="250" width="480" height="25" uuid="6d82f053-0a66-4bf4-8086-44cb5d9440d0"/>
+				<reportElement positionType="Float" x="40" y="190" width="480" height="25" uuid="6d82f053-0a66-4bf4-8086-44cb5d9440d0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["4.	Условия действия Договора"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="275" width="480" height="174" uuid="69f0bd71-b1bc-4122-ab57-db401799744b"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="215" width="480" height="75" uuid="69f0bd71-b1bc-4122-ab57-db401799744b"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -64,8 +64,8 @@
 "\n\t4.4.	Изменение условий и дополнения к настоящему Договору производятся по письменному соглашению Сторон."+
 "\n\t4.5.	Настоящий Договор составлен в двух экземплярах, имеющих  одинаковую юридическую силу, для каждой из Сторон."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="497" width="230" height="222" uuid="1643bb98-73eb-4045-a94e-34a4961daa0b"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="320" width="230" height="222" uuid="1643bb98-73eb-4045-a94e-34a4961daa0b"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -81,8 +81,8 @@
 "\nЮрист ____________________ "+
 "\n                                    (Ф.И.О. и подпись)"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="300" y="497" width="220" height="143" uuid="a9981408-3701-497d-815c-13c30ca2fc98"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="300" y="320" width="220" height="143" uuid="a9981408-3701-497d-815c-13c30ca2fc98"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -92,21 +92,21 @@
 "\n\nПаспортные данные "+$P{overdraft_borrower_passport_number}+", выдан "+$P{overdraft_borrower_passport_issue_by}+" ИИБ "+$P{overdraft_borrower_passport_issue_date}+"г."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="477" width="230" height="20" uuid="20c563ae-da2c-40b4-9072-a08d1b871590"/>
+				<reportElement positionType="Float" x="40" y="300" width="230" height="20" uuid="20c563ae-da2c-40b4-9072-a08d1b871590"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[БАНК:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="477" width="220" height="20" uuid="9bdadff5-9237-440a-b8fe-6c537bf92040"/>
+				<reportElement positionType="Float" x="300" y="300" width="220" height="20" uuid="9bdadff5-9237-440a-b8fe-6c537bf92040"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ЗАЕМЩИК:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="640" width="220" height="40" uuid="48c891cc-5d0a-4196-97aa-47db8891dae4"/>
+				<reportElement positionType="Float" x="300" y="463" width="220" height="40" uuid="48c891cc-5d0a-4196-97aa-47db8891dae4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

@@ -2,7 +2,7 @@
 <!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jsonMain_subreport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c681432-4547-4fd8-91c1-5634ca368da6">
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["/home/reports/protocol_form/uzb/"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["/home/reports/new_protocol/uzb/"]]></defaultValueExpression>
 	</parameter>
 	<field name="status" class="java.lang.String"/>
 	<field name="post" class="java.lang.String"/>

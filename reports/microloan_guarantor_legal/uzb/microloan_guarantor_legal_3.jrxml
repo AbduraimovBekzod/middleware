@@ -54,7 +54,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="429" splitType="Stretch">
+		<band height="310">
 			<staticText>
 				<reportElement x="40" y="30" width="480" height="20" uuid="bf877c6b-b595-4cac-bc33-f77545654cef"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">

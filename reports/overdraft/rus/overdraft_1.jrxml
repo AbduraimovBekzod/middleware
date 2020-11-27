@@ -33,7 +33,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
+		<band height="526">
 			<image>
 				<reportElement x="247" y="26" width="53" height="82" uuid="db8be51d-b4d5-4400-97e8-ec9ad090e3bc">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -71,15 +71,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{overdraft_date}+" г."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="261" width="480" height="130" uuid="8088e279-a3ad-4d3f-ac67-03d449f6acfb"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="261" width="480" height="79" uuid="8088e279-a3ad-4d3f-ac67-03d449f6acfb"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t"+$P{overdraft_bank_name}+" отдел/филиал Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{overdraft_filial_name} +" отделением/филиалом Банка "+$P{overdraft_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{overdraft_doverennost_number}+" от "+$P{overdraft_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{overdraft_borrower_fio}+" проживающий(ая) "+$P{overdraft_borrower_address}+" паспорт серии "+$P{overdraft_borrower_passport_number}+" выдан "+$P{overdraft_borrower_passport_issue_by}+" ИИБ "+$P{overdraft_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="434" width="480" height="356" uuid="a1be6f3d-c9e5-40f9-a7b6-6c1cbf3b3ccc"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="360" width="480" height="166" uuid="a1be6f3d-c9e5-40f9-a7b6-6c1cbf3b3ccc"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -93,7 +93,7 @@
 "\n\t1.8.	Согласно настоященму Договору, погашение кредита овердрафт осуществляется псоредством заработной платы, пенсии или других не запрещенных средств, поступивших на личную пластиковую карту Заемщика,  а также другими способами, не противоречащими законодательству."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="414" width="480" height="20" uuid="bfda75d6-d2ba-4371-8b5a-12671212ebff"/>
+				<reportElement positionType="Float" x="40" y="340" width="480" height="20" uuid="bfda75d6-d2ba-4371-8b5a-12671212ebff"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>

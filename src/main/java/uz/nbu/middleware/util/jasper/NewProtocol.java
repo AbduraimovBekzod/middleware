@@ -14,7 +14,7 @@ public class NewProtocol {
 
         JasperReport jasperReport = lang == 0 ?
                 JasperCompileManager.compileReport("reports"+File.separator+"new_protocol"+File.separator+"rus"+File.separator+"protocol_form.jrxml"):
-                JasperCompileManager.compileReport("reports"+File.separator+"new_protocol"+File.separator+"rus"+File.separator+"protocol_form.jrxml");
+                JasperCompileManager.compileReport("reports"+File.separator+"new_protocol"+File.separator+"uzb"+File.separator+"protocol_form.jrxml");
 
         Functions func = new Functions();
 

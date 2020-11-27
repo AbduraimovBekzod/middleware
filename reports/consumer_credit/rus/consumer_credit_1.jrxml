@@ -35,7 +35,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="802">
+		<band height="571">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<image>
 				<reportElement x="244" y="17" width="53" height="82" uuid="740e5862-7be7-4669-9cfc-07b9482a1df3">
@@ -75,14 +75,14 @@
 				<textFieldExpression><![CDATA[$P{consumer_date} + " г."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="37" y="231" width="480" height="129" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
+				<reportElement x="37" y="231" width="480" height="69" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" ИИБ "+$P{consumer_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="37" y="380" width="480" height="290" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>
+				<reportElement positionType="Float" x="37" y="320" width="480" height="170" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -96,21 +96,21 @@
 "\n\t1.8.	Согласно настоящему Договору, основной долг по просроченной ссуде и проценты по нему, могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="37" y="360" width="480" height="20" uuid="052b5d73-fc6f-4e75-976c-ffd720f05d4e"/>
+				<reportElement positionType="Float" x="37" y="300" width="480" height="20" uuid="052b5d73-fc6f-4e75-976c-ffd720f05d4e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1. Предмет Договора]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" x="37" y="670" width="480" height="20" uuid="2596b403-f194-4259-bc1e-a1ff74ba5e02"/>
+				<reportElement positionType="Float" x="37" y="490" width="480" height="20" uuid="2596b403-f194-4259-bc1e-a1ff74ba5e02"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2.	Права и обязанности сторон ]]></text>
 			</staticText>
 			<textField>
-				<reportElement positionType="Float" x="37" y="690" width="480" height="20" uuid="130cc8f6-94e3-41a0-a146-8dc037ecfcdf"/>
+				<reportElement positionType="Float" x="37" y="510" width="480" height="20" uuid="130cc8f6-94e3-41a0-a146-8dc037ecfcdf"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
@@ -159,7 +159,7 @@
 "\n("+$P{PSK_words}+")"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="37" y="710" width="480" height="41" uuid="92b27f3f-3c96-44f2-beeb-d5808ecd402e"/>
+				<reportElement positionType="Float" x="37" y="530" width="480" height="41" uuid="92b27f3f-3c96-44f2-beeb-d5808ecd402e"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

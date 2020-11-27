@@ -15,9 +15,9 @@
 		<![CDATA[]]>
 	</queryString>
 	<title>
-		<band height="713">
-			<textField>
-				<reportElement x="40" y="69" width="480" height="201" uuid="96fd0b3f-2d90-423f-a710-d934addb7a02"/>
+		<band height="418">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="69" width="480" height="91" uuid="96fd0b3f-2d90-423f-a710-d934addb7a02"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -49,14 +49,14 @@
 				<text><![CDATA[2. Права и обязанности сторон ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="270" width="480" height="19" uuid="40f8f265-52a4-491c-8519-681a7cbefc36"/>
+				<reportElement positionType="Float" x="40" y="160" width="480" height="19" uuid="40f8f265-52a4-491c-8519-681a7cbefc36"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.	Права заемщика:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="290" width="480" height="90" uuid="e6e56cb4-8633-43be-8f0e-362763abab86"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="180" width="480" height="50" uuid="e6e56cb4-8633-43be-8f0e-362763abab86"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -66,14 +66,14 @@
 "\n\t2.2.4.	Заемщик вправе самостоятельно выбирать страховую компанию."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="472" width="480" height="20" uuid="0fe07c9a-9905-4299-955b-e2538a94d11a"/>
+				<reportElement positionType="Float" x="40" y="288" width="480" height="20" uuid="0fe07c9a-9905-4299-955b-e2538a94d11a"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.	Обязанности заемщика:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="490" width="480" height="223" uuid="a9de2cf9-3728-47a8-a020-7b63b9c9f1b0"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="308" width="480" height="110" uuid="a9de2cf9-3728-47a8-a020-7b63b9c9f1b0"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -84,7 +84,7 @@
 "\n\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или имени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="382" width="480" height="20" uuid="8eb90cc4-7490-4694-92eb-d7ca10970f44">
+				<reportElement positionType="Float" x="40" y="230" width="480" height="20" uuid="8eb90cc4-7490-4694-92eb-d7ca10970f44">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -92,8 +92,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.	Обязанности Банка:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="401" width="480" height="71" uuid="bb7d8b2f-5f7b-41ed-9f05-228c0fa13a10"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="249" width="480" height="39" uuid="bb7d8b2f-5f7b-41ed-9f05-228c0fa13a10"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

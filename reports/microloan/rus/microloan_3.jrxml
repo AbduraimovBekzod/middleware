@@ -19,7 +19,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
+		<band height="600">
 			<textField>
 				<reportElement x="40" y="50" width="480" height="40" uuid="38b4e223-e2b6-4058-bc48-cbdc1ab2e62f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
