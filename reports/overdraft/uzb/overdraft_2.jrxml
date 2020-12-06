@@ -14,9 +14,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
-			<textField>
-				<reportElement x="40" y="89" width="480" height="231" uuid="18577a65-1671-4ff2-b468-c634af34a5e3"/>
+		<band height="431">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="89" width="480" height="111" uuid="18577a65-1671-4ff2-b468-c634af34a5e3"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -48,14 +48,14 @@
 				<text><![CDATA[2.	Томонларнинг ҳуқуқлари ва мажбуриятлари]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="321" width="480" height="19" uuid="588ba1b6-b1fd-4ff4-aba0-5242f6bb909b"/>
+				<reportElement positionType="Float" x="40" y="200" width="480" height="19" uuid="588ba1b6-b1fd-4ff4-aba0-5242f6bb909b"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.	Қарз олувчининг ҳуқуқлари:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="341" width="480" height="108" uuid="bc37478f-2680-4714-b57a-2d5f63814281"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="220" width="480" height="49" uuid="bc37478f-2680-4714-b57a-2d5f63814281"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -66,14 +66,14 @@
 "\n\t2.2.5.	Суғурта компаниясини танлаш."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="499" width="480" height="20" uuid="1d7521c6-1e69-41a9-a791-8fa2a6a0fd70"/>
+				<reportElement positionType="Float" x="40" y="320" width="480" height="20" uuid="1d7521c6-1e69-41a9-a791-8fa2a6a0fd70"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.	Қарз олувчининг мажбуриятлари:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="519" width="480" height="230" uuid="685f4f0b-2363-47cc-beee-5fc759876a91"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="340" width="480" height="91" uuid="685f4f0b-2363-47cc-beee-5fc759876a91"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -85,7 +85,7 @@
 "\n\t2.4.6.	Ушбу шартнома амал қиладиган муддат мобайнида Қарз олувчи Банкнинг розилигисиз ушбу шартнома бўйича Қарз олувчининг мажбуриятига нисбатан устивор талаб қилиш ҳуқуқига эга бўлиши мумкин бўлган учинчи томонларнинг кредитлари ёки қарзларини жалб қилмаслиги керак."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="449" width="480" height="20" uuid="3b74a1e0-14af-419c-86bd-b5c1b0919562">
+				<reportElement positionType="Float" x="40" y="270" width="480" height="20" uuid="3b74a1e0-14af-419c-86bd-b5c1b0919562">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -93,8 +93,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.	Банкнинг мажбуриятлари:"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="469" width="480" height="30" uuid="c404f46c-e739-41ba-8397-8548790dd98d"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="290" width="480" height="21" uuid="c404f46c-e739-41ba-8397-8548790dd98d"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

@@ -20,7 +20,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
+		<band height="504">
 			<textField>
 				<reportElement x="40" y="51" width="480" height="25" uuid="3cdd1ff5-aa29-4270-8c3c-d6f3ca3dc150"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -28,8 +28,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA["3.	Томонларнинг жавобгарлиги"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="76" width="480" height="154" uuid="8fd4ec2e-7b8e-40d0-b952-b0f2f0489e1c"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="76" width="480" height="74" uuid="8fd4ec2e-7b8e-40d0-b952-b0f2f0489e1c"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -38,14 +38,14 @@
 "\n\t3.3.	 Қарз олувчи томонидан ушбу шартноманинг шартлари бажарилиб, банк овердрафтни ўз вақтида ажратмаган ҳолатда Банк Қарз олувчига муддатида тўланмаган овердрафт суммасининг кечиктирилган ҳар бир куни учун 0,1 фоиз миқдорида, лекин муддатида тўланмаган кредит суммасининг 50 фоизидан юқори бўлмаган миқдорда пеня тўлайди."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="231" width="480" height="25" uuid="4b393460-7681-49d0-ac81-65bd4ade8f2a"/>
+				<reportElement positionType="Float" x="40" y="150" width="480" height="25" uuid="4b393460-7681-49d0-ac81-65bd4ade8f2a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["3.	Томонларнинг жавобгарлиги"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="256" width="480" height="143" uuid="8e002adf-3015-4379-aa18-747fc4fab2bf"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="175" width="480" height="74" uuid="8e002adf-3015-4379-aa18-747fc4fab2bf"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -55,8 +55,8 @@
 "\n\t4.4.	Ушбу шартномага ўзгартиш ва қўшимчалар ҳар икки томон имзолайдиган қўшимча битим билан расмийлаштирилади."+
 "\n\t4.5.	Шартнома бир хил юридик кучга эга бўлган иккита бир хил нусхада, ҳар бир томон учун биттадан тузилди."]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="40" y="458" width="230" height="222" uuid="7dfd2ef0-745a-4eca-8660-858e8c0f85d3"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="40" y="282" width="230" height="222" uuid="7dfd2ef0-745a-4eca-8660-858e8c0f85d3"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -72,8 +72,8 @@
 "\nХуқуқшунос ____________________ "+
 "\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="300" y="458" width="220" height="134" uuid="bc417f50-a7fe-42bb-9720-c66003e0bf37"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="300" y="282" width="220" height="134" uuid="bc417f50-a7fe-42bb-9720-c66003e0bf37"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -83,21 +83,21 @@
 "\n\nПаспорт маълумотлари "+$P{overdraft_borrower_passport_number}+", "+$P{overdraft_borrower_passport_issue_by}+" ИИБ томонидан "+$P{overdraft_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="438" width="230" height="20" uuid="cd6af3c7-cf46-4fe7-af29-ef021311d2e9"/>
+				<reportElement positionType="Float" x="40" y="262" width="230" height="20" uuid="cd6af3c7-cf46-4fe7-af29-ef021311d2e9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[БАНК:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="438" width="220" height="20" uuid="2c2ba29e-1d8c-4bd3-9943-a158254c1c19"/>
+				<reportElement positionType="Float" x="300" y="262" width="220" height="20" uuid="2c2ba29e-1d8c-4bd3-9943-a158254c1c19"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="592" width="220" height="40" uuid="f0da2db4-92ea-4f3b-beed-372755903eb4"/>
+				<reportElement positionType="Float" x="300" y="416" width="220" height="40" uuid="f0da2db4-92ea-4f3b-beed-372755903eb4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

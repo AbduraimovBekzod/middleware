@@ -32,7 +32,7 @@ public class Microloan {
             parameters.put("microloan_guarantee_surety_sum", requestObj.getString("microloan_guarantee_surety_sum"));
             parameters.put("microloan_borrower_passport_number", requestObj.getString("microloan_borrower_passport_number"));
             parameters.put("microloan_loan_repayment_rate", requestObj.getString("microloan_loan_repayment_rate"));
-            parameters.put("microloan_delay_percent_rate", requestObj.getString("microloan_delay_percent_rate"));
+            parameters.put("microloan_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("microloan_delay_percent_rate"))));
             parameters.put("microloan_loan_term", requestObj.getString("microloan_loan_term"));
             parameters.put("microloan_percent_rate", requestObj.getString("microloan_percent_rate"));
             parameters.put("microloan_borrower_passport_issue_by", requestObj.getString("microloan_borrower_passport_issue_by"));

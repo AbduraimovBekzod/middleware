@@ -39,7 +39,7 @@ public class InfoList {
         parameters.put("loan_currency", requestObj.getString("loan_currency"));
         parameters.put("loan_term", requestObj.getString("loan_term"));
         parameters.put("loan_amount", requestObj.getString("loan_amount"));
-        parameters.put("loan_rate_percent", requestObj.getString("loan_rate_percent"));
+        parameters.put("loan_rate_percent", String.format("%,.1f", Double.parseDouble(requestObj.getString("loan_rate_percent"))));
         parameters.put("additional_costs_third_party", requestObj.getString("additional_costs_third_party"));
         parameters.put("additional_costs_bank", requestObj.getString("additional_costs_bank"));
         parameters.put("loan_total_cost", requestObj.getString("loan_total_cost"));
@@ -60,7 +60,7 @@ public class InfoList {
         parameters = new HashMap<String, Object>();
 		
 		parameters.put("fullname_and_position_emp", requestObj.getString("fullname_and_position_emp"));
-        parameters.put("rate_for_late", requestObj.getString("rate_for_late"));
+        parameters.put("rate_for_late", String.format("%,.1f", Double.parseDouble(requestObj.getString("rate_for_late"))));
         parameters.put("collateral_loan", requestObj.getString("collateral_loan"));
         parameters.put("email", requestObj.getString("email"));
         parameters.put("phone_number", requestObj.getString("phone_number"));

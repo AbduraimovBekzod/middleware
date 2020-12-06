@@ -798,17 +798,7 @@
 				<textFieldExpression><![CDATA["Кун тартибидаги № " +($F{protocol_form_request_number}!=null?$F{protocol_form_request_number}:"") + " сонли ариза бўйича маъқуллаш натижалари:"]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="95">
-			<textField>
-				<reportElement positionType="Float" x="1" y="45" width="555" height="50" uuid="964ea229-fb81-4a54-83c9-ca5deb45031d"/>
-				<textElement>
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[($F{protocol_form_filial}!=null?$F{protocol_form_filial}:"")+ " бўлим/филиал\n Кредит қўмитаси котиби \n"+
-($F{protocol_form_secret_fio}!=null?$F{protocol_form_secret_fio}:"")+
-($F{protocol_form_secret_post}!=null?", "+$F{protocol_form_secret_post}:"")+
-($F{protocol_form_date}!=null?", "+$F{protocol_form_date}:"")]]></textFieldExpression>
-			</textField>
+		<band height="71">
 			<textField>
 				<reportElement x="1" y="6" width="553" height="10" uuid="27a3e6fd-c719-4164-872c-1678371f1026"/>
 				<textElement verticalAlignment="Middle">
@@ -817,7 +807,9 @@
 				<textFieldExpression><![CDATA["Кун тартибидаги № " +($F{protocol_form_request_number}!=null?$F{protocol_form_request_number}:"")+ " сонли ариза бўйича қарор: "+$F{protocol_form_decision}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="210" y="25" width="343" height="13" uuid="cf2dd2f4-0376-49fb-a1e0-9344e852c89d"/>
+				<reportElement x="210" y="25" width="343" height="46" uuid="cf2dd2f4-0376-49fb-a1e0-9344e852c89d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>

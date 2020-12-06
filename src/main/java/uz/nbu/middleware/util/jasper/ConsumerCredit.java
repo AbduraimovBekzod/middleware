@@ -33,7 +33,7 @@ public class ConsumerCredit {
             parameters.put("consumer_grace_period", requestObj.getString("consumer_grace_period"));
             parameters.put("consumer_borrower_passport_number", requestObj.getString("consumer_borrower_passport_number"));
             parameters.put("consumer_loan_repayment_rate", requestObj.getString("consumer_loan_repayment_rate"));
-            parameters.put("consumer_delay_percent_rate", requestObj.getString("consumer_delay_percent_rate"));
+            parameters.put("consumer_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_delay_percent_rate"))));
             parameters.put("consumer_loan_term", requestObj.getString("consumer_loan_term"));
             parameters.put("consumer_percent_rate", requestObj.getString("consumer_percent_rate"));
             parameters.put("consumer_borrower_passport_issue_by", requestObj.getString("consumer_borrower_passport_issue_by"));
