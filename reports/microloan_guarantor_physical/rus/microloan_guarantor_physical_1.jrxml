@@ -81,7 +81,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="560">
+		<band height="560" splitType="Stretch">
 			<staticText>
 				<reportElement x="310" y="40" width="210" height="69" forecolor="#5293E3" uuid="56f5c72e-1bee-4c31-9f91-b38c36839ab9"/>
 				<textElement verticalAlignment="Top">
@@ -89,7 +89,7 @@
 				</textElement>
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="120" width="480" height="20" uuid="c47d866d-2e74-43d7-a938-a35533bc86f2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
@@ -97,14 +97,14 @@
 				<textFieldExpression><![CDATA["Кафиллик шартномаси № "+$F{number}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="150" width="240" height="19" uuid="a15bf89c-93eb-4fba-ac0f-820dcf25f973"/>
+				<reportElement positionType="Float" x="40" y="150" width="240" height="19" uuid="a15bf89c-93eb-4fba-ac0f-820dcf25f973"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="150" width="240" height="19" uuid="172d1fc5-574a-445c-a826-5b484ae59cb3">
+				<reportElement positionType="Float" x="280" y="150" width="240" height="19" uuid="172d1fc5-574a-445c-a826-5b484ae59cb3">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -113,7 +113,7 @@
 				<textFieldExpression><![CDATA[$F{date}+" йил"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="180" width="480" height="70" uuid="d2161a69-c5cd-4409-81a9-4c56b38e42c0"/>
+				<reportElement positionType="Float" x="40" y="180" width="480" height="70" uuid="d2161a69-c5cd-4409-81a9-4c56b38e42c0"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

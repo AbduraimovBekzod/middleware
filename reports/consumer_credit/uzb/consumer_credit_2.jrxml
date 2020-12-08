@@ -19,7 +19,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="550">
+		<band height="550" splitType="Stretch">
 			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="50" width="480" height="120" uuid="4d4b0aa8-12eb-472b-8ec7-ea6cbe52387e"/>
 				<textElement textAlignment="Justified">

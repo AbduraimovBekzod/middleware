@@ -9,7 +9,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="698">
+		<band height="698" splitType="Stretch">
 			<staticText>
 				<reportElement x="40" y="23" width="480" height="177" uuid="083d85e6-c861-4ec1-b66c-8a2965e1569a"/>
 				<textElement textAlignment="Justified">

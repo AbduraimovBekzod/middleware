@@ -35,10 +35,10 @@ public class ConsumerCredit {
             parameters.put("consumer_loan_repayment_rate", requestObj.getString("consumer_loan_repayment_rate"));
             parameters.put("consumer_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_delay_percent_rate"))));
             parameters.put("consumer_loan_term", requestObj.getString("consumer_loan_term"));
-            parameters.put("consumer_percent_rate", requestObj.getString("consumer_percent_rate"));
+            parameters.put("consumer_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_percent_rate"))));
             parameters.put("consumer_borrower_passport_issue_by", requestObj.getString("consumer_borrower_passport_issue_by"));
             parameters.put("consumer_borrower_address", requestObj.getString("consumer_borrower_address"));
-            parameters.put("PSK_number", requestObj.getString("PSK_number"));
+            parameters.put("PSK_number", String.format("%,.1f", Double.parseDouble(requestObj.getString("PSK_number"))));
             parameters.put("PSK_words", requestObj.getString("PSK_words"));
             parameters.put("consumer_doverennost_date", requestObj.getString("consumer_doverennost_date"));
             parameters.put("consumer_borrower_fio", requestObj.getString("consumer_borrower_fio"));
@@ -63,7 +63,7 @@ public class ConsumerCredit {
             parameters.put("consumer_seller_contract_date", requestObj.getString("consumer_seller_contract_date"));
             parameters.put("consumer_guarantee_surety", requestObj.getString("consumer_guarantee_surety"));
             parameters.put("consumer_borrower_phone", requestObj.getString("consumer_borrower_phone"));
-			parameters.put("consumer_percent_rate_word", requestObj.getString("consumer_percent_rate_word"));
+            parameters.put("consumer_percent_rate_word", requestObj.getString("consumer_percent_rate_word"));
             if (requestObj.getInt("consumer_loan_term") <= 12) parameters.put("consumer_account", "12501");
             else parameters.put("consumer_account", "14901");
 

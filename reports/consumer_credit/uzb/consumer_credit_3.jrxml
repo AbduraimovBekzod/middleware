@@ -19,7 +19,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="649">
+		<band height="649" splitType="Stretch">
 			<textField>
 				<reportElement x="40" y="90" width="480" height="20" uuid="6920055c-8d1f-4e64-81ed-ddb5c19758b4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -60,7 +60,7 @@
 				<text><![CDATA[ҚАРЗ ОЛУВЧИ:]]></text>
 			</staticText>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="460" width="230" height="169" uuid="a44f1812-c923-456e-b1e0-587143182047"/>
+				<reportElement x="40" y="460" width="230" height="120" uuid="a44f1812-c923-456e-b1e0-587143182047"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -77,7 +77,7 @@
 "\n                                    (Ф.И.О. ва имзо)"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="295" y="460" width="220" height="149" uuid="bed779ad-8a1d-42c0-a68f-2d194150f33c"/>
+				<reportElement x="295" y="460" width="220" height="100" uuid="bed779ad-8a1d-42c0-a68f-2d194150f33c"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -87,7 +87,7 @@
 "\n\nПаспорт маълумотлари  "+$P{consumer_borrower_passport_number}+", "+$P{consumer_borrower_passport_issue_by}+" ИИБ томонидан "+$P{consumer_borrower_passport_issue_date}+"йилда берилган."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="295" y="609" width="220" height="40" uuid="c2492480-84ba-445f-b430-2d40d8dca66e"/>
+				<reportElement positionType="Float" x="295" y="570" width="220" height="40" uuid="c2492480-84ba-445f-b430-2d40d8dca66e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

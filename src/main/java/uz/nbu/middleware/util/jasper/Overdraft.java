@@ -32,7 +32,7 @@ public class Overdraft {
             parameters.put("overdraft_loan_repayment_rate", requestObj.getString("overdraft_loan_repayment_rate"));
             parameters.put("overdraft_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("overdraft_delay_percent_rate"))));
             parameters.put("overdraft_loan_term", requestObj.getString("overdraft_loan_term"));
-            parameters.put("overdraft_percent_rate", requestObj.getString("overdraft_percent_rate"));
+            parameters.put("overdraft_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("overdraft_percent_rate"))));
             parameters.put("overdraft_borrower_passport_issue_by", requestObj.getString("overdraft_borrower_passport_issue_by"));
             parameters.put("overdraft_borrower_address", requestObj.getString("overdraft_borrower_address"));
             parameters.put("overdraft_doverennost_date", requestObj.getString("overdraft_doverennost_date"));

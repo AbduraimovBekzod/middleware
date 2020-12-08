@@ -35,7 +35,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="640">
+		<band height="640" splitType="Stretch">
 			<image>
 				<reportElement x="247" y="26" width="53" height="82" uuid="70e440c4-8222-4c00-ac6d-9c5ac2080404">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -50,7 +50,7 @@
 				</textElement>
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="191" width="480" height="20" uuid="dd7059c1-9031-4daa-83b9-b3de7aadf86c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
@@ -58,14 +58,14 @@
 				<textFieldExpression><![CDATA["Истеъмол кредити бериш тўғрисида кредит шартномаси № "+$P{consumer_number}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="215" width="240" height="19" uuid="f70cb531-68d0-4d5d-9e09-2b5086f57e33"/>
+				<reportElement positionType="Float" x="40" y="215" width="240" height="19" uuid="f70cb531-68d0-4d5d-9e09-2b5086f57e33"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{consumer_city}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="215" width="240" height="19" uuid="cd669a45-8e3f-426c-b1e0-41e5ada9bf10">
+				<reportElement positionType="Float" x="280" y="215" width="240" height="19" uuid="cd669a45-8e3f-426c-b1e0-41e5ada9bf10">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -74,7 +74,7 @@
 				<textFieldExpression><![CDATA[$P{consumer_date}+" йил"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="240" width="480" height="89" uuid="6bde49b2-7468-4dd8-b1d3-1d8d3aa7c369"/>
+				<reportElement positionType="Float" x="40" y="240" width="480" height="89" uuid="6bde49b2-7468-4dd8-b1d3-1d8d3aa7c369"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

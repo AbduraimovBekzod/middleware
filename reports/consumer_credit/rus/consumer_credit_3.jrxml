@@ -19,7 +19,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="765">
+		<band height="680" splitType="Stretch">
 			<textField>
 				<reportElement x="40" y="161" width="480" height="25" uuid="def94fa6-f776-4760-bbe4-92136010ad30"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -60,7 +60,7 @@
 				<text><![CDATA[ЗАЕМЩИК:]]></text>
 			</staticText>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="520" width="230" height="245" uuid="76904560-3506-45a2-9e4a-0756325785e2"/>
+				<reportElement x="40" y="520" width="230" height="150" uuid="76904560-3506-45a2-9e4a-0756325785e2"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -77,7 +77,7 @@
 "\n                                    (Ф.И.О. и подпись)"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="300" y="520" width="220" height="169" uuid="ed5d4362-4cb5-49ab-8ca4-0978ccb71a4a"/>
+				<reportElement x="300" y="520" width="220" height="110" uuid="ed5d4362-4cb5-49ab-8ca4-0978ccb71a4a"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -87,7 +87,7 @@
 "\n\nПаспортные данные "+$P{consumer_borrower_passport_number}+", выдан "+$P{consumer_borrower_passport_issue_by}+" ИИБ  "+$P{consumer_borrower_passport_issue_date}+"г."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="300" y="714" width="220" height="40" uuid="09db5a9b-c3ff-4a62-9274-80b41a3e031a"/>
+				<reportElement positionType="Float" x="300" y="640" width="220" height="40" uuid="09db5a9b-c3ff-4a62-9274-80b41a3e031a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

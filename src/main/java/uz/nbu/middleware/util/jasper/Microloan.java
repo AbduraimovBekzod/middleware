@@ -34,13 +34,13 @@ public class Microloan {
             parameters.put("microloan_loan_repayment_rate", requestObj.getString("microloan_loan_repayment_rate"));
             parameters.put("microloan_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("microloan_delay_percent_rate"))));
             parameters.put("microloan_loan_term", requestObj.getString("microloan_loan_term"));
-            parameters.put("microloan_percent_rate", requestObj.getString("microloan_percent_rate"));
+            parameters.put("microloan_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("microloan_percent_rate"))));
             parameters.put("microloan_borrower_passport_issue_by", requestObj.getString("microloan_borrower_passport_issue_by"));
             parameters.put("microloan_borrower_address", requestObj.getString("microloan_borrower_address"));
             parameters.put("microloan_doverennost_date", requestObj.getString("microloan_doverennost_date"));
             parameters.put("microloan_borrower_fio", requestObj.getString("microloan_borrower_fio"));
             parameters.put("PSK_words", requestObj.getString("PSK_words"));
-            parameters.put("PSK_number", requestObj.getString("PSK_number"));
+            parameters.put("PSK_number", String.format("%,.1f", Double.parseDouble(requestObj.getString("PSK_number"))));
             parameters.put("microloan_filial_name", requestObj.getString("microloan_filial_name"));
             parameters.put("microloan_doverennost_number", requestObj.getString("microloan_doverennost_number"));
             parameters.put("microloan_loan_sum", requestObj.getString("microloan_loan_sum"));
@@ -57,7 +57,7 @@ public class Microloan {
             parameters.put("microloan_filial_phone", requestObj.getString("microloan_filial_phone"));
             parameters.put("microloan_filial_address", requestObj.getString("microloan_filial_address"));
             parameters.put("microloan_guarantee_surety", requestObj.getString("microloan_guarantee_surety"));
-			parameters.put("microloan_percent_rate_word", requestObj.getString("microloan_percent_rate_word"));
+            parameters.put("microloan_percent_rate_word", requestObj.getString("microloan_percent_rate_word"));
             if (requestObj.getInt("microloan_loan_term") <= 12) parameters.put("microloan_account", "12501");
             else parameters.put("microloan_account", "14901");
 
