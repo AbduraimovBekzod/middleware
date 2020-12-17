@@ -4,10 +4,21 @@
 	<field name="status" class="java.lang.String"/>
 	<field name="post" class="java.lang.String"/>
 	<field name="fio" class="java.lang.String"/>
+	<columnHeader>
+		<band height="14">
+			<staticText>
+				<reportElement x="0" y="4" width="554" height="10" uuid="42b9745c-1d27-4690-9c73-548525f3c19b"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Отсутвовали]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
 	<detail>
-		<band height="10" splitType="Stretch">
+		<band height="11" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="-1" width="555" height="11" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18"/>
+				<reportElement x="0" y="0" width="555" height="11" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>

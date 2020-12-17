@@ -58,6 +58,7 @@ public class Microloan {
             parameters.put("microloan_filial_address", requestObj.getString("microloan_filial_address"));
             parameters.put("microloan_guarantee_surety", requestObj.getString("microloan_guarantee_surety"));
             parameters.put("microloan_percent_rate_word", requestObj.getString("microloan_percent_rate_word"));
+            parameters.put("microloan_loan_repayment_date", requestObj.getString("microloan_loan_repayment_date"));
             if (requestObj.getInt("microloan_loan_term") <= 12) parameters.put("microloan_account", "12501");
             else parameters.put("microloan_account", "14901");
 

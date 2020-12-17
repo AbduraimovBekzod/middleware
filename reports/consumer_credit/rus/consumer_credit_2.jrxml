@@ -11,6 +11,7 @@
 	<parameter name="consumer_seller_contract_number" class="java.lang.String"/>
 	<parameter name="consumer_seller_contract_date" class="java.lang.String"/>
 	<parameter name="consumer_guarantee_surety" class="java.lang.String"/>
+	<parameter name="consumer_loan_repayment_date" class="java.lang.String"/>
 	<parameter name="consumer_account" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
@@ -19,9 +20,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="471" splitType="Stretch">
+		<band height="689" splitType="Stretch">
 			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="50" width="480" height="80" uuid="34d4a539-eb3c-4533-975a-ead4d1704d0b"/>
+				<reportElement x="40" y="50" width="480" height="140" uuid="34d4a539-eb3c-4533-975a-ead4d1704d0b"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -34,14 +35,14 @@
 "\n\t2.1.4.	В случае если Заемщик не выполняет обязательства по погашению основного долга и процентов по нему в срок, Банк вправе предпринять меры, установленные законодательством."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="130" width="480" height="19" uuid="0814c4f8-939b-4977-af65-422e0cc6f8c1"/>
+				<reportElement positionType="Float" x="40" y="190" width="480" height="19" uuid="0814c4f8-939b-4977-af65-422e0cc6f8c1"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.	Права заемщика:"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="150" width="480" height="80" uuid="a708a75d-a5df-46bd-85c4-1c805727e4fc"/>
+				<reportElement positionType="Float" x="40" y="210" width="480" height="159" uuid="a708a75d-a5df-46bd-85c4-1c805727e4fc"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -56,7 +57,7 @@
 "\n\t2.2.5.	Заемщик вправе самостоятельно выбирать страховую компанию и оценщика."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="230" width="480" height="20" uuid="741772fb-5229-4bb4-8abe-edc31fdaf5d1">
+				<reportElement positionType="Float" x="40" y="369" width="480" height="20" uuid="741772fb-5229-4bb4-8abe-edc31fdaf5d1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -64,8 +65,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.	Обязанности Банка:"]]></textFieldExpression>
 			</textField>
-			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="250" width="480" height="71" uuid="e3c30d8d-eb0a-4959-9fd0-27fe29e6c342"/>
+			<textField>
+				<reportElement positionType="Float" x="40" y="389" width="480" height="101" uuid="e3c30d8d-eb0a-4959-9fd0-27fe29e6c342"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -75,19 +76,19 @@
 "\n\t2.3.4.	Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="321" width="480" height="20" uuid="edd3af2d-5c2e-4c18-9dc4-eefcda0d8103"/>
+				<reportElement positionType="Float" x="40" y="490" width="480" height="20" uuid="edd3af2d-5c2e-4c18-9dc4-eefcda0d8103"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.	Обязанности заемщика:"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="40" y="341" width="480" height="130" uuid="b7ad59a4-2ccf-413d-995d-67b798cbac71"/>
+				<reportElement positionType="Float" x="40" y="510" width="480" height="179" uuid="b7ad59a4-2ccf-413d-995d-67b798cbac71"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения кредита, оформленное по  форме, удовлетворяющей запрос банка и в соотвествии с законодательством, обеспечение по кредиту на сумму не менее 125% от суммы кредита в виде "+$P{consumer_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{consumer_guarantee_surety_sum}+" сум,  являющееся залогом возвратности кредита."+
-"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{consumer_loan_repayment_rate}+" года,   в соответствии с графиком возврата кредита, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты.   "+
+"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{consumer_loan_repayment_date}+" года,   в соответствии с графиком возврата кредита, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты.   "+
 "\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
 "\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе кредитных отношений."]]></textFieldExpression>
 			</textField>

@@ -12,6 +12,7 @@
 	<parameter name="consumer_seller_contract_date" class="java.lang.String"/>
 	<parameter name="consumer_guarantee_surety" class="java.lang.String"/>
 	<parameter name="consumer_account" class="java.lang.String"/>
+	<parameter name="consumer_loan_repayment_date" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -19,9 +20,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="550" splitType="Stretch">
-			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="50" width="480" height="120" uuid="4d4b0aa8-12eb-472b-8ec7-ea6cbe52387e"/>
+		<band height="759" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="50" width="480" height="180" uuid="4d4b0aa8-12eb-472b-8ec7-ea6cbe52387e"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -34,14 +35,14 @@
 "\n\t2.1.4.	Қарз олувчи кредит бўйича асосий қарз ва фоизларни қайтаришнинг белгиланган муддатларига амал қилмаса Банк қонунчиликда белгиланган тартибда тегишли чоралар кўради."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="40" y="170" width="480" height="19" uuid="870ec619-456f-48c1-9812-c074962fffad"/>
+				<reportElement x="40" y="230" width="480" height="19" uuid="870ec619-456f-48c1-9812-c074962fffad"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.2.	Қарз олувчининг ҳуқуқлари:"]]></textFieldExpression>
 			</textField>
-			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="189" width="480" height="131" uuid="55b781dc-b455-467e-ba50-0f4290ec1c50"/>
+			<textField>
+				<reportElement x="40" y="250" width="480" height="189" uuid="55b781dc-b455-467e-ba50-0f4290ec1c50"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -57,7 +58,7 @@
 "\n\t2.2.6.	Суғурта компанияси ва баҳоловчини мустақил танлаш."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="40" y="320" width="480" height="20" uuid="2145bd4e-5ca7-4c3b-8899-324195192ff9">
+				<reportElement x="40" y="440" width="480" height="20" uuid="2145bd4e-5ca7-4c3b-8899-324195192ff9">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -65,8 +66,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.	Банкнинг мажбуриятлари:"]]></textFieldExpression>
 			</textField>
-			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="340" width="480" height="80" uuid="ea4e8429-37d0-4cad-9596-3cff41d306a9"/>
+			<textField>
+				<reportElement x="40" y="460" width="480" height="119" uuid="ea4e8429-37d0-4cad-9596-3cff41d306a9"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -76,22 +77,21 @@
 "\n\t2.3.4.	Қарз олувчини кредит беришни рад этиш, кредитни муддатидан олдин ундиришга қаратиш сабаблари тўғрисида ёзма хабардор қилиш."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="40" y="420" width="480" height="20" uuid="877e7436-f8b2-4c79-92ee-ece41c9b538a"/>
+				<reportElement x="40" y="579" width="480" height="20" uuid="877e7436-f8b2-4c79-92ee-ece41c9b538a"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.	Қарз олувчининг мажбуриятлари:"]]></textFieldExpression>
 			</textField>
-			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="440" width="480" height="110" uuid="05d5b527-a762-441a-a266-f848c24dfafc"/>
+			<textField>
+				<reportElement x="40" y="599" width="480" height="160" uuid="05d5b527-a762-441a-a266-f848c24dfafc"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Кредит олингунга қадар кредит қайтарилиши таъминоти сифатида кредитнинг 125 %дан кам бўлмаган "+$P{consumer_guarantee_surety_sum}+" сўмлик "+$P{consumer_guarantee_surety}+" (гаров таъминоти турларининг бири кўрсатилади) ни қонун ҳажжатлари талабларига мувофиқ ва Банкни қониқтирадиган шаклда расмийлаштириб тақдим этади."+
-"\n\t2.4.2.	Ушбу шартноманинг ажралмас қисми бўлган Кредитни қайтариш жадвалига  мувофиқ кредит ва унга ҳисобланган фоизларни "+$P{consumer_loan_repayment_rate}+" йилдан бошлаб ҳар ойда бир  марта сўндириб бориш."+
+"\n\t2.4.2.	Ушбу шартноманинг ажралмас қисми бўлган Кредитни қайтариш жадвалига  мувофиқ кредит ва унга ҳисобланган фоизларни "+$P{consumer_loan_repayment_date}+" йилдан бошлаб ҳар ойда бир  марта сўндириб бориш."+
 "\n\t2.4.3.	Ҳар ойда, кредитни қайтариш жадвалига асосан навбатдаги тўловларни Банкда Қарз олувчи номига очилган махсус ҳисобварақга олдиндан, асосий қарз ва фоизлар бўйича навбатдаги тўлов муддати келгунича киритиб бориш."+
-"\n\t2.4.4.	Кредит муносабатлари жараёнида кредит масалалари юзасидан зарур бўлган ҳар қандай ахборотни Банкнинг талабига кўра унга тақдим этиш."+
-"\n\t2.4.5.	Турар жойи, иш жойи, фамилияси ёки исми ўзгариши кутилаётгани, шунингдек мазкур шартнома бўйича мажбуриятлар бажарилишига салбий таъсир кўрсатиши мумкин бўлган бошқа вазиятлар тўғрисида кўпи билан 3 кун ичида Банкка хабар бериш."]]></textFieldExpression>
+"\n\t2.4.4.	Кредит муносабатлари жараёнида кредит масалалари юзасидан зарур бўлган ҳар қандай ахборотни Банкнинг талабига кўра унга тақдим этиш."]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

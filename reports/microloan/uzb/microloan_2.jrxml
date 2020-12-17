@@ -8,6 +8,7 @@
 	<parameter name="microloan_loan_sum" class="java.lang.String"/>
 	<parameter name="microloan_guarantee_surety" class="java.lang.String"/>
 	<parameter name="microloan_account" class="java.lang.String"/>
+	<parameter name="microloan_loan_repayment_date" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -15,7 +16,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="440">
+		<band height="440" splitType="Stretch">
 			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="50" width="480" height="70" uuid="a0796cdd-971c-4a3a-8442-5890ab4c4d64"/>
 				<textElement textAlignment="Justified">
@@ -65,7 +66,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Микроқарз олингунга қадар кредит қайтарилиши таъминоти сифатида микроқарзнинг 125%дан кам бўлмаган "+$P{microloan_guarantee_surety_sum}+" сўмлик "+$P{microloan_guarantee_surety}+" (гаров таъминоти турларининг бири кўрсатилади) ни қонун ҳажжатлари талабларига мувофиқ ва Банкни қониқтирадиган шаклда расмийлаштириб тақдим этади."+
-"\n\t2.4.2.	Ушбу шартноманинг ажралмас қисми бўлган микроқарзни қайтариш жадвалига  мувофиқ микроқарз ва унга ҳисобланган фоизларни "+$P{microloan_loan_repayment_rate}+" йилдан бошлаб ҳар ойда бир марта сўндириб бориш."+
+"\n\t2.4.2.	Ушбу шартноманинг ажралмас қисми бўлган микроқарзни қайтариш жадвалига  мувофиқ микроқарз ва унга ҳисобланган фоизларни "+$P{microloan_loan_repayment_date}+" йилдан бошлаб ҳар ойда бир марта сўндириб бориш."+
 "\n\t2.4.3.	Ҳар ойда, микроқарзни қайтариш жадвалига асосан навбатдаги тўловларни Банкда Қарз олувчи номига очилган махсус ҳисобварақга олдиндан, асосий қарз ва фоизлар бўйича навбатдаги тўлов муддати келгунича киритиб бориш."+
 "\n\t2.4.4.	Микроқарз муносабатлари жараёнида кредит масалалари юзасидан зарур бўлган ҳар қандай ахборотни Банкнинг талабига кўра унга тақдим этиш."+
 "\n\t2.4.5.	Турар жойи, иш жойи, фамилияси ёки исми ўзгариши кутилаётгани, шунингдек мазкур шартнома бўйича мажбуриятлар бажарилишига салбий таъсир кўрсатиши мумкин бўлган бошқа вазиятлар тўғрисида кўпи билан 3 кун ичида Банкка хабар бериш."+

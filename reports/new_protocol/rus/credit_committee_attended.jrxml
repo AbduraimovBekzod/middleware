@@ -16,15 +16,4 @@
 			</textField>
 		</band>
 	</detail>
-	<columnFooter>
-		<band height="18">
-			<staticText>
-				<reportElement x="0" y="8" width="554" height="10" uuid="33c7372a-5f78-4502-b2c8-4ab627db487a"/>
-				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[Отсутвовали]]></text>
-			</staticText>
-		</band>
-	</columnFooter>
 </jasperReport>

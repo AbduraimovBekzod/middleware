@@ -7,6 +7,7 @@
 	<parameter name="microloan_delay_percent_rate" class="java.lang.String"/>
 	<parameter name="microloan_loan_sum" class="java.lang.String"/>
 	<parameter name="microloan_guarantee_surety" class="java.lang.String"/>
+	<parameter name="microloan_loan_repayment_date" class="java.lang.String"/>
 	<parameter name="microloan_account" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
@@ -15,7 +16,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="410">
+		<band height="410" splitType="Stretch">
 			<textField textAdjust="StretchHeight">
 				<reportElement x="40" y="50" width="480" height="80" uuid="4d839893-0241-4309-9fb9-544aee9add42"/>
 				<textElement textAlignment="Justified">
@@ -64,7 +65,7 @@
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения микрозайма, оформленное по  форме, удовлетворяющей запрос банка и в соотвествии с законодательством, обеспечение по кредиту на сумму не менее 125% от суммы микрозайма в виде "+$P{microloan_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$P{microloan_guarantee_surety_sum}+" сум,  являющееся залогом возвратности микрозайма."+
-"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{microloan_loan_repayment_rate}+",   в соответствии с графиком возврата микрозайма, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты."+
+"\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$P{microloan_loan_repayment_date}+",   в соответствии с графиком возврата микрозайма, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты."+
 "\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика."+
 "\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе микрозаймных отношений."+
 "\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или шимени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору."]]></textFieldExpression>

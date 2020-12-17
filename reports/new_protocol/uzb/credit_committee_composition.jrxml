@@ -18,7 +18,7 @@
 		</band>
 		<band height="20">
 			<subreport>
-				<reportElement x="0" y="0" width="555" height="20" uuid="7cecd699-ae86-467d-b4df-4adea8cc52c7"/>
+				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="7cecd699-ae86-467d-b4df-4adea8cc52c7"/>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("credit_committee_absent")]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "credit_committee_absent.jasper"]]></subreportExpression>
 			</subreport>
