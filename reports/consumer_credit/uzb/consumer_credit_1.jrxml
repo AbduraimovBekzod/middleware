@@ -35,7 +35,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="640" splitType="Stretch">
+		<band height="802" splitType="Stretch">
 			<image>
 				<reportElement x="247" y="26" width="53" height="82" uuid="70e440c4-8222-4c00-ac6d-9c5ac2080404">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -50,22 +50,22 @@
 				</textElement>
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
-			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="191" width="480" height="20" uuid="dd7059c1-9031-4daa-83b9-b3de7aadf86c"/>
+			<textField>
+				<reportElement x="40" y="193" width="480" height="20" uuid="dd7059c1-9031-4daa-83b9-b3de7aadf86c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Истеъмол кредити бериш тўғрисида кредит шартномаси № "+$P{consumer_number}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="40" y="215" width="240" height="19" uuid="f70cb531-68d0-4d5d-9e09-2b5086f57e33"/>
+				<reportElement x="40" y="215" width="240" height="19" uuid="f70cb531-68d0-4d5d-9e09-2b5086f57e33"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{consumer_city}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="280" y="215" width="240" height="19" uuid="cd669a45-8e3f-426c-b1e0-41e5ada9bf10">
+				<reportElement x="280" y="215" width="240" height="19" uuid="cd669a45-8e3f-426c-b1e0-41e5ada9bf10">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -73,15 +73,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{consumer_date}+" йил"]]></textFieldExpression>
 			</textField>
-			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="240" width="480" height="89" uuid="6bde49b2-7468-4dd8-b1d3-1d8d3aa7c369"/>
+			<textField>
+				<reportElement x="40" y="240" width="480" height="131" uuid="6bde49b2-7468-4dd8-b1d3-1d8d3aa7c369"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ» акциядорлик жамиятининг "+$P{consumer_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда "+$P{consumer_doverennost_date}+" йилдаги "+$P{consumer_doverennost_number}+" -сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{consumer_bank_name}+" бошқарувчиси "+$P{consumer_emp_fio}+" бир томондан ва "+$P{consumer_borrower_address}+" да яшовчи, "+$P{consumer_borrower_passport_issue_by}+" ИИБ томонидан "+$P{consumer_borrower_passport_issue_date}+" йилда берилган № "+$P{consumer_borrower_passport_number}+" паспорт маълумотларига эга "+$P{consumer_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t«Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ» акциядорлик жамиятининг "+$P{consumer_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда \""+$P{consumer_doverennost_date}+"\" йилдаги \""+$P{consumer_doverennost_number}+"\" -сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{consumer_bank_name}+" бошқарувчиси "+$P{consumer_emp_fio}+" бир томондан ва "+$P{consumer_borrower_address}+" да яшовчи, "+$P{consumer_borrower_passport_issue_by}+" ИИБ томонидан "+$P{consumer_borrower_passport_issue_date}+" йилда берилган № "+$P{consumer_borrower_passport_number}+" паспорт маълумотларига эга "+$P{consumer_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
 			</textField>
-			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="350" width="480" height="210" uuid="28c73740-2cd3-4172-8638-2150187e63a5"/>
+			<textField>
+				<reportElement x="40" y="391" width="480" height="310" uuid="28c73740-2cd3-4172-8638-2150187e63a5"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -95,28 +95,28 @@
 "\n\t1.8.	Ушбу шартномага асосан берилган кредит бўйича муддатида тўланмаган асосий қарз ва фоизлар тўловлари Қарз олувчининг пластик карталаридаги маблағлари ҳисобидан чиқариб олиш орқали сўндирилиши мумкин."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="40" y="330" width="480" height="20" uuid="b13bbe39-62c0-4632-8bdf-e2e28ce44663"/>
+				<reportElement x="40" y="371" width="480" height="20" uuid="b13bbe39-62c0-4632-8bdf-e2e28ce44663"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1.	Шартнома предмети]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" x="40" y="560" width="480" height="20" uuid="d88a848a-27a7-44c6-b331-f1d3174f37f0"/>
+				<reportElement x="40" y="701" width="480" height="20" uuid="d88a848a-27a7-44c6-b331-f1d3174f37f0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2.	Томонларнинг ҳуқуқлари ва мажбуриятлари ]]></text>
 			</staticText>
 			<textField>
-				<reportElement positionType="Float" x="40" y="580" width="480" height="20" uuid="568a37db-2bd8-43da-8dd5-317e22736ed2"/>
+				<reportElement x="40" y="721" width="480" height="20" uuid="568a37db-2bd8-43da-8dd5-317e22736ed2"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.1.	Банкнинг ҳуқуқлари:"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="40" y="600" width="480" height="40" uuid="3420c0ca-7861-41a4-8024-91d87c50e99b"/>
+				<reportElement x="40" y="741" width="480" height="40" uuid="3420c0ca-7861-41a4-8024-91d87c50e99b"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -133,14 +133,16 @@
 				<text><![CDATA[Кредит бўйича фоиз ставкаси]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="150" width="207" height="30" uuid="ad3fc674-d49f-47ea-a264-8f080a59ad84"/>
+				<reportElement x="40" y="150" width="207" height="41" uuid="ad3fc674-d49f-47ea-a264-8f080a59ad84">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<text><![CDATA[тўла фоизли ойлик маош ҳисобга олган ҳолда харажатларни]]></text>
+				<text><![CDATA[Кредитнинг тўлиқ қиймати]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="247" y="120" width="273" height="30" uuid="49de1d97-742f-478b-b309-8c199fa839e6"/>
@@ -154,7 +156,9 @@
 "\n("+$P{consumer_percent_rate_word}+")"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="247" y="150" width="273" height="30" uuid="bdc76b78-13c3-49fe-9b86-d6042a390a09"/>
+				<reportElement x="247" y="150" width="273" height="41" uuid="bdc76b78-13c3-49fe-9b86-d6042a390a09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>

@@ -35,7 +35,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="540">
+		<band height="802">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<image>
 				<reportElement x="244" y="17" width="53" height="82" uuid="740e5862-7be7-4669-9cfc-07b9482a1df3">
@@ -51,22 +51,22 @@
 				</textElement>
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
-			<textField textAdjust="StretchHeight">
-				<reportElement x="37" y="182" width="480" height="20" uuid="cbd0cf33-e6e0-4ba4-8952-6b84fc9e5e11"/>
+			<textField>
+				<reportElement x="37" y="184" width="480" height="20" uuid="cbd0cf33-e6e0-4ba4-8952-6b84fc9e5e11"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Кредитный договор о выдаче потребительского кредита № "+$P{consumer_number}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="37" y="206" width="260" height="19" uuid="d3eaa592-f77f-4b77-8154-1c1adf86df5f"/>
+				<reportElement x="37" y="206" width="260" height="19" uuid="d3eaa592-f77f-4b77-8154-1c1adf86df5f"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{consumer_city}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="297" y="206" width="220" height="19" uuid="9ce95c9e-5247-44cd-a355-ce87d9d91ebe">
+				<reportElement x="297" y="206" width="220" height="19" uuid="9ce95c9e-5247-44cd-a355-ce87d9d91ebe">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -75,14 +75,14 @@
 				<textFieldExpression><![CDATA[$P{consumer_date} + " г."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="37" y="231" width="480" height="69" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
+				<reportElement x="37" y="231" width="480" height="129" uuid="c9763910-0b97-4ed1-b944-34f78bf610d7"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № "+$P{consumer_doverennost_number}+" от "+$P{consumer_doverennost_date}+" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" ИИБ "+$P{consumer_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\t"+$P{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $P{consumer_filial_name} +" Банка "+$P{consumer_emp_fio}+" действующего на основании Устава и Довереннности № \""+$P{consumer_doverennost_number}+"\" от \""+$P{consumer_doverennost_date}+"\" года с одной стороны и гражданин (ка) "+$P{consumer_borrower_fio}+" проживающий(ая) "+$P{consumer_borrower_address}+" паспорт серии "+$P{consumer_borrower_passport_number}+" выдан "+$P{consumer_borrower_passport_issue_by}+" ИИБ "+$P{consumer_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="37" y="320" width="480" height="150" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>
+				<reportElement positionType="Float" x="37" y="380" width="480" height="290" uuid="b965b55f-3de3-48e1-b048-b5058266ecd1"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -96,21 +96,21 @@
 "\n\t1.8.	Согласно настоящему Договору, основной долг по просроченной ссуде и проценты по нему, могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="37" y="300" width="480" height="20" uuid="052b5d73-fc6f-4e75-976c-ffd720f05d4e"/>
+				<reportElement positionType="Float" x="37" y="360" width="480" height="20" uuid="052b5d73-fc6f-4e75-976c-ffd720f05d4e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1. Предмет Договора]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" x="37" y="470" width="480" height="20" uuid="2596b403-f194-4259-bc1e-a1ff74ba5e02"/>
+				<reportElement positionType="Float" x="37" y="670" width="480" height="20" uuid="2596b403-f194-4259-bc1e-a1ff74ba5e02"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2.	Права и обязанности сторон ]]></text>
 			</staticText>
 			<textField>
-				<reportElement positionType="Float" x="37" y="490" width="480" height="20" uuid="130cc8f6-94e3-41a0-a146-8dc037ecfcdf"/>
+				<reportElement positionType="Float" x="37" y="690" width="480" height="20" uuid="130cc8f6-94e3-41a0-a146-8dc037ecfcdf"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
@@ -127,14 +127,16 @@
 				<text><![CDATA[Процентная ставка по кредиту]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="37" y="141" width="207" height="30" uuid="f2b5b3d1-6dc2-43a8-b24d-41d33a5dfd51"/>
+				<reportElement x="37" y="141" width="207" height="41" uuid="f2b5b3d1-6dc2-43a8-b24d-41d33a5dfd51">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<text><![CDATA[Полная стоимость кредита]]></text>
+				<text><![CDATA[Полная процентная ставка с учетом расходов]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="244" y="111" width="273" height="30" uuid="2628aa99-c04c-40be-85d2-eb0dedae9e1c"/>
@@ -148,7 +150,9 @@
 "\n("+$P{consumer_percent_rate_word}+")"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="244" y="141" width="273" height="30" uuid="6f2e4bc4-82d1-4c4d-a2e4-651ae6684a1c"/>
+				<reportElement x="244" y="141" width="273" height="41" uuid="6f2e4bc4-82d1-4c4d-a2e4-651ae6684a1c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -159,7 +163,7 @@
 "\n("+$P{PSK_words}+")"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="37" y="510" width="480" height="30" uuid="92b27f3f-3c96-44f2-beeb-d5808ecd402e"/>
+				<reportElement positionType="Float" x="37" y="710" width="480" height="41" uuid="92b27f3f-3c96-44f2-beeb-d5808ecd402e"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>

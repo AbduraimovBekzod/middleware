@@ -22,7 +22,7 @@
 				<text><![CDATA[Кредит қўмита таркиби]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="167" y="0" width="65" height="15" backcolor="#FFFFFF" uuid="2c40967a-42d5-439e-a1c3-5d41fd50f906">
+				<reportElement mode="Opaque" x="167" y="0" width="83" height="15" backcolor="#FFFFFF" uuid="2c40967a-42d5-439e-a1c3-5d41fd50f906">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -47,7 +47,7 @@
 				<text><![CDATA[Имзо]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="297" y="0" width="183" height="15" backcolor="#FFFFFF" uuid="0d72063d-6354-4e8d-9f89-52d00d100d3e">
+				<reportElement mode="Opaque" x="315" y="0" width="165" height="15" backcolor="#FFFFFF" uuid="0d72063d-6354-4e8d-9f89-52d00d100d3e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -60,7 +60,7 @@
 				<text><![CDATA[Маҳсус шартлар]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="232" y="0" width="65" height="15" backcolor="#FFFFFF" uuid="e75298ea-3807-4480-ac9c-5154ff457d6e">
+				<reportElement mode="Opaque" x="250" y="0" width="65" height="15" backcolor="#FFFFFF" uuid="e75298ea-3807-4480-ac9c-5154ff457d6e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="2" rightPadding="2">
@@ -88,7 +88,7 @@
 				<textFieldExpression><![CDATA[($F{fio}!=null?$F{fio}:"")+($F{post}!=null?", "+$F{post}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="167" y="0" width="65" height="15" uuid="e0b9aff3-c8e3-4895-90a2-339ffb7c856f">
+				<reportElement x="167" y="0" width="83" height="15" uuid="e0b9aff3-c8e3-4895-90a2-339ffb7c856f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -101,7 +101,7 @@
 				<textFieldExpression><![CDATA[($F{yes}!=null?$F{yes}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="232" y="0" width="65" height="15" uuid="24ea9337-f779-4e3b-82ad-e389ff457440">
+				<reportElement x="250" y="0" width="65" height="15" uuid="24ea9337-f779-4e3b-82ad-e389ff457440">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -114,9 +114,8 @@
 				<textFieldExpression><![CDATA[($F{no}!=null?$F{no}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="297" y="0" width="183" height="15" uuid="6ac84c54-307e-46aa-b897-3a3c0d33e9d8">
+				<reportElement x="315" y="0" width="165" height="15" uuid="6ac84c54-307e-46aa-b897-3a3c0d33e9d8">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box leftPadding="4" rightPadding="2">
 					<pen lineWidth="1.0"/>

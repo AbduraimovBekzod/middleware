@@ -8,96 +8,17 @@
 	<field name="post" class="java.lang.String"/>
 	<field name="fio" class="java.lang.String"/>
 	<detail>
-		<band height="36" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<subreport>
-				<reportElement x="0" y="16" width="555" height="20" uuid="1c2a7f8e-3cdb-4431-9283-74d8008d7840"/>
+				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="1c2a7f8e-3cdb-4431-9283-74d8008d7840"/>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("guarantors")]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "guarantors.jasper"]]></subreportExpression>
 			</subreport>
-			<staticText>
-				<reportElement x="0" y="0" width="30" height="16" uuid="b22430a5-a90f-4831-a812-aa4a19268de5">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<box>
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8" isBold="true"/>
-				</textElement>
-				<text><![CDATA[14.1]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="239" y="0" width="314" height="16" uuid="61ff6e9d-96da-4445-b5ab-87235312e04a">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<box>
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement>
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="30" y="0" width="209" height="16" uuid="0d8c7f92-ec41-446e-b7a8-996b7b81d25c">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<box padding="2">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[Поручитель: ]]></text>
-			</staticText>
-		</band>
-		<band height="16">
-			<staticText>
-				<reportElement x="0" y="0" width="30" height="16" uuid="c880fdd8-ad4b-4a87-9222-ea914368a73e">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<box>
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8" isBold="true"/>
-				</textElement>
-				<text><![CDATA[14.2]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="30" y="0" width="209" height="16" uuid="05bcbdce-ae63-4aa1-b8c2-9bdf50eddea0">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<box padding="2">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[Страховой полис: ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="239" y="0" width="314" height="16" uuid="781f774a-74cc-4315-8fdd-62dc2fbe6375">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<box>
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement>
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
 		</band>
 		<band height="20">
 			<subreport>
-				<reportElement x="0" y="0" width="555" height="20" uuid="7cecd699-ae86-467d-b4df-4adea8cc52c7"/>
+				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="7cecd699-ae86-467d-b4df-4adea8cc52c7"/>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("insurances")]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "insurances.jasper"]]></subreportExpression>
 			</subreport>

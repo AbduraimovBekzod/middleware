@@ -13,6 +13,7 @@
 	<parameter name="consumer_guarantee_surety" class="java.lang.String"/>
 	<parameter name="consumer_account" class="java.lang.String"/>
 	<parameter name="consumer_loan_repayment_date" class="java.lang.String"/>
+	<parameter name="consumer_seller_production_name" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -73,7 +74,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.1.	Қарз олувчига "+$P{consumer_loan_sum}+" сўм кредит бериш."+
 "\n\t2.3.2.	"+$P{consumer_account}+"________________ кредит ҳисобварағи очиш."+
-"\n\t2.3.3.	Кредит маблағини кредит ҳисобварағидан "+$P{consumer_seller_bank_account}+" нинг "+$P{consumer_seller_bank_name}+" банкида очилган- депозит ҳисобварағига "+$P{consumer_seller_contract_date}+" йилда тузилган "+$P{consumer_seller_contract_number}+" - сонли шартномага асосан тўловларни нақдсиз пул ўтказиш йўли билан амалга ошириш."+
+"\n\t2.3.3.	Кредит маблағини кредит ҳисобварағидан "+$P{consumer_seller_production_name}+" нинг "+$P{consumer_seller_bank_name}+" банкида очилган- "+$P{consumer_seller_bank_account}+" депозит ҳисобварағига "+$P{consumer_seller_contract_date}+" йилда тузилган "+$P{consumer_seller_contract_number}+" - сонли шартномага асосан тўловларни нақдсиз пул ўтказиш йўли билан амалга ошириш."+
 "\n\t2.3.4.	Қарз олувчини кредит беришни рад этиш, кредитни муддатидан олдин ундиришга қаратиш сабаблари тўғрисида ёзма хабардор қилиш."]]></textFieldExpression>
 			</textField>
 			<textField>

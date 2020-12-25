@@ -33,7 +33,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="490">
+		<band height="802" splitType="Stretch">
 			<image>
 				<reportElement x="247" y="26" width="53" height="82" uuid="3d667cfa-14d4-4f0c-ae8b-3ceb8fdfbcfa">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -49,7 +49,7 @@
 				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="189" width="480" height="20" uuid="12fe24cc-2116-4485-aeee-7e3cc1eeb7d5"/>
+				<reportElement x="40" y="194" width="480" height="20" uuid="12fe24cc-2116-4485-aeee-7e3cc1eeb7d5"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
@@ -72,14 +72,14 @@
 				<textFieldExpression><![CDATA[$P{microloan_date} + " йил"]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement x="40" y="250" width="480" height="50" uuid="7c526327-719f-4a8b-ae83-4c09990be8ef"/>
+				<reportElement x="40" y="250" width="480" height="80" uuid="7c526327-719f-4a8b-ae83-4c09990be8ef"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["«Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ» акциядорлик жамиятининг "+$P{microloan_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда "+$P{microloan_doverennost_date}+" йилдаги "+$P{microloan_doverennost_number}+"  - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{microloan_bank_name}+" бошқарувчиси "+$P{microloan_emp_fio}+" бир томондан ва "+$P{microloan_borrower_address}+" да яшовчи, "+$P{microloan_borrower_passport_issue_by}+" ИИБ томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган № "+$P{microloan_borrower_passport_number}+" паспорт маълумотларига эга "+$P{microloan_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["«Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ» акциядорлик жамиятининг "+$P{microloan_filial_name}+" (кейинги ўринларда–Банк) Низом ҳамда \""+$P{microloan_doverennost_date}+"\" йилдаги \""+$P{microloan_doverennost_number}+"\" - сонли ишончнома асосида иш олиб борувчи ўз вакили – "+$P{microloan_bank_name}+" бошқарувчиси "+$P{microloan_emp_fio}+" бир томондан ва "+$P{microloan_borrower_address}+" да яшовчи, "+$P{microloan_borrower_passport_issue_by}+" ИИБ томонидан "+$P{microloan_borrower_passport_issue_date}+" йилда берилган № "+$P{microloan_borrower_passport_number}+" паспорт маълумотларига эга "+$P{microloan_borrower_fio}+" (кейинги ўринларда–Қарз олувчи) иккинчи томондан ушбу шартномани қуйидагилар ҳақида туздилар."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
-				<reportElement positionType="Float" x="40" y="320" width="480" height="90" uuid="46051352-7a0d-46eb-ac2f-75bb43be2d00"/>
+				<reportElement positionType="Float" x="40" y="350" width="480" height="180" uuid="46051352-7a0d-46eb-ac2f-75bb43be2d00"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
@@ -92,28 +92,28 @@
 "\n\t1.7.	Ушбу шартномага асосан берилган микроқарз бўйича муддатида тўланмаган асосий қарз ва фоизлар тўловлари Қарз олувчининг пластик карталаридаги маблағлари ҳисобидан чиқариб олиш орқали сўндирилиши мумкин."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="40" y="300" width="480" height="20" uuid="0ee77b65-8dc8-4984-a1d3-ba8cee5bd056"/>
+				<reportElement positionType="Float" x="40" y="330" width="480" height="20" uuid="0ee77b65-8dc8-4984-a1d3-ba8cee5bd056"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1.	Шартнома предмети]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" x="40" y="410" width="480" height="20" uuid="b3a6dc80-941a-4667-b6d5-cdfde72c61be"/>
+				<reportElement positionType="Float" x="40" y="530" width="480" height="20" uuid="b3a6dc80-941a-4667-b6d5-cdfde72c61be"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2.	Томонларнинг ҳуқуқлари ва мажбуриятлари ]]></text>
 			</staticText>
 			<textField>
-				<reportElement positionType="Float" x="40" y="452" width="480" height="38" uuid="156514e2-8252-4652-88b5-b0d95c7b3863"/>
+				<reportElement positionType="Float" x="40" y="572" width="480" height="38" uuid="156514e2-8252-4652-88b5-b0d95c7b3863"/>
 				<textElement>
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.1.1.	Қарз олувчининг тўлов лаёқатини, микроқарз таъминоти етарлилигини назорат қилиш, Қарз олувчидан мажбуриятларни бажариш юзасидан керакли хужжатларни сўраб олиш."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="40" y="430" width="480" height="22" uuid="497cc12e-cfec-4ae5-af55-369a05a10c4c"/>
+				<reportElement positionType="Float" x="40" y="550" width="480" height="22" uuid="497cc12e-cfec-4ae5-af55-369a05a10c4c"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10" isBold="true"/>
 				</textElement>
@@ -130,14 +130,16 @@
 				<text><![CDATA[Кредит бўйича фоиз ставкаси]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="150" width="207" height="30" uuid="258eb51f-48d6-4853-9e97-6b360cd24bac"/>
+				<reportElement x="40" y="150" width="207" height="41" uuid="258eb51f-48d6-4853-9e97-6b360cd24bac">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box leftPadding="5">
 					<pen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="10"/>
 				</textElement>
-				<text><![CDATA[тўла фоизли ойлик маош ҳисобга олган ҳолда харажатларни]]></text>
+				<text><![CDATA[Кредитнинг тўлиқ қиймати]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="247" y="120" width="273" height="30" uuid="efdd5dfa-72e8-4a98-9798-e2952ee56fcd"/>
@@ -151,7 +153,9 @@
 "\n("+$P{microloan_percent_rate_word}+")"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="247" y="150" width="273" height="30" uuid="04078e07-b1aa-4d01-a18b-5248a1b4f682"/>
+				<reportElement x="247" y="150" width="273" height="41" uuid="04078e07-b1aa-4d01-a18b-5248a1b4f682">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>

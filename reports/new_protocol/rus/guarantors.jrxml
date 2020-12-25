@@ -3,6 +3,49 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jsonMain_subreport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c681432-4547-4fd8-91c1-5634ca368da6">
 	<field name="protocol_form_guarantor_fio" class="java.lang.String"/>
 	<field name="protocol_form_guarantor_scope" class="java.lang.String"/>
+	<columnHeader>
+		<band height="16">
+			<staticText>
+				<reportElement x="30" y="0" width="209" height="16" uuid="d405dde6-7d7a-4207-af95-27a3eb4fc04d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[Поручитель: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="0" width="314" height="16" uuid="d42f90f3-058a-4772-9e2c-652797d77e1e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="30" height="16" uuid="abe18bb7-26b6-490f-aaf6-b226a5e6e674">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[14.1]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
 	<detail>
 		<band height="32" splitType="Stretch">
 			<textField>

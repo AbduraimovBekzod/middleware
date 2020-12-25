@@ -13,6 +13,7 @@
 	<parameter name="consumer_guarantee_surety" class="java.lang.String"/>
 	<parameter name="consumer_loan_repayment_date" class="java.lang.String"/>
 	<parameter name="consumer_account" class="java.lang.String"/>
+	<parameter name="consumer_seller_production_name" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -72,7 +73,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA["\t2.3.1.	Выделение кредита Заемщику в размере "+$P{consumer_loan_sum}+" сум."+
 "\n\t2.3.2.	Открытие кредитного расчетного счета "+$P{consumer_account}+" ________________."+
-"\n\t2.3.3.	Банк обязан перевести  кредитные средства с ссудного счета Заёмщика путем перечисления безналичных денежных  средств на расчетный счет "+$P{consumer_seller_bank_account}+" открытый в "+$P{consumer_seller_bank_name}+" банке, на основании договора № "+$P{consumer_seller_contract_number}+" от "+$P{consumer_seller_contract_date}+" года заключенного между Заёмщиком и Поставщиком товара,работ, услуг."+
+"\n\t2.3.3.	Банк обязан перевести  кредитные средства с ссудного счета Заёмщика путем перечисления безналичных денежных  средств на расчетный счет "+$P{consumer_seller_bank_account}+" "+$P{consumer_seller_production_name}+" открытый в "+$P{consumer_seller_bank_name}+" банке, на основании договора № "+$P{consumer_seller_contract_number}+" от "+$P{consumer_seller_contract_date}+" года заключенного между Заёмщиком и Поставщиком товара,работ, услуг."+
 "\n\t2.3.4.	Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита."]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">

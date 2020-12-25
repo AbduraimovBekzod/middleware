@@ -58,9 +58,9 @@
 	<field name="protocol_decision" class="java.lang.String"/>
 	<field name="filial_address" class="java.lang.String"/>
 	<title>
-		<band height="519">
+		<band height="530">
 			<staticText>
-				<reportElement x="30" y="271" width="250" height="20" uuid="2bd52db7-1039-43c6-a3d3-d636358f1164"/>
+				<reportElement x="30" y="289" width="250" height="20" uuid="2bd52db7-1039-43c6-a3d3-d636358f1164"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -70,7 +70,7 @@
 				<text><![CDATA[Класс кредитоспособности]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="457" width="250" height="20" uuid="f0ed262a-044d-4ec9-8494-9203f62c8954"/>
+				<reportElement x="280" y="475" width="250" height="20" uuid="f0ed262a-044d-4ec9-8494-9203f62c8954"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -80,7 +80,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_grace_period}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="411" width="250" height="46" uuid="2ee5b680-6e70-4b3f-8236-9949a0f9717d">
+				<reportElement x="30" y="429" width="250" height="46" uuid="2ee5b680-6e70-4b3f-8236-9949a0f9717d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="3">
@@ -102,7 +102,7 @@
 				<text><![CDATA[Условия сделки]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="371" width="250" height="20" uuid="ef06e6f2-5f2f-4e05-83e0-1a4713b0ca06"/>
+				<reportElement x="280" y="389" width="250" height="20" uuid="ef06e6f2-5f2f-4e05-83e0-1a4713b0ca06"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -112,7 +112,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_percent_rate}+"%"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="251" width="250" height="20" uuid="4f43fed3-62cf-4723-90dd-e36013116192"/>
+				<reportElement x="30" y="269" width="250" height="20" uuid="4f43fed3-62cf-4723-90dd-e36013116192"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -122,7 +122,7 @@
 				<text><![CDATA[ИНН Клиента]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="477" width="250" height="20" uuid="88ffbe40-a9d1-46f1-8475-e3250a1c2c47"/>
+				<reportElement x="30" y="495" width="250" height="20" uuid="88ffbe40-a9d1-46f1-8475-e3250a1c2c47"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -132,7 +132,7 @@
 				<text><![CDATA[График погашения (тип)]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="351" width="250" height="20" uuid="f53fa21f-f48a-4e51-8168-fe4ef4aa5135"/>
+				<reportElement x="280" y="369" width="250" height="20" uuid="f53fa21f-f48a-4e51-8168-fe4ef4aa5135"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -142,7 +142,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_amount}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="331" width="250" height="20" uuid="fd59d895-0ad1-4dda-b6a2-2fe5e3214acb"/>
+				<reportElement x="30" y="349" width="250" height="20" uuid="fd59d895-0ad1-4dda-b6a2-2fe5e3214acb"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -152,7 +152,7 @@
 				<text><![CDATA[Валюта кредитования]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="191" width="250" height="20" uuid="90db46a2-f0ff-4556-9b06-36d263cffd25"/>
+				<reportElement x="280" y="209" width="250" height="20" uuid="90db46a2-f0ff-4556-9b06-36d263cffd25"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -162,7 +162,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_specialist_fio}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="291" width="250" height="20" uuid="d7e3b488-e3cd-4c2b-a298-fe04872feb6e"/>
+				<reportElement x="280" y="309" width="250" height="20" uuid="d7e3b488-e3cd-4c2b-a298-fe04872feb6e"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -172,7 +172,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_type}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="311" width="250" height="20" uuid="d52e4612-d8ea-4249-ba23-1f3c7d0051b6"/>
+				<reportElement x="280" y="329" width="250" height="20" uuid="d52e4612-d8ea-4249-ba23-1f3c7d0051b6"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -182,7 +182,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_product}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="191" width="250" height="20" uuid="004a19a6-4b0f-4121-aa1c-7197ac37588b"/>
+				<reportElement x="30" y="209" width="250" height="20" uuid="004a19a6-4b0f-4121-aa1c-7197ac37588b"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -192,7 +192,7 @@
 				<text><![CDATA[Кредитный специалист Ф.И.О]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="331" width="250" height="20" uuid="a17b9d2f-5f8e-4282-8da6-43a8c4b960b2"/>
+				<reportElement x="280" y="349" width="250" height="20" uuid="a17b9d2f-5f8e-4282-8da6-43a8c4b960b2"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -212,7 +212,7 @@
 				<text><![CDATA[Параметры сделки]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="311" width="250" height="20" uuid="42102469-8f2f-4068-a4d4-e5786c2ddbf8"/>
+				<reportElement x="30" y="329" width="250" height="20" uuid="42102469-8f2f-4068-a4d4-e5786c2ddbf8"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -222,7 +222,7 @@
 				<text><![CDATA[Кредитный продукт]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="371" width="250" height="20" uuid="97a5cf57-ae2b-495d-8e58-67f102dcc4c3"/>
+				<reportElement x="30" y="389" width="250" height="20" uuid="97a5cf57-ae2b-495d-8e58-67f102dcc4c3"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -232,17 +232,17 @@
 				<text><![CDATA[Процентная ставка ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="171" width="250" height="20" uuid="9071ee5e-b8d6-4903-9b09-5bc230ce0de3"/>
+				<reportElement x="280" y="171" width="250" height="38" uuid="9071ee5e-b8d6-4903-9b09-5bc230ce0de3"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
-				<textElement>
+				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{protocol_initiative_unit}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="411" width="250" height="46" uuid="af4f0b39-5cab-45a1-aa1f-e56c17e09149">
+				<reportElement x="280" y="429" width="250" height="46" uuid="af4f0b39-5cab-45a1-aa1f-e56c17e09149">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="3">
@@ -254,7 +254,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_finance_source}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="351" width="250" height="20" uuid="4362376a-6b2c-4aba-b86b-124d9a07f7bd"/>
+				<reportElement x="30" y="369" width="250" height="20" uuid="4362376a-6b2c-4aba-b86b-124d9a07f7bd"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -264,7 +264,7 @@
 				<text><![CDATA[Сумма кредитования]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="211" width="250" height="20" uuid="2a8cf836-1462-4e2d-87b6-cb06bed579f7"/>
+				<reportElement x="280" y="229" width="250" height="20" uuid="2a8cf836-1462-4e2d-87b6-cb06bed579f7"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -274,7 +274,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_specialist_position}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="171" width="250" height="20" uuid="56e2efa2-7c98-465f-81a4-c606da078f19"/>
+				<reportElement x="30" y="171" width="250" height="38" uuid="56e2efa2-7c98-465f-81a4-c606da078f19"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -284,7 +284,7 @@
 				<text><![CDATA[Инициирующее подразделение]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="251" width="250" height="20" uuid="0f4f10a7-99d2-4474-a686-1d0c663d8181"/>
+				<reportElement x="280" y="269" width="250" height="20" uuid="0f4f10a7-99d2-4474-a686-1d0c663d8181"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -294,7 +294,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_client_inn}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="211" width="250" height="20" uuid="c8ec4ffc-22f7-4ae0-8637-2988e12863cd"/>
+				<reportElement x="30" y="229" width="250" height="20" uuid="c8ec4ffc-22f7-4ae0-8637-2988e12863cd"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -304,7 +304,7 @@
 				<text><![CDATA[Должность кредитного специалиста ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="391" width="250" height="20" uuid="b1b8be3e-31c6-4649-ac2b-a8997c42d554"/>
+				<reportElement x="280" y="409" width="250" height="20" uuid="b1b8be3e-31c6-4649-ac2b-a8997c42d554"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -327,7 +327,7 @@
 "\nРешение по - вопросу повестки дня: "+$F{protocol_decision}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="457" width="250" height="20" uuid="f088ab1d-6d00-431d-960b-bfa93df21ada"/>
+				<reportElement x="30" y="475" width="250" height="20" uuid="f088ab1d-6d00-431d-960b-bfa93df21ada"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -337,7 +337,7 @@
 				<text><![CDATA[Льготный период]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="477" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
+				<reportElement x="280" y="495" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -347,7 +347,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_repayment_type}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="291" width="250" height="20" uuid="e802a159-d628-46e7-a586-355fe67acb0f"/>
+				<reportElement x="30" y="309" width="250" height="20" uuid="e802a159-d628-46e7-a586-355fe67acb0f"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -366,7 +366,7 @@
 				<text><![CDATA[Выписка из протокола решения кредитного комитета]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="231" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>
+				<reportElement x="280" y="249" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -376,7 +376,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_customer_name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="271" width="250" height="20" uuid="292010a9-b9a2-4cdf-a7fc-905c59756eaa"/>
+				<reportElement x="280" y="289" width="250" height="20" uuid="292010a9-b9a2-4cdf-a7fc-905c59756eaa"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -386,7 +386,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_credit_rating}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="231" width="250" height="20" uuid="8fa423ce-c065-4bb6-bef4-37c45955f009"/>
+				<reportElement x="30" y="249" width="250" height="20" uuid="8fa423ce-c065-4bb6-bef4-37c45955f009"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -396,7 +396,7 @@
 				<text><![CDATA[Наименование Клиента]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="391" width="250" height="20" uuid="a6d78842-950f-4040-ba6e-6a29b0aee5ec"/>
+				<reportElement x="30" y="409" width="250" height="20" uuid="a6d78842-950f-4040-ba6e-6a29b0aee5ec"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>

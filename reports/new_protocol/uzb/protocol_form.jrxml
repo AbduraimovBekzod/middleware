@@ -172,7 +172,9 @@
 				<text><![CDATA[Кун тартибидаги масала бўйича йиғилиш қарор қилади: ]]></text>
 			</staticText>
 			<subreport>
-				<reportElement x="0" y="291" width="553" height="22" uuid="ccbf621e-0fba-47e0-9ef2-e47df321f7cb"/>
+				<reportElement x="1" y="291" width="553" height="22" isRemoveLineWhenBlank="true" uuid="ccbf621e-0fba-47e0-9ef2-e47df321f7cb">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("loan_security")]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "loan_security.jasper"]]></subreportExpression>
 			</subreport>
