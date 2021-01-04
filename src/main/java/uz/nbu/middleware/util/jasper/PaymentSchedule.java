@@ -36,6 +36,7 @@ public class PaymentSchedule {
         requestObj.put("total_percent", func.indents(requestObj.getString("total_percent")));
         requestObj.put("total_debt", func.indents(requestObj.getString("total_debt")));
         requestObj.put("total_total", func.indents(requestObj.getString("total_total")));
+        requestObj.put("debtor_sum", func.indents(requestObj.getString("debtor_sum")));
 
         String str = requestObj.toString();
 

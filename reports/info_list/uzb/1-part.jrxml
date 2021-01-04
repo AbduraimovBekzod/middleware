@@ -30,7 +30,7 @@
 				<reportElement x="-20" y="-20" width="595" height="105" uuid="4e3b7884-e548-4760-aba9-983511f75bc5"/>
 				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
 				<staticText>
-					<reportElement x="60" y="41" width="515" height="30" uuid="05bae677-c8df-4cfc-ae12-763f948f798f">
+					<reportElement x="60" y="41" width="515" height="39" uuid="05bae677-c8df-4cfc-ae12-763f948f798f">
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					</reportElement>
 					<textElement textAlignment="Center">

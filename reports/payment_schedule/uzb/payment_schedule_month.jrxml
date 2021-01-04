@@ -12,7 +12,7 @@
 	<detail>
 		<band height="16" splitType="Stretch">
 			<textField>
-				<reportElement x="82" y="0" width="60" height="16" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18">
+				<reportElement x="94" y="0" width="48" height="16" uuid="ab6bc9b9-4643-4d6a-84c8-ca361673df18">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
@@ -37,7 +37,7 @@
 				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="32" y="0" width="50" height="16" uuid="a19f0297-0944-4d44-a426-e3430c1afca4">
+				<reportElement x="32" y="0" width="62" height="16" uuid="a19f0297-0944-4d44-a426-e3430c1afca4">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -47,7 +47,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{date}+" й."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="142" y="0" width="90" height="16" uuid="44133ab6-f3b8-4ce0-b430-bb9e83b8e728">

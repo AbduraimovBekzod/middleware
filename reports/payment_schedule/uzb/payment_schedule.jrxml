@@ -44,8 +44,9 @@
 				<textFieldExpression><![CDATA[$F{contract_date}+" йилдаги "+$F{contract_number}+"-сонли шартномага мувофиқ қарзни тўлаш жадвали"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="83" y="81" width="60" height="30" uuid="052e1df8-740b-48a4-b9f6-8d5f5dc87e3e">
+				<reportElement positionType="Float" x="95" y="81" width="48" height="30" uuid="052e1df8-740b-48a4-b9f6-8d5f5dc87e3e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
@@ -57,7 +58,7 @@
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" x="1" y="81" width="32" height="30" uuid="3c68e23d-cf75-47ee-8475-f36f4f251d82">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
@@ -121,10 +122,10 @@
 				<textElement textAlignment="Center">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["МФО: "+$F{debtor_mfo}+", Суммаси: "+$F{debtor_sum}+", Фоиз ставкаси: "+$F{debtor_percent}+",\nШартноманинг бошланиш санаси: "+$F{debtor_begin_date}+", Шартноманинг тугаш санаси: "+$F{debtor_end_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["МФО: "+$F{debtor_mfo}+", Суммаси: "+$F{debtor_sum}+", Фоиз ставкаси: "+$F{debtor_percent}+" %,\nШартноманинг бошланиш санаси: "+$F{debtor_begin_date}+" й., Шартноманинг тугаш санаси: "+$F{debtor_end_date} +" й."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="33" y="81" width="50" height="30" uuid="3f80369b-a97e-4dbd-859c-e3fd5e955fab"/>
+				<reportElement positionType="Float" x="33" y="81" width="62" height="30" uuid="3f80369b-a97e-4dbd-859c-e3fd5e955fab"/>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -177,7 +178,9 @@
 				<text><![CDATA[Жами]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="83" y="0" width="60" height="16" uuid="7a6f4b24-67d4-4f6e-b4ab-b6f741e4cf41"/>
+				<reportElement x="95" y="0" width="48" height="16" uuid="7a6f4b24-67d4-4f6e-b4ab-b6f741e4cf41">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
@@ -209,7 +212,9 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="33" y="0" width="50" height="16" uuid="3fc01960-fc73-4e13-8876-a5f991c1a30e"/>
+				<reportElement x="33" y="0" width="62" height="16" uuid="3fc01960-fc73-4e13-8876-a5f991c1a30e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="1.0"/>
 				</box>
