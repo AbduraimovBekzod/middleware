@@ -40,6 +40,7 @@ public class InfoList {
         parameters.put("loan_term", requestObj.getString("loan_term"));
         parameters.put("loan_amount", requestObj.getString("loan_amount"));
         parameters.put("loan_rate_percent", String.format("%,.1f", Double.parseDouble(requestObj.getString("loan_rate_percent"))));
+        parameters.put("penalty_for_violation_percent", String.format("%,.1f", Double.parseDouble(requestObj.getString("penalty_for_violation_percent"))));
         parameters.put("additional_costs_third_party", requestObj.getString("additional_costs_third_party"));
         parameters.put("additional_costs_bank", requestObj.getString("additional_costs_bank"));
         parameters.put("loan_total_cost", requestObj.getString("loan_total_cost"));
