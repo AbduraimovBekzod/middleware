@@ -9,7 +9,6 @@
 	<parameter name="phone_number" class="java.lang.String"/>
 	<parameter name="mail" class="java.lang.String"/>
 	<parameter name="fullname_and_position_emp" class="java.lang.String"/>
-	<parameter name="penalty_for_violation_percent" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -64,6 +63,19 @@
 				</textElement>
 				<text><![CDATA[3. Кредитнинг таъминоти]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="280" y="30" width="250" height="35" uuid="3b95f359-a22e-4a91-ba8c-5df4e05ae531">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="7">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{penalty_for_violation}]]></textFieldExpression>
+			</textField>
 			<textField>
 				<reportElement x="280" y="65" width="250" height="40" uuid="12792adc-5715-46a4-84d1-3df4eaa68e18">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -167,30 +179,6 @@
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{fullname_and_position_emp}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="280" y="30" width="154" height="35" uuid="fb59a80e-322d-44c4-ac94-88048709e09e">
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-				</reportElement>
-				<box padding="7">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{penalty_for_violation}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="434" y="30" width="96" height="35" uuid="12b85d2f-f2a5-4957-b156-a391b531098e">
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-				</reportElement>
-				<box padding="7">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{penalty_for_violation_percent}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

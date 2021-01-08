@@ -9,7 +9,6 @@
 	<parameter name="penalty_for_violation" class="java.lang.String"/>
 	<parameter name="mail" class="java.lang.String"/>
 	<parameter name="fullname_and_position_emp" class="java.lang.String"/>
-	<parameter name="penalty_for_violation_percent" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -57,7 +56,7 @@
 				<text><![CDATA[3. Обеспечение по кредиту]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="285" y="35" width="154" height="35" uuid="6912051c-e57e-4615-8473-783f5f24b61a">
+				<reportElement x="285" y="35" width="250" height="35" uuid="6912051c-e57e-4615-8473-783f5f24b61a">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<box padding="7">
@@ -164,18 +163,6 @@
 				</textElement>
 				<text><![CDATA[Сведения, приведенные в разделе 1 и 2 настоящего информационного листа, не являются окончательными и могут быть изменены в кредитном договоре. ]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="439" y="35" width="96" height="35" uuid="37deb3d6-632d-4038-a805-c101a5881cf8">
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-				</reportElement>
-				<box padding="7">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{penalty_for_violation_percent}]]></textFieldExpression>
-			</textField>
 		</band>
 	</detail>
 </jasperReport>
