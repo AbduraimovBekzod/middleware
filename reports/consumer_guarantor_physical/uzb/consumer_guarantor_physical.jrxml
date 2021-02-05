@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consumer_credit" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="40" bottomMargin="40" uuid="24560b43-37a8-4081-a1a0-6d1ff623f1a1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="guarantor_passport_issue_by" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_passport_issue_by]]></fieldDescription>
+	</field>
+	<field name="borrower_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_fio]]></fieldDescription>
+	</field>
+	<field name="borrower_passport_number" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_passport_number]]></fieldDescription>
+	</field>
+	<field name="guarantor_passport_issue_date" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_passport_issue_date]]></fieldDescription>
+	</field>
+	<field name="borrower_passport_issue_by" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_passport_issue_by]]></fieldDescription>
+	</field>
+	<field name="borrower_passport_issue_date" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_passport_issue_date]]></fieldDescription>
+	</field>
+	<field name="guarantor_passport_number" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_passport_number]]></fieldDescription>
+	</field>
+	<field name="number" class="java.lang.String">
+		<fieldDescription><![CDATA[number]]></fieldDescription>
+	</field>
+	<field name="city" class="java.lang.String">
+		<fieldDescription><![CDATA[city]]></fieldDescription>
+	</field>
+	<field name="grace_period_months_word" class="java.lang.String">
+		<fieldDescription><![CDATA[grace_period_months_word]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="doverennost_date" class="java.lang.String">
+		<fieldDescription><![CDATA[doverennost_date]]></fieldDescription>
+	</field>
+	<field name="loan_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_sum]]></fieldDescription>
+	</field>
+	<field name="doverennost_number" class="java.lang.String">
+		<fieldDescription><![CDATA[doverennost_number]]></fieldDescription>
+	</field>
+	<field name="borrower_contract_number" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_contract_number]]></fieldDescription>
+	</field>
+	<field name="borrower_contract_date" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_contract_date]]></fieldDescription>
+	</field>
+	<field name="loan_sum_word" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_sum_word]]></fieldDescription>
+	</field>
+	<field name="percent_rate_word" class="java.lang.String">
+		<fieldDescription><![CDATA[percent_rate_word]]></fieldDescription>
+	</field>
+	<field name="guarantor_sum_word" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_sum_word]]></fieldDescription>
+	</field>
+	<field name="filial" class="java.lang.String">
+		<fieldDescription><![CDATA[filial]]></fieldDescription>
+	</field>
+	<field name="guarantor_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_sum]]></fieldDescription>
+	</field>
+	<field name="percent_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[percent_rate]]></fieldDescription>
+	</field>
+	<field name="loan_term_word" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_term_word]]></fieldDescription>
+	</field>
+	<field name="guarantor_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_fio]]></fieldDescription>
+	</field>
+	<field name="loan_term" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_term]]></fieldDescription>
+	</field>
+	<field name="grace_period_months" class="java.lang.String">
+		<fieldDescription><![CDATA[grace_period_months]]></fieldDescription>
+	</field>
+	<field name="loan_purpose" class="java.lang.String">
+		<fieldDescription><![CDATA[loan_purpose]]></fieldDescription>
+	</field>
+	<field name="manager_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[manager_fio]]></fieldDescription>
+	</field>
+	<field name="bank_inn" class="java.lang.String">
+		<fieldDescription><![CDATA[bank_inn]]></fieldDescription>
+	</field>
+	<field name="guarantor_address" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_address]]></fieldDescription>
+	</field>
+	<field name="guarantor_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[guarantor_phone]]></fieldDescription>
+	</field>
+	<field name="borrower_address" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_address]]></fieldDescription>
+	</field>
+	<field name="filial_address" class="java.lang.String">
+		<fieldDescription><![CDATA[filial_address]]></fieldDescription>
+	</field>
+	<field name="filial_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[filial_phone]]></fieldDescription>
+	</field>
+	<field name="borrower_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[borrower_phone]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="660" splitType="Stretch">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="37" y="111" width="480" height="20" uuid="bb038569-f76e-4a71-a3e6-fbc1bdb7e26e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Кафиллик шартномаси № "+$F{number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="37" y="133" width="260" height="19" uuid="b8dea2ca-4134-4dbf-b90f-5a3ea3232bbf"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="297" y="133" width="220" height="19" uuid="61ab320a-51aa-4418-9c96-cb13582a2cc2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="156" width="480" height="14" uuid="bc80da6c-3620-46b3-8461-d2232c7c63f2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\tЎзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ "+$F{filial} + " бундан буён матнда “Кредитор” деб юритилувчи номидан Ишончнома асосида иш юритувчи Банкнинг бошқарувчиси _________________________ \"_____________________________\" \"___________________________\" бир томондан, ҳамда бундан буён матнда “Кафил” деб юритилувчи, " + $F{guarantor_passport_number} + " " + $F{guarantor_passport_issue_by} + " ИИБ томонидан " + $F{guarantor_passport_issue_date} + " йилда берилган паспортга эга бўлган фуқаро "+$F{guarantor_fio}+" иккинчи томондан, ҳамда бундан буён матнда “Қарздор” деб юритилувчи "+$F{borrower_passport_number}+ " " +$F{borrower_passport_issue_by}+" томонидан "+$F{borrower_passport_issue_date}+" йилда берилган паспортга эга бўлган фуқаро "+$F{borrower_fio}+" учинчи томондан, қуйидагилар ҳақида ушбу шартномани туздилар:"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="190" width="480" height="19" uuid="081ad6df-91d5-4709-b15e-5a5aa8817422"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t1.1. Ушбу шартномага мувофиқ Кафил, Кредитор ва Қарздор ўртасида тузилган Кредит шартномаси бўйича қарздорнинг барча мажбуриятлари, яъни ҳозирда мавжуд бўлган ва кейинчалик келажакда вужудга келиши мумкин бўлган мажбуриятларининг бажарилиши юзасидан, Кредитор олдидаги мажбуриятини сўзсиз ўз зиммасига олади.\n\t1.2. Ушбу шартнома бўйича кафиллик билан таъминланган мажбуриятлар асоси бўлиб, "+$F{loan_purpose}+" учун "+$F{grace_period_months}+" ойдан иборат бўлган имтиёзли давр билан "+$F{loan_term}+" ой муддатга, йиллик "+$F{percent_rate}+" % устама тўлаш шарти билан ажратиладиган "+$F{loan_sum}+" сўм кредит юзасидан Кредитор ва Қарздор ўртасида "+$F{borrower_contract_date}+" йилда тузилган № "+$F{borrower_contract_number}+"- сонли кредит шартномаси ҳисобланади. \n\t1.3. Кафилнинг Кредитор олдидаги мажбуриятлари миқдори Кредитор ва Қарздор ўртасида тузилган кредит шартномаси суммасининг 125%дан кам бўлмаган миқдорни, яъни "+$F{guarantor_sum}+" сўмни ташкил этади. \n\t1.4. Кафил Кредитор олдида Қарздор билан баравар хажмда жавоб беради, шу жумладан кредит асосий тўловларини, фоизларни, қарзни ундириб олиш бўйича суд чиқимларини ва қарздор томонидан мажбуриятлар бажарилмаганлиги ёки лозим даражада бажарилмаганлиги туфайли неустойка ва Кредитор кўрган бошқа зарарларни тўлайди. Мазкур шартномада белгиланган мажбуриятларни бажармаганлиги учун Кафил Кредиторга кечиктирилган тўловнинг ҳар бир куни учун кечиктирилган тўловнинг 0,1 фоизи миқдорида, лекин талаб суммасининг 50 фоизидан ошмаган миқдорда пеня тўлайди.\n\tПеня тўланиши Кафилни мазкур шартнома бўйича ўз мажбуриятларини бажаришдан озод этмайди."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="170" width="480" height="20" uuid="0cb043bd-ab34-49c4-a10a-9b04eee86bcf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I. ШАРТНОМА ПРЕДМЕТИ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="209" width="480" height="20" uuid="2c2fd59a-1401-4520-9fe6-90fe1778b6c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[II. КАФИЛНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="229" width="480" height="21" uuid="34367d3b-2b94-4362-a804-c064727dfa1b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1. Кафиллик билан таъминланган мажбуриятлар Қарздор томонидан бажарилмаганда ёки лозим даражада бажарилмаганда ва Кредиторнинг талабига асосан, Кафил кредит тўловларини, кредит бўйича ҳисобланган фоизларни ва бошқа тўловларни Кредит шартномасидаги қарздорнинг мажбуриятлари билан белгиланган муддат ва миқдорда тўлаш мажбурияти олади.\n\t2.2. Агар кафил тўлов қобилиятини йўқотган ёки мажбуриятларини бажара олмайдиган ҳолатда бўлса, қарздорликни ундириш кафилнинг барча мол-мулкига қаратилади.\n\t2.3. Кредитор томонидан қўйилган мажбуриятларини бажариш тўғрисидаги талаб 1 (бир) банк иш кунида Қарздор томонидан бажарилмаса, Кафил: \n\tа) Кредит шартномаси бўйича талабларни қондириш учун етарли бўладиган суммани, кейинчалик Кредитор кўрсатган ҳисобвараққа ўтказиш учун, ўзининг барча ҳисобварақларидан ундириб бериш тўғрисида Кафилнинг банкига сўзсиз ва чакириб олинмайдиган талабни қўйиш ҳуқуқини (акцептсиз) Кредиторга беради;\n\tб) Ўзига хизмат кўрсатувчи банкга Кредиторнинг талабига биноан ўз ҳисоб рақамларидаги пул маблағлари ҳаракати ҳақида маълумот бериш ваколати (ҳуқуқи)ни беради;\n\tв) Ўзига хизмат кўрсатувчи банкга Кредиторнинг биринчи талабига асосан Кафилнинг розилигисиз Кредитор талаб қилган валютада Кафилнинг ҳисобварақларидан маблағларни кўчириш тўғрисида фармойиш беради (кўчиришни топширади), яъни ҳисобварағидан пул маблағларини ўзининг розилигисиз кўчириш ҳуқуқини беради.\n\t2.4. Кредиторнинг талабига кўра Кафил ўзининг молиявий аҳволи тўғрисидаги барча маълумотларни тақдим этади. \n\t2.5. Иш жойи ёки яшаш жойи ўзгарганда, Кафил бу ҳақда 10 кунлик муддат ичида Кредиторга хабар бериши лозим.\n\t2.6. Қарздорнинг кредит шартномасига мувофиқ мажбуриятлари тўла бажарилгандан сўнг, Қарздордан ўзига етказилган зарарларни қопланишини талаб қилиш."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="270" width="480" height="40" uuid="9ded869b-522c-461d-aec3-1def4fb7ab26"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t3.1. Кафиллик билан таъминланган мажбуриятни бажарган Қарздор бу ҳақда Кафилни дарҳол хабардор қилиши шарт.\n\t3.2. Қарздор кафиллик билан таъминланган мажбуриятни бажармаган ёки лозим даражада бажармаган тақдирда Кафил ва Карздор Кредитор олдида солидар жавоб берадилар."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="250" width="480" height="20" uuid="f1734367-aa5f-4cda-9ca4-32e69ac0ad96"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[III. ҚАРЗДОРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="310" width="480" height="20" uuid="7744c85f-ff59-4c51-892f-9930a62bd6bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IV. КРЕДИТОРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="330" width="480" height="40" uuid="e03a125f-1875-46b5-9e53-5d5196ba5d87"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t4.1. Кафил Қарздорнинг Кредитор олдидаги мажбуриятларини бажарганда, Кредитор Қарздорга бўлган талабларни тасдиқловчи ҳамма ҳужжатларни ҳамда ушбу талабларни таъминлайдиган ҳуқуқни Кафилга топшириш мажбуриятини олади.\n\t4.2. Кредит мажбуриятлари бажарилмаганда ёки лозим даражада бажарилмаганда тезкорлик билан Кафил ва Қарздорга тўлов талабномаси қўйиш, тўлов толабномаси бир ойлик муддат ичида бажарилмаганда қарз мажбуриятларини қонунда белгиланган тартибда суд орқали ундириб олиш."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="244" y="17" width="53" height="82" uuid="248435a2-577b-4592-be36-39d77dafd8ab">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="327" y="32" width="180" height="67" forecolor="#5293E3" uuid="5b313de1-26df-4675-bec8-368e1f034e52"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="370" width="480" height="20" uuid="814b99f4-2552-4ce0-abab-e267b196b9a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[V. ШАРТНОМАНИ АМАЛ ҚИЛИШ МУДДАТИ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="390" width="480" height="30" uuid="bacf6a1d-9c8d-4ea6-9d93-7dede0061c3d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t5.1. Мазкур шартнома имзоланган кундан бошлаб кучга киради, Қарздор ва Кредитор ўртасида тузилган кредит шартномаси шартлари тўла бажарилгунга қадар амалда бўлади."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="420" width="480" height="20" uuid="2bca0e37-f5b7-41a4-9b15-fe8e01c89507"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VI. БОШҚА ШАРТЛАР]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="440" width="480" height="40" uuid="7488deaf-10d5-4450-a478-622535c5d3fa"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t6.1. Тарафлар ўртасидаги низолар келишув йўли билан ҳал этилмаса, улар суд тартибида кўриб чиқилади. Мазкур шартномада кўрсатиб ўтилмаган ҳолатларда, тарафлар Ўзбекистон Республикасининг амалдаги фуқаролик қонунчилигига асосланади(риоя қилади)лар.\n\t6.2. Мазкур шартномага қўшимча ва ўзгартиришлар киритиш тарафларнинг розилиги билан қўшимча Келишув битими тузиш йўли билан амалга оширилади. Ушбу билан Кафил кредит шартномаси шартларига ўзгартиш ва қўшимчалар киритишга олдиндан ўз розилигини беради ва қарздорнинг Кредит шартномасига киритиладиган мазкур ўзгартиш ва қўшимчалар юзасидан вужудга келадиган мажбуриятлари бўйича солидар жавоб бериш мажбуриятини олади.\n\t6.3. Кафил Қарздор ва Кафилнинг кредит тарихини шакллантириш учун зарур бўлган барча маълумотларни Банк томонидан “Кредит ахборот таҳлилий маркази” кредит бюросига берилишига ўз розилигини беради.\n\t6.4. Кафил мустақил юридик шахс сифатида ўз фаолиятини тугатган тақдирда ёки унинг юридик мақоми ўзгарганда, Кредиторнинг розилиги билан Кафилнинг мазкур шартнома бўйича барча мажбуриятлари унинг ҳуқуқий ворисига ўтказилади ёхуд Кафил Кредит шартномаси бўйича қарзни қайтариш, шу жумладан келишилган (белгиланган) муддатдан қатъий назар, фоизларни тўлаш мажбуриятини олади.\n\t6.5. Ушбу шартнома бир хил юридик кучга эга бўлган уч нусхада тузилиб, томонларнинг ҳар бирига бир нусхадан берилади."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="493" width="480" height="20" uuid="17fb12bd-2e05-42e7-8827-c85424797b1f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ТОМОНЛАРНИНГ МАНЗИЛЛАРИ ВА БАНК РЕКВИЗИТЛАРИ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="540" width="155" height="120" uuid="7eed4fb9-74f3-4948-a9c3-68e9a7cbdb89">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{filial} + "\nМанзил: " + $F{filial_address} + "\nСТИР: " + $F{bank_inn} + "\nТелефон рақами: " + $F{filial_phone} +"\n\nБошқарувчи \n____________________ _________\n    (Ф.И.О. и имзо)\n\nБош бухгалтер \n____________________ _________\n    (Ф.И.О. и имзо)\n\n                                М.П.\nХуқуқшунос\n____________________ _________\n    (Ф.И.О. и имзо)\n\n"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="362" y="540" width="155" height="120" uuid="4a5fd79e-506a-468c-b38b-8845706420b5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{borrower_fio} +"\nМанзил: "+$F{borrower_address}+"\nТелефон: " +$F{borrower_phone}+"\nПаспорт маълумотлари: "+$F{borrower_passport_number} +" "+$F{borrower_passport_issue_by}+" ИИБ томонидан "+ $F{borrower_passport_issue_date} +" йилда берилган.\n\n________________________ \n ( имзо)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="200" y="540" width="155" height="120" uuid="cce41f4b-3e5e-4a1a-805a-800a99ec0f27">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{guarantor_fio}+
+"\nМанзил: "+$F{guarantor_address}+
+"\nТелефон: "+$F{guarantor_phone}+
+"\nПаспорт маълумотлари: "+$F{guarantor_passport_number} +" "+$F{guarantor_passport_issue_by}+" ИИБ томонидан "+$F{guarantor_passport_issue_date} +" йилда берилган.\n\n________________________"+ 
+"\n (имзо)"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="522" width="155" height="18" uuid="b96346d5-3014-4173-b8c7-5aa76efd84c1"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[“Кредитор”]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="200" y="522" width="155" height="18" uuid="f6c0bc40-062c-43d5-9b72-0442e62c07eb"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[“Кафил”]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="362" y="522" width="155" height="18" uuid="82252bb3-250d-4ed0-bbd6-61f7484a8216"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[“Қарздор”]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

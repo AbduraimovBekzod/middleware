@@ -19,81 +19,39 @@ public class ConsumerCredit {
         Functions func = new Functions();
 
         requestObj.put("consumer_loan_sum", func.indents(requestObj.getString("consumer_loan_sum")));
-        
-        for (int i = 1; i <= 3; i++) { //запись параметров в report
+        requestObj.put("consumer_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_delay_percent_rate"))));
+        requestObj.put("consumer_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_percent_rate"))));
+        requestObj.put("PSK_number", String.format("%,.1f", Double.parseDouble(requestObj.getString("PSK_number"))));
 
-            JasperReport jasperReport = lang == 0 ?
-                    JasperCompileManager.compileReport(dir + "reports/consumer_credit/rus/consumer_credit_" + i + ".jrxml") :
-                    JasperCompileManager.compileReport(dir + "reports/consumer_credit/uzb/consumer_credit_" + i + ".jrxml");
-
-            Map<String, Object> parameters = new HashMap<String, Object>();
-
-            parameters.put("consumer_blanking_type", requestObj.getString("consumer_blanking_type"));
-            parameters.put("consumer_guarantee_surety_sum", requestObj.getString("consumer_guarantee_surety_sum"));
-            parameters.put("consumer_grace_period", requestObj.getString("consumer_grace_period"));
-            parameters.put("consumer_borrower_passport_number", requestObj.getString("consumer_borrower_passport_number"));
-            parameters.put("consumer_loan_repayment_rate", requestObj.getString("consumer_loan_repayment_rate"));
-            parameters.put("consumer_delay_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_delay_percent_rate"))));
-            parameters.put("consumer_loan_term", requestObj.getString("consumer_loan_term"));
-            parameters.put("consumer_percent_rate", String.format("%,.1f", Double.parseDouble(requestObj.getString("consumer_percent_rate"))));
-            parameters.put("consumer_borrower_passport_issue_by", requestObj.getString("consumer_borrower_passport_issue_by"));
-            parameters.put("consumer_borrower_address", requestObj.getString("consumer_borrower_address"));
-            parameters.put("PSK_number", String.format("%,.1f", Double.parseDouble(requestObj.getString("PSK_number"))));
-            parameters.put("PSK_words", requestObj.getString("PSK_words"));
-            parameters.put("consumer_doverennost_date", requestObj.getString("consumer_doverennost_date"));
-            parameters.put("consumer_borrower_fio", requestObj.getString("consumer_borrower_fio"));
-            parameters.put("consumer_filial_name", requestObj.getString("consumer_filial_name"));
-            parameters.put("consumer_doverennost_number", requestObj.getString("consumer_doverennost_number"));
-            parameters.put("consumer_loan_sum", requestObj.getString("consumer_loan_sum"));
-            parameters.put("consumer_emp_fio", requestObj.getString("consumer_emp_fio"));
-            parameters.put("consumer_number", requestObj.getString("consumer_number"));
-            parameters.put("consumer_city", requestObj.getString("consumer_city"));
-            parameters.put("consumer_date", requestObj.getString("consumer_date"));
-            parameters.put("consumer_bank_name", requestObj.getString("consumer_bank_name"));
-            parameters.put("consumer_committee_decision_number", requestObj.getString("consumer_committee_decision_number"));
-            parameters.put("consumer_borrower_passport_issue_date", requestObj.getString("consumer_borrower_passport_issue_date"));
-            parameters.put("consumer_filial_inn", requestObj.getString("consumer_filial_inn"));
-            parameters.put("consumer_committee_decision_date", requestObj.getString("consumer_committee_decision_date"));
-            parameters.put("consumer_filial_phone", requestObj.getString("consumer_filial_phone"));
-            parameters.put("consumer_filial_address", requestObj.getString("consumer_filial_address"));
-            parameters.put("consumer_loan_purpose", requestObj.getString("consumer_loan_purpose"));
-            parameters.put("consumer_seller_bank_account", requestObj.getString("consumer_seller_bank_account"));
-            parameters.put("consumer_seller_bank_name", requestObj.getString("consumer_seller_bank_name"));
-            parameters.put("consumer_seller_contract_number", requestObj.getString("consumer_seller_contract_number"));
-            parameters.put("consumer_seller_contract_date", requestObj.getString("consumer_seller_contract_date"));
-            parameters.put("consumer_guarantee_surety", requestObj.getString("consumer_guarantee_surety"));
-            parameters.put("consumer_borrower_phone", requestObj.getString("consumer_borrower_phone"));
-            parameters.put("consumer_percent_rate_word", requestObj.getString("consumer_percent_rate_word"));
-            parameters.put("consumer_loan_repayment_date", requestObj.getString("consumer_loan_repayment_date"));
-            parameters.put("consumer_seller_production_name", requestObj.getString("consumer_seller_production_name"));
-            if (requestObj.getInt("consumer_loan_term") <= 12) parameters.put("consumer_account", "12501");
-            else parameters.put("consumer_account", "14901");
-
-            JRDataSource dataSource = new JREmptyDataSource();
-
-            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
-
-            JasperExportManager.exportReportToPdfFile(jasperPrint, dir + "output/consumer_credit_" + i + ".pdf");//create pdf file
+        if (requestObj.getInt("consumer_loan_term") <= 12) {
+            requestObj.put("consumer_account", "12501");
+        } else {
+            requestObj.put("consumer_account", "14901");
         }
 
-        PDFMergerUtility ut = new PDFMergerUtility();
-        for (int i = 1; i <= 3; i++) {
-            ut.addSource(dir + "output/consumer_credit_" + i + ".pdf");
-        }
-        ut.setDestinationFileName(dir + "output/consumer_credit.pdf");//merge pdf name
-        ut.mergeDocuments();//create merge pdf
+        JasperReport jasperReport = lang == 0 ?
+                JasperCompileManager.compileReport(dir+"reports/consumer_credit/rus/consumer_credit.jrxml"):
+                JasperCompileManager.compileReport(dir+"reports/consumer_credit/uzb/consumer_credit.jrxml");
 
-        File file = new File(dir + "output/consumer_credit.pdf");
+        String str = requestObj.toString();
+
+        try (ByteArrayInputStream is = new ByteArrayInputStream(str.getBytes())) {
+            Map<String, Object> parametersMap = new HashMap<>();
+
+            parametersMap.put(JsonQueryExecuterFactory.JSON_INPUT_STREAM, is);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parametersMap);
+            JasperExportManager.exportReportToPdfFile(jasperPrint, "output" + File.separator + "consumer_credit.pdf");
+        }
+
+        File file = new File("output" + File.separator + "consumer_credit.pdf");
+
         FileInputStream fis = new FileInputStream(file);
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream(); //BLOB
         byte[] buf = new byte[1024];
-        for (int readNum; (readNum = fis.read(buf)) != -1; ) {
+        for(int readNum; (readNum = fis.read(buf)) != -1;)
+        {
             bos.write(buf, 0, readNum);
-        }
-
-        for (int i = 1; i <= 3; i++) { //delete parts
-            new File(dir + "output/consumer_credit_" + i + ".pdf").delete();
         }
 
         return bos;

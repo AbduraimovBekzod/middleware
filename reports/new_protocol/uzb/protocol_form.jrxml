@@ -815,7 +815,7 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{secretary_mfo}+", "+$F{secretary_fio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{secretary_fio}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="0" y="25" width="150" height="14" uuid="7d4bf0f8-11dc-4b72-9b80-b8a69d950a55"/>

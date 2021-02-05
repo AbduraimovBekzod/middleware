@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consumer_credit" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="40" bottomMargin="40" uuid="24560b43-37a8-4081-a1a0-6d1ff623f1a1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="PSK_number" class="java.lang.String">
+		<fieldDescription><![CDATA[PSK_number]]></fieldDescription>
+	</field>
+	<field name="consumer_number" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_number]]></fieldDescription>
+	</field>
+	<field name="consumer_city" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_city]]></fieldDescription>
+	</field>
+	<field name="consumer_date" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_date]]></fieldDescription>
+	</field>
+	<field name="consumer_bank_name" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_bank_name]]></fieldDescription>
+	</field>
+	<field name="consumer_filial_name" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_filial_name]]></fieldDescription>
+	</field>
+	<field name="consumer_borrower_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_borrower_fio]]></fieldDescription>
+	</field>
+	<field name="consumer_borrower_address" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_borrower_address]]></fieldDescription>
+	</field>
+	<field name="consumer_borrower_passport_number" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_borrower_passport_number]]></fieldDescription>
+	</field>
+	<field name="consumer_borrower_passport_issue_by" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_borrower_passport_issue_by]]></fieldDescription>
+	</field>
+	<field name="consumer_borrower_passport_issue_date" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_borrower_passport_issue_date]]></fieldDescription>
+	</field>
+	<field name="consumer_committee_decision_number" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_committee_decision_number]]></fieldDescription>
+	</field>
+	<field name="consumer_committee_decision_date" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_committee_decision_date]]></fieldDescription>
+	</field>
+	<field name="consumer_loan_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_loan_sum]]></fieldDescription>
+	</field>
+	<field name="consumer_loan_purpose" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_loan_purpose]]></fieldDescription>
+	</field>
+	<field name="consumer_grace_period" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_grace_period]]></fieldDescription>
+	</field>
+	<field name="consumer_loan_term" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_loan_term]]></fieldDescription>
+	</field>
+	<field name="consumer_percent_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_percent_rate]]></fieldDescription>
+	</field>
+	<field name="consumer_delay_percent_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_delay_percent_rate]]></fieldDescription>
+	</field>
+	<field name="consumer_blanking_type" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_blanking_type]]></fieldDescription>
+	</field>
+	<field name="consumer_loan_repayment_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_loan_repayment_rate]]></fieldDescription>
+	</field>
+	<field name="consumer_account" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_account]]></fieldDescription>
+	</field>
+	<field name="consumer_seller_bank_account" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_seller_bank_account]]></fieldDescription>
+	</field>
+	<field name="consumer_seller_production_name" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_seller_production_name]]></fieldDescription>
+	</field>
+	<field name="consumer_seller_bank_name" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_seller_bank_name]]></fieldDescription>
+	</field>
+	<field name="consumer_seller_contract_number" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_seller_contract_number]]></fieldDescription>
+	</field>
+	<field name="consumer_seller_contract_date" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_seller_contract_date]]></fieldDescription>
+	</field>
+	<field name="consumer_guarantee_surety" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_guarantee_surety]]></fieldDescription>
+	</field>
+	<field name="consumer_guarantee_surety_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_guarantee_surety_sum]]></fieldDescription>
+	</field>
+	<field name="consumer_loan_repayment_date" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_loan_repayment_date]]></fieldDescription>
+	</field>
+	<field name="consumer_filial_address" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_filial_address]]></fieldDescription>
+	</field>
+	<field name="consumer_filial_inn" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_filial_inn]]></fieldDescription>
+	</field>
+	<field name="consumer_filial_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_filial_phone]]></fieldDescription>
+	</field>
+	<field name="consumer_borrower_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[consumer_borrower_phone]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="762" splitType="Stretch">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="37" y="164" width="480" height="20" uuid="bb038569-f76e-4a71-a3e6-fbc1bdb7e26e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Кредитный договор о выдаче потребительского кредита № "+$F{consumer_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="37" y="186" width="260" height="19" uuid="b8dea2ca-4134-4dbf-b90f-5a3ea3232bbf"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consumer_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="297" y="186" width="220" height="19" uuid="61ab320a-51aa-4418-9c96-cb13582a2cc2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consumer_date} + " г."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="209" width="480" height="14" uuid="bc80da6c-3620-46b3-8461-d2232c7c63f2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t"+$F{consumer_bank_name}+" Национального банка (именуемый далее по тексту-Банк) в лице своего представителя- Управляющего "+ $F{consumer_filial_name} +" Банка ________________________________ действующего на основании Устава и Довереннности № \"_____________________________\" от \"__________________________\" года с одной стороны и гражданин (ка) "+$F{consumer_borrower_fio}+" проживающий(ая) "+$F{consumer_borrower_address}+" паспорт серии "+$F{consumer_borrower_passport_number}+" выдан "+$F{consumer_borrower_passport_issue_by}+" ИИБ "+$F{consumer_borrower_passport_issue_date}+" г. (именуемый далее по тексту- Заемщик) с другой стороны, вместе именуемые «Стороны» заключили между собой настоящий Договор о нижеследуюшем."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="243" width="480" height="19" uuid="081ad6df-91d5-4709-b15e-5a5aa8817422"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t1.1.	Банк согласно решению кредитного комитета  № "+$F{consumer_committee_decision_number}+" от "+$F{consumer_committee_decision_date}+" года предоставляет Заёмщику кредит для потребительских нужд.\n\t1.2.	Сумма кредита "+$F{consumer_loan_sum}+" сум.\n\t1.3.	Цель кредита для "+$F{consumer_loan_purpose}+".\n\t1.4.	Кредит выдается с льготным периодом "+$F{consumer_grace_period}+" месяцев на срок "+$F{consumer_loan_term}+" месяцев.\n\t1.5.	Процентная ставка за пользование кредитом устанавливается в размере "+$F{consumer_percent_rate}+" процентов за год. За просроченный основной долг процентная ставка устанавливается в размере "+$F{consumer_delay_percent_rate}+" процентов годовых.\n\t1.6.	Кредит погашается "+$F{consumer_blanking_type}+" способом (выбирается аннуитет или способ уменьшения остатка суммы кредиты). Возврат кредита осуществляется  согласно  графику возврата кредита, являющегося  неотъемлемой частью настоящего договора, в соответствии с которым периодичность погашения осуществляется "+$F{consumer_loan_repayment_rate}+" числа каждого месяца.\n\t1.7.	С целью соответствующего выполнения Заемщиком обязательств по настоящему Договору, в соответствии со статей 783 Гражданского кодекса Республики Узбекистан, Банку предоставляется безотзывное и беусловное право/распоряжение списывания со всех банковских счетов Заемщика, открытых в Банке, суммы для выполнения платежных обязатлельств.\n\t1.8.	Согласно настоящему Договору, основной долг по просроченной ссуде и проценты по нему, могут быть погашены со средств, имеющихся на пластиковых картах Заемщика."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="223" width="480" height="20" uuid="0cb043bd-ab34-49c4-a10a-9b04eee86bcf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. Предмет Договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="262" width="480" height="20" uuid="2c2fd59a-1401-4520-9fe6-90fe1778b6c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Права и обязанности сторон ]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="37" y="282" width="480" height="20" uuid="cb632ab0-705f-477e-82b3-8dfc38957b3c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1.	Права Банка:"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="302" width="480" height="21" uuid="34367d3b-2b94-4362-a804-c064727dfa1b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.1.1.	Банк вправе контролировать  платежеспособность Заемщика, достаточность кредитного обеспечения, запрашивать необходимые документы, подтверждающие выполнение обязательств Заемщиком. \n\t2.1.2.	При несвоевременном погашении очередной части Кредита Банк вправе:\n\tа) начиная с даты перевода кредита на счет просроченных ссуд, взимать платеж по повышеной процентной ставке  начисляемой на сумму просроченного основного долга в размере "+$F{consumer_delay_percent_rate}+"% за год;\n\tб) требовать от Заемщика досрочного возврата кредита (остатка долга по кредиту) и незамедлительного  принятия  мер по оплате процентов по нему;\n\tв) в соответствии с законодательством, Банк вправе пользоваться всеми правами по продаже  кредитного обеспечения;\n\tг) Банк вправе в установленном порядке  расторгнуть настоящий Договор.\n\t2.1.3.	Банк вправе контролировать выполнение Заемщиком условий настоящего Договора, в частности целевое использование кредита.\n\t2.1.4.	В случае если Заемщик не выполняет обязательства по погашению основного долга и процентов по нему в срок, Банк вправе предпринять меры, установленные законодательством."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="323" width="480" height="19" uuid="9ef9c34a-4e7b-432a-bc4e-d8a25fe85083"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.2.	Права заемщика:"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="343" width="480" height="30" uuid="64f115f0-ac8b-4589-89d0-22c90831d4f6"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.2.1.	Заемщик вправе ознакомиться с  проектом кредитного договора вне банка и получить его для консультации.\n\t2.2.2.	Заемщик вправе отказаться от получения кредита, до фактического  получения денежных средств от Банка, после подписания кредитного договора.\n\t2.2.3.	Заемщик вправе осуществлять следующие действия по оплате кредита и начисленных по нему процентов:\n\t•	Сдача наличных средств в кассу банковского учреждения;\n\t•	Перевод денежных средств с личного депозитного расчетного счета Заемщика, открытого в Банке;\n\t•	Перевод денежных средств с заработной платы Заемщика посредством безналичного расчета;\n\t•	Другими способами не противоречащими действующему законодательству.\n\t2.2.4.	При внесении  изменений в кредитный договор Банком, получить извещение минимум за  5 дней до внесения изменений.\n\t2.2.5.	Заемщик вправе самостоятельно выбирать страховую компанию и оценщика."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="373" width="480" height="20" uuid="ba201286-a833-4ab8-9150-a65474fb8abf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.3.	Обязанности Банка:"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="393" width="480" height="20" uuid="72b8f6ef-7bbc-4552-bb1f-850290c1867d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.3.1.	Выделение кредита Заемщику в размере "+$F{consumer_loan_sum}+" сум.\n\t2.3.2.	Открытие кредитного расчетного счета "+$F{consumer_account}+" ________________.\n\t2.3.3.	Банк обязан перевести  кредитные средства с ссудного счета Заёмщика путем перечисления безналичных денежных  средств на расчетный счет "+$F{consumer_seller_bank_account}+" "+$F{consumer_seller_production_name}+" открытый в "+$F{consumer_seller_bank_name}+" банке, на основании договора № "+$F{consumer_seller_contract_number}+" от "+$F{consumer_seller_contract_date}+" года заключенного между Заёмщиком и Поставщиком товара,работ, услуг.\n\t2.3.4.	Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="413" width="480" height="20" uuid="8936df06-313d-42d5-8fc7-891681a58d05"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.	Обязанности заемщика:"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="433" width="480" height="40" uuid="3e513e95-d32a-4fd3-a9b0-9d3a9a34ee83"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t2.4.1.	Заемщик обязан предоставить  в Банк до получения кредита, оформленное по  форме, удовлетворяющей запрос банка и в соотвествии с законодательством, обеспечение по кредиту на сумму не менее 125% от суммы кредита в виде "+$F{consumer_guarantee_surety}+" (указывается вид залогового обеспечения) на сумму "+$F{consumer_guarantee_surety_sum}+" сум,  являющееся залогом возвратности кредита.\n\t2.4.2.	Один раз в месяц, ежемесячно, начиная с "+$F{consumer_loan_repayment_date}+" года,   в соответствии с графиком возврата кредита, являющегося неотъемлемой частью данного Договора, Заемщик обязан погашать кредит и начисленные по нему проценты.\n\t2.4.3.	Заемщик обязан ежемесячно, в соответствии с графиком возврата кредита, вносить досрочные платежи, платежи по основному долгу и начисленням процентам на специальный расчетный счет Заемщика.\n\t2.4.4.	Заемщик обязан предоставлять  в соответствии с требованиями Банка любые сведения  по кредитным вопросам в процессе кредитных отношений.\n\t2.4.5.	Заемщик обязан известить Банк в течении 3 дней о возможных  изменениях адреса, места работы, фамилии или шимени, а также других данных, которые когут оказать отрицательное влияние на выполнение обязательств по настоящему Договору.\n\t2.4.6.	В период действия данного Договора, Заемщик без согласования с Банком, не должен привлекать кредиты или долги третьих лиц, имеющих право требования взыскания относительно Заемщика.\n\t2.4.7.	В течении 10 дней, после выделения кредита заемщик должен предоставить в банк документы, подтверждающие приобретение товаров за счет полученного кредита."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="297" y="613" width="220" height="20" uuid="f1e2daf3-5ccf-4ccf-884b-d844c3b4fc1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ЗАЕМЩИК:]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="633" width="230" height="110" uuid="66c10cc0-d4a8-4402-96ca-1222e58eb07b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consumer_filial_name}+" филиал/ отдел Банка\n\nАдрес: "+$F{consumer_filial_address}+"\n\nИНН "+$F{consumer_filial_inn}+"\n\nТелефон "+$F{consumer_filial_phone}+"\n\nУправляющий \n__________________________  _________\n    (Ф.И.О. и подпись)\n\nГлавный бухгалтер \n__________________________  _________\n    (Ф.И.О. и подпись)\n\n                                М.П.\nЮрист\n__________________________  _________\n    (Ф.И.О. и подпись)"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="297" y="703" width="220" height="40" uuid="7595bf21-9d28-42c0-b541-2ae59d6779e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[__________________
+(подпись)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="613" width="230" height="20" uuid="d2bc9113-02b2-46ff-b3b3-b3acfa0c9110"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[БАНК:]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="297" y="633" width="220" height="60" uuid="7f07eff4-8162-4217-b2b1-53d15c2ff65c"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consumer_borrower_fio}+"\n\nАдрес "+$F{consumer_borrower_address}+"\n\nТелефон "+$F{consumer_borrower_phone}+"\n\nПаспортные данные "+$F{consumer_borrower_passport_number}+", выдан "+$F{consumer_borrower_passport_issue_by}+" ИИБ  "+$F{consumer_borrower_passport_issue_date}+"г."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="493" width="480" height="40" uuid="9ded869b-522c-461d-aec3-1def4fb7ab26"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t3.1.	Стороны, уклоняющиеся от выполнения обязательств, предусмотренных настоящим Договором несут ответственность в соответствии с условиями данного договора и действующим законодательством Республики Узбекистан. \n\t3.2.	В случае возникновения просроченной задолженности по кредиту, Заемщик уплачивает Банку за каждый просроченный день  пеню в размере 0,1 процентов от суммы просроченной задолженности за каждый день просрочки, но не более 50 процентов от суммы просроченной задолженности.\n\t3.3.	В случае если Заемщик выполнил условия данного договора, а Банк несвоевременно перечислил сумму кредита, Банк уплачивает пеню в раз мере 0,1 процентов от просроченной суммы за каждый день, но не более 50 процентов от суммы просроченной задолженности."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="473" width="480" height="20" uuid="f1734367-aa5f-4cda-9ca4-32e69ac0ad96"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Ответственность сторон]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="37" y="533" width="480" height="20" uuid="7744c85f-ff59-4c51-892f-9930a62bd6bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. Условия действия Договора]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="37" y="553" width="480" height="40" uuid="e03a125f-1875-46b5-9e53-5d5196ba5d87"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\t4.1.	Данный Договор вступает в силу со дня подписания и действует до полного погашения Заемщиком кредита и процентов по нему, а также выполнению сторонами обязательств в соответствии с настоящим Договором.\n\t4.2.	Настоящий Договор может быть расторгнут согласно письменному заявлению одной сторон, до выполнения Банком обязательств по выдаче кредита.\n\t4.3.	В случае возникновения споров по настоящему Договору, стороны решают их в установленном порядке, в соответствии с действующим законодательством Республики Узбекистан.\n\t4.4.	Изменение условий и дополнения к настоящему Договору производятся по письменному соглашению Сторон.\n\t4.5.	Настоящий Договор составлен в двух экземплярах, имеющих  одинаковую юридическую силу, для каждой из Сторон."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="244" y="17" width="53" height="82" uuid="248435a2-577b-4592-be36-39d77dafd8ab">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="327" y="32" width="180" height="67" forecolor="#5293E3" uuid="5b313de1-26df-4675-bec8-368e1f034e52"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият Миллий банки АЖ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="115" width="163" height="41" uuid="396d8d51-a732-4c0f-a522-133ada996521">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[Полная стоимость кредита]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="115" width="317" height="41" uuid="cf934f72-af96-45bd-9889-23fcf229527a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PSK_number}+"%"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

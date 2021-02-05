@@ -152,8 +152,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{consumer_percent_rate}+"%"+
-"\n("+$P{consumer_percent_rate_word}+")"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{consumer_percent_rate}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="247" y="150" width="273" height="41" uuid="bdc76b78-13c3-49fe-9b86-d6042a390a09">
@@ -165,8 +164,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{PSK_number}+"%"+
-"\n("+$P{PSK_words}+")"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{PSK_number}+"%"]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

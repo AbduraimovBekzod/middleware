@@ -149,8 +149,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{microloan_percent_rate}+"%"+
-"\n("+$P{microloan_percent_rate_word}+")"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{microloan_percent_rate}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="247" y="150" width="273" height="41" uuid="04078e07-b1aa-4d01-a18b-5248a1b4f682">
@@ -162,8 +161,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{PSK_number}+"%"+
-"\n("+$P{PSK_words}+")"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{PSK_number}+"%"]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

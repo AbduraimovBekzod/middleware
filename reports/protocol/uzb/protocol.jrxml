@@ -42,7 +42,7 @@
 	<title>
 		<band height="526">
 			<textField>
-				<reportElement x="280" y="475" width="250" height="20" uuid="f0ed262a-044d-4ec9-8494-9203f62c8954"/>
+				<reportElement positionType="Float" x="280" y="475" width="250" height="20" uuid="f0ed262a-044d-4ec9-8494-9203f62c8954"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -52,7 +52,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_grace_period}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="389" width="250" height="20" uuid="ef06e6f2-5f2f-4e05-83e0-1a4713b0ca06"/>
+				<reportElement positionType="Float" x="280" y="389" width="250" height="20" uuid="ef06e6f2-5f2f-4e05-83e0-1a4713b0ca06"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -62,7 +62,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_percent_rate}+"%"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="369" width="250" height="20" uuid="f53fa21f-f48a-4e51-8168-fe4ef4aa5135"/>
+				<reportElement positionType="Float" x="280" y="369" width="250" height="20" uuid="f53fa21f-f48a-4e51-8168-fe4ef4aa5135"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -72,7 +72,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_amount}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="209" width="250" height="20" uuid="90db46a2-f0ff-4556-9b06-36d263cffd25"/>
+				<reportElement positionType="Float" x="280" y="209" width="250" height="20" uuid="90db46a2-f0ff-4556-9b06-36d263cffd25"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -82,7 +82,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_specialist_fio}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="309" width="250" height="20" uuid="d7e3b488-e3cd-4c2b-a298-fe04872feb6e"/>
+				<reportElement positionType="Float" x="280" y="309" width="250" height="20" uuid="d7e3b488-e3cd-4c2b-a298-fe04872feb6e"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -92,7 +92,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_type}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="329" width="250" height="20" uuid="d52e4612-d8ea-4249-ba23-1f3c7d0051b6"/>
+				<reportElement positionType="Float" x="280" y="329" width="250" height="20" uuid="d52e4612-d8ea-4249-ba23-1f3c7d0051b6"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -102,7 +102,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_product}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="349" width="250" height="20" uuid="a17b9d2f-5f8e-4282-8da6-43a8c4b960b2"/>
+				<reportElement positionType="Float" x="280" y="349" width="250" height="20" uuid="a17b9d2f-5f8e-4282-8da6-43a8c4b960b2"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -112,7 +112,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_lending_currency}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="171" width="250" height="38" uuid="9071ee5e-b8d6-4903-9b09-5bc230ce0de3">
+				<reportElement positionType="Float" x="280" y="171" width="250" height="38" uuid="9071ee5e-b8d6-4903-9b09-5bc230ce0de3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="3">
@@ -124,7 +124,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_initiative_unit}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="429" width="250" height="46" uuid="af4f0b39-5cab-45a1-aa1f-e56c17e09149">
+				<reportElement positionType="Float" x="280" y="429" width="250" height="46" uuid="af4f0b39-5cab-45a1-aa1f-e56c17e09149">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="3">
@@ -136,7 +136,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_finance_source}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="229" width="250" height="20" uuid="2a8cf836-1462-4e2d-87b6-cb06bed579f7"/>
+				<reportElement positionType="Float" x="280" y="229" width="250" height="20" uuid="2a8cf836-1462-4e2d-87b6-cb06bed579f7"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -146,7 +146,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_loan_specialist_position}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="269" width="250" height="20" uuid="0f4f10a7-99d2-4474-a686-1d0c663d8181"/>
+				<reportElement positionType="Float" x="280" y="269" width="250" height="20" uuid="0f4f10a7-99d2-4474-a686-1d0c663d8181"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -156,7 +156,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_client_inn}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="409" width="250" height="20" uuid="b1b8be3e-31c6-4649-ac2b-a8997c42d554"/>
+				<reportElement positionType="Float" x="280" y="409" width="250" height="20" uuid="b1b8be3e-31c6-4649-ac2b-a8997c42d554"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -165,7 +165,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{protocol_term}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField textAdjust="StretchHeight">
 				<reportElement x="41" y="50" width="479" height="100" uuid="5e15e36d-7311-41f2-986f-3513446723a6"/>
 				<textElement textAlignment="Left">
 					<font fontName="DejaVu Serif" size="9" isBold="true"/>
@@ -179,7 +179,7 @@
 "\nКун тартибидаги масала бўйича қарор: "+$F{protocol_decision}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="495" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
+				<reportElement positionType="Float" x="280" y="495" width="250" height="20" uuid="3ee20c04-13e6-4c1d-bf18-4316cc3733d6"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -195,10 +195,10 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Кредит қўмитаси қарори байонидан кўчирма]]></text>
+				<text><![CDATA[Кредит қўмитаси қарори баёнидан кўчирма]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="280" y="249" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>
+				<reportElement positionType="Float" x="280" y="249" width="250" height="20" uuid="cc093c4f-7664-44de-9f44-ca5958a11701"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -208,7 +208,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_customer_name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="289" width="250" height="20" uuid="292010a9-b9a2-4cdf-a7fc-905c59756eaa"/>
+				<reportElement positionType="Float" x="280" y="289" width="250" height="20" uuid="292010a9-b9a2-4cdf-a7fc-905c59756eaa"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -218,7 +218,7 @@
 				<textFieldExpression><![CDATA[$F{protocol_credit_rating}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="349" width="250" height="20" uuid="c532065f-0a13-43d0-9e96-2b31f2d840fe"/>
+				<reportElement positionType="Float" x="30" y="349" width="250" height="20" uuid="c532065f-0a13-43d0-9e96-2b31f2d840fe"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -228,7 +228,7 @@
 				<text><![CDATA[Кредит валютаси]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="171" width="250" height="38" uuid="892f932e-5d80-4a95-b694-8b5773215ff5">
+				<reportElement positionType="Float" x="30" y="171" width="250" height="38" uuid="892f932e-5d80-4a95-b694-8b5773215ff5">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="3">
@@ -240,7 +240,7 @@
 				<text><![CDATA[Кредитни ажратувчи бўлим/филиал номи]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="269" width="250" height="20" uuid="a45426d3-8276-4377-a4a8-692d43e70053"/>
+				<reportElement positionType="Float" x="30" y="269" width="250" height="20" uuid="a45426d3-8276-4377-a4a8-692d43e70053"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -250,7 +250,7 @@
 				<text><![CDATA[Мижоз СТИРи]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="289" width="250" height="20" uuid="4fdbd0f4-6374-4fa8-a676-4f525d516fdc"/>
+				<reportElement positionType="Float" x="30" y="289" width="250" height="20" uuid="4fdbd0f4-6374-4fa8-a676-4f525d516fdc"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -260,7 +260,7 @@
 				<text><![CDATA[Кредитга лаёқатлилик синфи]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="495" width="250" height="20" uuid="b4ee9b2c-b028-4675-b5bb-480f69e0e8b6"/>
+				<reportElement positionType="Float" x="30" y="495" width="250" height="20" uuid="b4ee9b2c-b028-4675-b5bb-480f69e0e8b6"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -270,7 +270,7 @@
 				<text><![CDATA[Кредитни қайтариш тури]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="369" width="250" height="20" uuid="4e348662-2793-4c69-9c17-1fa74c54e803"/>
+				<reportElement positionType="Float" x="30" y="369" width="250" height="20" uuid="4e348662-2793-4c69-9c17-1fa74c54e803"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -280,7 +280,7 @@
 				<text><![CDATA[Кредит суммаси]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="475" width="250" height="20" uuid="1bcbd769-b430-4dd7-a1a9-0fb23de17248"/>
+				<reportElement positionType="Float" x="30" y="475" width="250" height="20" uuid="1bcbd769-b430-4dd7-a1a9-0fb23de17248"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -290,7 +290,7 @@
 				<text><![CDATA[Имтиёзли давр]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="151" width="250" height="20" uuid="859953f2-5855-4490-8217-3ce6a9fcb6ab"/>
+				<reportElement positionType="Float" x="30" y="151" width="250" height="20" uuid="859953f2-5855-4490-8217-3ce6a9fcb6ab"/>
 				<box>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -300,7 +300,7 @@
 				<text><![CDATA[Кредит параметрлари]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="329" width="250" height="20" uuid="3de1d35d-501f-42db-b627-c1f9ff0e4d10"/>
+				<reportElement positionType="Float" x="30" y="329" width="250" height="20" uuid="3de1d35d-501f-42db-b627-c1f9ff0e4d10"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -310,7 +310,7 @@
 				<text><![CDATA[Кредит маҳсулоти]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="389" width="250" height="20" uuid="ba945ca2-ce1e-4993-a6bd-3a143175a6c9"/>
+				<reportElement positionType="Float" x="30" y="389" width="250" height="20" uuid="ba945ca2-ce1e-4993-a6bd-3a143175a6c9"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -320,7 +320,7 @@
 				<text><![CDATA[Фоиз ставкаси (йиллик)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="209" width="250" height="20" uuid="5fa43985-e9fe-4ada-bde8-5dcc5f30fd87"/>
+				<reportElement positionType="Float" x="30" y="209" width="250" height="20" uuid="5fa43985-e9fe-4ada-bde8-5dcc5f30fd87"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -330,7 +330,7 @@
 				<text><![CDATA[Кредит мутахассиси Ф.И.О.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="249" width="250" height="20" uuid="1e61e3e5-7100-414c-ab0e-80965401db55"/>
+				<reportElement positionType="Float" x="30" y="249" width="250" height="20" uuid="1e61e3e5-7100-414c-ab0e-80965401db55"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -340,7 +340,7 @@
 				<text><![CDATA[Мижоз номи]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="229" width="250" height="20" uuid="7dd51b23-fd67-47b2-81cb-4b47326b69e4"/>
+				<reportElement positionType="Float" x="30" y="229" width="250" height="20" uuid="7dd51b23-fd67-47b2-81cb-4b47326b69e4"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -350,7 +350,7 @@
 				<text><![CDATA[Кредит мутахассиси лавозими ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="309" width="250" height="20" uuid="04dd9eb0-c603-4ef5-972b-4ac9994f75ef"/>
+				<reportElement positionType="Float" x="30" y="309" width="250" height="20" uuid="04dd9eb0-c603-4ef5-972b-4ac9994f75ef"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -360,7 +360,7 @@
 				<text><![CDATA[Кредит тури]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="409" width="250" height="20" uuid="980cb498-1d7c-4f13-a108-d580a598150e"/>
+				<reportElement positionType="Float" x="30" y="409" width="250" height="20" uuid="980cb498-1d7c-4f13-a108-d580a598150e"/>
 				<box padding="3">
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>
@@ -370,7 +370,7 @@
 				<text><![CDATA[Кредит муддати]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="429" width="250" height="46" uuid="dd6555ab-ba74-41bd-b374-9d007f24296c">
+				<reportElement positionType="Float" x="30" y="429" width="250" height="46" uuid="dd6555ab-ba74-41bd-b374-9d007f24296c">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box padding="3">
@@ -382,7 +382,7 @@
 				<text><![CDATA[Молиялаштириш манбаи]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="151" width="250" height="20" uuid="38e83a16-d4f1-4dea-83b0-632ad834aad6"/>
+				<reportElement positionType="Float" x="280" y="151" width="250" height="20" uuid="38e83a16-d4f1-4dea-83b0-632ad834aad6"/>
 				<box>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</box>

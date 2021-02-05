@@ -12,6 +12,7 @@
 			<staticText>
 				<reportElement mode="Opaque" x="0" y="0" width="167" height="15" backcolor="#FFFFFF" uuid="82954937-6f5c-49c7-981e-64e3415b1c32">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box leftPadding="2" rightPadding="2">
 					<pen lineWidth="1.0"/>
@@ -85,7 +86,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Serif" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[($F{fio}!=null?$F{fio}:"")+($F{post}!=null?", "+$F{post}:"")]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{fio}!=null?$F{fio}:"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="167" y="0" width="83" height="15" uuid="e0b9aff3-c8e3-4895-90a2-339ffb7c856f">

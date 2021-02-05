@@ -2,7 +2,7 @@
 <!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jsonMain_subreport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c681432-4547-4fd8-91c1-5634ca368da6">
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["/home/reports/new_protocol/rus/"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["/home/reports/new_protocol/uzb/"]]></defaultValueExpression>
 	</parameter>
 	<field name="status" class="java.lang.String"/>
 	<field name="post" class="java.lang.String"/>
@@ -12,15 +12,17 @@
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<subreport>
 				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="1c2a7f8e-3cdb-4431-9283-74d8008d7840"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("credit_committee_attended")]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "credit_committee_attended.jasper"]]></subreportExpression>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("guarantors")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "guarantors.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 		<band height="20">
 			<subreport>
-				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="7cecd699-ae86-467d-b4df-4adea8cc52c7"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("credit_committee_absent")]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "credit_committee_absent.jasper"]]></subreportExpression>
+				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="7cecd699-ae86-467d-b4df-4adea8cc52c7">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("insurances")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "insurances.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>

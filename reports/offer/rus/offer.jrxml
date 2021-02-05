@@ -120,46 +120,6 @@
 				</textElement>
 				<text><![CDATA[ФИО клиента]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="222" width="261" height="20" uuid="518c8f40-2ffb-416a-9cfd-974f49308d25"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{client_fio}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="260" y="442" width="261" height="20" uuid="29e3e683-d556-4b0c-a2d9-e9337537e1b6"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{offer_datetime}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="260" y="422" width="261" height="20" uuid="5cf663e6-9ecd-4787-8fcd-a378e2b0c550"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_type}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="260" y="362" width="261" height="20" uuid="27118e2a-5c87-4445-b306-047208fb99d4"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_sum}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="51" y="145" width="470" height="30" uuid="5b6c5665-6639-41ae-8d76-7364c947fa30"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -168,16 +128,6 @@
 				<text><![CDATA[Информация 
 об утверждении заёмщиком оферте о предоставлении онлайн кредита]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="202" width="261" height="20" uuid="5a434087-289f-4054-a9d9-b59693411782"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{claim_datetime}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="182" width="208" height="20" uuid="f6d52bb7-fe72-40ae-bab5-0d91a0320dcc"/>
 				<box leftPadding="5">
@@ -188,26 +138,6 @@
 				</textElement>
 				<text><![CDATA[Номер заявки]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="182" width="261" height="20" uuid="b0342e34-ee03-4260-8d9a-69c72557cd6b"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{claim_number}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="260" y="242" width="261" height="20" uuid="80adcf76-fc4a-45c6-b127-3569c4967280"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{passport}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="242" width="208" height="20" uuid="29f916a5-e2fa-4a90-8b19-c7c460f72e76"/>
 				<box leftPadding="5">
@@ -218,16 +148,6 @@
 				</textElement>
 				<text><![CDATA[Паспортные данные]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="262" width="261" height="20" uuid="6abec871-eb48-4669-ae68-d3a38f56c157"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{client_inn}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="262" width="208" height="20" uuid="a40c101d-5bcc-4177-9011-42f94234b56e"/>
 				<box leftPadding="5">
@@ -238,16 +158,6 @@
 				</textElement>
 				<text><![CDATA[ИНН]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="282" width="261" height="20" uuid="bdc2d426-3dee-48b3-96df-ece698e22d77"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{client_phone}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="282" width="208" height="20" uuid="8da19b0a-1837-4cf7-a729-7dde34a11d26"/>
 				<box leftPadding="5">
@@ -258,16 +168,6 @@
 				</textElement>
 				<text><![CDATA[Телефон]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="302" width="261" height="20" uuid="5492fcbc-6095-4872-b5cb-f729136728b5"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{org_inn}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="302" width="208" height="20" uuid="a69273f3-fa60-4b77-af77-7d109233c133"/>
 				<box leftPadding="5">
@@ -288,16 +188,6 @@
 				</textElement>
 				<text><![CDATA[Наименование организации]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="322" width="261" height="20" uuid="18b6e7a4-03fa-4ed3-8dcf-62e2b28ceee4"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{org_name}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="342" width="208" height="20" uuid="fc8055b5-66a4-459d-b5c2-5824a8b59042"/>
 				<box leftPadding="5">
@@ -308,16 +198,6 @@
 				</textElement>
 				<text><![CDATA[Сумма скоринга]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="342" width="261" height="20" uuid="eac41951-e597-4ee4-ba22-34e52fc38e44"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{scoring_sum}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="382" width="208" height="20" uuid="c92baae3-1e93-43a1-89a7-b3af2585a19c"/>
 				<box leftPadding="5">
@@ -328,16 +208,6 @@
 				</textElement>
 				<text><![CDATA[Срок кредита]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="382" width="261" height="20" uuid="6e065d35-a219-46b4-a65e-854a7b632328"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_term}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="402" width="208" height="20" uuid="b33c89f3-e6a5-40c1-9d00-92980f32511a"/>
 				<box leftPadding="5">
@@ -348,16 +218,6 @@
 				</textElement>
 				<text><![CDATA[Годовая процентная ставка]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="402" width="261" height="20" uuid="a2953ae6-066b-4bca-83d2-5f24b5c4cdfd"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{percent_rate}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="462" width="208" height="28" uuid="96a10da4-83b8-4c28-b92d-5d03ea251558"/>
 				<box leftPadding="5">
@@ -368,16 +228,6 @@
 				</textElement>
 				<text><![CDATA[Номер пластиковой карты, на которую выдан кредит]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="462" width="261" height="28" uuid="a96e6acb-b862-4015-b2ce-17f0e5977b8a"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{card_number}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="570" width="208" height="20" uuid="5fdf3860-c540-46c6-bf51-ba657aad7d3a"/>
 				<box leftPadding="5">
@@ -388,26 +238,6 @@
 				</textElement>
 				<text><![CDATA[Дата и время оформления кредита]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="570" width="261" height="20" uuid="0c1da53a-8c50-4f28-a69c-04fc84f11f63"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_datetime}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="260" y="490" width="261" height="30" uuid="699aa0a8-1e33-40c2-b9d5-4c7690730ffb"/>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{filial}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="490" width="208" height="30" uuid="38cd44da-d311-4b64-b66b-22ebbe8fe818"/>
 				<box leftPadding="5">
@@ -418,13 +248,6 @@
 				</textElement>
 				<text><![CDATA[Отделение банка/филиал (МФО и название)]]></text>
 			</staticText>
-			<image>
-				<reportElement x="247" y="26" width="53" height="82" uuid="32a09815-e044-421a-bb73-019858b0cfbb">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<imageExpression><![CDATA["image/123.png"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="52" y="550" width="208" height="20" uuid="9c71f041-8bc0-40e6-b187-087d5a7677c6">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -437,18 +260,6 @@
 				</textElement>
 				<text><![CDATA[Статус заявки в ИАБС]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="550" width="261" height="20" uuid="c2f6219b-2d60-4ce8-93b8-4b2cd1037152">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{iabs_status}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="590" width="208" height="20" uuid="921b48b8-ae66-499f-b585-eac90659ff61">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -461,18 +272,6 @@
 				</textElement>
 				<text><![CDATA[Статус кредита]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="260" y="590" width="261" height="20" uuid="e82f8f0c-5222-43af-a7ea-79072dcc5dbc">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<box leftPadding="5">
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{loan_status}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="52" y="520" width="208" height="30" uuid="32bab790-e69a-40bc-b09c-ed36d662a94b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -486,7 +285,177 @@
 				<text><![CDATA[Дата и время создания заявки в ИАБС]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="260" y="520" width="261" height="30" uuid="cbf60b52-d837-464e-bbcc-e0ab2c355139">
+				<reportElement x="260" y="222" width="261" height="20" uuid="3e15b2df-c34b-44e8-a414-3d6183906991"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{client_fio}!=null?$F{client_fio}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="442" width="261" height="20" uuid="aeff0137-8877-432b-8b05-a3b58f802456"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{offer_datetime}!=null?$F{offer_datetime}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="422" width="261" height="20" uuid="b92e03f8-e998-4dfe-98c8-f85819d4e159"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{loan_type}!=null?$F{loan_type}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="362" width="261" height="20" uuid="89d180a1-df54-4da7-b2d1-c3ad7d2432db"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{loan_sum}!=null?$F{loan_sum}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="202" width="261" height="20" uuid="6104de5d-bda3-4acc-b6b7-18a46b7fa249"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{claim_datetime}!=null?$F{claim_datetime}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="182" width="261" height="20" uuid="c1d16964-9567-49c4-9b6f-21fdac027853"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{claim_number}!=null?$F{claim_number}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="242" width="261" height="20" uuid="4165046f-3f76-4b9f-9250-240bccbd595e"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{passport}!=null?$F{passport}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="262" width="261" height="20" uuid="96481790-d5f5-46c5-ba89-0eccb1072157"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{client_inn}!=null?$F{client_inn}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="282" width="261" height="20" uuid="49a401ed-d7f0-41a5-879c-642d33c2120a"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{client_phone}!=null?$F{client_phone}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="302" width="261" height="20" uuid="b7ca7f6c-5b72-451a-8607-68d4ea854b62"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{org_inn}!=null?$F{org_inn}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="322" width="261" height="20" uuid="bb318464-efb5-431b-9d65-c56a49709f64"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{org_name}!=null?$F{org_name}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="342" width="261" height="20" uuid="5add6893-fcf1-42e8-89eb-6d4386decf1c"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{scoring_sum}!=null?$F{scoring_sum}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="382" width="261" height="20" uuid="02035c6e-63bd-4d1a-925c-e43f7b0c3dee"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{loan_term}!=null?$F{loan_term}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="402" width="261" height="20" uuid="e16f71c0-affc-44b9-9f97-587777351b2a"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{percent_rate}!=null?$F{percent_rate}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="462" width="261" height="28" uuid="b2a00f82-ac59-4da6-93ed-0de153074b9c"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{card_number}!=null?$F{card_number}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="570" width="261" height="20" uuid="652f1dc0-3d98-4daf-9cac-8768221c38ac"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{loan_datetime}!=null?$F{loan_datetime}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="490" width="261" height="30" uuid="a81111da-a419-4284-8254-7d07e0aff361"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{filial}!=null?$F{filial}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="550" width="261" height="20" uuid="338d0e00-3a34-4af4-a3e9-7a6f8e430aa8">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="5">
@@ -495,8 +464,602 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{iabs_datetime}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{iabs_status}!=null?$F{iabs_status}:"-")]]></textFieldExpression>
 			</textField>
+			<textField>
+				<reportElement x="260" y="590" width="261" height="20" uuid="2ff2acf8-f5f8-4c99-9a72-440cb9b137bd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{loan_status}!=null?$F{loan_status}:"-")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="520" width="261" height="30" uuid="a8fef641-add3-45f1-9acb-dc132e80521a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{iabs_datetime}!=null?$F{iabs_datetime}:"-")]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="20" width="555" height="20" uuid="cbb14ee3-d5eb-4c03-9459-12b0e79d5eb5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Оферта]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="555" height="20" uuid="82433cc5-c8c1-43f2-97c2-141983f2b0c3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(руководство использования при оформлении «Онлайн кредита» через приложение «Миллий»)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="555" height="39" uuid="c790804a-cd87-4bf2-9b06-69081032aa79"/>
+				<box leftPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	Настоящий документ является официальным подтверждением Акционерного общества «Национальный банк» (далее – «Банк») и держателя карты (далее-«Заемщик») о предоставлении  услуги онлайн кредита через приложение «Миллий»).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="99" width="555" height="20" uuid="2296e655-f5a3-42da-972f-1e6d6748b060">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Термины и определения]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="119" width="555" height="140" uuid="94b6f409-5f20-4871-869f-80e20229d2d7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	Мобильное приложение «Миллий» - программное обеспечение для мобильных устройств, которое позволяет пользователю оплачивать онлайн услуги, управлять пластиковой картой и выполнять другие операции;
+	Онлайн кредит – кредит, предоставляемый Банком Заемщику при недостаточности или отсутствии денежных средств на Картсчете (Счете) Заемщика в пределах лимита онлайн кредита;
+	Оферта – документ, подтвержденный Банком и публично опубликованный в электронном виде через Мобильное приложение, предлагающий заключение договора по предоставлению онлайн кредита;
+	Акцепт – полное и безоговорочное принятие Оферты. Акцептирование Оферты создает заключение Договора и имеет юридическое значение;
+	Договор – договор между Заемщиком и Банком на предоставление услуг по дистанционному получению онлайн кредита, который заключается посредством Акцепта Оферты.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="259" width="555" height="20" uuid="916a9a9a-edc4-462f-b8ec-332073dd7feb">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I.	Предмет договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="279" width="555" height="70" uuid="24e143a6-aac4-483c-acc5-ec626ec6fdc2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	1.1.	Банк предоставляет онлайн кредит через мобильное приложение  «Миллий» держателю пластиковой карты, выпущенной Банком в рамках зарплатного проекта. Заемщик обязуется полностью погасить онлайн кредит и начисленные по нему проценты в порядке, указанном в настоящей Оферте.
+	1.2.	Онлайн кредит считается выданным с даты получения на банковскую карту Заемщика или с даты использования в пределах лимита, установленного на банковской карте.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="349" width="555" height="20" uuid="adae7a88-7aee-473c-8c3a-aff67e33b710">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[II.	Общие условия оферты]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="369" width="555" height="130" uuid="289fd5eb-9a93-44d5-928f-57455a9111de"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	2.1.	Все, кто акцептует данную оферту (далее по тексту «Заемщик»):
+	- Ознакомились со всеми условиями и сведениями, раскрытыми в разделе «Условия кредитования» в мобильном приложении «Миллий»;
+	- Понимают, что получение онлайн кредита невозможно без раскрытия информации о себе, и желают предоставить Банку, необходимую информацию;
+	- Понимают, что письменные документы от Банка могут быть предоставлены Пользователю в электронном виде и считают такую форму получения документов для себя доступной;
+	- Заемщик самостоятельно использует мобильное приложение «Миллий» через свое мобильное устройство, и все действия, выполняемые через мобильное приложение и аккаунт, считаются выполненными им;
+	- Сообщают, что, ознакомившись с офертой поняли все условия, предложенные в оферте.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="499" width="555" height="20" uuid="54fa94df-d4b7-4e8a-970f-a16941704339">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[III.	Порядок акцептирования договора ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="519" width="555" height="50" uuid="6e03c0e9-a678-46a6-87b8-7cb4945504b1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	3.1.	Акцепт по настоящему договору производится в виде электронного сообщения, текст которого содержит согласие Заемщика.
+	3.2.	Акцепт считается принятым со стороны Заемщика с момента одобрения онлайн кредита через мобильное приложение «Миллий».  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="569" width="555" height="20" uuid="20b364ab-5f2e-44e3-8cd6-5a6e7f5e3b17">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IV.	Порядок по утверждению принятого акцепта]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="589" width="555" height="25" uuid="73343c5c-3e13-43ae-843a-7505f020a55c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	4.1.	После получения акцепта Банк направляет Пользователю сообщение о получении акцепта.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="614" width="555" height="20" uuid="1fa3b22a-fc5e-4f06-8de8-4ed6982de06f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[V.	Условия онлайн кредита]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="634" width="555" height="145" uuid="2494abf8-e60c-483d-b37e-60dd1f724899"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	5.1.	Общие условия онлайн кредита опубликованы на сайте Банка в сети Интернет по адресу: https://nbu.uz/.
+	5.2.	Онлайн кредит выдается после проверки кредитоспособности и платежеспособности Заемщика по скоринговой модели банка.
+	5.3.	Кредитоспособность Заемщика определяется по личным данным, анализами движения банковской карты и другими финансовыми показателями.
+	5.4.	По результатам анализа кредитоспособности, Заемщик уведомляется об условиях предоставляемого лимита онлайн кредита или об отказе посредством сообщения в Мобильном приложении.
+	5.5.	С целью соответствующего выполнения Заемщиком обязательств по настоящему Договору, в соответствии со статей 783 Гражданского кодекса Республики Узбекистан, Банку предоставляется безотзывное и безусловное право/распоряжение списывать со всех банковских счетов]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="20" width="554" height="50" uuid="642ca6a7-1060-48e4-b2fd-5808cdbd0f80"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[ Заемщика, открытых в Банке, суммы для выполнения платежных обязательств.
+	5.6.	Согласно настоящему Договору, погашение онлайн кредита осуществляется посредством заработной платы, пенсии или других не запрещенных средств, поступивших на личную пластиковую карту Заемщика, а также другими способами, не противоречащими законодательству.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="555" height="20" uuid="7adae5fb-e1cb-4451-913a-b4b24803a274">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VI.	Права и обязанности сторон]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="555" height="439" uuid="9e188d4e-7ee8-44be-9b08-2e26deceea79"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	6.1.	Заемщик имеет право:	
+	6.1.1. Ознакомиться с условиями онлайн кредитования и использовать  выданные средства в рамках выделенного кредита или утвержденного лимита;
+	6.1.2. Уплачивать кредит и проценты по нему путем внесение денежных средств на банковскую карту;
+	6.1.3. Отказаться от получения онлайн кредита до фактического получения денежных средств от Банка, после подписания договора;
+	6.1.4. Осуществлять частичное или полное погашение кредита в сроки, указанные в договоре.
+	6.2. Заемщик обязуется:
+	6.2.1. Соблюдать требования настоящего договора;
+	6.2.2. Ежемесячно для погашения Задолженности обеспечить на карточном счете наличие суммы денежных средств не менее суммы платежа и не позднее даты оплаты платежа;
+	6.2.3. Письменно известить Банк в течении 3 дней об изменениях адреса, места работы, обслуживающего Банка, полных реквизитов зарплатной пластиковой карты, фамилии или имени, а также других данных, которые могут оказать отрицательное влияние на выполнение обязательств по настоящему Договору.
+	6.3. Банк имеет право:
+	6.3.1	. Контролировать платежеспособность Заемщика, достаточность обеспечения онлайн кредита, запрашивать необходимые документы, подтверждающие выполнение обязательств Заемщиком.
+	6.3.2. При несвоевременном погашении очередной части онлайн кредита:
+	а) Начиная с даты перевода кредита на счет просроченных ссуд, взимать платеж по повышенной процентной ставке, равной двукратному размеру основной ставки по кредитному продукту;
+	б) Требовать от Заемщика досрочного возврата кредита (остатка долга по кредиту) и незамедлительного принятия мер по оплате процентов по нему;
+	в) Отказать Заемщику в выпуске, активации, перевыпуске или разблокировании Кредитной карты, а также в предоставлении/возобновлении Лимита задолженности по своему усмотрению и без указания причин (после открытия лимита кредитования сформировавшиеся просроченные долги по кредитам в течении 3х месяца не будет погашены в установленные сроки использования лимита);
+	г) Банк вправе в установленном порядке расторгнуть настоящий Договор и принять меры, предусмотренные законодательством. 
+	6.3.3. Контролировать выполнение Заемщиком условий настоящего Договора.
+	6.4. Банк обязуется: 
+	6.4.1. Обеспечивать бесперебойную работу мобильного приложения «Миллий»;
+	6.4.2. Предоставить Заемщику онлайн кредит на условиях настоящего договора;
+	6.4.3. Извещать Заемщика в письменном порядке о причинах досрочного взыскания кредита.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="529" width="555" height="20" uuid="dca05b38-19bd-463c-b1bd-c3e362de1b56">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VII.	Ответственность сторон]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="549" width="555" height="160" uuid="b4812e72-c281-4956-b41e-2c133f2a6aea"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	7.1.	За неисполнение либо ненадлежащее исполнение своих обязательств, Стороны несут ответственность в соответствии с действующим законодательством Республики Узбекистан;
+	7.2.	За неуплату кредита в срок Заемщик уплачивает Банку штраф в размере 0,1% от суммы просроченного платежа за каждый день просрочки, но не более 10% от суммы просроченного платежа;
+	7.3.	В случае несвоевременного предоставления заемщику кредита по вине Банка, Заемщик имеет право на получение пени размере 0,1 % от суммы невыданного кредита за каждый день, но не более 10 % от суммы невыданного кредита в установленном порядке;
+	7.4.	Стороны освобождаются от ответственности за частичное или неисполнение обязательств по настоящему Договору, если это неисполнение явилось следствием обстоятельств непреодолимой силы, возникших после заключения Договора в результате событий чрезвычайного характера, который участник не мог ни предвидеть, ни предотвратить разумными мерами (Форс-мажор).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="709" width="555" height="20" uuid="b34e4446-e62a-436b-93da-48a87c138f5c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIII.	Конфиденциальность]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="729" width="555" height="60" uuid="8e9a084e-386d-487c-a9e3-200ad4fbe225"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	8.1.	Заемщик даёт согласие на обработку и использование персональных данных, а также предоставления информации по данной оферте кредитному бюро и, при необходимости, страховой компании.
+	8.2.	Банк в праве передать всю необходимую информацию третьем лицам в рамках данной оферты, для исполнения своих обязательств.]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="20" width="555" height="20" uuid="63637236-bc49-4e1f-ac52-3f1c5ede15ea">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IX.	Условия прекращения действия договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="555" height="40" uuid="1f2e5e3a-4f5b-445f-b6e3-c2c2458b8876"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	9.1.	Договор прекращается после полного исполнения сторонами условий договора.
+	9.2.	Окончание срока договора не освобождает Заемщика от исполнения своих обязательств и   ответственности от неисполнения или не надлежащего исполнения условий договора.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="555" height="20" uuid="964c6e51-4e00-42f2-8edb-5907f0bd04a4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X.	Порядок разрешения споров]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="555" height="50" uuid="b6284a63-fb6f-423c-a48d-c5ea7550dbea"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	10.1.	Все споры и разногласия, которые могут возникнуть в связи с настоящим Договором, по возможности будут разрешаться путем переговоров между сторонами.
+	10.2.	Если стороны не смогут договориться, то спор разрешается в межрайонном Гражданском суде, по месту нахождения Заемщика.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="555" height="20" uuid="0d638d32-c1c3-4013-af5f-9f018decfc74">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[XI.	Другие условия договора]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="555" height="50" uuid="1682d91e-afd6-4046-aed8-831ac814202a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	11.1.	Электронная версия документа будет хранится в базе данных банка.
+	11.2.	Все уведомления в рамках настоящей оферты сторонам будут отправляться по адресу или номеру телефона, указанный сторонами как адрес или номер телефона для извещения или уведомления. ]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="390" width="555" height="20" uuid="2cf54ff0-c42f-421c-9abf-054c6d94d9fa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[II.	Офертанинг умумий шартлари ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="640" width="555" height="25" uuid="70ea6889-a05f-4512-b8fd-4d835897e223">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	4.1.	Акцепт қабул қилингандан сўнг, Банк Қарз олувчига акцептни қабул қилинганлиги тўғрисида ҳабар юборади.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="312" width="555" height="78" uuid="1b54f12d-b7d7-49f3-8fa8-e6b92eb57f3c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	1.1.	Банк томонидан иш ҳақи лойиҳаси доирасида эмиссия қилинган пластик картаси эгасига Банкнинг расмий веб саҳифаси ва “Миллий” мобил илова орқали Онлайн кредит тақдим этилади. Қарз олувчи ушбу Офертада кўрсатилган тартибда Онлайн кредит ва унга ҳисобланган фоизларни тўлиқ қайтаради.  
+	1.2.	Онлайн кредит Қарз олувчининг банк картасига келиб тушган кундан ёки банк картасига ўрнатилган лимит доирасида ишлатилгандан бошлаб ажратилган ҳисобланади. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="555" height="20" uuid="a956ec7e-0a0d-4a7f-9dc2-8fe65415c61a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Оферта]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="119" width="555" height="20" uuid="cc23def3-43ed-4719-8b48-3dde2a7f9d10">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Атамалар ва таърифлар]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="555" height="59" uuid="d5be643e-cc19-406f-babd-93608b4993f4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	Ушбу хужжат «Ўзбекистон Республикаси ташқи иқтисодий фаолият миллий банки» акциядорлик жамияти (кейинги ўринларда–Банк)нинг карта эгалари бўлган жисмоний шахслар (кейинги ўринларда-Қарз олувчи)га «Миллий» мобил иловасидан фойдаланган ҳолда Онлайн кредит ажратиш бўйича хизматларни кўрсатиш мақсадида шартномани имзолаш учун расмий таклифи (оферта)дир.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="620" width="555" height="20" uuid="bc25b66b-2109-4b4f-9ac4-2ce97b07134c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IV.	Акцептни қабул қилинганлигини тасдиқлаш тартиби ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="551" width="555" height="20" uuid="993a8374-1e22-4262-868e-5f3e912347e0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[III.	Шартномани акцептлаш тартиби ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="571" width="555" height="49" uuid="f13f97be-89d6-484e-8ceb-baa5a08e74d0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	3.1. Ушбу шартномага асосан акцепт мижознинг розилиги бўлган электрон шаклда амалга оширилади.
+	3.2. Қарз олувчи Банкнинг расмий веб саҳифаси ва “Миллий” мобил иловаси орқали Онлайн кредитдан фойдаланишни маъқуллаган вақтдан бошлаб қабул қилинган ҳисобланади.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="665" width="555" height="20" uuid="ddcd483d-f515-4804-a4ce-088821224c5a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[V.	Онлайн кредит шартлари ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="139" width="555" height="153" uuid="bf2a0722-b943-4101-be95-f1d98655530a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	 “Миллий” мобил иловаси – фойдаланувчига ҳизмат кўрсатувчиларга онлайн режимда ҳақ тўлаш, ўз пластик карталари бошқариш ва бошқа амалларни бажариш имкониятини берувчи мобил қурилмалар учун мўлжалланган дастурий таъминот;
+	Онлайн кредит – Банк томонидан жисмоний шахсларга нақд пулсиз шаклда банк картасига ўтказиш йўли билан, шунингдек банк карта сақловчисига истеъмол эҳтиёжини қондириш учун банк картаси ҳисобварағидаги қолдиқ маблағдан ортиқ миқдордаги маблағни ўрнатилган лимит доирасида ишлатиш ҳуқуқини берувчи кредит хизмати тури;
+	Оферта – Банк томонидан тасдиқланган ва мобил илова орқали электрон шаклда эълон қилинган Онлайн кредит бўйича шартнома тузишни таклиф қилувчи хужжат;
+	Акцепт – Офертани тўлиқ ва шартсиз қабул қилиш. Офертани қабул қилиш шартнома тузилишини таъминлайди ва юридик кучга эга бўлади;
+	Шартнома – Қарз олувчи ва Банк ўртасида Онлайн кредитни масофадан туриб олиш бўйича ҳизматларни тақдим этиш тўғрисида Офертани қабул қилиш орқали тузилган шартнома;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="685" width="555" height="84" uuid="5b2ff9ca-5e2b-4cdb-8c6f-4c94ce372817"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	5.1.	Онлайн кредитнинг умумий шартлари Банкнинг https://nbu.uz/ расмий веб саҳифасида эълон қилинади. 
+	5.2.	Онлайн кредит Банкнинг скоринг моделига мувофиқ Қарз олувчининг кредитга лаёқатлилиги ва тўлов қобилияти текширилгандан сўнг берилади.  
+	5.3.	Қарз олувчининг кредитга лаёқатлилиги ва тўлов қобилияти унинг Банкка тақдим этган шахсий маълумотлари асосида кредит тарихи, банк карталари харакати таҳлили ва бошқа молиявий кўрсаткичлар орқали аниқланади.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="410" width="555" height="141" uuid="313c8862-b94e-4320-9947-be730612191d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	2.1.	Ушбу Офертани қабул қилган Қарз олувчи: 
+	- “Миллий” мобил иловасининг “Кредит ажратиш шартлари” бўлимида келтирилган барча шартлар ва маълумотлар билан танишишини;
+	- ўзи ҳақидаги маълумотларни ошкор қилмасдан Онлайн кредит олишнинг иложи йўқлигини тушуниши ва Банкка керакли бўлган барча электрон маълумотларни тақдим этишини;
+	- ҳужжатлар электрон шаклда тақдим этилиши ва ҳужжатларни бундай шаклда тақдим этилиши Қарз олувчига мақбуллигини;
+	- Қарз олувчи мустақил равишда мобил қурилмаси орқали “Миллий” мобил иловасидан фойдаланиши, мобил илова ва унинг аккаунти орқали бажарилган барча амаллар у томонидан бажарилган деб ҳисобланишини;
+	- таклиф этилган Офертанинг барча шартларини иҳтиёрий тарзда ва онгли равишда тушуниб тасдиқлайди.  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="555" height="20" uuid="d47af4d0-dc24-46bb-8cf6-82b9fdf798d5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(«Миллий» мобил иловаси орқали «Онлайн кредит»дан фойдаланиш бўйича)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="292" width="555" height="20" uuid="78666193-3eea-47a9-92cf-fd1d81934465">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I.	Шартнома предмети ]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="619" width="555" height="20" uuid="50944ca1-4dc3-4753-b8e4-5561f039694f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VII.	Томонларнинг жавобгарлиги]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="159" width="555" height="460" uuid="d7ccc710-45ca-4015-8e21-2bfa16519e72"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	6.1 Қарз олувчининг ҳуқуқлари:
+	6.1.1. Банкнинг Онлайн кредитлар ажратиш тартиби билан танишиб чиқиш,  ажратилган кредит ва тасдиқланган лимит доирасида маблағлардан фойдаланиш;
+	6.1.2. Кредит ва унга ҳисобланган фоиз тўловларини банк картасига маблағ киритиш орқали амалга ошириш;
+	6.1.3. Кредит шартномаси имзоланганидан кейин, бироқ пул маблағлари ҳақиқатда олингунга қадар кредит олишдан бирон-бир тўловларсиз воз кечиш;
+	6.1.4. Кредит қарздорлигини шартномада белгиланган муддатлардан аввал қисман ёки тўлиқ қайтариш.
+	6.2. Қарз олувчининг мажбуриятлари:
+	6.2.1. Ушбу Оферта талабларини бажариш; 
+	6.2.2. Кредит ажратилганидан бошлаб ҳар ойда, кредит бўйича навбатдаги тўловларни Банкда Қарз олувчи номига очилган пластик карта ҳисобварағига олдиндан, асосий қарз ва фоизлар бўйича навбатдаги тўлов муддати келгунича киритиб бориш;
+	6.2.3. Турар жойи, иш жойи, хизмат кўрсатувчи банки, иш ҳақи картасининг реквизитлари, фамилияси ёки исми ўзгариши кутилаётгани, шунингдек мазкур шартнома бўйича мажбуриятлар бажарилишига салбий таъсир кўрсатиши мумкин бўлган бошқа ҳолатлар тўғрисида кўпи билан 3 кун ичида Банкка хабар бериш.
+	6.3.	Банкнинг ҳуқуқлари:
+	6.3.1. Қарз олувчининг тўлов лаёқатини, кредит таъминоти етарлилигини назорат қилиш, Қарз олувчидан мажбуриятларни бажариш юзасидан керакли ҳужжатларни сўраб олиш;
+	6.3.2. Онлайн кредитнинг навбатдаги қисми ўз вақтида сўндирилмаган ҳолларда:
+	а) Онлайн кредит (ёки унинг бир қисми) муддати ўтган тўловлар ҳисобварағига киритилган санадан бошлаб кредит учун ҳақни оширилган фоиз ставкаси бўйича, кредит хизмати асосий ставкасининг икки баробари миқдорида белгилаш;
+	б) Қарз олувчидан Онлайн кредитни (кредит бўйича қарз қолдиғини) муддатидан олдин қайтариш ва фоизларни тўлаш юзасидан дарҳол чоралар кўришини талаб қилиш;
+	в) Қарз олувчига банк картаси чиқариш, активлаштириш, қайта чиқариш ёки блокдан чиқариш шунингдек, кредит лимитини (кредит лимити очилгандан сўнг кредит бўйича юзага келган муддати ўтган қарздорликлар 3 ой давомида белгиланган муддатларда сўндирмаган тақдирда лимитдан фойдаланишни) бекор қилиш; 
+	г) ушбу шартномани белгиланган тартибда бекор қилиш ва қонунчиликда белгиланган чоралар кўриш.
+	6.3.3. Қарз олувчи томонидан ушбу Оферта шартларининг бажарилишини назорат қилиш. 
+	6.4. Банкнинг мажбуриятлари:
+	6.4.1. «Миллий» мобил иловасини узлуксиз ишлашини таъминлаш; 
+	6.4.2. Ушбу оферта шартлари асосида Қарз олувчига Онлайн кредит ажратиш;
+	6.4.3. Қарз олувчини Онлайн кредитни муддатидан олдин ундиришга қаратиш сабаблари тўғрисида ёзма хабардор қилиш. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="139" width="555" height="20" uuid="a31c5c5f-6ef5-420e-8e92-2e7ee2777ec2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VI.	Томонларнинг ҳуқуқ ва мажбуриятлари ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="639" width="555" height="131" uuid="9487e80e-3875-46cc-99ea-418a4251a6dd"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	7.1.	Томонлар ушбу шартномада кўзда тутилган ўз мажбуриятларни бажармаганлиги ва лозим даражада бажармаганлиги учун Ўзбекистон Республикасининг амалдаги қонунчилигига мувофиқ жавобгар бўладилар. 
+	7.2.	Кредит бўйича қарздорликни белгиланган муддатда тўламаганлиги ва улар бўйича муддати ўтган суммалар вужудга келгани учун Қарз олувчи Банкка кечиктирилган тўловларнинг ҳар бир куни учун кечиктирилган тўлов суммасининг               0,1 фоизи миқдорида, аммо кечиктирилган тўлов суммасининг 10 фоизидан ошмаган миқдорда пеня тўлайди.
+	7.3.	Қарз олувчи томонидан ушбу шартноманинг шартлари бажарилиб, банк кредитни ўз вақтида ажратмаган ҳолатда Банк Қарз олувчига муддатида тўланмаган кредит суммасининг кечиктирилган ҳар бир куни учун 0,1 фоиз миқдорида, лекин муддатида тўланмаган кредит суммасининг 10 фоизидан юқори бўлмаган миқдорда пеня тўлайди.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="554" height="119" uuid="bfbad41d-3edb-4640-b590-db1a5bd8718f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	5.4.	Кредитга лаёқатлилик таҳлилининг натижаларига кўра Қарз олувчига Онлайн кредити ажратилади ёки кредит ажратишни рад этиш тўғрисида мобил илова орқали ҳабар қилинади. 
+	5.5.	Қарз олувчи томонидан ушбу шартнома бўйича мажбуриятлар тегишлича бажарилишини таъминлаш мақсадида, Ўзбекистон Республикаси Фуқаролик кодексининг 783-моддасига мувофиқ, Банкка кредит қарзларини сўндириш бўйича Қарз олувчининг Банкдаги ҳар қандай ҳисобварақларидан ҳар қандай валютадаги пул маблағларини чиқариб олиш борасида ҳеч қандай шарт қўйилмайдиган ва қайтариб олинмайдиган ҳуқуқ/фармойиш тақдим этади.
+	5.6.	Ушбу шартномага мувофиқ, Онлайн кредит тўлови Қарз олувчининг банк картасига ўтказилган иш ҳақи, пенсия ва таъқиқланмаган бошқа маблағлар ҳисобидан ва қонунчиликда тақиқланмаган бошқа усуллар орқали амалга оширилиши мумкин.]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="151" width="555" height="20" uuid="0a5cc690-bf74-4a9d-acae-4a408ada2c79">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IX.	Шартноманинг бекор бўлиши шартлари]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="171" width="555" height="50" uuid="64985ca7-f79c-4fd7-a41e-da5ae8023c56">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	9.1.	Шартнома томонлар шартнома шартларини тўлиқ бажарганларидан кейин бекор қилинган деб ҳисобланади. 
+	9.2.	Шартноманинг амал қилиш муддатининг тугаши Қарз олувчини ўз мажбуриятларини бажаришдан ёки ушбу Оферта шартларни бажаришдан озод қилмайди. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="221" width="555" height="20" uuid="b3188232-dde6-4624-ba8a-aa055ee2f923">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X.	Низоларни ҳал қилиш тартиби]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="241" width="555" height="50" uuid="402fbdc0-175a-4a2e-a7ca-699598deb995">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	10.1.	Ушбу Оферта бўйича юзага келган ҳар қандай низолар ва келишмовчиликлар томонлар ўртасида музокаралар орқали ҳал қилинади.
+	10.2.	Агар томонлар келиша олмасалар, низолар жавобгарнинг манзили бўйича ҳудуддаги Фуқаролик судларида ҳал қилинади. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="291" width="555" height="20" uuid="c5d35fc0-f6f5-4d00-8b00-a67f33798959">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[XI.	Офертанинг бошқа шартлари]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="311" width="555" height="48" uuid="baa0ea6f-2fc7-4e34-b34c-b564d4d8aa8f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	11.1.	Хужжатлар электрон кўринишда банкнинг маълумотлар базасида сақланади.
+	11.2.	Ушбу Оферта бўйича барча ҳабарномалар томонларга манзилига ёки ҳабарнома жўнатиш манзили сифатида белгиланган мобил телефон рақамига жўнатиш орқали амалга оширилади. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="555" height="20" uuid="7846505d-43cc-4cdc-8aa0-363f75c24525">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIII.	Маълумотларнинг ошкор қилиш тартиби ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="555" height="61" uuid="febf9ce1-7e26-44da-a9b1-195b7f56a6ed">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	8.1.	Қарз олувчи шахсий маълумотларни қайта ишланишига, фойдаланишга шунингдек, ушбу Оферта бўйича маълумотларни Кредит бюросига ва агар керак бўлса суғурта компаниясига тақдим этилишига розилик беради.
+	8.2.	Банк ўз мажбуриятларини бажариш учун ушбу Оферта доирасида барча зарур маълумотларни учинчи шахсларга беришга ҳақлидир.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="554" height="50" uuid="1c283a6a-f285-405b-949c-243c96f7bdb1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<text><![CDATA[	7.4.	Томонлар тарафидан ўз мажбурияларини бажармасликлари ёки лозим даражада бажармасликлари енгиб бўлмайдиган куч, яъни фавқулодда ва муайян шароитларда олдини олиб бўлмайдиган вазиятлар (форс-мажор) туфайли келиб чиққан ҳолларда томонлар жавобгарликдан озод этилади.]]></text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>
