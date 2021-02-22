@@ -1,74 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="80c96d60-2553-4001-8b29-ba235bc3dfff">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-	<parameter name="result_emp_fio" class="java.lang.String"/>
-	<parameter name="result_borrower_fio" class="java.lang.String"/>
-	<parameter name="result_borrower_address" class="java.lang.String"/>
-	<parameter name="result_borrower_phone" class="java.lang.String"/>
-	<parameter name="result_borrower_date" class="java.lang.String"/>
-	<parameter name="result_borrower_request_number" class="java.lang.String"/>
-	<parameter name="result_product" class="java.lang.String"/>
-	<parameter name="result_sum" class="java.lang.String"/>
-	<parameter name="result_filial" class="java.lang.String"/>
-	<parameter name="result_currency" class="java.lang.String"/>
-	<queryString>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<queryString language="JSON">
 		<![CDATA[]]>
 	</queryString>
+	<field name="result_emp_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[result_emp_fio]]></fieldDescription>
+	</field>
+	<field name="result_borrower_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_fio]]></fieldDescription>
+	</field>
+	<field name="result_borrower_address" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_address]]></fieldDescription>
+	</field>
+	<field name="result_borrower_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_phone]]></fieldDescription>
+	</field>
+	<field name="result_borrower_date" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_date]]></fieldDescription>
+	</field>
+	<field name="result_borrower_request_number" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_request_number]]></fieldDescription>
+	</field>
+	<field name="result_product" class="java.lang.String">
+		<fieldDescription><![CDATA[result_product]]></fieldDescription>
+	</field>
+	<field name="result_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[result_sum]]></fieldDescription>
+	</field>
+	<field name="result_filial" class="java.lang.String">
+		<fieldDescription><![CDATA[result_filial]]></fieldDescription>
+	</field>
+	<field name="result_currency" class="java.lang.String">
+		<fieldDescription><![CDATA[result_currency]]></fieldDescription>
+	</field>
+	<field name="PSK_number" class="java.lang.String">
+		<fieldDescription><![CDATA[PSK_number]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
 		<band height="802" splitType="Stretch">
-			<staticText>
-				<reportElement x="20" y="50" width="524" height="40" uuid="229ec895-436d-42c0-a87e-4aad12f29725">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif"/>
-				</textElement>
-				<text><![CDATA[Акционерное общество «Национальный Банк»
-100084, Республика Узбекистан, г. Ташкент, проспект Амира Темира,101, тел. +998 78 148-00-10 ]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="205" y="110" width="315" height="40" uuid="ee294e2f-6c93-4b64-a409-346b262056c8"/>
+				<reportElement x="20" y="110" width="500" height="40" uuid="ee294e2f-6c93-4b64-a409-346b262056c8"/>
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{result_borrower_fio}+"\n"+
-$P{result_borrower_address}+"\n"+
-$P{result_borrower_phone}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{result_borrower_fio}+"\n"+
+$F{result_borrower_address}+"\n"+
+$F{result_borrower_phone}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="60" y="180" width="190" height="20" uuid="7a725aa6-df33-4cff-a38f-73f9e73d7cd3"/>
 				<textElement>
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Дата "+$P{result_borrower_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Дата "+$F{result_borrower_date}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="60" y="240" width="460" height="20" uuid="0cefd279-bc81-442d-be67-0e21e2cabe8e"/>
-				<textElement textAlignment="Center">
+				<reportElement x="60" y="240" width="460" height="30" uuid="0cefd279-bc81-442d-be67-0e21e2cabe8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Уважаемый "+$P{result_borrower_fio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Уважаемый "+$F{result_borrower_fio}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="60" y="280" width="460" height="80" uuid="3be0f61e-efb3-4b28-bb4c-e442ccb77dca"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="60" y="280" width="460" height="120" uuid="3be0f61e-efb3-4b28-bb4c-e442ccb77dca"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\tПосле рассмотрения вашей заявки на кредит №"+$P{result_borrower_request_number}+" на получение "+$P{result_product}+" на сумму "+$P{result_sum}+" "+$P{result_currency}+" уведомляем Вас о невозможности удовлетворения Вашей заявки по причине не соответствия Ваших данных требованиям скоринговой системы Банка."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\tПосле рассмотрения вашей заявки на кредит №"+$F{result_borrower_request_number}+" на получение "+$F{result_product}+" на сумму "+$F{result_sum}+" "+$F{result_currency}+" уведомляем Вас о невозможности удовлетворения Вашей заявки по причине не соответствия Ваших данных требованиям скоринговой системы Банка."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="60" y="450" width="350" height="79" uuid="0b695b4a-0e58-4867-a213-567c1ddba75b"/>
 				<textElement>
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Отделение: "+$P{result_filial}+
-"\n\nКредитный менеджер "+$P{result_emp_fio}+
+				<textFieldExpression><![CDATA["Филиал: "+$F{result_filial}+
+"\n\nКредитный менеджер "+$F{result_emp_fio}+
 "\n\n_____________________________"+
 "\n                         (Подпись) "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="50" width="524" height="40" uuid="5b4b3e8d-6a8d-456d-9d88-4554836a3dec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Акционерное общество «Национальный Банк»\n"+$F{address}+", тел. +998 78 148-00-10"]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

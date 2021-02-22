@@ -1,74 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="scoring_result" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d29d83a9-0dea-40f3-be3a-4834f92bd052">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-	<parameter name="result_borrower_fio" class="java.lang.String"/>
-	<parameter name="result_borrower_address" class="java.lang.String"/>
-	<parameter name="result_borrower_phone" class="java.lang.String"/>
-	<parameter name="result_borrower_date" class="java.lang.String"/>
-	<parameter name="result_borrower_request_number" class="java.lang.String"/>
-	<parameter name="result_product" class="java.lang.String"/>
-	<parameter name="result_sum" class="java.lang.String"/>
-	<parameter name="result_emp_fio" class="java.lang.String"/>
-	<parameter name="result_filial" class="java.lang.String"/>
-	<parameter name="result_currency" class="java.lang.String"/>
-	<queryString>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<queryString language="JSON">
 		<![CDATA[]]>
 	</queryString>
+	<field name="result_emp_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[result_emp_fio]]></fieldDescription>
+	</field>
+	<field name="result_borrower_fio" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_fio]]></fieldDescription>
+	</field>
+	<field name="result_borrower_address" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_address]]></fieldDescription>
+	</field>
+	<field name="result_borrower_phone" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_phone]]></fieldDescription>
+	</field>
+	<field name="result_borrower_date" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_date]]></fieldDescription>
+	</field>
+	<field name="result_borrower_request_number" class="java.lang.String">
+		<fieldDescription><![CDATA[result_borrower_request_number]]></fieldDescription>
+	</field>
+	<field name="result_product" class="java.lang.String">
+		<fieldDescription><![CDATA[result_product]]></fieldDescription>
+	</field>
+	<field name="result_sum" class="java.lang.String">
+		<fieldDescription><![CDATA[result_sum]]></fieldDescription>
+	</field>
+	<field name="result_filial" class="java.lang.String">
+		<fieldDescription><![CDATA[result_filial]]></fieldDescription>
+	</field>
+	<field name="result_currency" class="java.lang.String">
+		<fieldDescription><![CDATA[result_currency]]></fieldDescription>
+	</field>
+	<field name="PSK_number" class="java.lang.String">
+		<fieldDescription><![CDATA[PSK_number]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
 		<band height="802" splitType="Stretch">
-			<staticText>
-				<reportElement x="10" y="55" width="540" height="34" uuid="d3b8dd1b-30b8-49d9-b0c6-878da67a88aa">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" isBold="false"/>
-				</textElement>
-				<text><![CDATA[Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки акциядорлик жамияти
-Ўзбекистон Республикаси, Тошкент ш., Амир темур хиёбони, 101, 100084, тел. +998 78 148-00-10]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="210" y="115" width="315" height="40" uuid="7b7d0811-fbda-4fb2-a4b8-b8808dd0d8b5"/>
+				<reportElement x="20" y="115" width="505" height="40" uuid="7b7d0811-fbda-4fb2-a4b8-b8808dd0d8b5"/>
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{result_borrower_fio}+"\n"+
-$P{result_borrower_address}+"\n"+
-$P{result_borrower_phone}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{result_borrower_fio}+"\n"+
+$F{result_borrower_address}+"\n"+
+$F{result_borrower_phone}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="65" y="185" width="190" height="20" uuid="08c1e184-27bf-4890-8efd-41c4f6d944c9"/>
 				<textElement>
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Сана "+$P{result_borrower_date}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Сана "+$F{result_borrower_date}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="65" y="245" width="460" height="20" uuid="372ff101-3f16-42c5-b2b8-f8eeb34d7173"/>
-				<textElement textAlignment="Center">
+				<reportElement x="65" y="245" width="460" height="25" uuid="372ff101-3f16-42c5-b2b8-f8eeb34d7173"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Ҳурматли "+$P{result_borrower_fio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Ҳурматли "+$F{result_borrower_fio}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="65" y="285" width="460" height="80" uuid="5e069acb-6ffc-4861-a857-55e14c04c4cf"/>
 				<textElement textAlignment="Justified">
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["\tСизнинг "+$P{result_sum}+" "+$P{result_currency}+" миқдордаги "+$P{result_product}+" кредити олиш юзасидан тақдим этилган № "+$P{result_borrower_request_number}+" аризангиз Банкнинг скоринг тизими шартларига мос келмаганлиги учун рад этилганлиги тўғрисида хабардор қилмамиз. "]]></textFieldExpression>
+				<textFieldExpression><![CDATA["\tСизнинг "+$F{result_sum}+" "+$F{result_currency}+" миқдордаги "+$F{result_product}+" кредити олиш юзасидан тақдим этилган № "+$F{result_borrower_request_number}+" аризангиз Банкнинг скоринг тизими шартларига мос келмаганлиги учун рад этилганлиги тўғрисида хабардор қилмамиз. "]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="65" y="450" width="350" height="79" uuid="8e828a24-6b7d-4a7c-87cf-4038e1be1ae0"/>
 				<textElement>
 					<font fontName="DejaVu Serif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Бўлими: "+$P{result_filial}+
-"\n\nКредит мутахассиси: "+$P{result_emp_fio}+
+				<textFieldExpression><![CDATA["Филиали: "+$F{result_filial}+
+"\n\nКредит мутахассиси: "+$F{result_emp_fio}+
 "\n\n_____________________________"+
 "\n                     (имзо) "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="50" width="524" height="40" uuid="c157d41c-2d62-4e42-8462-34983f2ce09c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ўзбекистон Республикаси Ташқи иқтисодий фаолият миллий банки акциядорлик жамияти\n"+$F{address}+", тел. +998 78 148-00-10"]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
